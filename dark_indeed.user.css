@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name           Indeed.com Dark
+@author         Hussein Esmail
+@description    `A dark theme for the website https://indeed.com`
+@namespace      https://github.com/hussein-esmail7/userstyles
+==/UserStyle== */
+
+@-moz-document url-prefix("indeed.com") {
+
+    :root {
+        --background-color: #1f1f1f;
+        --background-color-secondary: grey;
+        --text-color: white;
+        --title-color: blue;
+        --link-color: blue;
+    }
+
+    html, li, .icl-Ratings, .icl-NavigableContainer,  .icl-NavigableContainer--hasBorderBottom, .icl-NavigableContainer--hasBorderTop, .icl-NavigableContainer-linkWrapper, .icl-Ratings-description {
+        background-color: var(--background-color);
+        color: var(--text-color);
+    }
+
+    .icl-GlobalFooter-link, a:link, .icl-GlobalFooter-item, .jobsearch-JobMetadataFooter, h1, .jobsearch-JobInfoHeader-title-container, .jobsearch-DesktopStickyContainer-subtitle {
+        background-color: var(--background-color-secondary);
+        color: var(--link-color) !important;
+    }
+
+}
