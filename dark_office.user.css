@@ -1,0 +1,40 @@
+/* ==UserStyle==
+@name           office.com - 02/06/2021, 20:55:59
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("office.com") {
+    /* Insert code here... */
+    :root {
+        --color-bg: black;
+        --color-bg-secondary: #2f2f2f;
+        --color-bg-lighter: #eeeeee;
+        --color-fg: white;
+        --color-selected: #3f3f3f;
+    }
+    
+    .plannerApp, .sideNav {
+        background-color: var(--color-bg) !important;
+    }
+    
+    h1, h2, h3, h4, h5, h6, .plannerApp, .sideNav, .selected, span.leftNavItem, .ms-Icon, .welcome, .tileName, .ms-TooltipHost, div.name, .value, tspan, .primaryTextSectionTitle, .pivotLink, .overflowInitialsIcon-150, label {
+        color: var(--color-fg) !important;
+    }
+    .rollupChart {
+        background-color: var(--color-bg-lighter) !important;
+    }
+    
+    span.leftNavItem, .ms-Icon, .linkContents {
+        background-color: transparent;
+    }
+    
+    li.selected {
+        background-color: var(--color-selected) !important;
+    }
+    .planCard, div.container {
+        background-color: var(--color-bg-secondary) !important;
+    }
+}
