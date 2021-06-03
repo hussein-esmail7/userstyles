@@ -1,16 +1,17 @@
 /* ==UserStyle==
-@name           office.com - 02/06/2021, 20:55:59
-@namespace      github.com/openstyles/stylus
+@name           Dark Office
+@namespace      github.com/hussein-esmail7/userstyles
 @version        1.0.0
 @description    A new userstyle
-@author         Me
+@author         Hussein Esmail
 ==/UserStyle== */
 
 @-moz-document domain("office.com") {
-    /* Insert code here... */
+    
     :root {
         --color-bg: black;
         --color-bg-secondary: #2f2f2f;
+        --color-bg-tertiary: #3e3e3e;
         --color-bg-lighter: #eeeeee;
         --color-fg: white;
         --color-selected: #3f3f3f;
@@ -20,8 +21,12 @@
         background-color: var(--color-bg) !important;
     }
     
-    h1, h2, h3, h4, h5, h6, .plannerApp, .sideNav, .selected, span.leftNavItem, .ms-Icon, .welcome, .tileName, .ms-TooltipHost, div.name, .value, tspan, .primaryTextSectionTitle, .pivotLink, .overflowInitialsIcon-150, label {
+    h1, h2, h3, h4, h5, h6, .plannerApp, .sideNav, .selected, span.leftNavItem, .ms-Icon, .welcome, .tileName, .ms-TooltipHost, div.name, .value, tspan, .primaryTextSectionTitle, .pivotLink, [class^="overflowInitialsIcon"], label, .title, .dueDate, .addTaskText, .addColumn, .ms-Checkbox-text, .label, input, .htmlContent, .commenterName, .timestamp {
+        /* Main text color */
         color: var(--color-fg) !important;
+    }
+    .ms-TextField-fieldGroup {
+        background-color: var(--color-bg-tertiary) !important;
     }
     .rollupChart {
         background-color: var(--color-bg-lighter) !important;
@@ -34,7 +39,8 @@
     li.selected {
         background-color: var(--color-selected) !important;
     }
-    .planCard, div.container {
+    .planCard, div.container, .addButton, .taskEditor-dialog-container, .taskEditor-dialog-content {
         background-color: var(--color-bg-secondary) !important;
     }
+    
 }
