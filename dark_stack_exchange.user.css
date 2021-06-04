@@ -1,1 +1,38 @@
-/* TODO */
+/* ==UserStyle==
+@name           stackexchange.com - 25/05/2021, 15:37:07
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("stackexchange.com") {
+    /* Insert code here... */
+    
+    :root {
+        --background-color: black;
+        --text-color: white;
+        --url-color: #7b75ff;
+        --background-color-code: #333333;
+        
+    }
+    
+    .container, #content, footer, header, .s-sidebarwidget, .s-sidebarwidget--header {
+        background-color: var(--background-color) !important;
+    }
+    
+    .container, #content, footer, header, code, .post-tag, .s-sidebarwidget, .s-sidebarwidget--header {
+        color: var(--text-color) !important;
+    }
+    code, pre, .post-tag {
+        background-color: var(--background-color-code) !important;
+        border-color: var(--background-color-code) !important;
+    }
+    .question-hyperlink, .relativetime, .js-gps-track, .js-add-link {
+        color: var(--url-color) !important;
+    }
+    .js-freemium-cta {
+        /* Banished elements */
+        display: none;
+    }
+}

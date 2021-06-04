@@ -1,1 +1,67 @@
-/* TODO */
+/* ==UserStyle==
+@name           The Pirate Bay Dark Mode - 17/05/2021, 14:32:49
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document regexp(".+piratebay*.*"), domain("tpb.party") {
+    /* Insert code here... */
+    :root {
+    --background-color: #222629;
+    --text-color: white;
+    --text-color-seconday: #eeeeee;
+    --button-text-color: black;
+    --table-background-color: #31363a;
+    --table-hover-color: #222222;
+    --transparent-color: transparent;
+    --search-bar-color: white;
+    }
+
+    
+    html {
+        background-color: var(--background-color);
+    }
+
+    div#detailsframe *, head, body, footer, h2, table#searchResult th, table#searchResult td, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details * {
+        background-color: transparent !important;
+    }
+
+    a, strong, label, h2, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl * {
+        color: var(--text-color) !important;
+        border-width: 0;
+    }
+
+    input {
+        color: var(--button-text-color) !important;
+    }
+
+    .https_form {
+        background-color: var(--search-bar-color);
+    }
+
+
+    table#searchResult tr, table#searchResult tr.alt {
+        background: var(--table-background-color);
+        color: var(--text-color);
+    }
+
+    table#searchResult tr:hover {
+        background: var(--table-hover-color);
+    }
+
+    .nfo {
+        font-size: large;
+    }
+
+    a[title^='Get this torrent'] {
+        font-size: x-large;
+    }
+
+
+    
+    
+    
+    
+}

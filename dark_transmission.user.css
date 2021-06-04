@@ -1,1 +1,24 @@
-/* TODO */
+/* ==UserStyle==
+@name           localhost - 12/05/2021, 18:10:21
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document url-prefix("http://localhost:9091/transmission/web") {
+    /* Insert code here... */
+    :root {
+        --background-color: black;
+        --text-color: white;
+    }
+    html, .torrent_list, .compact, ul, li, #torrent_container, body, .torrent, .ui-widget-content, .ui-menu-divider, .toolbar {
+        background-color: var(--background-color) !important;
+        color: var(--text-color) !important;
+    }
+    li.ui-state-disabled {
+        background-color: red !important;
+        color: var(--text-color) !important;
+    }
+}
+

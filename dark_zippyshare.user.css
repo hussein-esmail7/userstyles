@@ -1,1 +1,32 @@
-/* TODO */
+/* ==UserStyle==
+@name           zippyshare.com Dark Simplified
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Hussein Esmail
+==/UserStyle== */
+
+@-moz-document domain("zippyshare.com") {
+    /* Insert code here... */
+    :root {
+        --background-color: black;
+        --text-color: white;
+    }
+    html, .inner_menu, a:link, span, td, font {
+        background-color: var(--background-color) !important;
+        color: var(--text-color) !important;
+        
+    }
+    .logo, .slickbox, .center_ad {
+        display: none !important;
+        overflow: hidden !important;
+        width: 0 !important;
+        height: 0 !important;
+        border-radius: 0px !important;
+        padding: 0px !important;
+    }
+    .outer_menu, .inner_menu, .inner_main, .outer_main {
+        border-radius: 0px !important;
+        padding: 0px !important;
+    }
+}

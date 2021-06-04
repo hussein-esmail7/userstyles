@@ -1,1 +1,27 @@
-/* TODO */
+/* ==UserStyle==
+@name           medium.com - 21/04/2021, 22:50:55
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("medium.com") {
+    
+    :root {
+        --background-color: black;
+        --text-color: white;
+    }
+    
+    .meteredContent, div {
+        background-color: var(--background-color) !important;
+        
+    }
+    p, h1, h2, h3, h4, h5, h6, a:link, button {
+       color: var(--text-color) !important; 
+    }
+    
+    div.uq {
+        display: none;
+    }
+}

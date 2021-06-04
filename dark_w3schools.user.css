@@ -1,1 +1,62 @@
-/* TODO */
+/* ==UserStyle==
+@name           w3schools.com - 06/05/2021, 22:33:12
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("w3schools.com"), domain("w3docs.com") {
+    /* Insert code here... */
+    :root {
+        --color-background: black;
+        --color-text: white;
+        --color-table: #1e1e1e;
+        --color-example: #1e1e1e;
+        --color-url: #7ecbff;
+        --color-url-visited: #eaabff;
+        --color-text-code: #fff;
+        --color-text-code-attribute: #ffb700;
+        --color-text-code-brackets: #6b6a6a;
+        --color-text-code-tags: #3282ff;
+        --color-panel-red: #5c0101;
+    }
+    
+    .w3-white, #leftmenuinnerinner, .w3-bar, .sidesection, .intro, .pagemenu, body {
+        background-color: var(--color-background) !important;
+    }
+    .w3-example, .tut_overview {
+        background-color: var(--color-example);
+    }
+    .w3-codespan, .w3-code, #w3-exerciseform {
+        color: var(--color-text-code);
+        background-color: var(--color-example);
+    }
+    p, h1, h2, h3, h4, h5, h6, li, span, td, th {
+        color: var(--color-text) !important;
+    }
+    a:link {
+        color: var(--color-url) !important;
+    }
+    a:visited {
+        color: var(--color-url-visited) !important;
+    }
+    td, th, .w3-note, ul.list {
+        background-color: var(--color-table);
+    }
+    .tagcolor, .cssdelimitercolor, .pythoncolor {
+        color: var(--color-text-code-brackets) !important;
+    }
+    .tagnamecolor, .pythonkeywordcolor {
+        color: var(--color-text-code-tags) !important;
+    }
+    .attributevaluecolor, .csspropertyvaluecolor {
+        color: var(--color-text-code-attribute) !important;
+    }
+    #snhb-mid_content-0, .cookie-disclaimer {
+        display: none;
+    }
+    .w3-pale-red {
+        background-color: var(--color-panel-red) !important;
+    }
+}

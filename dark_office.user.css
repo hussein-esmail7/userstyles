@@ -15,13 +15,14 @@
         --color-bg-lighter: #eeeeee;
         --color-fg: white;
         --color-selected: #3f3f3f;
+        --color-inprogress: darkcyan;
     }
     
     .plannerApp, .sideNav {
         background-color: var(--color-bg) !important;
     }
     
-    h1, h2, h3, h4, h5, h6, .plannerApp, .sideNav, .selected, span.leftNavItem, .ms-Icon, .welcome, .tileName, .ms-TooltipHost, div.name, .value, tspan, .primaryTextSectionTitle, .pivotLink, [class^="overflowInitialsIcon"], label, .title, .dueDate, .addTaskText, .addColumn, .ms-Checkbox-text, .label, input, .htmlContent, .commenterName, .timestamp {
+    h1, h2, h3, h4, h5, h6, .plannerApp, .sideNav, .selected, span.leftNavItem, .ms-Icon, .welcome, .tileName, .ms-TooltipHost, div.name, .value, tspan, .primaryTextSectionTitle, .pivotLink, [class^="overflowInitialsIcon"], label, .title, .dueDate, .addTaskText, .addColumn, .ms-Checkbox-text, .label, input, .htmlContent, .commenterName, .timestamp, .ms-TextField-field {
         /* Main text color */
         color: var(--color-fg) !important;
     }
@@ -41,6 +42,9 @@
     }
     .planCard, div.container, .addButton, .taskEditor-dialog-container, .taskEditor-dialog-content {
         background-color: var(--color-bg-secondary) !important;
+    }
+    .color-inprogress {
+        color: var(--color-inprogress) !important;
     }
     
 }
