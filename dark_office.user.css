@@ -18,15 +18,15 @@
         --color-inprogress: darkcyan;
     }
     
-    .plannerApp, .sideNav {
+    .plannerApp, .sideNav, .ms-Callout-main, .plannerAppCallout {
         background-color: var(--color-bg) !important;
     }
     
-    h1, h2, h3, h4, h5, h6, .plannerApp, .sideNav, .selected, span.leftNavItem, .ms-Icon, .welcome, .tileName, .ms-TooltipHost, div.name, .value, tspan, .primaryTextSectionTitle, .pivotLink, [class^="overflowInitialsIcon"], label, .title, .dueDate, .addTaskText, .addColumn, .ms-Checkbox-text, .label, input, .htmlContent, .commenterName, .timestamp, .ms-TextField-field {
+    h1, h2, h3, h4, h5, h6, .plannerApp, .sideNav, .selected, span.leftNavItem, .ms-Icon, .welcome, .tileName, .ms-TooltipHost, div.name, .value, tspan, .primaryTextSectionTitle, .pivotLink, [class^="overflowInitialsIcon"], label, .title, .dueDate, .addTaskText, .addColumn, .ms-Checkbox-text, .label, input, .htmlContent, .commenterName, .timestamp, .ms-TextField-field, .ms-Callout-main {
         /* Main text color */
         color: var(--color-fg) !important;
     }
-    .ms-TextField-fieldGroup {
+    .ms-TextField-fieldGroup, button.header {
         background-color: var(--color-bg-tertiary) !important;
     }
     .rollupChart {
