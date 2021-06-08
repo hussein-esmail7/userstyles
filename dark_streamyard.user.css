@@ -1,53 +1,63 @@
-:root {
-    --background-color: #1f1f1f;
-    --text-color: white;
-    --secondary-background-color: #3f3f3f;
-    --link-hover-color: #4f4f4f;
-    --icon-background: white;
-}
+/* ==UserStyle==
+@name           Streamyard Dark
+@namespace      github.com/hussein-esmail7/userstyles
+@version        1.0.0
+@description    `A dark theme for the website streamyard.com`
+@author         Hussein Esmail
+==/UserStyle== */
 
-html, p, thead, th, h3, h5, h6, label, .Menu__Overlay-guefeD, .CardRow__Row-iwYPAi, .LayoutRow__Row-hGktkw, .Studio__VideoRow-laaJIh, .ControlRow__Row-cGnYiZ, .RightAside__TabsColumn-chsQNW, .RightTabButton__SmallText-bjEwtB, .PlatformComments__Wrap-citecx, .Banners__Wrap-idyxCh, .Brand__Wrap-cFRVAJ, .Text__StyledText-llZFeh, .Chat__Wrap-diuKMg, .ReactModal__Content, .SettingsModal__DesktopSideNav-kefkTM {
-    /* Main */
-    background-color: var(--background-color) !important;
-    color: var(--text-color) !important;
-}
+@-moz-document domain("streamyard.com") {
+    :root {
+        --background-color: #1f1f1f;
+        --text-color: white;
+        --secondary-background-color: #3f3f3f;
+        --link-hover-color: #4f4f4f;
+        --icon-background: white;
+    }
 
-.irfIIU, .duuTGt, .Button__InnerSpan-kIhqEy {
-    background-color: var(--secondary-background-color);
-}
-.gDuIYT {
-    color: var(--text-color);
-}
-.Button__Wrap-hKuFEo {
-    /* "Enter Broadcast Studio" buttons on homepage */
-    background-color: var(--secondary-background-color);
-}
-a:hover {
-    background-color: var(--link-hover-color) !important;
-}
+    html, p, thead, th, h3, h5, h6, label, .Menu__Overlay-guefeD, .CardRow__Row-iwYPAi, .LayoutRow__Row-hGktkw, .Studio__VideoRow-laaJIh, .ControlRow__Row-cGnYiZ, .RightAside__TabsColumn-chsQNW, .RightTabButton__SmallText-bjEwtB, .PlatformComments__Wrap-citecx, .Banners__Wrap-idyxCh, .Brand__Wrap-cFRVAJ, .Text__StyledText-llZFeh, .Chat__Wrap-diuKMg, .ReactModal__Content, .SettingsModal__DesktopSideNav-kefkTM {
+        /* Main */
+        background-color: var(--background-color) !important;
+        color: var(--text-color) !important;
+    }
 
-.RightTabButton__IconWrap-erJwGk {
-    background-color: var(--icon-background);
-}
+    .irfIIU, .duuTGt, .Button__InnerSpan-kIhqEy {
+        background-color: var(--secondary-background-color);
+    }
+    .gDuIYT {
+        color: var(--text-color);
+    }
+    .Button__Wrap-hKuFEo {
+        /* "Enter Broadcast Studio" buttons on homepage */
+        background-color: var(--secondary-background-color);
+    }
+    a:hover {
+        background-color: var(--link-hover-color) !important;
+    }
 
-.ButtonBase__WrapperButton-bxmLLE {
-    color: white !important;
-}
+    .RightTabButton__IconWrap-erJwGk {
+        background-color: var(--icon-background);
+    }
 
-.AlertBubble__CloseButton-eBQkHq {
-    /* TODO */
-    /* Red X for warnings, doesn't work */
-    background-color: red !important;
-    color: red;
-}
+    .ButtonBase__WrapperButton-bxmLLE {
+        color: white !important;
+    }
 
-.CardName__StyledText-emOkCz {
-    /* Names of individual members backstage */
-    background-color: transparent !important;
-    color: black !important;
-}
+    .AlertBubble__CloseButton-eBQkHq {
+        /* TODO */
+        /* Red X for warnings, doesn't work */
+        background-color: red !important;
+        color: red;
+    }
 
-.jGYCRa {
-    /* Blue buttons. If this isn't here */
-    background-color: transparent;
+    .CardName__StyledText-emOkCz {
+        /* Names of individual members backstage */
+        background-color: transparent !important;
+        color: black !important;
+    }
+
+    .jGYCRa {
+        /* Blue buttons. If this isn't here */
+        background-color: transparent;
+    }
 }

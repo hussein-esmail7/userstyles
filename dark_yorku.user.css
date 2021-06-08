@@ -1,41 +1,53 @@
-/* TODO: Convert to .user.css format */
-:root {
-    --background-main: #1f1f1f;
-    --background-non-intrusive: grey;
-    --background-course-links: #2f2f2f;
-    --dark-red: #7d0800;
-    --text-color: white;
-    --url-color: red;
-}
+/* ==UserStyle==
+@name           YorkU Dark
+@namespace      github.com/hussein-esmail7/userstyles
+@version        1.0.0
+@description    `A dark theme for York University websites`
+@author         Me
+==/UserStyle== */
 
-html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer {
-    background-color: var(--background-main) !important;
-    color: var(--text-color);
-    border: none;
-}
+@-moz-document domain("passportyork.yorku.ca"), domain("eclass.yorku.ca"), domain("webapp.eecs.yorku.ca") {
 
-#york-logo {
-    background-color: var(--background-non-intrusive);
-}
+    :root {
+        --color-alert: red;
+        --color-bg: #1f1f1f;
+        --color-bg-secondary: grey;
+        --color-fg: white;
+        --background-course-links: #2f2f2f;
+        --dark-red: #7d0800;
+        --color-url: red;
+    }
 
-.app-title-bar {
-    background-color: var(--dark-red);
-}
+    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer {
+        background-color: var(--color-bg) !important;
+        color: var(--color-fg);
+        border: none;
+    }
 
-a:link {
-    color: var(--url-color);
-}
+    #york-logo {
+        background-color: var(--color-bg-secondary);
+    }
 
-.alert, .alert-info {
-    background-color: red !important;
-    border: 0px;
-}
+    .app-title-bar {
+        background-color: var(--dark-red);
+    }
 
-.course-info-container {
-    background-color: var(--background-course-links) !important;
-}
+    a:link {
+        color: var(--color-url);
+    }
 
-.block_slideshow, #card-widgetmenu, .dashboard-card-img { 
-    /* Elements to get rid of*/
-    display: none;
+    .alert, .alert-info {
+        background-color: var(--color-alert) !important;
+        border: 0px;
+    }
+
+    .course-info-container {
+        background-color: var(--background-course-links) !important;
+    }
+
+    .block_slideshow, #card-widgetmenu, .dashboard-card-img, #ycrest { 
+        /* Elements to get rid of*/
+        display: none;
+    }
+
 }

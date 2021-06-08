@@ -1,13 +1,13 @@
 /* ==UserStyle==
-@name           zippyshare.com Dark Simplified
-@namespace      github.com/openstyles/stylus
+@name           Zippyshare Dark Simplified
+@namespace      github.com/hussein-esmail7/userstyles
 @version        1.0.0
-@description    A new userstyle
+@description    `A dark theme for the website zippyshare.com`
 @author         Hussein Esmail
 ==/UserStyle== */
 
 @-moz-document domain("zippyshare.com") {
-    /* Insert code here... */
+    
     :root {
         --background-color: black;
         --text-color: white;

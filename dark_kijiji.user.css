@@ -1,0 +1,35 @@
+/* ==UserStyle==
+@name           Kijiji Dark
+@author         Hussein Esmail
+@version        1.0.0
+@description    `A dark theme for the website https://kijiji.ca`
+@namespace      https://github.com/hussein-esmail7/userstyles
+==/UserStyle== */
+
+@-moz-document domain("kijiji.ca") {
+    
+    :root {
+        --color-bg: black;
+        --color-bg-secondary: #2e2e2e;
+        --color-fg: white;
+        --color-fg-secondary: #c4c4c4;
+    }
+    
+    html, body, div, fieldset, section, footer, .fes-pagelet, .mainPageContent, #MainContainer, .sticky-inner-wrapper {
+        background-color: var(--color-bg) !important;
+    }
+    
+    html, body, div, fieldset, label {
+        color: var(--color-fg) !important;
+    }
+    
+    [class^="radioLabelDescription"], .small-print, [class^="postingLocationTip"], [class^="postingLocationContent"] {
+        color: var(--color-fg-secondary) !important;
+    }
+    
+    textarea, input, select, .checkbox-label {
+        background-color: var(--color-bg-secondary) !important;
+        color: var(--color-fg) !important;
+    }
+    
+}

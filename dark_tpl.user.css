@@ -1,12 +1,13 @@
 /* ==UserStyle==
-@name           torontopubliclibrary.ca - 01/05/2021, 21:01:36
-@namespace      github.com/openstyles/stylus
+@name           Toronto Public Library Dark
+@namespace      github.com/hussein-esmail7/userstyles
 @version        1.0.0
-@description    A new userstyle
+@description    `A dark theme for the website torontopubliclibrary.ca`
 @author         Hussein Esmail
 ==/UserStyle== */
 
 @-moz-document domain("torontopubliclibrary.ca") {
+
     :root {
         --background-color: black;
         --background-color-item-focus: #1e1e1e;
@@ -14,25 +15,31 @@
         --notice-color: darkred;
         --url-color: lightblue;
     }
+
     body, .SearchBox, .logon, #form_signin, .container, .action-bar, td, .panel, .menu-item, section, [class^="components-pages"], [class^="components-Save"], [class^="components-ItemButton"], th, .copyright, .add-new-list, .page-content, div.notice, .megamenu, .megamenu-column {
-        background-color: var(--background-color) !important;
-        
+        background-color: var(--background-color) !important; 
     }
+
     .selected {
         background-color: var(--background-color-item-focus);
     }
+
     body, .SearchBox, .logon, h1, label, .holds-title, .menu-item, span, p, ul, th {
         color: var(--text-color) !important;
     }
+
     a:link, a {
         color: var(--url-color) !important;
     }
+
     .media-item {
         background-color: var(--background-color-item-focus) !important;
         padding: 0;
         border: none;
     }
+
     p.notice, .branch-message-outer, .branch-message p, .alert {
         background-color: var(--notice-color) !important;
     }
+    
 }

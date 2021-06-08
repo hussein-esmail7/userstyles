@@ -1,28 +1,41 @@
 /* ==UserStyle==
 @name           Libgen Dark
 @author         Hussein Esmail
-@description    `A dark theme for the website TODO`
+@version        1.0.0
+@description    `A dark theme for the Libgen websites`
 @namespace      https://github.com/hussein-esmail7/userstyles
 ==/UserStyle== */
 
-@-moz-document url-prefix("indeed.com") {
-
+@-moz-document url-prefix("libgen"), domain("library.lol") {
+    /* Insert code here... */
+    
     :root {
-        --background-color: #1f1f1f;
-        --background-color-secondary: grey;
+        --background-color: black;
         --text-color: white;
-        --title-color: blue;
-        --link-color: blue;
+        --table-color: #1e1e1e;
+        --url-color: lightblue;
+        --url-visited-color: #e294ff;
     }
-
-    html, li, .icl-Ratings, .icl-NavigableContainer,  .icl-NavigableContainer--hasBorderBottom, .icl-NavigableContainer--hasBorderTop, .icl-NavigableContainer-linkWrapper, .icl-Ratings-description {
+    
+    body, #menu, .drop {
         background-color: var(--background-color);
+        color: var(--text-color) !important;
+    }
+    .c, tr[valign="top"] {
+        background-color: var(--table-color) !important;
         color: var(--text-color);
     }
-
-    .icl-GlobalFooter-link, a:link, .icl-GlobalFooter-item, .jobsearch-JobMetadataFooter, h1, .jobsearch-JobInfoHeader-title-container, .jobsearch-DesktopStickyContainer-subtitle {
-        background-color: var(--background-color-secondary);
-        color: var(--link-color) !important;
+    a:link, h1 {
+        color: var(--url-color) !important;
     }
-
+    a:visited {
+        color: var(--url-visited-color);
+    }
+    i, font[size="1"] {
+        color: var(--text-color);
+    }
+    sup, a[href="../setlang.php?lang=ru"] {
+        display: none;
+        size: 0;
+    }
 }
