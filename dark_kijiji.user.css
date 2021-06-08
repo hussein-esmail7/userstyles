@@ -11,15 +11,18 @@
     :root {
         --color-bg: black;
         --color-bg-secondary: #2e2e2e;
+        --color-bg-footer: #3e3e3e;
         --color-fg: white;
         --color-fg-secondary: #c4c4c4;
+        --color-link: #76bfff;
+        --color-avatar: lightblue;
     }
     
-    html, body, div, fieldset, section, footer, .fes-pagelet, .mainPageContent, #MainContainer, .sticky-inner-wrapper {
+    html, body, div, fieldset, section, .fes-pagelet, .mainPageContent, #MainContainer, .sticky-inner-wrapper, #SearchLocationPicker, button, a[class^="shareLink"], table, div.top-feature-bottom-bar {
         background-color: var(--color-bg) !important;
     }
     
-    html, body, div, fieldset, label {
+    html, body, div, fieldset, label, h1, h2, h3, h4, h5, h6, [itemprop="name"], li[class^="currentCrumb"], span, svg, strong, header, h1[class^="headerTitle"] {
         color: var(--color-fg) !important;
     }
     
@@ -27,9 +30,36 @@
         color: var(--color-fg-secondary) !important;
     }
     
-    textarea, input, select, .checkbox-label {
+    textarea, input, select, .checkbox-label, div[class^="defaultMessages"], div[class^="container__success"], button[class^="searchSubmit"], div[class^="outerWrapper"], li.highlight {
         background-color: var(--color-bg-secondary) !important;
         color: var(--color-fg) !important;
+    }
+    
+    div[class^="generalOverlay"], div[class^="editButtonContentWrapper"], div[class^="previewContent"], div[class^="column"], div[class^="scrollToContainer"], button[class^="scrollToButton"], button[aria-label="My Account"], div[class^="socialMediaIcons"], div[class^="header"], a[aria-label="Notifications"], button[class^="favouriteButton"], svg[class^="favouriteButtonIcon__default"], div.fes-favourite, div.fes-pagelet, div[data-fes-id^="favouriteButton"], [class^="logo"], div[class^="text__fullBleed"] {
+        background-color: transparent !important;
+    }
+    
+    a:link, [role="link"] {
+        color: var(--color-link) !important;
+    }
+    
+    footer, footer > *, header, header > *, div[class^="menuWrapper"], div[class^="nameL1"] {
+        /* For the header and footer and all elements inside them */
+        background-color: var(--color-bg-footer) !important;
+    }
+    
+    div[class^="cardContainer"], div[data-testid="adcard-container"] {
+        border: 5px var(--color-fg-secondary) !important;
+        border-style: solid;
+    }
+    
+    div[class^="avatar"] {
+        background-color: var(--color-avatar) !important;
+    }
+    
+    div[class^="text__fullBleed"] > * {
+        /* Places where black text is still required */
+        color: black !important;
     }
     
 }
