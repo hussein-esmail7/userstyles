@@ -13,18 +13,21 @@
         --color-bg: #1f1f1f;
         --color-bg-secondary: grey;
         --color-fg: white;
+        --color-nav: #2e2e2e;
         --background-course-links: #2f2f2f;
         --dark-red: #7d0800;
         --color-url: red;
     }
 
-    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer {
+    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, .dropdown-menu, .sectionhead {
         background-color: var(--color-bg) !important;
-        color: var(--color-fg);
-        border: none;
     }
 
-    #york-logo {
+    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, h1, h2, h3, h4, h5, h6, .card-title, .text-muted, .dropdown-toggle, .logininfo, .eris_search_library {
+        color: var(--color-fg) !important;
+    }
+    
+    #york-logo, .eris_search_library {
         background-color: var(--color-bg-secondary);
     }
 
@@ -45,9 +48,18 @@
         background-color: var(--background-course-links) !important;
     }
 
-    .block_slideshow, #card-widgetmenu, .dashboard-card-img, #ycrest { 
+    .block_slideshow, #card-widgetmenu, #ycrest, .watson-btn-container { 
         /* Elements to get rid of*/
         display: none;
+    }
+    
+    .bg-white, .nav-link, .d-inline-block, [aria-controls="nav-drawer"], #page-footer {
+        /* Navigation Bar */
+        background-color: var(--color-nav) !important;
+    }
+    
+    .sectionhead {
+        border: white 1px solid;
     }
 
 }
