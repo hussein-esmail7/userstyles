@@ -2,36 +2,58 @@
 @name           StackExchange Dark
 @namespace      github.com/hussein-esmail7/userstyles
 @version        1.0.0
-@description    `A dark theme for the StackExchange websites`
+@description    A new userstyle
 @author         Hussein Esmail
 ==/UserStyle== */
 
 @-moz-document domain("stackexchange.com") {
     
     :root {
-        --background-color: black;
-        --text-color: white;
-        --url-color: #7b75ff;
-        --background-color-code: #333333;
-        
+        --color-bg: black;
+        --color-text: white;
+        --color-url: #d2d0ff;
+        --color-code-bg: #333333;
+        --color-code-blue: lightblue;
+        --color-button-active: #7a7a7a;
+        --color-button-bg: #003faf;
+        --color-bg-textarea: #404040;
     }
     
-    .container, #content, footer, header, .s-sidebarwidget, .s-sidebarwidget--header {
-        background-color: var(--background-color) !important;
+    .container, #content, footer, header, .s-sidebarwidget, .s-sidebarwidget--header, .lv-info, .number, .lv-stats-wrapper, .dialog-content {
+        background-color: var(--color-bg) !important;
     }
     
-    .container, #content, footer, header, code, .post-tag, .s-sidebarwidget, .s-sidebarwidget--header {
-        color: var(--text-color) !important;
+    .container, #content, footer, header, code, .post-tag, .s-sidebarwidget, .s-sidebarwidget--header, h1, h2, h3, h4, h5, h6, .s-btn, .mr2, .js-vote-count, .fs-fine, textarea, label, .user-action-time, .number, .dialog-content {
+        color: var(--color-text) !important;
     }
+    
     code, pre, .post-tag {
-        background-color: var(--background-color-code) !important;
-        border-color: var(--background-color-code) !important;
+        background-color: var(--color-code-bg) !important;
     }
-    .question-hyperlink, .relativetime, .js-gps-track, .js-add-link {
-        color: var(--url-color) !important;
+    
+    .question-hyperlink, .relativetime, .js-gps-track, .js-add-link, a {
+        color: var(--color-url) !important;
     }
+    
     .js-freemium-cta {
         /* Banished elements */
         display: none;
+    }
+    
+    .hljs-keyword {
+        /* Blue code */
+        color: var(--color-code-blue) !important;
+    }
+    
+    .youarehere, .youarehere > * {
+        background-color: var(--color-button-active) !important;
+    }
+    
+    textarea {
+        background-color: var(--color-bg-textarea) !important;
+    }
+    
+    .s-btn__filled {
+        background-color: var(--color-button-bg);
     }
 }
