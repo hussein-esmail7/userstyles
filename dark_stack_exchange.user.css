@@ -6,7 +6,7 @@
 @author         Hussein Esmail
 ==/UserStyle== */
 
-@-moz-document domain("stackexchange.com") {
+@-moz-document domain("stackexchange.com"), domain("superuser.com") {
     
     :root {
         --color-bg: black;
@@ -19,7 +19,7 @@
         --color-bg-textarea: #404040;
     }
     
-    .container, #content, footer, header, .s-sidebarwidget, .s-sidebarwidget--header, .lv-info, .number, .lv-stats-wrapper, .dialog-content {
+    html, body, .container, #content, footer, header, .s-sidebarwidget, .s-sidebarwidget--header, .lv-info, .number, .lv-stats-wrapper, .dialog-content {
         background-color: var(--color-bg) !important;
     }
     
