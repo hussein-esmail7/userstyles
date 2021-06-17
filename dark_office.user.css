@@ -14,6 +14,7 @@
         --color-bg-tertiary: #3e3e3e;
         --color-bg-lighter: #eeeeee;
         --color-fg: white;
+        --color-fg-darker: black;
         --color-selected: #3f3f3f;
         --color-inprogress: darkcyan;
     }
@@ -22,7 +23,7 @@
         background-color: var(--color-bg) !important;
     }
     
-    h1, h2, h3, h4, h5, h6, .plannerApp, .sideNav, .selected, span.leftNavItem, .ms-Icon, .welcome, .tileName, .ms-TooltipHost, div.name, .value, tspan, .primaryTextSectionTitle, .pivotLink, [class^="overflowInitialsIcon"], label, .title, .dueDate, .addTaskText, .addColumn, .ms-Checkbox-text, .label, input, .htmlContent, .commenterName, .timestamp, .ms-TextField-field, .ms-Callout-main {
+    h1, h2, h3, h4, h5, h6, .plannerApp, .sideNav, .selected, span.leftNavItem, .ms-Icon, .welcome, .tileName, .ms-TooltipHost, div.name, .value, tspan, .primaryTextSectionTitle, .pivotLink, [class^="overflowInitialsIcon"], label, .title, .dueDate, .addTaskText, .addColumn, .ms-Checkbox-text, .label, input, .htmlContent, .commenterName, .timestamp, .ms-TextField-field, .ms-Callout-main, span {
         /* Main text color */
         color: var(--color-fg) !important;
     }
@@ -40,11 +41,14 @@
     li.selected {
         background-color: var(--color-selected) !important;
     }
-    .planCard, div.container, .addButton, .taskEditor-dialog-container, .taskEditor-dialog-content {
+    .planCard, div.container, .addButton, .taskEditor-dialog-container, .taskEditor-dialog-content, .ms-ContextualMenu-Callout {
         background-color: var(--color-bg-secondary) !important;
     }
     .color-inprogress {
         color: var(--color-inprogress) !important;
+    }
+    .ms-ContextualMenu-itemText {
+        color: var(--color-fg-darker) !important;
     }
     
 }
