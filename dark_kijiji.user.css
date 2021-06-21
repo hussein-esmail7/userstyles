@@ -18,7 +18,7 @@
         --color-avatar: lightblue;
     }
     
-    html, body, div, fieldset, section, .fes-pagelet, .mainPageContent, #MainContainer, .sticky-inner-wrapper, #SearchLocationPicker, button, a[class^="shareLink"], table, div.top-feature-bottom-bar {
+    html, body, div, fieldset, section, .fes-pagelet, .mainPageContent, #MainContainer, .sticky-inner-wrapper, #SearchLocationPicker, button, a[class^="shareLink"], table, div.top-feature-bottom-bar, li[class^="selectedCategoryListItem"] {
         background-color: var(--color-bg) !important;
     }
     
@@ -30,7 +30,7 @@
         color: var(--color-fg-secondary) !important;
     }
     
-    textarea, input, select, .checkbox-label, div[class^="defaultMessages"], div[class^="container__success"], button[class^="searchSubmit"], div[class^="outerWrapper"], li.highlight {
+    textarea, input, select, .checkbox-label, div[class^="defaultMessages"], div[class^="container__success"], button[class^="searchSubmit"], button[class^="titleButton"], div[class^="outerWrapper"], li.highlight, .button-task, .file-upload-button {
         background-color: var(--color-bg-secondary) !important;
         color: var(--color-fg) !important;
     }
