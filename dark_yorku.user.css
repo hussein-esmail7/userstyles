@@ -11,7 +11,7 @@
     :root {
         --color-alert: red;
         --color-bg: #1f1f1f;
-        --color-bg-secondary: grey;
+        --color-bg-secondary: #201919;
         --color-fg: white;
         --color-nav: #2e2e2e;
         --background-course-links: #2f2f2f;
@@ -19,15 +19,15 @@
         --color-url: red;
     }
 
-    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, .dropdown-menu, .sectionhead {
+    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, .dropdown-menu, .sectionhead, #nav-drawer, .list-group, ul, li, .list-group-item, .bg-light, .page-link {
         background-color: var(--color-bg) !important;
     }
 
-    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, h1, h2, h3, h4, h5, h6, .card-title, .text-muted, .dropdown-toggle, .logininfo, .eris_search_library {
+    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, h1, h2, h3, h4, h5, h6, .card-title, .text-muted, .dropdown-toggle, .logininfo, .eris_search_library, a, td {
         color: var(--color-fg) !important;
     }
     
-    #york-logo, .eris_search_library {
+    #york-logo, .eris_search_library, table, table > *  {
         background-color: var(--color-bg-secondary);
     }
 
@@ -36,7 +36,7 @@
     }
 
     a:link {
-        color: var(--color-url);
+        color: var(--color-url) !important;
     }
 
     .alert, .alert-info {
@@ -62,4 +62,29 @@
         border: white 1px solid;
     }
 
+}
+
+@-moz-document domain("yfile.news.yorku.ca") {
+    /* Insert code here... */
+    
+    :root {
+        --background-color: #222629;
+        --text-color: white;
+        --text-color-seconday: #eeeeee;
+        --button-text-color: black;
+        --table-background-color: #31363a;
+        --table-hover-color: #222222;
+        --transparent-color: transparent;
+        --search-bar-color: white;
+    }
+    
+    .hfeed, #header-wrap, #navi-wrap, .container, .post, .postmeta, aside, #footer-widgets-bg, #footer-wrap {
+        background-color: var(--background-color) !important;
+    }
+    
+    h1, h2, h3, h4, h5, h6, div, time, .post {
+        color: var(--text-color) !important;
+    }
+    
+    
 }
