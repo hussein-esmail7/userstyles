@@ -1,23 +1,29 @@
 /* ==UserStyle==
-@name           Zippyshare Dark Simplified
-@namespace      github.com/hussein-esmail7/userstyles
+@name           zippyshare.com Dark Simplified
+@namespace      github.com/openstyles/stylus
 @version        1.0.0
-@description    `A dark theme for the website zippyshare.com`
+@description    A new userstyle
 @author         Hussein Esmail
 ==/UserStyle== */
 
 @-moz-document domain("zippyshare.com") {
-    
+    /* Insert code here... */
     :root {
-        --background-color: black;
+        --background-color: #222629;
         --text-color: white;
+        --text-color-seconday: #eeeeee;
+        --button-text-color: black;
+        --table-background-color: #31363a;
+        --table-hover-color: #222222;
+        --transparent-color: transparent;
+        --search-bar-color: #000;
     }
-    html, .inner_menu, a:link, span, td, font {
+    html, .inner_menu, a:link, span, td, font, a {
         background-color: var(--background-color) !important;
         color: var(--text-color) !important;
         
     }
-    .logo, .slickbox, .center_ad {
+    .logo, .slickbox, .center_ad, #qrCode {
         display: none !important;
         overflow: hidden !important;
         width: 0 !important;

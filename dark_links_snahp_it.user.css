@@ -1,0 +1,35 @@
+/* ==UserStyle==
+@name           links.snahp.it - 30/06/2021, 13:20:24
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("links.snahp.it") {
+    :root {
+        --background-color: #222629;
+        --text-color: white;
+        --text-color-seconday: #eeeeee;
+        --button-text-color: black;
+        --table-background-color: #31363a;
+        --table-hover-color: #222222;
+        --transparent-color: transparent;
+        --search-bar-color: #000;
+    }
+    
+    html, body, #content {
+        /* Background color */
+        background-color: var(--background-color) !important;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, #security_code {
+        /* Text color */
+        color: var(--text-color) !important;
+    }
+
+    #security_code {
+        /* Input field */
+        background-color: var(--search-bar-color);
+    }
+}

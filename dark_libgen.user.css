@@ -6,15 +6,16 @@
 @namespace      https://github.com/hussein-esmail7/userstyles
 ==/UserStyle== */
 
-@-moz-document url-prefix("libgen"), domain("library.lol") {
-    /* Insert code here... */
-    
+@-moz-document domain("libgen.is"), domain("library.lol") {
     :root {
-        --background-color: black;
+        --background-color: #222629;
         --text-color: white;
-        --table-color: #1e1e1e;
-        --url-color: lightblue;
-        --url-visited-color: #e294ff;
+        --text-color-seconday: #eeeeee;
+        --button-text-color: black;
+        --table-background-color: #31363a;
+        --table-hover-color: #222222;
+        --transparent-color: transparent;
+        --search-bar-color: #000;
     }
     
     body, #menu, .drop {

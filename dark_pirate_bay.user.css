@@ -27,9 +27,9 @@
         background-color: transparent !important;
     }
 
-    a, strong, label, h2, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl * {
+    a, strong, label, h2, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl *, table#searchResult tr, table#searchResult tr.alt {
         color: var(--text-color) !important;
-        border-width: 0;
+        /* border-width: 0; */
     }
 
     input {
@@ -42,7 +42,6 @@
 
     table#searchResult tr, table#searchResult tr.alt {
         background: var(--table-background-color);
-        color: var(--text-color);
     }
 
     table#searchResult tr:hover {

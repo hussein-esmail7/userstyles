@@ -1,0 +1,39 @@
+/* ==UserStyle==
+@name           Dark Theme Template
+@namespace      github.com/hussein-esmail7/userstyles
+@version        1.0.0
+@description    `A dark theme template for websites`
+@author         Hussein Esmail
+==/UserStyle== */
+
+@-moz-document domain("") { /* TODO */
+    :root {
+        --background-color: #222629;
+        --text-color: white;
+        --text-color-seconday: #eeeeee;
+        --button-text-color: black;
+        --table-background-color: #31363a;
+        --table-hover-color: #222222;
+        --transparent-color: transparent;
+        --search-bar-color: white;
+    }
+    
+    html {
+        /* Background color */
+        background-color: var(--background-color);
+    }
+
+    h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl * {
+        /* Text color */
+        color: var(--text-color) !important;
+    }
+
+    input {
+        color: var(--button-text-color) !important;
+    }
+
+    .https_form {
+        background-color: var(--search-bar-color);
+    }
+
+}
