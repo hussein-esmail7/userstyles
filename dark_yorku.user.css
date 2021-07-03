@@ -65,12 +65,10 @@
 }
 
 @-moz-document domain("yfile.news.yorku.ca") {
-    /* Insert code here... */
-    
     :root {
         --background-color: #222629;
         --text-color: white;
-        --text-color-seconday: #eeeeee;
+        --text-color-secondary: #eeeeee;
         --button-text-color: black;
         --table-background-color: #31363a;
         --table-hover-color: #222222;
@@ -85,6 +83,30 @@
     h1, h2, h3, h4, h5, h6, div, time, .post {
         color: var(--text-color) !important;
     }
+       
+}
+
+@-moz-document domain("w2prod.sis.yorku.ca") {
+    :root {
+        --background-color: #222629;
+        --text-color: white;
+        --text-color-secondary: #eeeeee;
+        --color-link: #76bfff;
+        --button-text-color: black;
+        --table-background-color: #31363a;
+        --table-hover-color: #222222;
+        --transparent-color: transparent;
+        --search-bar-color: white;
+    }
     
+    .hfeed, #header-wrap, #navi-wrap, .container, .post, .postmeta, aside, #footer-widgets-bg, #footer-wrap, table, p, #yib11banner, td {
+        background-color: var(--background-color) !important;
+    }
     
+    h1, h2, h3, h4, h5, h6, div, time, .post, p, li, td {
+        color: var(--text-color) !important;
+    }
+    a:link {
+        color: var(--color-link) !important;
+    }
 }

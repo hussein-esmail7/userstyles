@@ -1,0 +1,64 @@
+/* ==UserStyle==
+@name           Echo360 Dark
+@namespace      github.com/hussein-esmail7/userstyles
+@version        1.0.0
+@description    `A dark theme template for websites`
+@author         Hussein Esmail
+==/UserStyle== */
+
+@-moz-document domain("echo360.ca") { 
+    :root {
+        --color-bg: #222629; 
+        --color-highlight: green;
+        --color-timeline: lightblue;
+        --color-timeline-hover: white;
+        --color-text: white;
+        --color-text-secondary: #eeeeee;
+        --color-bg-table: #31363a;
+        --color-table-hover: #222222;
+        --transparent-color: transparent;
+        --search-bar-color: white;
+        --size-video-table: 98%
+    }
+    
+    html, [class^="Content"], header, .main-content, .main-content * {
+        /* Background color */
+        background-color: var(--color-bg) !important;
+    }
+
+    h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl *, span {
+        /* Text color */
+        color: var(--color-text) !important;
+    }
+
+    input, .echo-input-group, select {
+        background-color: var(--color-bg-table) !important;
+        color: var(--search-bar-color) !important;
+    }
+
+    .https_form {
+        background-color: var(--search-bar-color);
+    }
+    [class^="SearchAndFilter"], [id^="video-card"], [class^="CardWrapper"], [tabindex="-1"], .echo-select__control, #mediaSortField-direction, button, .media-icons *, .group-contents * {
+        background-color: var(--color-bg-table) !important;
+    }
+    
+    .contents-wrapper {
+        width: var(--size-video-table)
+    }
+    
+    .highlight {
+        background-color: var(--color-highlight) !important;
+    } 
+    
+    .timeline-bg, img {
+        background-color: transparent !important;
+    }
+    .progress, .volume-menu-bar-indicator {
+        background-color: var(--color-timeline) !important;
+    }
+    .cursor {
+        background-color: var(--color-timeline-hover) !important;
+    }
+
+}
