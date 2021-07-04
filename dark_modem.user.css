@@ -1,0 +1,49 @@
+/* ==UserStyle==
+@name           Modem Dark
+@namespace      github.com/hussein-esmail7/userstyles
+@version        1.0.0
+@description    `A dark theme template for websites`
+@author         Hussein Esmail
+==/UserStyle== */
+
+@-moz-document domain("192.168.2.1") {
+    :root {
+        --background-color: #222629;
+        --text-color: white;
+        --text-color-secondary: #eeeeee;
+        --button-text-color: black;
+        --table-background-color: #31363a;
+        --table-hover-color: #222222;
+        --transparent-color: transparent;
+        --search-bar-color: white;
+        --color-button: blue;
+    }
+    
+    html, div, div *, #myServices {
+        /* Background color */
+        background-color: var(--background-color) !important;
+    }
+
+    h1, h2, h3, h4, h5, h6, a, p, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl *, input, button.headerButton {
+        /* Text color */
+        color: var(--text-color) !important;
+    }
+
+    input {
+        background-color: var(--button-text-color) !important;
+    }
+
+    .https_form {
+        background-color: var(--search-bar-color);
+    }
+    
+    .tileTextContainerWrapper, .tileTextContainer, .title, .networkDisabledText, .tileLabel, .tileInfoContainer, .tileInfoBlock, .tileInfoNum, .buttonContainer, .toggleOn, .toggleOff, .tileInfoLabel, .SSIDContainer, span.label, .WiFiPasswordContainer, span.passwordContainer, .showPassword, .wrapSSID, .clickTitle {
+        /* Transparent */
+        background-color: transparent !important;
+    }
+    
+    #closebutton {
+        background-color: var(--color-button) !important;
+    }
+
+}
