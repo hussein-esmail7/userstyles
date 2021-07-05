@@ -8,28 +8,28 @@
 
 @-moz-document domain("") { /* TODO */
     :root {
-        --background-color: #222629;
-        --text-color: white;
-        --text-color-secondary: #eeeeee;
-        --button-text-color: black;
-        --table-background-color: #31363a;
+        --color-bg: #222629;
+        --color-fg: white;
+        --color-fg-secondary: #eeeeee;
+        --color-fg-button: black;
+        --color-bg-table: #31363a;
         --table-hover-color: #222222;
-        --transparent-color: transparent;
-        --search-bar-color: white;
+        --color-transparent: transparent;
+        --color-bg-search: white;
     }
     
     html {
         /* Background color */
-        background-color: var(--background-color);
+        background-color: var(--color-bg);
     }
 
     h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl * {
         /* Text color */
-        color: var(--text-color) !important;
+        color: var(--color-fg) !important;
     }
 
     input {
-        color: var(--button-text-color) !important;
+        color: var(--color-fg-button) !important;
     }
 
     .https_form {
