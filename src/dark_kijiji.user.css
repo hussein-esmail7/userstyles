@@ -18,7 +18,7 @@
         --color-avatar: lightblue;
     }
     
-    html, body, div, fieldset, section, .fes-pagelet, .mainPageContent, #MainContainer, .sticky-inner-wrapper, #SearchLocationPicker, button, a[class^="shareLink"], table, div.top-feature-bottom-bar, li[class^="selectedCategoryListItem"] {
+    html, body, div, fieldset, section, .fes-pagelet, .mainPageContent, #MainContainer, .sticky-inner-wrapper, #SearchLocationPicker, button, a[class^="shareLink"], table, div.top-feature-bottom-bar, li[class^="selectedCategoryListItem"], main {
         background-color: var(--color-bg) !important;
     }
     
