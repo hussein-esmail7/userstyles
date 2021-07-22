@@ -19,6 +19,7 @@ This repository is used to host my custom .user.css files that I use in the "Sty
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_office.user.css) [Dark] MS Office (Tasks, Homepage, etc.)
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_pirate_bay.user.css) [Dark] Pirate Bay
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_stack_exchange.user.css) [Dark] Stack Exchange
+- [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_streamyard.user.css) [Dark] Streamyard
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_tpl.user.css) [Dark] Toronto Public Library
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_transmission.user.css) [Dark]  Transmission Daemon
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_w3schools.user.css) [Dark] w3schools
