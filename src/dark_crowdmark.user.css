@@ -1,0 +1,89 @@
+/* ==UserStyle==
+@name           Dark Crowdmark
+@namespace      github.com/hussein-esmail7/userstyles
+@version        1.0.0
+@description    `A dark theme template for websites`
+@author         Hussein Esmail
+==/UserStyle== */
+
+@-moz-document domain("crowdmark.com") { 
+    :root {
+        --color-bg: #222629;
+        --color-fg: white;
+        --color-fg-secondary: #eeeeee;
+        --color-fg-button: black;
+        --color-bg-table: #31363a;
+        --table-hover-color: #222222;
+        --color-transparent: transparent;
+        --color-bg-search: white;
+        
+        /* New colors not in template */
+        --color-button: #313131;
+        --color-bg-input: #555555;
+        --color-a-link: lightblue;
+        --color-bg-panel: #222222;
+        --color-bg-hover: black;
+        --color-fg-comment: #272727;
+        --color-fg-panel-border-left: #c23908;
+    }
+    
+    html, body, nav, header, footer, .home__what-can-do, .panel, .modal--session-monitor {
+        /* Background color */
+        background-color: var(--color-bg) !important;
+    }
+
+    h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl *, p, input, .select2-selection, .select2-selection__rendered, select {
+        /* Text color */
+        color: var(--color-fg) !important;
+    }
+
+    input, select, .select2-selection {
+        background-color: var(--color-bg-input) !important;
+    }
+
+    .https_form {
+        background-color: var(--search-bar-color);
+    }
+    
+    .button {
+        background-color: var(--color-button) !important;
+    }
+    
+    a:link {
+        color: var(--color-a-link) !important;
+    }
+    
+    tr:hover {
+        background-color: var(--color-bg-hover) !important;
+    }
+    
+    .list-block, .score-view__page-container {
+        background-color: var(--color-bg-panel) !important;
+        box-shadow: none !important; 
+        border-left: 2px solid var(--color-fg-panel-border-left) !important;
+    }
+    
+    .button--secondary {
+        background-color: pink !important;
+    }
+    
+    .comment__preview * {
+        color: var(--color-fg-comment) !important;
+    }
+    
+    .list-block::before {
+        /* Elements to get rid of */
+        /* .list-block::before are the book images underneath the course panels */
+        display: none !important;
+    }
+    
+    
+    .panel--table::-webkit-scrollbar {
+        display: none;              /* Hide horizontal scrollbars for Chrome, Safari, Opera */
+    }
+    .panel--table {
+        -ms-overflow-style: none;   /* Hide horizontal scrollbars for IE and Edge */
+        scrollbar-width: none;      /* Hide horizontal scrollbars for Firefox */
+    }
+
+}
