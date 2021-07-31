@@ -1,0 +1,33 @@
+/* ==UserStyle==
+@name           Bibliogram Dark
+@namespace      github.com/hussein-esmail7/userstyles
+@version        1.0.0
+@description    `A dark theme template for bibliogram.art`
+@author         Hussein Esmail
+==/UserStyle== */
+
+@-moz-document domain("bibliogram.art") { 
+    :root {
+        --color-bg: #222629;
+        --color-bg-button: #222222;
+        --color-fg: white;
+    }
+    
+    html, body, .timeline-section, header, .about-container, .notice {
+        /* Background color */
+        background-color: var(--color-bg) !important;
+    }
+
+    h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl * {
+        /* Text color */
+        color: var(--color-fg) !important;
+    }
+    
+    .selector {
+        background-color: var(--color-bg-button) !important;
+    }
+    
+    .banner-image {
+        background-color: grey;
+    }
+}
