@@ -13,7 +13,7 @@
         --color-fg: white;
     }
     
-    html, body, .timeline-section, header, .about-container, .notice {
+    html, body, .timeline-section, header, .about-container, .notice, span {
         /* Background color */
         background-color: var(--color-bg) !important;
     }
