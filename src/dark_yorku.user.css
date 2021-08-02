@@ -74,15 +74,33 @@
         --table-hover-color: #222222;
         --transparent-color: transparent;
         --search-bar-color: white;
+        --text-title: 'York University - YFile';
     }
     
-    .hfeed, #header-wrap, #navi-wrap, .container, .post, .postmeta, aside, #footer-widgets-bg, #footer-wrap {
+    aside, #footer-widgets-bg, #footer-wrap, #header-wrap, #navi-wrap, .hfeed, .container, .post, .postmeta {
         background-color: var(--color-bg) !important;
     }
     
     h1, h2, h3, h4, h5, h6, div, time, .post {
         color: var(--color-fg) !important;
     }
+    
+    aside, article {
+        border: none !important;
+    }
+    
+    #york-logo a img, #logo {
+        display: none;
+    }
+    
+    #york-logo:after {
+        /* Replace header images with the text */
+        /* Since that's all the images are. */
+        /* Saves bandwidth this way too. */
+        content: var(--text-title);
+    }
+    
+    
        
 }
 
@@ -97,18 +115,33 @@
         --table-hover-color: #222222;
         --transparent-color: transparent;
         --search-bar-color: white;
+        --color-bg-input: #232222;
+        --color-fg-input: white;
     }
     
     .hfeed, #header-wrap, #navi-wrap, .container, .post, .postmeta, aside, #footer-widgets-bg, #footer-wrap, table, p, #yib11banner, td {
         background-color: var(--color-bg) !important;
     }
     
-    h1, h2, h3, h4, h5, h6, div, time, .post, p, li, td {
+    h1, h2, h3, h4, h5, h6, div, time, .post, p, li, td, select {
         color: var(--color-fg) !important;
     }
     a:link {
         color: var(--color-link) !important;
     }
+    
+    select {
+        background-color: var(--color-bg-input);
+    }
+    
+    option {
+        color: var(--color-fg-input) !important;
+    }
+    
+    img[src="/WebObjects/cdm.woa/Contents/WebServerResources/y.gif"], td.smallbodytext, td[valign="bottom"], td[background="https://w2prod.sis.yorku.ca/WebObjects/YorkUimages/banner_bg.gif"]{
+        display: none;
+    }
+    
 }
 
 @-moz-document domain("yorku.zoom.us") {
@@ -146,3 +179,4 @@
         background-color: var(--color-bg-secondary) !important;
     }
 }
+
