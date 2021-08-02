@@ -6,7 +6,7 @@
 @author         Hussein Esmail
 ==/UserStyle== */
 
-@-moz-document url-prefix("bibliogram.") { 
+@-moz-document domain("bibliogram.art"), domain("bibliogram.snopyta.org"), domain("bibliogram.pussthecat.org"), domain("bibliogram.nixnet.services"), domain("bibliogram.ethibox.fr"), domain("insta.trom.tf"), domain("bibliogram.hamster.dance"), domain("bib.actionsack.com") { 
     :root {
         --color-bg: #222629;
         --color-bg-button: #222222;
