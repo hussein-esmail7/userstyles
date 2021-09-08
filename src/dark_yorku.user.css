@@ -157,7 +157,7 @@
         --color-bg-search: white;
     }
     
-    body, #content_container, .launch-section, .logo-bar, .custom-head {
+    body, #content_container, .launch-section, .logo-bar, .custom-head, #zoom-ui-frame, #header {
         /* Background color */
         background-color: var(--color-bg) !important;
     }
