@@ -48,7 +48,7 @@
         background-color: var(--background-course-links) !important;
     }
 
-    .block_slideshow, #card-widgetmenu, #ycrest, .watson-btn-container { 
+    .block_slideshow, #card-widgetmenu, #ycrest, .watson-btn-container, .block_yu_messager { 
         /* Elements to get rid of*/
         display: none;
     }
