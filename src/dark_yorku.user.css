@@ -9,21 +9,23 @@
 @-moz-document domain("passportyork.yorku.ca"), domain("eclass.yorku.ca"), domain("webapp.eecs.yorku.ca") {
 
     :root {
-        --color-alert: red;
+        --color-bg-alert: #5c1717;
         --color-bg: #1f1f1f;
+        --color-bg-input: #535353;
+        --color-bg-url-hover: darkred;
         --color-bg-secondary: #201919;
+        --color-bg-courselink: #2f2f2f;
         --color-fg: white;
+        --color-fg-url: red;
         --color-nav: #2e2e2e;
-        --background-course-links: #2f2f2f;
         --dark-red: #7d0800;
-        --color-url: red;
     }
 
-    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, .dropdown-menu, .sectionhead, #nav-drawer, .list-group, ul, li, .list-group-item, .bg-light, .page-link {
+    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, .dropdown-menu, .sectionhead, #nav-drawer, .list-group, ul, li, .list-group-item, .bg-light, .page-link, .card-block, .collapse, .region_main_settings_menu_proxy {
         background-color: var(--color-bg) !important;
     }
 
-    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, h1, h2, h3, h4, h5, h6, .card-title, .text-muted, .dropdown-toggle, .logininfo, .eris_search_library, a, td, pre {
+    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, h1, h2, h3, h4, h5, h6, .card-title, .text-muted, .dropdown-toggle, .logininfo, .eris_search_library, a, td, pre, select, textarea {
         color: var(--color-fg) !important;
     }
     
@@ -36,19 +38,27 @@
     }
 
     a:link {
-        color: var(--color-url) !important;
+        color: var(--color-fg-url) !important;
+    }
+    
+    a:active, a:hover {
+        background-color: var(--color-bg-url-hover) !important;
+    }
+    
+    a:visited {
+        background-color: transparent !important;
     }
 
-    .alert, .alert-info {
-        background-color: var(--color-alert) !important;
+    .alert, .alert-info, .alert * {
+        background-color: var(--color-bg-alert) !important;
         border: 0px;
     }
 
     .course-info-container {
-        background-color: var(--background-course-links) !important;
+        background-color: var(--color-bg-courselink) !important;
     }
 
-    .block_slideshow, #card-widgetmenu, #ycrest, .watson-btn-container, .block_yu_messager { 
+    .block_slideshow, #card-widgetmenu, #ycrest, .watson-btn-container { 
         /* Elements to get rid of*/
         display: none;
     }
@@ -60,6 +70,11 @@
     
     .sectionhead {
         border: white 1px solid;
+    }
+    
+    select, textarea {
+        /* Input boxes */
+        background-color: var(--color-bg-input) !important;
     }
 
 }
