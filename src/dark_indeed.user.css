@@ -6,15 +6,15 @@
 @namespace      https://github.com/hussein-esmail7/userstyles
 ==/UserStyle== */
 
-@-moz-document url-prefix("indeed.com") {
+:root {
+    --background-color: #1f1f1f;
+    --background-color-secondary: grey;
+    --text-color: white;
+    --title-color: blue;
+    --link-color: blue;
+}
 
-    :root {
-        --background-color: #1f1f1f;
-        --background-color-secondary: grey;
-        --text-color: white;
-        --title-color: blue;
-        --link-color: blue;
-    }
+@-moz-document url-prefix("indeed.com") {
 
     html, li, .icl-Ratings, .icl-NavigableContainer,  .icl-NavigableContainer--hasBorderBottom, .icl-NavigableContainer--hasBorderTop, .icl-NavigableContainer-linkWrapper, .icl-Ratings-description {
         background-color: var(--background-color);

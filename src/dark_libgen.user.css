@@ -6,36 +6,46 @@
 @namespace      https://github.com/hussein-esmail7/userstyles
 ==/UserStyle== */
 
+:root {
+    --color-bg: #222629;
+    --color-fg: white;
+    --color-fg-secondary: #eeeeee;
+    --color-fg-button: black;
+    --color-bg-table: #31363a;
+    --table-hover-color: #222222;
+    --transparent-color: transparent;
+    --color-bg-search: #000;
+}
+
 @-moz-document domain("libgen.is"), domain("library.lol") {
-    :root {
-        --background-color: #222629;
-        --text-color: white;
-        --text-color-seconday: #eeeeee;
-        --button-text-color: black;
-        --table-background-color: #31363a;
-        --table-hover-color: #222222;
-        --transparent-color: transparent;
-        --search-bar-color: #000;
-    }
     
     body, #menu, .drop {
-        background-color: var(--background-color);
-        color: var(--text-color) !important;
+        /* Background colour */
+        background-color: var(--color-bg);
+        color: var(--color-fg) !important;
     }
+
     .c, tr[valign="top"] {
+        /* Text colour */
         background-color: var(--table-color) !important;
-        color: var(--text-color);
+        color: var(--color-fg);
     }
+
     a:link, h1 {
+        /* URL colour */
         color: var(--url-color) !important;
     }
+
     a:visited {
         color: var(--url-visited-color);
     }
+
     i, font[size="1"] {
-        color: var(--text-color);
+        color: var(--color-fg);
     }
+
     sup, a[href="../setlang.php?lang=ru"] {
+        /* Elements to hide */
         display: none;
         size: 0;
     }

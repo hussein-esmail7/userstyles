@@ -2,22 +2,22 @@
 @name           StackExchange Dark
 @namespace      github.com/hussein-esmail7/userstyles
 @version        1.0.0
-@description    A new userstyle
+@description    `A dark theme for the StackExchange websites`
 @author         Hussein Esmail
 ==/UserStyle== */
 
+:root {
+    --color-bg: black;
+    --color-text: white;
+    --color-url: #d2d0ff;
+    --color-code-bg: #333333;
+    --color-code-blue: lightblue;
+    --color-button-active: #7a7a7a;
+    --color-button-bg: #003faf;
+    --color-bg-textarea: #404040;
+}
+
 @-moz-document domain("stackexchange.com"), domain("superuser.com") {
-    
-    :root {
-        --color-bg: black;
-        --color-text: white;
-        --color-url: #d2d0ff;
-        --color-code-bg: #333333;
-        --color-code-blue: lightblue;
-        --color-button-active: #7a7a7a;
-        --color-button-bg: #003faf;
-        --color-bg-textarea: #404040;
-    }
     
     html, body, .container, #content, footer, header, .s-sidebarwidget, .s-sidebarwidget--header, .lv-info, .number, .lv-stats-wrapper, .dialog-content, .s-modal--dialog, .bg-white, .ps-relative, .d-flex, .tag-suggestions {
         background-color: var(--color-bg) !important;

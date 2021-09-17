@@ -6,23 +6,23 @@
 @author         Hussein Esmail
 ==/UserStyle== */
 
+:root {
+    --color-bg: #222629;
+    --color-bg-secondary: #2f2f2f;
+    --color-bg-tertiary: #3e3e3e;
+    --color-bg-lighter: #eeeeee;
+    --color-bg-table: #31363a;
+    --color-fg: white;
+    --color-fg-secondary: #eeeeee;
+    --color-fg-button: black;
+    --color-selected: #3f3f3f;
+    --color-inprogress: darkcyan;
+    --table-hover-color: #222222;
+    --transparent-color: transparent;
+    --search-bar-color: white;
+}
+
 @-moz-document domain("office.com") {
-    
-    :root {
-        --color-bg: #222629;
-        --color-bg-secondary: #2f2f2f;
-        --color-bg-tertiary: #3e3e3e;
-        --color-bg-lighter: #eeeeee;
-        --color-bg-table: #31363a;
-        --color-fg: white;
-        --color-fg-secondary: #eeeeee;
-        --color-fg-button: black;
-        --color-selected: #3f3f3f;
-        --color-inprogress: darkcyan;
-        --table-hover-color: #222222;
-        --transparent-color: transparent;
-        --search-bar-color: white;
-    }
     
     .plannerApp, .sideNav, .ms-Callout-main, .plannerAppCallout, .o365cs-base, .form-content-container, .office-form-body {
         background-color: var(--color-bg) !important;

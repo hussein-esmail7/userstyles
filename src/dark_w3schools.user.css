@@ -6,21 +6,21 @@
 @author         Me
 ==/UserStyle== */
 
+:root {
+    --color-background: black;
+    --color-text: white;
+    --color-table: #1e1e1e;
+    --color-example: #1e1e1e;
+    --color-url: #7ecbff;
+    --color-url-visited: #eaabff;
+    --color-text-code: #fff;
+    --color-text-code-attribute: #ffb700;
+    --color-text-code-brackets: #6b6a6a;
+    --color-text-code-tags: #3282ff;
+    --color-panel-red: #5c0101;
+}
+
 @-moz-document domain("w3schools.com"), domain("w3docs.com") {
-    
-    :root {
-        --color-background: black;
-        --color-text: white;
-        --color-table: #1e1e1e;
-        --color-example: #1e1e1e;
-        --color-url: #7ecbff;
-        --color-url-visited: #eaabff;
-        --color-text-code: #fff;
-        --color-text-code-attribute: #ffb700;
-        --color-text-code-brackets: #6b6a6a;
-        --color-text-code-tags: #3282ff;
-        --color-panel-red: #5c0101;
-    }
     
     body, .CodeMirror, .w3-white, .w3-bar, .sidesection, .intro, .pagemenu, #leftmenuinnerinner {
         background-color: var(--color-background) !important;

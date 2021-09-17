@@ -6,23 +6,24 @@
 @namespace      https://github.com/hussein-esmail7/userstyles
 ==/UserStyle== */
 
+:root {
+    --color-bg: black;
+    --color-bg-secondary: #2e2e2e;
+    --color-bg-footer: #3e3e3e;
+    --color-fg: white;
+    --color-fg-secondary: #c4c4c4;
+    --color-link: #76bfff;
+    --color-avatar: lightblue;
+    --color-bg-button: #6d6dee;
+}
+
 @-moz-document domain("kijiji.ca") {
     
-    :root {
-        --color-bg: black;
-        --color-bg-secondary: #2e2e2e;
-        --color-bg-footer: #3e3e3e;
-        --color-fg: white;
-        --color-fg-secondary: #c4c4c4;
-        --color-link: #76bfff;
-        --color-avatar: lightblue;
-    }
-    
-    html, body, div, fieldset, section, .fes-pagelet, .mainPageContent, #MainContainer, .sticky-inner-wrapper, #SearchLocationPicker, button, a[class^="shareLink"], table, div.top-feature-bottom-bar, li[class^="selectedCategoryListItem"], main {
+    html, body, div, fieldset, section, .fes-pagelet, .mainPageContent, #MainContainer, .sticky-inner-wrapper, #SearchLocationPicker, button, a[class^="shareLink"], table, div.top-feature-bottom-bar, li[class^="selectedCategoryListItem"], main, li, span[class^="filterButtonCounter"] {
         background-color: var(--color-bg) !important;
     }
     
-    html, body, div, fieldset, label, h1, h2, h3, h4, h5, h6, [itemprop="name"], li[class^="currentCrumb"], span, svg, strong, header, h1[class^="headerTitle"] {
+    html, body, div, fieldset, label, h1, h2, h3, h4, h5, h6, [itemprop="name"], li[class^="currentCrumb"], span, svg, strong, header, h1[class^="headerTitle"], div[class^="headerContainer"] * {
         color: var(--color-fg) !important;
     }
     
@@ -62,4 +63,8 @@
         color: black !important;
     }
     
+    button[data-qa-id="adRepostButton"], button[data-qa-id="adRepostButton"] *, a[data-qa-id="header-link-post-ad"] {
+        /* Buttons with coloured background like the Post and Repost  buttons */
+        background-color: var(--color-bg-button) !important;
+    }
 }

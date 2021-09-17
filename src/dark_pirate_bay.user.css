@@ -6,19 +6,19 @@
 @author         Hussein Esmail
 ==/UserStyle== */
 
+:root {
+    --background-color: #222629;
+    --text-color: white;
+    --text-color-secondary: #eeeeee;
+    --button-text-color: black;
+    --table-background-color: #31363a;
+    --table-hover-color: #222222;
+    --transparent-color: transparent;
+    --search-bar-color: white;
+}
+
 @-moz-document regexp(".+piratebay*.*"), domain("tpb.party") {
-    /* Insert code here... */
-    :root {
-        --background-color: #222629;
-        --text-color: white;
-        --text-color-secondary: #eeeeee;
-        --button-text-color: black;
-        --table-background-color: #31363a;
-        --table-hover-color: #222222;
-        --transparent-color: transparent;
-        --search-bar-color: white;
-    }
-    
+
     html {
         background-color: var(--background-color);
     }

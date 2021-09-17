@@ -6,18 +6,19 @@
 @author         Hussein Esmail
 ==/UserStyle== */
 
+:root {
+    --background-color: #222629;
+    --text-color: white;
+    --text-color-secondary: #eeeeee;
+    --button-text-color: black;
+    --table-background-color: #31363a;
+    --table-hover-color: #222222;
+    --transparent-color: transparent;
+    --search-bar-color: white;
+    --color-button: blue;
+}
+
 @-moz-document domain("192.168.2.1") {
-    :root {
-        --background-color: #222629;
-        --text-color: white;
-        --text-color-secondary: #eeeeee;
-        --button-text-color: black;
-        --table-background-color: #31363a;
-        --table-hover-color: #222222;
-        --transparent-color: transparent;
-        --search-bar-color: white;
-        --color-button: blue;
-    }
     
     html, div, div *, #myServices {
         /* Background color */

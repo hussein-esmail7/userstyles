@@ -6,23 +6,24 @@
 @author         Hussein Esmail
 ==/UserStyle== */
 
+:root {
+    --background-color: #222629;
+    --text-color: white;
+    --text-color-secondary: #eeeeee;
+    --button-text-color: black;
+    --table-background-color: #31363a;
+    --table-hover-color: #222222;
+    --transparent-color: transparent;
+    --search-bar-color: #000;
+}
+
 @-moz-document domain("zippyshare.com") {
-    /* Insert code here... */
-    :root {
-        --background-color: #222629;
-        --text-color: white;
-        --text-color-secondary: #eeeeee;
-        --button-text-color: black;
-        --table-background-color: #31363a;
-        --table-hover-color: #222222;
-        --transparent-color: transparent;
-        --search-bar-color: #000;
-    }
+    
     html, .inner_menu, a:link, span, td, font, a {
         background-color: var(--background-color) !important;
         color: var(--text-color) !important;
-        
     }
+
     .logo, .slickbox, .center_ad, #qrCode {
         display: none !important;
         overflow: hidden !important;

@@ -6,14 +6,15 @@
 @author         Hussein Esmail
 ==/UserStyle== */
 
+:root {
+    --background-color: #1f1f1f;
+    --text-color: white;
+    --secondary-background-color: #3f3f3f;
+    --link-hover-color: #4f4f4f;
+    --icon-background: white;
+}
+
 @-moz-document domain("streamyard.com") {
-    :root {
-        --background-color: #1f1f1f;
-        --text-color: white;
-        --secondary-background-color: #3f3f3f;
-        --link-hover-color: #4f4f4f;
-        --icon-background: white;
-    }
 
     html, p, thead, th, h3, h5, h6, label, .Menu__Overlay-guefeD, .CardRow__Row-iwYPAi, .LayoutRow__Row-hGktkw, .Studio__VideoRow-laaJIh, .ControlRow__Row-cGnYiZ, .RightAside__TabsColumn-chsQNW, .RightTabButton__SmallText-bjEwtB, .PlatformComments__Wrap-citecx, .Banners__Wrap-idyxCh, .Brand__Wrap-cFRVAJ, .Text__StyledText-llZFeh, .Chat__Wrap-diuKMg, .ReactModal__Content, .SettingsModal__DesktopSideNav-kefkTM {
         /* Main */

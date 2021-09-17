@@ -2,30 +2,31 @@
 @name           Dark Crowdmark
 @namespace      github.com/hussein-esmail7/userstyles
 @version        1.0.0
-@description    `A dark theme template for websites`
+@description    `A dark theme for Crowdmark, an online test submission site`
 @author         Hussein Esmail
 ==/UserStyle== */
 
+:root {
+    --color-bg: #222629;
+    --color-fg: white;
+    --color-fg-secondary: #eeeeee;
+    --color-fg-button: black;
+    --color-bg-table: #31363a;
+    --table-hover-color: #222222;
+    --color-transparent: transparent;
+    --color-bg-search: white;
+    
+    /* New colors not in template */
+    --color-button: #313131;
+    --color-bg-input: #555555;
+    --color-a-link: lightblue;
+    --color-bg-panel: #222222;
+    --color-bg-hover: black;
+    --color-fg-comment: #272727;
+    --color-fg-panel-border-left: #c23908;
+}
+
 @-moz-document domain("crowdmark.com") { 
-    :root {
-        --color-bg: #222629;
-        --color-fg: white;
-        --color-fg-secondary: #eeeeee;
-        --color-fg-button: black;
-        --color-bg-table: #31363a;
-        --table-hover-color: #222222;
-        --color-transparent: transparent;
-        --color-bg-search: white;
-        
-        /* New colors not in template */
-        --color-button: #313131;
-        --color-bg-input: #555555;
-        --color-a-link: lightblue;
-        --color-bg-panel: #222222;
-        --color-bg-hover: black;
-        --color-fg-comment: #272727;
-        --color-fg-panel-border-left: #c23908;
-    }
     
     html, body, nav, header, footer, .home__what-can-do, .panel, .modal--session-monitor {
         /* Background color */
