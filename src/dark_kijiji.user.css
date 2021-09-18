@@ -20,7 +20,7 @@
 
 @-moz-document domain("kijiji.ca") {
     
-    html, body, div, fieldset, section, .fes-pagelet, .mainPageContent, #MainContainer, .sticky-inner-wrapper, #SearchLocationPicker, button, a[class^="shareLink"], table, div.top-feature-bottom-bar, li[class^="selectedCategoryListItem"], main, li, span[class^="filterButtonCounter"] {
+    html, body, div, fieldset, section, .fes-pagelet, .mainPageContent, #MainContainer, .sticky-inner-wrapper, #SearchLocationPicker, button, a[class^="shareLink"], table, div.top-feature-bottom-bar, li[class^="selectedCategoryListItem"], main, li, span[class^="filterButtonCounter"], nav, .container-346951201 {
         background-color: var(--color-bg) !important;
     }
     
@@ -32,7 +32,7 @@
         color: var(--color-fg-secondary) !important;
     }
     
-    textarea, input, select, .checkbox-label, div[class^="defaultMessages"], div[class^="container__success"], button[class^="searchSubmit"], button[class^="titleButton"], div[class^="outerWrapper"], li.highlight, .button-task, .file-upload-button {
+    textarea, input, select, .checkbox-label, div[class^="defaultMessages"], div[class^="container__success"], button[class^="searchSubmit"], button[class^="titleButton"], div[class^="outerWrapper"], li.highlight, .button-task, .file-upload-button, div[class^="mergedPillWrapper"] * {
         background-color: var(--color-bg-secondary) !important;
         color: var(--color-fg) !important;
     }
@@ -41,7 +41,7 @@
         background-color: transparent !important;
     }
     
-    a:link, [role="link"] {
+    a:link, [role="link"], a[tabindex="0"] {
         color: var(--color-link) !important;
     }
     
