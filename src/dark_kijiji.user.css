@@ -15,6 +15,7 @@
     --color-link: #76bfff;
     --color-avatar: lightblue;
     --color-bg-button: #6d6dee;
+    --color-bg-button-alert: #d54f4f;
 }
 
 @-moz-document domain("kijiji.ca") {
@@ -23,7 +24,7 @@
         background-color: var(--color-bg) !important;
     }
     
-    html, body, div, fieldset, label, h1, h2, h3, h4, h5, h6, [itemprop="name"], li[class^="currentCrumb"], span, svg, strong, header, h1[class^="headerTitle"], div[class^="headerContainer"] * {
+    html, body, div, fieldset, label, h1, h2, h3, h4, h5, h6, [itemprop="name"], li[class^="currentCrumb"], span, svg, strong, header, h1[class^="headerTitle"], div[class^="headerContainer"] *, button[data-testid="pill-option"] {
         color: var(--color-fg) !important;
     }
     
@@ -63,8 +64,24 @@
         color: black !important;
     }
     
-    button[data-qa-id="adRepostButton"], button[data-qa-id="adRepostButton"] *, a[data-qa-id="header-link-post-ad"] {
+    button[data-qa-id="adPromoteButton"] *, a[data-qa-id="header-link-post-ad"], button[class^="actionButton"], a#browseKijiji {
         /* Buttons with coloured background like the Post and Repost  buttons */
         background-color: var(--color-bg-button) !important;
+    }
+    
+    button[data-qa-id="adRepostButton"], button[data-qa-id="adRepostButton"] * {
+        /* Repost buttons will be red because it requires your attention (and has a deadline) */
+        background-color: var(--color-bg-button-alert) !important;
+    }
+    
+    span[class^="promoteButtonTextTablet"] {
+        background-color: transparent !important;
+    }
+    
+    .container__success-2527921021, .container__tip-199291752 {
+        /* Hidden elements */
+        /* 2527921021: Ad has been successfully reposed banner popup */
+        /* 199291752: Ad should be reposted within # days */
+        display: none !important;
     }
 }
