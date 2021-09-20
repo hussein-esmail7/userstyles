@@ -18,7 +18,6 @@
     --color-url: red;
 }
 
-<<<<<<< HEAD
 :root {
     /* From YFile area */
     --color-bg: #222629;
@@ -61,7 +60,6 @@
 }
 
 @-moz-document domain("passportyork.yorku.ca"), domain("eclass.yorku.ca"), domain("webapp.eecs.yorku.ca") {
-=======
     :root {
         --color-bg-alert: #5c1717;
         --color-bg: #1f1f1f;
@@ -74,7 +72,6 @@
         --color-nav: #2e2e2e;
         --dark-red: #7d0800;
     }
->>>>>>> 42744910d406bfdec95eebd2c5aa6dbf6f52b782
 
     html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, .dropdown-menu, .sectionhead, #nav-drawer, .list-group, ul, li, .list-group-item, .bg-light, .page-link, .card-block, .collapse, .region_main_settings_menu_proxy {
         background-color: var(--color-bg) !important;
@@ -213,3 +210,47 @@
     }
 }
 
+@-moz-document domain("hrselfserve.yorku.ca") {
+    :root {
+        --color-bg: #222629;
+        --color-bg-input: black;
+        --color-bg-secondary: black;
+        --color-fg: white;
+        --color-fg-secondary: #eeeeee;
+        --color-fg-button: black;
+        --color-bg-table: #31363a;
+        --table-hover-color: #222222;
+        --color-transparent: transparent;
+        --color-bg-search: white;
+    }
+    
+    html, table, td, th, .tab_selected, #win0divTIMESHEET,  .ps_box-scrollarea-row {
+        /* Background color */
+        background-color: var(--color-bg) !important;
+    }
+
+    h1, h2, h3, h4, h5, h6, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl *, span, input {
+        /* Text color */
+        color: var(--color-fg) !important;
+    }
+    
+    a:link {
+        color: lightblue !important;
+    }
+
+    .https_form {
+        background-color: var(--search-bar-color);
+    }
+    
+    .pst_panel-side1, .ps_ag-step-button, .psc_selected, .nuilp {
+        background-color: var(--color-bg-secondary) !important;
+    }
+    
+    span {
+        background-color: transparent !important;
+    }
+    
+    input {
+        background-color: var(--color-bg-input);
+    }
+}
