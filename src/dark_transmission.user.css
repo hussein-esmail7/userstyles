@@ -6,13 +6,12 @@
 @author         Hussein Esmail
 ==/UserStyle== */
 
-:root {
-    --background-color: black;
-    --text-color: white;
-    --color-disabled: red;
-}
-
 @-moz-document url-prefix("http://localhost:9091/transmission/web") {
+    :root {
+        --background-color: black;
+        --text-color: white;
+        --color-disabled: red;
+    }
     
     html, .torrent_list, .compact, ul, li, #torrent_container, body, .torrent, .ui-widget-content, .ui-menu-divider, .toolbar {
         background-color: var(--background-color) !important;

@@ -6,13 +6,12 @@
 @author         Hussein Esmail
 ==/UserStyle== */
 
-:root {
-    --background-color: black;
-    --text-color: white;
-}
-
 @-moz-document domain("medium.com") {
-    
+    :root {
+        --background-color: black;
+        --text-color: white;
+    }
+
     .meteredContent, div {
         background-color: var(--background-color) !important; 
     }

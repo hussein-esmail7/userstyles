@@ -6,16 +6,15 @@
 @author         Hussein Esmail
 ==/UserStyle== */
 
-:root {
-    --background-color: black;
-    --background-color-item-focus: #1e1e1e;
-    --text-color: white;
-    --notice-color: darkred;
-    --url-color: lightblue;
-}
-
 @-moz-document domain("torontopubliclibrary.ca") {
-
+    :root {
+        --background-color: black;
+        --background-color-item-focus: #1e1e1e;
+        --text-color: white;
+        --notice-color: darkred;
+        --url-color: lightblue;
+    }
+    
     body, .SearchBox, .logon, #form_signin, .container, .action-bar, td, .panel, .menu-item, section, [class^="components-pages"], [class^="components-Save"], [class^="components-ItemButton"], th, .copyright, .add-new-list, .page-content, div.notice, .megamenu, .megamenu-column {
         background-color: var(--background-color) !important; 
     }

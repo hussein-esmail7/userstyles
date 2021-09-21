@@ -6,22 +6,21 @@
 @author         Hussein Esmail
 ==/UserStyle== */
 
-:root {
-    --color-bg: #222629; 
-    --color-highlight: green;
-    --color-timeline: lightblue;
-    --color-timeline-hover: white;
-    --color-text: white;
-    --color-text-secondary: #eeeeee;
-    --color-bg-table: #31363a;
-    --color-table-hover: #222222;
-    --transparent-color: transparent;
-    --search-bar-color: white;
-    --size-video-table: 98%
-}
-
 @-moz-document domain("echo360.ca") { 
-    
+    :root {
+        --color-bg: #222629; 
+        --color-highlight: green;
+        --color-timeline: lightblue;
+        --color-timeline-hover: white;
+        --color-text: white;
+        --color-text-secondary: #eeeeee;
+        --color-bg-table: #31363a;
+        --color-table-hover: #222222;
+        --transparent-color: transparent;
+        --search-bar-color: white;
+        --size-video-table: 98%
+    }
+
     html, [class^="Content"], header, .main-content, .main-content * {
         /* Background color */
         background-color: var(--color-bg) !important;

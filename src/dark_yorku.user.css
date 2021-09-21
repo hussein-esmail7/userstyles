@@ -6,8 +6,8 @@
 @author         Hussein Esmail
 ==/UserStyle== */
 
+/* From eClass area
 :root {
-    /* From eClass area */
     --color-alert: red;
     --color-bg: #1f1f1f;
     --color-bg-secondary: #201919;
@@ -16,48 +16,7 @@
     --background-course-links: #2f2f2f;
     --dark-red: #7d0800;
     --color-url: red;
-}
-
-:root {
-    /* From YFile area */
-    --color-bg: #222629;
-    --color-fg: white;
-    --color-fg-secondary: #eeeeee;
-    --button-text-color: black;
-    --table-background-color: #31363a;
-    --table-hover-color: #222222;
-    --transparent-color: transparent;
-    --search-bar-color: white;
-    --text-title: 'York University - YFile';
-}
-
-:root {
-    /* From w2prod.sis.yorku.ca area */
-    --color-bg: #222629;
-    --color-fg: white;
-    --color-fg-secondary: #eeeeee;
-    --color-link: #76bfff;
-    --button-text-color: black;
-    --table-background-color: #31363a;
-    --table-hover-color: #222222;
-    --transparent-color: transparent;
-    --search-bar-color: white;
-    --color-bg-input: #232222;
-    --color-fg-input: white;
-}
-
-:root {
-    /* From yorku.zoom.us area */
-    --color-bg: #222629;
-    --color-bg-secondary: #201919;
-    --color-fg: white;
-    --color-fg-secondary: #eeeeee;
-    --color-fg-button: black;
-    --color-bg-table: #31363a;
-    --table-hover-color: #222222;
-    --color-transparent: transparent;
-    --color-bg-search: white;
-}
+} */
 
 @-moz-document domain("passportyork.yorku.ca"), domain("eclass.yorku.ca"), domain("webapp.eecs.yorku.ca") {
     :root {
@@ -132,7 +91,18 @@
 }
 
 @-moz-document domain("yfile.news.yorku.ca") {
-    
+    :root {
+        --color-bg: #222629;
+        --color-fg: white;
+        --color-fg-secondary: #eeeeee;
+        --button-text-color: black;
+        --table-background-color: #31363a;
+        --table-hover-color: #222222;
+        --transparent-color: transparent;
+        --search-bar-color: white;
+        --text-title: 'York University - YFile';
+    }
+
     aside, #footer-widgets-bg, #footer-wrap, #header-wrap, #navi-wrap, .hfeed, .container, .post, .postmeta {
         background-color: var(--color-bg) !important;
     }
@@ -159,7 +129,20 @@
 }
 
 @-moz-document domain("w2prod.sis.yorku.ca") {
-    
+    :root {
+        --color-bg: #222629;
+        --color-fg: white;
+        --color-fg-secondary: #eeeeee;
+        --color-link: #76bfff;
+        --button-text-color: black;
+        --table-background-color: #31363a;
+        --table-hover-color: #222222;
+        --transparent-color: transparent;
+        --search-bar-color: white;
+        --color-bg-input: #232222;
+        --color-fg-input: white;
+    }
+
     .hfeed, #header-wrap, #navi-wrap, .container, .post, .postmeta, aside, #footer-widgets-bg, #footer-wrap, table, p, #yib11banner, td {
         background-color: var(--color-bg) !important;
     }
@@ -186,7 +169,18 @@
 }
 
 @-moz-document domain("yorku.zoom.us") {
-    
+    :root {
+        --color-bg: #222629;
+        --color-bg-secondary: #201919;
+        --color-fg: white;
+        --color-fg-secondary: #eeeeee;
+        --color-fg-button: black;
+        --color-bg-table: #31363a;
+        --table-hover-color: #222222;
+        --color-transparent: transparent;
+        --color-bg-search: white;
+    }
+
     body, #content_container, .launch-section, .logo-bar, .custom-head, #zoom-ui-frame, #header {
         /* Background color */
         background-color: var(--color-bg) !important;

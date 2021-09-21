@@ -6,19 +6,18 @@
 @author         Hussein Esmail
 ==/UserStyle== */
 
-:root {
-    --background-color: #222629;
-    --text-color: white;
-    --text-color-seconday: #eeeeee;
-    --button-text-color: black;
-    --table-background-color: #31363a;
-    --table-hover-color: #222222;
-    --transparent-color: transparent;
-    --search-bar-color: #000;
-}
-
 @-moz-document domain("links.snahp.it") {
-    
+    :root {
+        --background-color: #222629;
+        --text-color: white;
+        --text-color-seconday: #eeeeee;
+        --button-text-color: black;
+        --table-background-color: #31363a;
+        --table-hover-color: #222222;
+        --transparent-color: transparent;
+        --search-bar-color: #000;
+    }
+
     html, body, #content {
         /* Background color */
         background-color: var(--background-color) !important;
