@@ -30,13 +30,14 @@
         --color-fg-url: red;
         --color-nav: #2e2e2e;
         --dark-red: #7d0800;
+        --color-bg-panel: #222629;
     }
 
-    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, .dropdown-menu, .sectionhead, #nav-drawer, .list-group, ul, li, .list-group-item, .bg-light, .page-link, .card-block, .collapse, .region_main_settings_menu_proxy {
+    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, .dropdown-menu, .sectionhead, #nav-drawer, .list-group, ul, li, .list-group-item, .bg-light, .page-link, .card-block, .collapse, .region_main_settings_menu_proxy, div[id^="moodle-dialogue-yui"], th, td {
         background-color: var(--color-bg) !important;
     }
 
-    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, h1, h2, h3, h4, h5, h6, .card-title, .text-muted, .dropdown-toggle, .logininfo, .eris_search_library, a, td, pre, select, textarea {
+    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, h1, h2, h3, h4, h5, h6, .card-title, .text-muted, .dropdown-toggle, .logininfo, .eris_search_library, a, td, pre, select, textarea, .ablock div div span, th {
         color: var(--color-fg) !important;
     }
     
@@ -69,7 +70,7 @@
         background-color: var(--color-bg-courselink) !important;
     }
 
-    .block_slideshow, #card-widgetmenu, #ycrest, .watson-btn-container { 
+    .block_slideshow, #card-widgetmenu, #ycrest, .watson-btn-container, .feedback div p, .feedback div div div div br, .feedback div div br { 
         /* Elements to get rid of*/
         display: none;
     }
@@ -87,7 +88,16 @@
         /* Input boxes */
         background-color: var(--color-bg-input) !important;
     }
-
+    
+    .formulation, .info, .qtext p, .qtext div div div p, .ablock div div div div div div div p {
+        background-color: var(--color-bg-panel) !important;
+    }
+    i.text-success {
+        background-color: green !important;
+    }
+    i.text-danger {
+        background-color: red !important;
+    }
 }
 
 @-moz-document domain("yfile.news.yorku.ca") {
