@@ -19,7 +19,7 @@
         --color-bg-button-alert: #d54f4f;
     }
 
-    html, body, div, fieldset, section, .fes-pagelet, .mainPageContent, #MainContainer, .sticky-inner-wrapper, #SearchLocationPicker, button, a[class^="shareLink"], table, div.top-feature-bottom-bar, li[class^="selectedCategoryListItem"], main, li, span[class^="filterButtonCounter"], nav, .container-346951201 {
+    html, body, div, fieldset, section, .fes-pagelet, .mainPageContent, #MainContainer, .sticky-inner-wrapper, #SearchLocationPicker, button, a[class^="shareLink"], table, div.top-feature-bottom-bar, li[class^="selectedCategoryListItem"], main, li, span[class^="filterButtonCounter"], nav, .container-346951201, tr {
         background-color: var(--color-bg) !important;
     }
     
