@@ -10,6 +10,7 @@
 This repository is used to host my custom .user.css files that I use in the "Stylus" browser extension in Brave. Most (if not all) of these are for dark modes for sites that do not have them themselves.
 
 ## Styles List
+- [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/brave_search.user.css) Brave Search Simplified
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_bibliogram.user.css) [Dark] Bibliogram
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_crowdmark.user.css) [Dark] Crowdmark
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_echo360.user.css) [Dark] Echo360 Lecture Platform
