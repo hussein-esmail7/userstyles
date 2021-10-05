@@ -83,4 +83,19 @@
         /* 199291752: Ad should be reposted within # days */
         display: none !important;
     }
+    
+    div[class^="messageRow"] * {
+        background-color: var(--color-bg-button) !important;
+    }
+    
+    time {
+        background-color: var(--color-bg) !important;
+    }
+    
+    button[type="submit"] {
+        background-color: var(--color-bg-button) !important;
+        color: var(--color-fg);
+        border: none;
+    }
+        
 }
