@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Brave Search
 @namespace      github.com/hussein-esmail7/userstyles
-@version        1.0.0
+@version        1.0.1
 @description    `A terminal-ized template for Brave Search`
 @author         Hussein Esmail
 ==/UserStyle== */
@@ -18,13 +18,13 @@
         --color-bg-search: white;
         --color-fg-border: white;
         --font-all: monospace;
-        --txt-result-prefix: "> ";
+        --txt-result-prefix: "> "; /* String to display before new search result */
     }
     
     html, p, * {
         font-family: var(--font-all) !important;
     }
-    main, header, footer, #navbar-tabs, .container-80, #results, .snippet {
+    main, header, footer, body *, #navbar-tabs, .container-80, #results, .snippet {
         background-color: var(--color-bg) !important;
     }
     
