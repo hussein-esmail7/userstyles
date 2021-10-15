@@ -1,12 +1,12 @@
 /* ==UserStyle==
-@name           links.snahp.it Dark
+@name           fora.snahp.eu Dark
 @namespace      github.com/openstyles/stylus
 @version        1.0.0
 @description    A new userstyle
 @author         Hussein Esmail
 ==/UserStyle== */
 
-@-moz-document domain("links.snahp.it") {
+@-moz-document domain("fora.snahp.eu") {
     :root {
         --background-color: #222629;
         --text-color: white;
