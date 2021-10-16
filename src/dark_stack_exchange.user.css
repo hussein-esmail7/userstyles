@@ -6,7 +6,7 @@
 @author         Hussein Esmail
 ==/UserStyle== */
 
-@-moz-document domain("stackexchange.com"), domain("superuser.com") {
+@-moz-document domain("stackexchange.com"), domain("superuser.com"), domain("askubuntu.com") {
     :root {
         --color-bg: black;
         --color-text: white;
@@ -18,10 +18,13 @@
         --color-bg-textarea: #404040;
     }
 
-    html, body, .container, #content, footer, header, .s-sidebarwidget, .s-sidebarwidget--header, .lv-info, .number, .lv-stats-wrapper, .dialog-content, .s-modal--dialog, .bg-white, .ps-relative, .d-flex, .tag-suggestions {
+    html, body, .container, #content, footer, header, .s-sidebarwidget, .s-sidebarwidget--header, .lv-info, .number, .lv-stats-wrapper, .dialog-content, .s-modal--dialog, .bg-white, .ps-relative, .d-flex, .tag-suggestions, .achievements-dialog, .achievements-dialog .header {
         background-color: var(--color-bg) !important;
     }
     
+    body {
+        background-image: none; 
+    }
     .container, #content, footer, header, code, .post-tag, .s-sidebarwidget, .s-sidebarwidget--header, h1, h2, h3, h4, h5, h6, .s-btn, .mr2, .js-vote-count, .fs-fine, textarea, label, .user-action-time, .number, .dialog-content, p, li, .fs-body1, .s-description, input {
         color: var(--color-text) !important;
     }
