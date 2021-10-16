@@ -9,34 +9,58 @@
 /* This themw works best when the site theme is set to "Digi Orange" */
 @-moz-document domain("fora.snahp.eu") {
     :root {
-        --color-bg: #1a1a1a;
-        --color-fg: white;
-        --color-fg-secondary: #eeeeee;
-        --color-fg-unread: orange;
-        --color-fg-button: black;
-        --color-bg-table: #31363a;
-        --table-hover-color: #222222;
-        --color-transparent: transparent;
-        --color-bg-search: white;
-        --color-fg-border: white;
-        --font-all: monospace;
-        --max-width: 800px;
-        
+        --color-bg: #141414;            /* */
+        --color-bg-hidebox: orange;     /* Bg color for "Please click _ to show" div */
+        --color-fg: #f8f8f8;            /* */
+        --color-fg-unread: orange;      /* */
+        --color-fg-replace: #0080FF;    /* */
+        --max-width: 800px;               /* Max width, centered on page */
+        --font-default: Verdana, Helvetica, Arial, sans-serif;
+        --font-all: monospace;            /* New main font to use */
+        --font-all-spacing: -1px;         /* New main font spacing (if it needs to be altered) */
+        --all-location: auto;             /* 'auto' for centered, 'none' for all to left side */
+
     }
 
-    html, body, #content, dl, li, ul, .nav-tabs, .navlinks, .post .inner, .bg1, .post {
+    *:not(i) {
+        /* Monospace everything except symbols (i tag) */
+        font-family: var(--font-all) !important;
+        letter-spacing: var(--font-all-spacing);
+    }
+    
+    html, 
+    body, 
+    #content, 
+    dl, 
+    li, 
+    ul, 
+    .nav-tabs, 
+    .navlinks, 
+    .post .inner, 
+    .bg1, 
+    .post {
         /* Background color */
         background-color: var(--color-bg) !important;
         background-image: none; /* Clears background image */
         border: none !important;
         box-shadow: none !important;
         max-width: var(--max-width);
-        margin: auto;
-
+        margin: var(--all-location);
+    }
+    
+    .username-coloured {
+        /* Items not to monospace */
+        font-family: var(--font-default) !important;
+        letter-spacing: normal;
     }
     
     li {
         background: none !important;
+    }
+    
+    span[style="color:#0000BF"] {
+        /* Get rid of ugly illegible colors */
+        color: var(--color-fg-replace) !important;
     }
     
     .forabg, .forumbg, .navbar, .post .inner {
@@ -80,9 +104,67 @@
         width: auto;
     }
     
-    dd.posts, dd.lastpost, i.icon-red, span.open, a[title="Donate to Snahp"], .rx_spotlight, .online-list, .birthday-list, a.read i, dd.profile-rank img, .user-flair__badge-image, .user-flair__expand-symbol, .user-flair__linked-image-badge, .profile-posts, dd.profile-joined {
-        /* Items to get rid of */
-        /* TODO: Speech bubble images on left side */
+    a:link:hover {
+        color: var(--color-url);
+        text-decoration: underline;
+    }  
+
+    div.list-inner {
+        margin: 0px !important;
+        padding: 0px !important;
+        text-align: left !important;
+    } 
+    
+    li.header dt .list-inner {
+        text-indent: 0px !important;
+    }
+    
+    .forum_unread, 
+    .forum_read_subforum, 
+    .forum_unread_subforum, 
+    .forum_read_locked, 
+    .forum_read, 
+    .topic_unread, 
+    .sticky_unread, 
+    .pm_unread, 
+    .topic_read, 
+    .sticky_read, 
+    .pm_read, 
+    .topic_read_mine,
+    .sticky_read_mine,
+    .global_read,
+    .global_read_mine,
+    .announce_read_mine,
+    .announce_read,
+    .global_read_locked,
+    .global_read_locked_mine,
+    .announce_read_locked_mine,
+    .announce_read_locked,
+    .global_unread,
+    .global_unread_mine,
+    .announce_unread_mine,
+    .announce_unread {
+        /* Get rid of the speech bubble images on the left */
+        /* Text color is a good indication for me of what's unread */
+        background-image: none !important; 
+    }
+    
+    dd.posts, 
+    dd.lastpost, 
+    i.icon-red, 
+    span.open, 
+    dd.profile-joined,
+    a[title="Donate to Snahp"],
+    a.read i, 
+    dd.profile-rank img,
+    .rx_spotlight,
+    .online-list,                       
+    .birthday-list,                     /* I don't know these people. Sorry! :( */
+    .user-flair__badge-image,
+    .user-flair__expand-symbol,
+    .user-flair__linked-image-badge,
+    .profile-posts {
+        /* Items to get rid of to make things nicer */
         display: none !important;
     }
     
