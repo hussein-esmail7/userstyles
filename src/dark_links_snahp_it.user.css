@@ -11,15 +11,16 @@
     :root {
         --color-bg: #141414;            /* */
         --color-bg-hidebox: orange;     /* Bg color for "Please click _ to show" div */
-        --color-fg: #f8f8f8;            /* */
-        --color-fg-unread: orange;      /* */
-        --color-fg-replace: #0080FF;    /* */
+        --color-fg: #f8f8f8;            /* Default text color */
+        --color-fg-unread: orange;      /* Unread posts color */
+        --color-fg-replace: #0080FF;    /* For the badly formatted hard-coded colors out there */
         --max-width: 800px;               /* Max width, centered on page */
         --font-default: Verdana, Helvetica, Arial, sans-serif;
         --font-all: monospace;            /* New main font to use */
         --font-all-spacing: -1px;         /* New main font spacing (if it needs to be altered) */
         --all-location: auto;             /* 'auto' for centered, 'none' for all to left side */
-
+        --height-profile-pic: 80px; /* Max height for profile pictures */
+        --col-text-align-views: right; /* Align number column to side */
     }
 
     *:not(i) {
@@ -55,15 +56,18 @@
     }
     
     li {
+        /* Get rid of border style on right side of table headers */
         background: none !important;
     }
     
     span[style="color:#0000BF"] {
-        /* Get rid of ugly illegible colors */
+        /* Get rid of hardcoded items (an HTML no-no) */
+        /* These also looked bad */
         color: var(--color-fg-replace) !important;
     }
     
     .forabg, .forumbg, .navbar, .post .inner {
+        /* Get rid of grey borders on tables, posts, and nav bars */
         border: none;
         padding: 0;
         margin: 0 !important;
@@ -80,11 +84,12 @@
     }
     
     dd.topics, dd.views {
+        /* Must be here or else the Views column would be positioned badly */
         float: right !important;
     }
     
     .forums li .row-item dd.topics, dd.views {
-        text-align: right;
+        text-align: var(--col-text-align-views);
     }
     
     img.mega_icon, img.gdrive_icon {
@@ -100,8 +105,13 @@
     }
     
     .postprofile .avatar img {
-        max-height: 80px !important;
+        max-height: var(--height-profile-pic) !important;
         width: auto;
+    }
+    
+    .hidebox.hi {
+        /* Bg color for "Please click _ to show" div */
+        background-color: var(--color-bg-hidebox) !important;
     }
     
     a:link:hover {
@@ -154,12 +164,12 @@
     i.icon-red, 
     span.open, 
     dd.profile-joined,
-    a[title="Donate to Snahp"],
+    a[title^="Donate"], /* I'm sorry, don't need to be reminded I'm broke :/ */
     a.read i, 
     dd.profile-rank img,
     .rx_spotlight,
     .online-list,                       
-    .birthday-list,                     /* I don't know these people. Sorry! :( */
+    .birthday-list, /* I don't know these people. Sorry! :( */
     .user-flair__badge-image,
     .user-flair__expand-symbol,
     .user-flair__linked-image-badge,
