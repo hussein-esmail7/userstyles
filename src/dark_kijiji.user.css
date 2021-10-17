@@ -27,6 +27,10 @@
         color: var(--color-fg) !important;
     }
     
+    .headerContainer-471773205 {
+        color: var(--color-bg) !important;
+    }
+    
     [class^="radioLabelDescription"], .small-print, [class^="postingLocationTip"], [class^="postingLocationContent"] {
         color: var(--color-fg-secondary) !important;
     }
@@ -36,7 +40,7 @@
         color: var(--color-fg) !important;
     }
     
-    div[class^="generalOverlay"], div[class^="editButtonContentWrapper"], div[class^="previewContent"], div[class^="column"], div[class^="scrollToContainer"], button[class^="scrollToButton"], button[aria-label="My Account"], div[class^="socialMediaIcons"], div[class^="header"], a[aria-label="Notifications"], button[class^="favouriteButton"], svg[class^="favouriteButtonIcon__default"], div.fes-favourite, div.fes-pagelet, div[data-fes-id^="favouriteButton"], [class^="logo"], div[class^="text__fullBleed"] {
+    div[class^="generalOverlay"], div[class^="editButtonContentWrapper"], div[class^="previewContent"], div[class^="column"], div[class^="scrollToContainer"], button[class^="scrollToButton"], button[aria-label="My Account"], div[class^="socialMediaIcons"], a[aria-label="Notifications"], button[class^="favouriteButton"], svg[class^="favouriteButtonIcon__default"], div.fes-favourite, div.fes-pagelet, div[data-fes-id^="favouriteButton"], [class^="logo"], div[class^="text__fullBleed"] {
         background-color: transparent !important;
     }
     
@@ -44,7 +48,7 @@
         color: var(--color-link) !important;
     }
     
-    footer, footer > *, header, header > *, div[class^="menuWrapper"], div[class^="nameL1"] {
+    footer, footer > *, header, div[class^="menuWrapper"], div[class^="nameL1"] {
         /* For the header and footer and all elements inside them */
         background-color: var(--color-bg-footer) !important;
     }
