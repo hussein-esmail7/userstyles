@@ -1,12 +1,20 @@
 /* ==UserStyle==
 @name           fora.snahp.eu Dark
-@namespace      github.com/openstyles/stylus
-@version        1.0.0
-@description    A new userstyle
+@namespace      github.com/hussein-esmail7/userstyles
+@version        1.0.1
+@description    `Simplified dark theme`
 @author         Hussein Esmail
 ==/UserStyle== */
 
-/* This themw works best when the site theme is set to "Digi Orange" */
+/*                      █                  / dark_snahp.user.css
+ *  ▄▄▄   ▄ ▄▄    ▄▄▄   █ ▄▄   ▄▄▄▄       / Works best with "Digi Orange" theme
+ * █   ▀  █▀  █  ▀   █  █▀  █  █▀ ▀█     / Install with the "Stylish" extension
+ *  ▀▀▀▄  █   █  ▄▀▀▀█  █   █  █   █    /
+ * ▀▄▄▄▀  █   █  ▀▄▄▀█  █   █  ██▄█▀   /
+ *                             █      / https://husseinesmail.xyz
+ *                             ▀     / https://github.com/hussein-esmail7/userstyles
+*/
+
 @-moz-document domain("fora.snahp.eu") {
     :root {
         --color-bg: #141414;					   /* Main background color */
