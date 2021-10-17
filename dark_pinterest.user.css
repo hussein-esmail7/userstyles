@@ -1,0 +1,98 @@
+/* ==UserStyle==
+@name           Pinterest Dark
+@namespace      github.com/hussein-esmail7/userstyles
+@version        1.0.0
+@description    `A dark theme template for Pinterest`
+@author         Hussein Esmail
+==/UserStyle== */
+
+
+
+@-moz-document domain("pinterest.ca") { 
+    
+    :root {
+        --color-bg: #222629;
+        --color-fg: white;
+        --color-fg-secondary: #eeeeee;
+        --color-fg-button: black;
+        --color-bg-table: #31363a;
+        --table-hover-color: #222222;
+        --color-transparent: transparent;
+        --color-bg-search: white;
+        --search-bar-color: blue;
+        
+        /* To implement */
+        --max-width: 800px;					 /* Max width, centered on page */
+        --all-location: auto; /* 'auto' for centered, 'none' for all to left side */
+        
+    }
+
+    html, div[data-test-id="header-background"], div[aria-label="Choose board"] div div, div[data-test-id="visual-content-container"], div[data-test-id="description-content-container"], .qiB .a3i, div[role="list"], div[data-test-id="related-modules-header"] div {
+        /* Background color */
+        background-color: var(--color-bg) !important;
+        
+    }
+
+    h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl *, span {
+        /* Text color */
+        color: var(--color-fg) !important;
+    }
+    
+    svg[aria-label="secret board"],
+    svg[aria-label="board with sections"] {
+        color: white;
+    }
+    
+    /* Highlight when a pin is sponsored by emphasizing the "Promoted by" text */
+    div[title="Promoted by"] {
+        background-color: red !important;
+    }
+    
+    img {
+        background-color: transparent !important;
+    }
+    
+    button.BackButtonHideShadow /* Show where the back button is more prominently */ {
+        background-color: white !important;
+    }
+    
+    /* Sponsored pins to hide + other stuff */
+    a[href*="://www.homedepot.ca"], 
+    a[href*="://web.aw.ca"],
+    a[href*="://ca.cartier.com"],
+    a[href*="://www.homehardware.ca"],
+    a[href*="://www.rogers.com"],
+    a[href*="://www.nissan.ca"],
+    a[href*="://www.behr.ca"],
+    a[href*="://www.tastyrewards.com"],
+    a[href*="://www.ford.ca"],
+    a[href*="://fr.ford.ca"],
+    a[href*="://www.westjet.com"],
+    a[href*="://www.starbucksathome.com"],
+    a[href*="://www.armstrongcheese.ca"],
+    a[href*="://www.sobeys.com"],
+    a[href*="://on.jacksontriggswinery.com"],
+    a[href*="://www.wayfair.ca"],
+    a[href*="://swiffer.com"],
+    a[href*="://en.wackojaco.com"],
+    a[href*="://www.1664blanc.com"],
+    a[href*="://www.mrclean.com"],
+    a[href*="://www.americanexpress.com"],
+    a[href*="://www.webbernaturals.com"],
+    a[href*="://2cart.net"],
+    a[href*="://starbucks.app.link"],
+    a[href*="://shop"],
+    a[href*="://dawn-dish.ca"],
+    a[href*="://moosehead.ca"],
+    a[href*="://www.thebay.com"],
+    a[href*="://www.georgeandwilly.com"],
+    a[href*="://www.samsung.com"],
+    a[href*="://www.microban24.ca"],
+    a[href*="://www.amazon.ca"],
+    div[data-test-id="triedItCommentTabs"], /* Comments section of pins */
+    div[data-test-id="tries-images"] /* Related images preview from pin (4 small squares beside photo) */
+    {
+        display: none !important;
+    }
+
+}
