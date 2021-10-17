@@ -8,7 +8,21 @@
 ==/UserStyle== */
 
 /* Parially based off of Woratana Perth's theme, "Enhanced Medium.com Developer Theme" */
-@-moz-document domain("medium.com"), domain("towardsdatascience.com"), domain("blog.usejournal.com"), domain("blog.insightdatascience.com") {
+@-moz-document 
+domain("arlogilbert.com"), 
+domain("blog.0day.rocks"), 
+domain("blog.discordapp.com/"), 
+domain("blog.ettic.ca/"), 
+domain("blog.insightdatascience.com"), 
+domain("blog.usejournal.com"), 
+domain("engineering.salesforce.com"),
+domain("hackernoon.com"), 
+domain("medium.com"), 
+domain("medium.freecodecamp.org"), 
+domain("posts.specterops.io"), 
+domain("theascent.pub"), 
+domain("towardsdatascience.com") {
+
     :root {
         --color-bg: #141414;
         --color-fg: #f8f8f8;
@@ -31,8 +45,27 @@
         text-decoration: underline !important;
     }
     
-    div.uq {
+    div.uq, .overlay, .u-fixed, .metabar--spacer, .overlay, .postMeterBar, div.buttonSet.buttonSet--wide {
+        /* Elements to get rid of */
         display: none;
+    }
+
+    .u-overflowHidden {
+        overflow:visible !important;
+    }
+    .u-transition--fadeIn300 {
+        visibility : hidden !important;
+    }
+      div.u-xs-hide.js-metabarLogoLeft {
+        margin-left:47% !important;
+    }
+    
+    .section-inner {
+        max-width: 1100px !important;
+    }
+
+    html.u-overflowHidden {
+        overflow: auto !important;
     }
     
     .mo path  {
