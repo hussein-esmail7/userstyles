@@ -4,25 +4,90 @@
 @version        1.0.1
 @description    `A dark theme for the website Medium.com`
 @author         Hussein Esmail
+@license        CC0-1.0
 ==/UserStyle== */
 
-@-moz-document domain("medium.com") {
+/* Parially based off of Woratana Perth's theme, "Enhanced Medium.com Developer Theme" */
+@-moz-document domain("medium.com"), domain("towardsdatascience.com"), domain("blog.usejournal.com"), domain("blog.insightdatascience.com") {
     :root {
         --color-bg: #141414;
         --color-fg: #f8f8f8;
+        --color-bg-button-social-media: lightblue;
+        --color-fg-logo: #f8f8f8;
+        --color-bg-highlight: #272712;
     }
 
-    .meteredContent, div {
+    body, .meteredContent, div, li *, button {
         /* Background color */
         background-color: var(--color-bg) !important; 
     }
     
-    p, h1, h2, h3, h4, h5, h6, a:link, button {
+    body, div.u-textColorNormal, h1.u-textColorDark, p, span, div, figcaption, li, a, h1, h2, h3, h4, button, a[rel="noopener"] {
         /* Text color */
        color: var(--color-fg) !important; 
+    }
+    
+    a {
+        text-decoration: underline !important;
     }
     
     div.uq {
         display: none;
     }
+    
+    .mo path  {
+        fill: var(--color-bg-button-social-media) !important;
+    }
+    
+    .bp {
+        /* Popup */
+        background-color: #282a36 !important;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px !important;
+    } 
+    
+    svg, .aw, .ax {
+        /* Logo */
+        fill: var(--color-fg-logo) !important;
+    }
+    
+    div:not(.ty) {
+        /* Elements to disable */
+        background: transparent !important;
+        background-color: transparent;
+    }
+    
+    nav {
+        /* Navigation */
+        background-color: #6a737d33 !important;
+        backdrop-filter: blur(10px) saturate(125%);
+        padding-bottom: 5px;
+    }
+    
+    .gist .highlight {
+        background: #333;
+    }
+
+    .gist .blob-code, .gist .blob-num {
+        color: #7a81a9;
+    }
+    
+    button {
+        border-color: #f8f8f2 !important;
+    }
+    
+    button:selected {
+        color: #f8f8f2 !important;
+    }
+    
+    div.qy.s.qu.qv.qw.qs.qx.jh.qf * {
+        background-color: none !important;
+        color: none !important;
+        fill: none !important;
+    }
+    
+    mark {
+        /* Top highlights */
+        background-color: var(--color-bg-highlight) !important;
+    }
+    
 }
