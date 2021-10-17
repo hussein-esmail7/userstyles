@@ -8,8 +8,8 @@
 
 @-moz-document domain("search.brave.com") {
     :root {
-        --color-bg: #1a1a1a;
-        --color-fg: white;
+        --color-bg: #141414;
+        --color-fg: #f8f8f8;
         --color-fg-secondary: #eeeeee;
         --color-fg-button: black;
         --color-bg-table: #31363a;

@@ -33,11 +33,23 @@
         --color-bg-panel: #222629;
     }
 
-    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, .dropdown-menu, .sectionhead, #nav-drawer, .list-group, ul, li, .list-group-item, .bg-light, .page-link, .card-block, .collapse, .region_main_settings_menu_proxy, div[id^="moodle-dialogue-yui"], th, td {
+    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, .dropdown-menu, .sectionhead, #nav-drawer, .list-group, ul, li, .list-group-item, .bg-light, .page-link, .card-block, .collapse, .region_main_settings_menu_proxy, div[id^="moodle-dialogue-yui"], th, td, div#tabs, .mod_turnitintooltwo .ui-widget-header, .mod_turnitintooltwo_submissions_data_table .odd .sorting_1 {
         background-color: var(--color-bg) !important;
+        
     }
 
-    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, h1, h2, h3, h4, h5, h6, .card-title, .text-muted, .dropdown-toggle, .logininfo, .eris_search_library, a, td, pre, select, textarea, .ablock div div span, th {
+    .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, .mod_turnitintooltwo_listbar, .mod_turnitintooltwo_refresh_link {
+        background: none !important;
+    }
+    
+    .ui-corner-all {
+        border-radius: 0px !important;
+    }
+    
+    .mod_turnitintooltwo_listbar {
+        border: none;
+    }
+    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, h1, h2, h3, h4, h5, h6, .card-title, .text-muted, .dropdown-toggle, .logininfo, .eris_search_library, a, td, pre, select, textarea, .ablock div div span, th, div.mod_turnitintooltwo_refresh_link {
         color: var(--color-fg) !important;
     }
     
@@ -97,6 +109,10 @@
     }
     i.text-danger {
         background-color: red !important;
+    }
+    
+    div.mod_turnitintooltwo_refresh_link {
+        border: 1px solid white;
     }
 }
 

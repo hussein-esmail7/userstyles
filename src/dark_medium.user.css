@@ -8,16 +8,18 @@
 
 @-moz-document domain("medium.com") {
     :root {
-        --background-color: black;
-        --text-color: white;
+        --color-bg: #141414;
+        --color-fg: #f8f8f8;
     }
 
     .meteredContent, div {
-        background-color: var(--background-color) !important; 
+        /* Background color */
+        background-color: var(--color-bg) !important; 
     }
     
     p, h1, h2, h3, h4, h5, h6, a:link, button {
-       color: var(--text-color) !important; 
+        /* Text color */
+       color: var(--color-fg) !important; 
     }
     
     div.uq {

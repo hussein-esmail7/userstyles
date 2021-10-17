@@ -8,10 +8,10 @@
 
 @-moz-document domain("kijiji.ca") {
     :root {
-        --color-bg: black;
+        --color-bg: #141414;
         --color-bg-secondary: #2e2e2e;
         --color-bg-footer: #3e3e3e;
-        --color-fg: white;
+        --color-fg: #f8f8f8;
         --color-fg-secondary: #c4c4c4;
         --color-link: #76bfff;
         --color-avatar: lightblue;

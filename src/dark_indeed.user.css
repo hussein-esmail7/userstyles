@@ -8,20 +8,19 @@
 
 @-moz-document url-prefix("indeed.com") {
     :root {
-        --background-color: #1f1f1f;
-        --background-color-secondary: grey;
-        --text-color: white;
-        --title-color: blue;
-        --link-color: blue;
+        --color-bg: #141414;
+        --color-bg-secondary: grey;
+        --color-fg: #f8f8f8;
+        --color-fg-url: blue;
     }
 
     html, li, .icl-Ratings, .icl-NavigableContainer,  .icl-NavigableContainer--hasBorderBottom, .icl-NavigableContainer--hasBorderTop, .icl-NavigableContainer-linkWrapper, .icl-Ratings-description {
-        background-color: var(--background-color);
-        color: var(--text-color);
+        background-color: var(--color-bg);
+        color: var(--color-fg);
     }
 
     .icl-GlobalFooter-link, a:link, .icl-GlobalFooter-item, .jobsearch-JobMetadataFooter, h1, .jobsearch-JobInfoHeader-title-container, .jobsearch-DesktopStickyContainer-subtitle {
-        background-color: var(--background-color-secondary);
+        background-color: var(--color-bg-secondary);
         color: var(--link-color) !important;
     }
 

@@ -8,9 +8,10 @@
 
 @-moz-document domain("bibliogram.art"), domain("bibliogram.snopyta.org"), domain("bibliogram.pussthecat.org"), domain("bibliogram.nixnet.services"), domain("bibliogram.ethibox.fr"), domain("insta.trom.tf"), domain("bibliogram.hamster.dance"), domain("bib.actionsack.com") { 
     :root {
-        --color-bg: #222629;
+        --color-bg: #141414;
         --color-bg-button: #222222;
-        --color-fg: white;
+        --color-fg: #f8f8f8;
+        --color-bg-banner: grey;
     }
 
     html, body, .timeline-section, header, .about-container, .notice, span, .relative-box, .user-header {
@@ -28,6 +29,7 @@
     }
     
     .banner-image {
-        background-color: grey;
+        /* Background color of the image on the homepage */
+        background-color: var(--color-bg-banner);
     }
 }

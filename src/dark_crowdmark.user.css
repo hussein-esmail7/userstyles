@@ -8,8 +8,8 @@
 
 @-moz-document domain("crowdmark.com") { 
     :root {
-        --color-bg: #222629;
-        --color-fg: white;
+        --color-bg: #141414;
+        --color-fg: #f8f8f8;
         --color-fg-secondary: #eeeeee;
         --color-fg-button: black;
         --color-bg-button-submit: #8ccbdb;

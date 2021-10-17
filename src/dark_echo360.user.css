@@ -8,11 +8,11 @@
 
 @-moz-document domain("echo360.ca") { 
     :root {
-        --color-bg: #222629; 
+        --color-bg: #141414; 
         --color-highlight: green;
         --color-timeline: lightblue;
         --color-timeline-hover: white;
-        --color-text: white;
+        --color-fg: #f8f8f8;
         --color-text-secondary: #eeeeee;
         --color-bg-table: #31363a;
         --color-table-hover: #222222;
@@ -28,7 +28,7 @@
 
     h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl *, span {
         /* Text color */
-        color: var(--color-text) !important;
+        color: var(--color-fg) !important;
     }
 
     input, .echo-input-group, select {
