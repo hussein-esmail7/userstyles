@@ -50,7 +50,8 @@
         margin: var(--all-location);
     }
     
-    .username-coloured {
+    .username-coloured,
+	div.codebox * {
         /* Items not to monospace */
         font-family: var(--font-default) !important;
         letter-spacing: normal;
