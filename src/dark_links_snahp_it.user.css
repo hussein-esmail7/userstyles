@@ -29,17 +29,18 @@
         letter-spacing: var(--font-all-spacing);
     }
     
-    html, 
-    body, 
     #content, 
-    dl, 
-    li, 
-    ul, 
+    .bg1, 
     .nav-tabs, 
     .navlinks, 
     .post .inner, 
-    .bg1, 
-    .post {
+    .post,
+    body, 
+    dl, 
+    form div,
+    html, 
+    li, 
+    ul {
         /* Background color */
         background-color: var(--color-bg) !important;
         background-image: none; /* Clears background image */
@@ -66,14 +67,23 @@
         color: var(--color-fg-replace) !important;
     }
     
-    .forabg, .forumbg, .navbar, .post .inner {
+    .forabg, 
+    .forumbg, 
+    .navbar, 
+    .post .inner {
         /* Get rid of grey borders on tables, posts, and nav bars */
         border: none;
         padding: 0;
         margin: 0 !important;
     }
     
-    h1, h2, h3, h4, h5, h6, p, #security_code {
+    h1, 
+    h2, 
+    h3, 
+    h4, 
+    h5, 
+    h6, 
+    p {
         /* Text color */
         color: var(--color-fg) !important;
     }
@@ -83,12 +93,14 @@
         color: var(--color-fg-unread);
     }
     
-    dd.topics, dd.views {
+    dd.topics, 
+    dd.views {
         /* Must be here or else the Views column would be positioned badly */
         float: right !important;
     }
     
-    .forums li .row-item dd.topics, dd.views {
+    .forums li .row-item dd.topics, 
+    dd.views {
         text-align: var(--col-text-align-views);
     }
     
@@ -129,31 +141,31 @@
         text-indent: 0px !important;
     }
     
-    .forum_unread, 
-    .forum_read_subforum, 
-    .forum_unread_subforum, 
-    .forum_read_locked, 
-    .forum_read, 
-    .topic_unread, 
-    .sticky_unread, 
-    .pm_unread, 
-    .topic_read, 
-    .sticky_read, 
-    .pm_read, 
-    .topic_read_mine,
-    .sticky_read_mine,
-    .global_read,
-    .global_read_mine,
-    .announce_read_mine,
     .announce_read,
+    .announce_read_locked,
+    .announce_read_locked_mine,
+    .announce_read_mine,
+    .announce_unread,
+    .announce_unread_mine,
+    .forum_read, 
+    .forum_read_locked, 
+    .forum_read_subforum, 
+    .forum_unread, 
+    .forum_unread_subforum, 
+    .global_read,
     .global_read_locked,
     .global_read_locked_mine,
-    .announce_read_locked_mine,
-    .announce_read_locked,
+    .global_read_mine,
     .global_unread,
     .global_unread_mine,
-    .announce_unread_mine,
-    .announce_unread {
+    .pm_read, 
+    .pm_unread, 
+    .sticky_read, 
+    .sticky_read_mine,
+    .sticky_unread, 
+    .topic_read, 
+    .topic_read_mine,
+    .topic_unread {
         /* Get rid of the speech bubble images on the left */
         /* Text color is a good indication for me of what's unread */
         background-image: none !important; 
@@ -164,7 +176,7 @@
     i.icon-red, 
     span.open, 
     dd.profile-joined,
-    a[title^="Donate"], /* I'm sorry, don't need to be reminded I'm broke :/ */
+    a[title^="Donate"],
     a.read i, 
     dd.profile-rank img,
     .rx_spotlight,
@@ -173,9 +185,15 @@
     .user-flair__badge-image,
     .user-flair__expand-symbol,
     .user-flair__linked-image-badge,
-    .profile-posts {
+    .profile-posts,
+    .fa-home /* Home icon beside "Board Index" link */ {
         /* Items to get rid of to make things nicer */
         display: none !important;
     }
+    
+    /* Other Improvements I Would Do ==================================
+    - Reduce the width of the textarea when using the full reply editor
+    
+    */
     
 }
