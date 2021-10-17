@@ -29,8 +29,31 @@
         --all-location: auto; /* 'auto' for centered, 'none' for all to left side */
         --height-profile-pic: 80px;		 /* Max height for profile pictures */
         --col-text-align-views: right;		 /* Align number column to side */
+        --margin-right-topic-list: 200px;
+        --margin-right-thread-pages: -150px;
     }
 
+    @media (max-width: 700px) {
+        /* Mobile changes */
+        :root {
+            /* Variable changes for mobile */
+            --margin-right-topic-list: 20px;
+            --margin-right-thread-pages: 0px;
+        }
+        
+        /* New items for mobile only */
+        
+        ul[role="menubar"] .search-box.responsive-hide {
+            /* Show search bar for the whole forum */
+            display: block !important;
+        }
+        
+        ul[role="menubar"] .search-box.responsive-hide div form fieldset {
+            /* Make search bar wider so user can see it */
+            width: calc(100% / 0.75)
+        }
+    }
+    
     *:not(i) {
         /* Monospace everything except symbols (i tag) */
         font-family: var(--font-all) !important;
@@ -118,11 +141,11 @@
     }
 
     ul.topiclist dl .list-inner {
-        margin-right: 200px !important;
+        margin-right: var(--margin-right-topic-list) !important;
     }
 
     .list-inner .pagination {
-        margin-right: -150px;
+        margin-right: var(--margin-right-thread-pages);
     }
 
     .postprofile .avatar img {
