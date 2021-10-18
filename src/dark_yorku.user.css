@@ -33,7 +33,7 @@
         --dark-red: #7d0800;
     }
 
-    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, .dropdown-menu, .sectionhead, #nav-drawer, .list-group, ul, li, .list-group-item, .bg-light, .page-link, .card-block, .collapse, .region_main_settings_menu_proxy, div[id^="moodle-dialogue-yui"], th, td, div#tabs, .mod_turnitintooltwo .ui-widget-header, .mod_turnitintooltwo_submissions_data_table .odd .sorting_1, #page, div.card.login, .ps_box-group {
+    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, .dropdown-menu, .sectionhead, #nav-drawer, .list-group, ul, li, .list-group-item, .bg-light, .page-link, .card-block, .collapse, .region_main_settings_menu_proxy, div[id^="moodle-dialogue-yui"], th, td, div#tabs, .mod_turnitintooltwo .ui-widget-header, .mod_turnitintooltwo_submissions_data_table .odd .sorting_1, #page, div.card.login, .ps_box-group, .fp-navbar, .filemanager-container {
         background-color: var(--color-bg) !important;
         
     }
