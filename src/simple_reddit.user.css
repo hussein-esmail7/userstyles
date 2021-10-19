@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Reddit Simplified Theme
 @namespace      github.com/hussein-esmail7/userstyles
-@version        1.0.2
+@version        1.0.3
 @description    `A simpler theme template for Reddit (New)`
 @author         Hussein Esmail
 ==/UserStyle== */
@@ -10,6 +10,15 @@
 
 @-moz-document domain("reddit.com") {
 
+    /* Reddit - New Theme */
+    
+    /* What this theme does:
+    1. Hide Premium/Coins/Powerups/Talk/Predictions buttons on sidebars
+    2. Hide Award button on each post
+    3. (try to) Hide Twitter JS frames when linked to a tweet
+    4. Hides RPAN items in your feed
+    */
+    
     :root {
         --color-bg: #141414;
         --color-fg: #f8f8f8;
@@ -27,13 +36,25 @@
         height: 0px;
         width: 0px;
     }
-    a[href="/rpan/"], /* Hide rpan button from top nav bar */
-    a[href="/r/psbattleslive"], /* Hide sponsored button from top nav bar */
-    ._3qQRMrsougg399HF8ZDsfl, /* rpan posts in home feed */
-    ._1EWxiIupuIjiExPQeK4Kud, /* Award button on each post */
+
+    /* Elements to hide */
     ._17nmfaMf1Rq20sVfEmle0O.yIt5UPS176eVebNGNRQtf ._2MkcR85HDnYngvlVW2gMMa, /* Website thumbnails that aren't really images */
-    ._3JgI-GOrkmyIeDeyzXdyUD._2CSlKHjH7lsjx0IpjORx14 iframe /* TODO: Embedded Twitter frame (temporary) */
-    
+    ._1EWxiIupuIjiExPQeK4Kud, /* Award button on each post */
+    ._3JgI-GOrkmyIeDeyzXdyUD._2CSlKHjH7lsjx0IpjORx14 iframe, /* TODO: Embedded Twitter frame (temporary) */
+    ._3qQRMrsougg399HF8ZDsfl, /* RPAN posts in home feed */
+    .oiDWziAp_Bua6rb7oQKXs, /* Live button on sidebar */
+    a#focus-Coins._26MVepkxZHzpNv1cuAA4JA._2MgAHlPDdKvXiG-Qbz5cbC, /* Coins button on sidebar */
+    a#focus-Powerups._26MVepkxZHzpNv1cuAA4JA._2MgAHlPDdKvXiG-Qbz5cbC, /* Coins button on sidebar */
+    a#focus-Predictions._26MVepkxZHzpNv1cuAA4JA._2MgAHlPDdKvXiG-Qbz5cbC, /* Predictions button on sidebar */
+    a#focus-Premium._26MVepkxZHzpNv1cuAA4JA._2MgAHlPDdKvXiG-Qbz5cbC, /* Premium button on sidebar */
+    a#focus-Talk._26MVepkxZHzpNv1cuAA4JA._2MgAHlPDdKvXiG-Qbz5cbC, /* Talk button on sidebar */
+    a._1YWXCINvcuU7nk0ED-bta8[href="/coins"], /* Coins button on profile menu */
+    a._1YWXCINvcuU7nk0ED-bta8[href="/powerups"], /* Powerups button on profile menu */
+    a._1YWXCINvcuU7nk0ED-bta8[href="/predictions"], /* Predictions button on profile menu */
+    a._1YWXCINvcuU7nk0ED-bta8[href="/premium"], /* Premium button on profile menu */
+    a._1YWXCINvcuU7nk0ED-bta8[href="/talk"], /* Talk button on profile menu */
+    a[href="/r/psbattleslive"], /* Hide sponsored button from top nav bar */
+    a[href="/rpan/"] /* RPAN button from top nav bar */
     {
         /* Elements to hide */
         display: none !important;
