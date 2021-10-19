@@ -8,7 +8,7 @@
 
 
 
-@-moz-document domain("") { /* TODO */
+@-moz-document domain("reddit.com") {
     
     :root {
         --color-bg: #141414;
