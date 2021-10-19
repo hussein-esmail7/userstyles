@@ -7,7 +7,9 @@
 - [Donate](#donate)
 
 ## What is this?
-This repository is used to host my custom .user.css files that I use in the "Stylus" browser extension in Brave. Most (if not all) of these are for dark modes for sites that do not have them themselves.
+This repository is used to host my custom .user.css files that I use in the 
+"Stylus" browser extension in Brave. Most (if not all) of these are for dark 
+modes for sites that do not have them themselves.
 
 ## Styles List
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/brave_search.user.css) Brave Search Simplified
@@ -30,6 +32,7 @@ This repository is used to host my custom .user.css files that I use in the "Sty
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_w3schools.user.css) [Dark] w3schools
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_yorku.user.css) [Dark] York University Sites
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_zippyshare.user.css) [Dark] Zippyshare
+- [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/simple_reddit.user.css) [Simplified] Reddit
 
 # Donate
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/husseinesmail)
