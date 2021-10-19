@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Reddit Simplified Theme
 @namespace      github.com/hussein-esmail7/userstyles
-@version        1.0.1
+@version        1.0.2
 @description    `A simpler theme template for Reddit (New)`
 @author         Hussein Esmail
 ==/UserStyle== */
@@ -9,7 +9,7 @@
 
 
 @-moz-document domain("reddit.com") {
-    
+
     :root {
         --color-bg: #141414;
         --color-fg: #f8f8f8;
@@ -20,21 +20,22 @@
         --color-bg-search: white;
     }
 
-    html, body, div, p, li, ul {
-        /* Background color */
-        background-color: var(--color-bg) !important;
+    
+    ._17nmfaMf1Rq20sVfEmle0O.yIt5UPS176eVebNGNRQtf ._2MkcR85HDnYngvlVW2gMMa, /* Website thumbnails that aren't really images */
+    ._3JgI-GOrkmyIeDeyzXdyUD._2CSlKHjH7lsjx0IpjORx14 iframe /* TODO: Embedded Twitter frame (temporary) */
+    {
+        height: 0px;
+        width: 0px;
     }
-
-    h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl * {
-        /* Text color */
-        color: var(--color-fg) !important;
+    a[href="/rpan/"], /* Hide rpan button from top nav bar */
+    a[href="/r/psbattleslive"], /* Hide sponsored button from top nav bar */
+    ._3qQRMrsougg399HF8ZDsfl, /* rpan posts in home feed */
+    ._1EWxiIupuIjiExPQeK4Kud, /* Award button on each post */
+    ._17nmfaMf1Rq20sVfEmle0O.yIt5UPS176eVebNGNRQtf ._2MkcR85HDnYngvlVW2gMMa, /* Website thumbnails that aren't really images */
+    ._3JgI-GOrkmyIeDeyzXdyUD._2CSlKHjH7lsjx0IpjORx14 iframe /* TODO: Embedded Twitter frame (temporary) */
+    
+    {
+        /* Elements to hide */
+        display: none !important;
     }
-
-    input {
-        /* Text inputs */
-        color: var(--color-fg-button) !important;
-        background-color: var(--color-bg-search);
-    }
-
 }
-
