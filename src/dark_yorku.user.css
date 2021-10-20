@@ -19,6 +19,9 @@
 } */
 
 @-moz-document domain("passportyork.yorku.ca"), domain("eclass.yorku.ca"), domain("webapp.eecs.yorku.ca") {
+    
+    /* eClass */
+    
     :root {
         --color-bg: #141414;
         --color-bg-alert: #5c1717;
@@ -46,8 +49,9 @@
         border-radius: 0px !important;
     }
     
-    .mod_turnitintooltwo_listbar {
-        border: none;
+    .mod_turnitintooltwo_listbar, .block_online_users, .block_yu_messager, .dashboard-card-img, header#page-header div .card  {
+        /* Borders to get rid of */
+        border: none !important;
     }
     html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, h1, h2, h3, h4, h5, h6, .card-title, .text-muted, .dropdown-toggle, .logininfo, .eris_search_library, a, td, pre, select, textarea, .ablock div div span, th, div.mod_turnitintooltwo_refresh_link {
         color: var(--color-fg) !important;
@@ -82,7 +86,7 @@
         background-color: var(--color-bg-courselink) !important;
     }
 
-    .block_slideshow, #card-widgetmenu, #ycrest, .watson-btn-container, .feedback div p, .feedback div div div div br, .feedback div div br { 
+    .block_slideshow, #card-widgetmenu, #ycrest, .watson-btn-container, .feedback div p, .feedback div div div div br, .feedback div div br, .block_yu_messager, .dashboard-card-img, #instance-222305-header, aside#block-region-side-pre { 
         /* Elements to get rid of*/
         display: none;
     }
@@ -119,11 +123,35 @@
         background-color: var(--dark-red) !important;
     }
     
+    div.card-text .info {
+        background-color: inherit !important; 
+    }
     
+    header#page-header div .card {
+        height: 50px;
+    }
     
+    .block_myoverview .paged-content-page-container {
+        min-height: 5rem;
+    }
+    
+    .block_myoverview .content {
+        min-height: 10rem;
+    }
+    
+    div.menubar  {
+        background-color: inherit !important;
+    }
+    
+    nav[role="navigation"] {
+        display: block !important;
+    }
 }
 
 @-moz-document domain("yfile.news.yorku.ca") {
+    
+    /* YFile */
+    
     :root {
         --color-bg: #141414;
         --color-bg-alert: #5c1717;
@@ -149,10 +177,12 @@
     }
     
     aside, article {
+        /* Borders to get rid of */
         border: none !important;
     }
     
     #york-logo a img, #logo {
+        /* Elements to get rid of */
         display: none;
     }
     
@@ -196,6 +226,7 @@
     }
     
     img[src="/WebObjects/cdm.woa/Contents/WebServerResources/y.gif"], td.smallbodytext, td[valign="bottom"], td[background="https://w2prod.sis.yorku.ca/WebObjects/YorkUimages/banner_bg.gif"]{
+        /* Elements to get rid of */
         display: none;
     }
     
@@ -292,6 +323,7 @@
     }
     
     img[alt="COVID-19 Updates"] {
+        /* Elements to get rid of */
         display: none;
     }
     
@@ -301,7 +333,40 @@
 
     #PSTABNBO a span, .PSPUSHBUTTON.Left {
         background: none;
-    }
+    }   
+}
 
+
+@-moz-document domain(yorku.ubixhealth.com) {
     
+    /* YU Screen */
+    :root {
+        --color-bg: #141414;
+        --color-bg-alert: #5c1717;
+        --color-bg-courselink: #2f2f2f;
+        --color-bg-input: #535353;
+        --color-bg-panel: #222629;
+        --color-bg-secondary: #201919;
+        --color-bg-url-hover: darkred;
+        --color-fg: #f8f8f8;
+        --color-fg-url: red;
+        --color-nav: #2e2e2e;
+        --dark-red: #7d0800;
+    }
+    
+    .navbar, main, .card-body, .o-card-row {
+        background-color: var(--color-bg) !important;
+    }
+    
+    img[alt="logo"], .navbar-toggler {
+        background-color: white;
+    }
+    
+    p, div.card-title span, .card-text, label {
+        color: var(--color-fg) !important;
+    }
+    
+    .card-page {
+        border: none;
+    }
 }
