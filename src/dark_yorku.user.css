@@ -210,7 +210,7 @@
         --dark-red: #7d0800;
     }
 
-    .hfeed, #header-wrap, #navi-wrap, .container, .post, .postmeta, aside, #footer-widgets-bg, #footer-wrap, table, p, #yib11banner, td {
+    body, .hfeed, #header-wrap, #navi-wrap, .container, .post, .postmeta, aside, #footer-widgets-bg, #footer-wrap, table, p, #yib11banner, td {
         background-color: var(--color-bg) !important;
     }
     
@@ -228,6 +228,15 @@
     img[src="/WebObjects/cdm.woa/Contents/WebServerResources/y.gif"], td.smallbodytext, td[valign="bottom"], td[background="https://w2prod.sis.yorku.ca/WebObjects/YorkUimages/banner_bg.gif"]{
         /* Elements to get rid of */
         display: none;
+    }
+    
+    span[style="BACKGROUND-COLOR: YELLOW"] {
+        /* For exam schedule ("Information valid as of ...") */
+        background-color: var(--color-bg-alert) !important;
+    }
+    body {
+        /* Gets rid of white bar on the right side */
+        background-image: none;
     }
     
 }
