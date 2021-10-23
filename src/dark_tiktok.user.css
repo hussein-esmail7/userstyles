@@ -1,0 +1,105 @@
+/* ==UserStyle==
+@name           TikTok Dark Theme
+@namespace      github.com/hussein-esmail7/userstyles
+@version        1.0.0
+@description    `A dark theme template for tiktok.com`
+@author         Hussein Esmail
+==/UserStyle== */
+
+
+
+@-moz-document domain("tiktok.com") { 
+    
+    :root {
+        --color-bg: #141414;
+        --color-fg: #f8f8f8;
+        --color-fg-secondary: #eeeeee;
+        --color-fg-button: black;
+        --color-bg-table: #31363a;
+        --table-hover-color: #222222;
+        --color-bg-search: white;
+        
+        --color-bg-button-follow: red;
+        --color-fg-button-follow: white;
+        --color-fg-button-border: white;
+        --color-fg-tab-active: #b90909;
+    }
+    
+    
+    /* DELETE THIS BLOCK TO SHOW COMMENTS SECTION */
+    .comment-container, .comment-post-outside-container {
+        display: none !important;
+    }
+    
+
+    html, body, li, ul, .main-body, .side-bar, .scroll-container, .header-container, .popup, .content-container, .comment-container, .comment-post-outside-container, .profile-card-outside-wrapper *, .accounts-list-modal, .keyboard-shortcut-container-modal, .jsx-1518916823 {
+        /* Background color */
+        background-color: var(--color-bg) !important;
+    }
+
+    h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl *, .video-feed-tab *, .copy-link-container *, .comment-text *, .like-container * {
+        /* Text color */
+        color: var(--color-fg) !important;
+    }
+
+    input, form {
+        /* Text inputs */
+        color: var(--color-fg-button) !important;
+        background-color: var(--color-bg-search) !important; 
+    }
+    
+    img.logo-icon, a[href^="/messages/"] div, img[src="https://lf16-tiktok-web.ibytedtos.com/obj/tiktok-web-us/tiktok/web/node/_next/static/images/unlike-c0928a8c3ac7b448ef79c4bb26aec869.svg"], .accounts-list-modal .header .close-btn {
+        /* Items to reverse bgcolor if you can't see them */
+        background-color: white !important;
+    }
+    
+    .follow-button {
+        background-color: var(--color-bg-button-follow);
+        color: var(--color-fg-button-follow);
+        border: var(--color-bg-button-follow) solid 1px !important;
+    }
+    
+    .video-control-container {
+        display: block;
+    }
+    
+    .bottom-line {
+        background: var(--color-fg) !important;
+    }
+    
+    .copy-link-container, .link-container, .copy-container, p.copy-link {
+        border: var(--color-fg-button-border) solid 1px;
+    }
+    
+    /* Reducing how much space the nav bar takes up */
+    div.nav-wrapper, .nav-item {
+        margin-bottom: 0 !important;
+        padding: 2px !important;
+    }
+    
+    .nav-item svg {
+        /* Get rid of icons beside nav bar */
+        display: none;
+    }
+    
+    .tab.active {
+        background-color: var(--color-fg-tab-active);
+        border: grey solid 3px;
+    }
+    
+    .accounts-list-modal.jsx-2021749678 {
+        /* TODO: Issue. cannot scroll on following list */
+        width: 90% !important;
+        height: 90% !important;
+        margin: auto !important;
+        transform: none !important;
+        background: none;
+        left: 0;
+        top: 0;
+        position: static;
+        
+    }
+    
+
+}
+

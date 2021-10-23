@@ -27,6 +27,7 @@ modes for sites that do not have them themselves.
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_stack_exchange.user.css) [Dark] Stack Exchange
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_streamyard.user.css) [Dark] Streamyard
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_stylus.user.css) [Dark] Stylus Editor
+- [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_tiktok.user.css) [Dark] TikTok
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_tpl.user.css) [Dark] Toronto Public Library
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_transmission.user.css) [Dark]  Transmission Daemon
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_w3schools.user.css) [Dark] w3schools
