@@ -11,6 +11,12 @@ This repository is used to host my custom .user.css files that I use in the
 "Stylus" browser extension in Brave. Most (if not all) of these are for dark 
 modes for sites that do not have them themselves.
 
+## Installation
+
+1. Install [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) from the Chrome Web Store, or [Stylus](https://addons.mozilla.org/en-CA/firefox/addon/styl-us/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) from the Firefox Add-ons Store.
+2. Open whichever URLs you want to install from this page in a new tab.
+3. You should see an "Install Style" button on the top left corner of the page instead of plain text. Once you install it, that theme will be applied to the site it's for.
+
 ## Styles List
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/brave_search.user.css) Brave Search Simplified
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_bibliogram.user.css) [Dark] Bibliogram
