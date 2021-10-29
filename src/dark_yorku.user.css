@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YorkU Dark
 @namespace      github.com/hussein-esmail7/userstyles
-@version        1.0.0
+@version        1.0.1
 @description    `A dark theme for York University websites`
 @author         Hussein Esmail
 ==/UserStyle== */
@@ -23,20 +23,22 @@
     /* eClass */
     
     :root {
-        --color-bg: #141414;
+        --color-bg: #141414;              /* Default background color */
         --color-bg-alert: #5c1717;
         --color-bg-courselink: #2f2f2f;
         --color-bg-input: #535353;
         --color-bg-panel: #222629;
         --color-bg-secondary: #201919;
         --color-bg-url-hover: darkred;
-        --color-fg: #f8f8f8;
-        --color-fg-url: red;
-        --color-nav: #2e2e2e;
+        --color-fg: #f8f8f8;              /* Default text color */
+        --color-fg-url: red;              /* Default URL foreground color */
+        --color-fg-url-course: orange;    /* Foreground color for course URLs on homepage */
+        --color-nav: #141414;             /* Used to be: #2e2e2e */
         --dark-red: #7d0800;
+        --font-all: monospace;              /* New main font to use */
     }
 
-    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, .dropdown-menu, .sectionhead, #nav-drawer, .list-group, ul, li, .list-group-item, .bg-light, .page-link, .card-block, .collapse, .region_main_settings_menu_proxy, div[id^="moodle-dialogue-yui"], th, td, div#tabs, .mod_turnitintooltwo .ui-widget-header, .mod_turnitintooltwo_submissions_data_table .odd .sorting_1, #page, div.card.login, .ps_box-group, .fp-navbar, .filemanager-container {
+    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, .dropdown-menu, .sectionhead, #nav-drawer, .list-group, ul, li, .list-group-item, .bg-light, .page-link, .card-block, .collapse, .region_main_settings_menu_proxy, div[id^="moodle-dialogue-yui"], th, td, div#tabs, .mod_turnitintooltwo .ui-widget-header, .mod_turnitintooltwo_submissions_data_table .odd .sorting_1, #page, div.card.login, .ps_box-group, .fp-navbar, .filemanager-container, .calendar_event_course {
         background-color: var(--color-bg) !important;
         
     }
@@ -86,12 +88,34 @@
         background-color: var(--color-bg-courselink) !important;
     }
 
-    .block_slideshow, #card-widgetmenu, #ycrest, .watson-btn-container, .feedback div p, .feedback div div div div br, .feedback div div br, .block_yu_messager, .dashboard-card-img, #instance-222305-header, aside#block-region-side-pre { 
-        /* Elements to get rid of*/
+    .block_slideshow,           /* Slideshow at top of homescreen */
+    #card-widgetmenu, 
+    #ycrest, 
+    .watson-btn-container,      /* Ask Savy button */
+    .feedback div p, 
+    .feedback div div div div br, 
+    .feedback div div br, 
+    .block_yu_messager, 
+    .dashboard-card-img,        /* Image for each course on homescreen */
+    #instance-222305-header, 
+    .block_badges,              /* Badges block on homescreen */
+    .block_calendar_month,      /* Calendar block on homescreen */
+    .dashboard-card-footer,     /* Progress bars below courses */
+    .block_important_links,     /* Links section I never use */
+    .block_library              /* Library search block */
+    { 
+        /* Elements to get rid of */
         display: none;
     }
     
-    .bg-white, .nav-link, .d-inline-block, [aria-controls="nav-drawer"], #page-footer {
+    .bg-white, 
+    .nav-link,                      /* Language dropdown on left */
+    [aria-controls="nav-drawer"], 
+    #page-footer,
+    button.btn.nav-link,            /* Nav button on left side */
+    ul.navbar-nav,                  /* Buttons beside profile menu */
+    .usermenu                       /* Profile menu on right */
+    {
         /* Navigation Bar */
         background-color: var(--color-nav) !important;
     }
@@ -139,12 +163,80 @@
         min-height: 10rem;
     }
     
-    div.menubar  {
+    div.menubar {
         background-color: inherit !important;
+    }
+    
+    .calendar_event_course {
+        border-color: inherit !important;
     }
     
     nav[role="navigation"] {
         display: block !important;
+    }
+    
+    @media (min-width: 1200px) {
+        #region-main.has-blocks .dashboard-card-deck:not(.fixed-width-cards) .dashboard-card {
+            /* Homepage courses list as list not blocks */
+            width: inherit;
+        }
+    }
+    
+    .dashboard-card, .course-info-container {
+        background-color: inherit !important;
+    }
+    
+    .dashboard-card, .course-info-container,
+    .block_timeline,
+    .block_myoverview,
+    .block_calendar_upcoming
+    
+    {
+        border: none;
+    }
+    
+    .coursename, 
+    .course-info-container .align-items-start .text-truncate .coursename 
+    {
+        /* Change colour of course URLs specifically */
+        color: var(--color-fg-url-course) !important;
+    }
+    
+    .coursename:hover, a:hover {
+        /* Do not show red background when hovering a URL */
+        background-color: inherit !important;
+    }
+    
+    *:not(i) {
+        /* Monospace everything except symbols (i tag) */
+        /* i tags are used for images, and emojis, which this font doesn't have */
+        font-family: var(--font-all) !important;
+    }
+    
+    .block .block-cards .course-info-container,
+    .block_online_users div div,
+    .block_online_users .p-3 {
+        /* Reduce the empty space border around each course on homepage */
+        padding: 0;
+        margin: 0 !important;
+    }
+    
+    
+    @media (min-width: 576px) {
+        .card-deck {
+            /* Make each option button for each course on homepage on right side */
+            flex-direction: column !important;
+        }
+    }
+    
+    small {
+        /* Default = 80%, looks too small (some profs put entire paragraphs in this) */
+        font-size: 90%;
+    }
+    
+    .sectionname span a {
+        /* These URLs link to themselves, which is a bit pointless */
+        color: var(--color-fg) !important;
     }
 }
 
