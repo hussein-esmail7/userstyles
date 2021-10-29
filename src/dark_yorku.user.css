@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YorkU Dark
 @namespace      github.com/hussein-esmail7/userstyles
-@version        1.0.1
+@version        1.0.2
 @description    `A dark theme for York University websites`
 @author         Hussein Esmail
 ==/UserStyle== */
@@ -55,7 +55,7 @@
         /* Borders to get rid of */
         border: none !important;
     }
-    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, h1, h2, h3, h4, h5, h6, .card-title, .text-muted, .dropdown-toggle, .logininfo, .eris_search_library, a, td, pre, select, textarea, .ablock div div span, th, div.mod_turnitintooltwo_refresh_link {
+    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, h1, h2, h3, h4, h5, h6, .card-title, .text-muted, .dropdown-toggle, .logininfo, .eris_search_library, a, td, pre, select, textarea, .ablock div div span, th, div.mod_turnitintooltwo_refresh_link, p span, p strong {
         color: var(--color-fg) !important;
     }
     
