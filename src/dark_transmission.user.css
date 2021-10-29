@@ -11,6 +11,7 @@
         --background-color: black;
         --text-color: white;
         --color-disabled: red;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
     }
     
     html, .torrent_list, .compact, ul, li, #torrent_container, body, .torrent, .ui-widget-content, .ui-menu-divider, .toolbar {

@@ -19,6 +19,7 @@
         --color-text-code-brackets: #6b6a6a;
         --color-text-code-tags: #3282ff;
         --color-panel-red: #5c0101;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
     body, .CodeMirror, .w3-white, .w3-bar, .sidesection, .intro, .pagemenu, #leftmenuinnerinner {

@@ -18,7 +18,8 @@
         --color-table-hover: #222222;
         --transparent-color: transparent;
         --search-bar-color: white;
-        --size-video-table: 98%
+        --size-video-table: 98%;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
     html, [class^="Content"], header, .main-content, .main-content * {

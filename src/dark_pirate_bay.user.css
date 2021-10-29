@@ -8,18 +8,19 @@
 
 @-moz-document regexp(".+piratebay*.*"), domain("tpb.party") {
     :root {
-        --background-color: #222629;
-        --text-color: white;
-        --text-color-secondary: #eeeeee;
-        --button-text-color: black;
-        --table-background-color: #31363a;
+        --color-bg: #1f1f1f;
+        --color-fg: #f8f8f8;
+        --color-fg-secondary: #eeeeee;
+        --color-fg-button: black;
+        --color-bg-table: #31363a;
         --table-hover-color: #222222;
         --transparent-color: transparent;
         --search-bar-color: white;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
     html {
-        background-color: var(--background-color);
+        background-color: var(--color-bg);
     }
 
     div#detailsframe *, head, body, footer, h2, table#searchResult th, table#searchResult td, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details * {
@@ -27,12 +28,12 @@
     }
 
     a, strong, label, h2, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl *, table#searchResult tr, table#searchResult tr.alt {
-        color: var(--text-color) !important;
+        color: var(--color-fg) !important;
         /* border-width: 0; */
     }
 
     input {
-        color: var(--button-text-color) !important;
+        color: var(--color-fg-button) !important;
     }
 
     .https_form {
@@ -40,7 +41,7 @@
     }
 
     table#searchResult tr, table#searchResult tr.alt {
-        background: var(--table-background-color);
+        background: var(--color-bg-table);
     }
 
     table#searchResult tr:hover {

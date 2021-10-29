@@ -36,6 +36,7 @@
         --color-nav: #141414;             /* Used to be: #2e2e2e */
         --dark-red: #7d0800;
         --font-all: monospace;              /* New main font to use */
+        color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
     html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, .dropdown-menu, .sectionhead, #nav-drawer, .list-group, ul, li, .list-group-item, .bg-light, .page-link, .card-block, .collapse, .region_main_settings_menu_proxy, div[id^="moodle-dialogue-yui"], th, td, div#tabs, .mod_turnitintooltwo .ui-widget-header, .mod_turnitintooltwo_submissions_data_table .odd .sorting_1, #page, div.card.login, .ps_box-group, .fp-navbar, .filemanager-container, .calendar_event_course {
@@ -190,7 +191,6 @@
     .block_timeline,
     .block_myoverview,
     .block_calendar_upcoming
-    
     {
         border: none;
     }
@@ -220,7 +220,6 @@
         padding: 0;
         margin: 0 !important;
     }
-    
     
     @media (min-width: 576px) {
         .card-deck {

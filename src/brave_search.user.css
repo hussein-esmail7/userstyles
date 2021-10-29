@@ -19,6 +19,7 @@
         --color-fg-border: white;
         --font-all: monospace;
         --txt-result-prefix: "> "; /* String to display before new search result */
+        color-scheme: dark;                 /* Used to get dark scroll bars */
     }
     
     html, p, * {

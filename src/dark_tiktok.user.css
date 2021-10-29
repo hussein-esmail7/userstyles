@@ -18,6 +18,7 @@
         --color-bg-table: #31363a;
         --table-hover-color: #222222;
         --color-bg-search: white;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
         
         --color-bg-button-follow: red;
         --color-fg-button-follow: white;

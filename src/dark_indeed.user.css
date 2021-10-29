@@ -12,6 +12,7 @@
         --color-bg-secondary: grey;
         --color-fg: #f8f8f8;
         --color-fg-url: blue;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
     html, li, .icl-Ratings, .icl-NavigableContainer,  .icl-NavigableContainer--hasBorderBottom, .icl-NavigableContainer--hasBorderTop, .icl-NavigableContainer-linkWrapper, .icl-Ratings-description {

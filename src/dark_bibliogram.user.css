@@ -12,6 +12,7 @@
         --color-bg-button: #222222;
         --color-fg: #f8f8f8;
         --color-bg-banner: grey;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
     html, body, .timeline-section, header, .about-container, .notice, span, .relative-box, .user-header {

@@ -17,6 +17,7 @@
         --table-hover-color: #222222;
         --color-transparent: transparent;
         --color-bg-search: white;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
         
         /* New colors not in template */
         --color-button: #313131;

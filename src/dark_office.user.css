@@ -21,6 +21,7 @@
         --table-hover-color: #222222;
         --transparent-color: transparent;
         --search-bar-color: white;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
     .plannerApp, .sideNav, .ms-Callout-main, .plannerAppCallout, .o365cs-base, .form-content-container, .office-form-body {

@@ -8,14 +8,15 @@
 
 @-moz-document domain("stackexchange.com"), domain("superuser.com"), domain("askubuntu.com") {
     :root {
-        --color-bg: black;
-        --color-text: white;
+        --color-bg: #1f1f1f;
+        --color-fg: #f8f8f8;
         --color-url: #d2d0ff;
-        --color-code-bg: #333333;
+        --color-bg-code: #333333;
         --color-code-blue: lightblue;
         --color-button-active: #7a7a7a;
-        --color-button-bg: #003faf;
+        --color-bg-button: #003faf;
         --color-bg-textarea: #404040;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
     html, body, .container, #content, footer, header, .s-sidebarwidget, .s-sidebarwidget--header, .lv-info, .number, .lv-stats-wrapper, .dialog-content, .s-modal--dialog, .bg-white, .ps-relative, .d-flex, .tag-suggestions, .achievements-dialog, .achievements-dialog .header {
@@ -26,11 +27,11 @@
         background-image: none; 
     }
     .container, #content, footer, header, code, .post-tag, .s-sidebarwidget, .s-sidebarwidget--header, h1, h2, h3, h4, h5, h6, .s-btn, .mr2, .js-vote-count, .fs-fine, textarea, label, .user-action-time, .number, .dialog-content, p, li, .fs-body1, .s-description, input {
-        color: var(--color-text) !important;
+        color: var(--color-fg) !important;
     }
     
     code, pre, .post-tag {
-        background-color: var(--color-code-bg) !important;
+        background-color: var(--color-bg-code) !important;
     }
     
     .question-hyperlink, .relativetime, .js-gps-track, .js-add-link, a {
@@ -56,6 +57,6 @@
     }
     
     .s-btn__filled {
-        background-color: var(--color-button-bg);
+        background-color: var(--color-bg-button);
     }
 }

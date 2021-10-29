@@ -29,6 +29,7 @@ domain("towardsdatascience.com") {
         --color-bg-button-social-media: lightblue;
         --color-fg-logo: #f8f8f8;
         --color-bg-highlight: #272712;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
     body, .meteredContent, div, li *, button {

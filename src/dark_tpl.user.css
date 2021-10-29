@@ -13,6 +13,7 @@
         --text-color: white;
         --notice-color: darkred;
         --url-color: lightblue;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
     }
     
     body, .SearchBox, .logon, #form_signin, .container, .action-bar, td, .panel, .menu-item, section, [class^="components-pages"], [class^="components-Save"], [class^="components-ItemButton"], th, .copyright, .add-new-list, .page-content, div.notice, .megamenu, .megamenu-column {

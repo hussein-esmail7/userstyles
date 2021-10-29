@@ -24,6 +24,7 @@ regexp("moz-extension://.*") {
         --color-border-search: #737373;
         --font-button: arial,sans-serif;
         --color-bg-message-box: #b22222;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
     #notes,

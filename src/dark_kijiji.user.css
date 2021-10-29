@@ -17,6 +17,7 @@
         --color-avatar: lightblue;
         --color-bg-button: #6d6dee;
         --color-bg-button-alert: #d54f4f;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
     html, body, div, fieldset, section, .fes-pagelet, .mainPageContent, #MainContainer, .sticky-inner-wrapper, #SearchLocationPicker, button, a[class^="shareLink"], table, div.top-feature-bottom-bar, li[class^="selectedCategoryListItem"], main, li, span[class^="filterButtonCounter"], nav, .container-346951201, tr {

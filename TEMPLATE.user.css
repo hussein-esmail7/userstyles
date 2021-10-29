@@ -11,13 +11,14 @@
 @-moz-document domain("") { /* TODO */
     
     :root {
-        --color-bg: #141414;
-        --color-fg: #f8f8f8;
+        --color-bg: #141414;            /* Default background color */
+        --color-fg: #f8f8f8;            /* Default text color */
         --color-fg-secondary: #eeeeee;
         --color-fg-button: black;
         --color-bg-table: #31363a;
         --table-hover-color: #222222;
         --color-bg-search: white;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
     html, body, div, p, li, ul {

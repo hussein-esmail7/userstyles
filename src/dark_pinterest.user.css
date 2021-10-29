@@ -20,6 +20,7 @@
         --color-transparent: transparent;
         --color-bg-search: white;
         --search-bar-color: blue;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
         
         /* To implement */
         --max-width: 800px;					 /* Max width, centered on page */

@@ -17,6 +17,7 @@
         --transparent-color: transparent;
         --search-bar-color: white;
         --color-button: blue;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
     html, div, div *, #myServices {
