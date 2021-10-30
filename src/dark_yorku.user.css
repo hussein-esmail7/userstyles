@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YorkU Dark
 @namespace      github.com/hussein-esmail7/userstyles
-@version        1.0.2
+@version        1.0.3
 @description    `A dark theme for York University websites`
 @author         Hussein Esmail
 ==/UserStyle== */
@@ -305,10 +305,10 @@
         background-color: var(--color-bg) !important;
     }
     
-    h1, h2, h3, h4, h5, h6, div, time, .post, p, li, td, select, option {
+    h1, h2, h3, h4, h5, h6, div, time, .post, p, li, td, select, option, .timetablecell font * {
         color: var(--color-fg) !important;
     }
-    a:link {
+    a:link, a.blacklink {
         color: var(--color-fg-url) !important;
     }
     
@@ -316,7 +316,11 @@
         background-color: var(--color-bg-input);
     }
     
-    img[src="/WebObjects/cdm.woa/Contents/WebServerResources/y.gif"], td.smallbodytext, td[valign="bottom"], td[background="https://w2prod.sis.yorku.ca/WebObjects/YorkUimages/banner_bg.gif"]{
+    img[src="/WebObjects/cdm.woa/Contents/WebServerResources/y.gif"],
+    td.smallbodytext, 
+    td[valign="bottom"],
+    td[background="https://w2prod.sis.yorku.ca/WebObjects/YorkUimages/banner_bg.gif"]
+    {
         /* Elements to get rid of */
         display: none;
     }
