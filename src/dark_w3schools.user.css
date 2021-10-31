@@ -1,62 +1,79 @@
 /* ==UserStyle==
 @name           w3schools Dark
-@namespace      github.com/hussein-esmail7/userstyles
-@version        1.0.1
-@description    `A dark theme for the website w3schools.com`
+@version        1.0.2
 @author         Hussein Esmail
+@description    `A dark theme for the website w3schools.com`
+@namespace      https://github.com/hussein-esmail7/userstyles
+@homepageURL    https://github.com/hussein-esmail7/userstyles
+@supportURL     https://github.com/hussein-esmail7/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/dark_w3schools.user.css
 ==/UserStyle== */
 
 @-moz-document domain("w3schools.com"), domain("w3docs.com") {
     :root {
-        --color-background: black;
-        --color-text: white;
-        --color-table: #1e1e1e;
-        --color-example: #1e1e1e;
-        --color-url: #7ecbff;
-        --color-url-visited: #eaabff;
-        --color-text-code: #fff;
-        --color-text-code-attribute: #ffb700;
-        --color-text-code-brackets: #6b6a6a;
-        --color-text-code-tags: #3282ff;
+        --color-bg: #141414;            /* Default background color */
+        --color-fg: #f8f8f8;            /* Default text color */
+        --color-bg-table: #1e1e1e;
+        --color-bg-ex: #1e1e1e;
+        --color-fg-url: #7ecbff;
+        --color-fg-url-visited: #eaabff;
+        --color-fg-code: #fff;
+        --color-fg-code-attribute: #ffb700;
+        --color-fg-code-brackets: #6b6a6a;
+        --color-fg-code-tags: #3282ff;
         --color-panel-red: #5c0101;
         color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
     body, .CodeMirror, .w3-white, .w3-bar, .sidesection, .intro, .pagemenu, #leftmenuinnerinner {
-        background-color: var(--color-background) !important;
+        /* Background color */
+        background-color: var(--color-bg) !important;
     }
     .w3-example, .tut_overview {
-        background-color: var(--color-example);
+        /* Background color for examples */
+        background-color: var(--color-bg-ex);
     }
     .w3-codespan, .w3-code, #w3-exerciseform {
-        color: var(--color-text-code);
-        background-color: var(--color-example);
+        color: var(--color-fg-code);
+        background-color: var(--color-bg-ex);
     }
     p, h1, h2, h3, h4, h5, h6, li, span, td, th {
-        color: var(--color-text) !important;
+        /* Text color */
+        color: var(--color-fg) !important;
     }
+
     a:link {
-        color: var(--color-url) !important;
+        color: var(--color-fg-url) !important;
     }
+
     a:visited {
-        color: var(--color-url-visited) !important;
+        color: var(--color-fg-url-visited) !important;
     }
+
     td, th, .w3-note, ul.list {
-        background-color: var(--color-table);
+        /* Background color for tables */
+        background-color: var(--color-bg-table);
     }
+
     .tagcolor, .cssdelimitercolor, .pythoncolor {
-        color: var(--color-text-code-brackets) !important;
+        color: var(--color-fg-code-brackets) !important;
     }
+
     .tagnamecolor, .pythonkeywordcolor {
-        color: var(--color-text-code-tags) !important;
+        color: var(--color-fg-code-tags) !important;
     }
+
     .attributevaluecolor, .csspropertyvaluecolor {
-        color: var(--color-text-code-attribute) !important;
+        color: var(--color-fg-code-attribute) !important;
     }
+
     #snhb-mid_content-0, .cookie-disclaimer {
+        /* Elements to get rid of */
         display: none;
     }
+
     .w3-pale-red {
         background-color: var(--color-panel-red) !important;
     }
+
 }

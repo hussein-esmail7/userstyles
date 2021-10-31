@@ -1,13 +1,16 @@
 /* ==UserStyle==
 @name         Stylus Dark
-@version      1.3.4-branched
-@description  `A dark theme for Stylus`
-@namespace    https://github.com/hussein-esmail7/userstyles
+@version      1.0.1
 @author       Hussein Esmail
+@description  `A dark theme for Stylus`
 @license      CC-BY-SA-4.0
+@namespace      https://github.com/hussein-esmail7/userstyles
+@homepageURL    https://github.com/hussein-esmail7/userstyles
+@supportURL     https://github.com/hussein-esmail7/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/dark_stylus.user.css
 ==/UserStyle== */
 
-/* Note: This style was based off overdodactyl's Userstyle at https://github.com/overdodactyl/Stylus-Dark */
+/* Note: This style was based off overdodactyl's Userstyle at https://github.com/overdodactyl/Stylus-Dark (version 1.3.4) */
 /* I am hosting my own copy because I make changes to my own userstyles every now and then. */
 
 @-moz-document regexp("chrome-extension://.*"),

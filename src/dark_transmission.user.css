@@ -1,27 +1,30 @@
 /* ==UserStyle==
 @name           Transmission Dark
-@namespace      github.com/hussein-esmail7/userstyles
-@version        1.0.0
-@description    `A dark theme for the Transmission web interface`
+@version        1.0.1
 @author         Hussein Esmail
+@description    `A dark theme for the Transmission web interface`
+@namespace      https://github.com/hussein-esmail7/userstyles
+@homepageURL    https://github.com/hussein-esmail7/userstyles
+@supportURL     https://github.com/hussein-esmail7/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/dark_transmission.user.css
 ==/UserStyle== */
 
 @-moz-document url-prefix("http://localhost:9091/transmission/web") {
     :root {
-        --background-color: black;
-        --text-color: white;
-        --color-disabled: red;
+        --color-bg: #141414;            /* Default background color */
+        --color-fg: #f8f8f8;            /* Default text color */
+        --color-bg-disabled: red;
         color-scheme: dark;                 /* Used to get dark scroll bars */
     }
     
     html, .torrent_list, .compact, ul, li, #torrent_container, body, .torrent, .ui-widget-content, .ui-menu-divider, .toolbar {
-        background-color: var(--background-color) !important;
-        color: var(--text-color) !important;
+        background-color: var(--color-bg) !important;
+        color: var(--color-fg) !important;
     }
     
     li.ui-state-disabled {
-        background-color: var(--color-disabled) !important;
-        color: var(--text-color) !important;
+        background-color: var(--color-bg-disabled) !important;
+        color: var(--color-fg) !important;
     }
 
 }

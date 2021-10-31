@@ -1,16 +1,19 @@
 /* ==UserStyle==
 @name           Bibliogram Dark
-@namespace      github.com/hussein-esmail7/userstyles
-@version        1.0.0
-@description    `A dark theme template for bibliogram.art`
+@version        1.0.1
 @author         Hussein Esmail
+@description    `A dark theme template for Bibliogram instances`
+@namespace      https://github.com/hussein-esmail7/userstyles
+@homepageURL    https://github.com/hussein-esmail7/userstyles
+@supportURL     https://github.com/hussein-esmail7/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/dark_bibliogram.user.css
 ==/UserStyle== */
 
 @-moz-document domain("bibliogram.art"), domain("bibliogram.snopyta.org"), domain("bibliogram.pussthecat.org"), domain("bibliogram.nixnet.services"), domain("bibliogram.ethibox.fr"), domain("insta.trom.tf"), domain("bibliogram.hamster.dance"), domain("bib.actionsack.com") { 
     :root {
-        --color-bg: #141414;
+        --color-bg: #141414;            /* Default background color */
+        --color-fg: #f8f8f8;            /* Default text color */
         --color-bg-button: #222222;
-        --color-fg: #f8f8f8;
         --color-bg-banner: grey;
         color-scheme: dark;                 /* Used to get dark scroll bars */
     }
