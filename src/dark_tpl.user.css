@@ -28,7 +28,7 @@
         background-color: var(--color-bg-item-focus);
     }
 
-    body, .SearchBox, .logon, h1, label, .holds-title, .menu-item, span, p, ul, th {
+    body, .SearchBox, .logon, h1, h2, h3, h4, h5, h6, label, .holds-title, .menu-item, span, p, ul, th {
         /* Text color */
         color: var(--color-fg) !important;
     }
