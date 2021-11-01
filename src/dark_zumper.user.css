@@ -1,0 +1,76 @@
+/* ==UserStyle==
+@name           Zumper Dark Theme 
+@version        1.0.0
+@author         Hussein Esmail
+@description    `A dark theme template for websites`
+@namespace      https://github.com/hussein-esmail7/userstyles
+@homepageURL    https://github.com/hussein-esmail7/userstyles
+@supportURL     https://github.com/hussein-esmail7/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/dark_zumper.user.css
+==/UserStyle== */
+
+@-moz-document domain("zumper.com") {
+    :root {
+        --color-bg: #222629;
+        --color-fg: white;
+        --color-fg-secondary: #eeeeee;
+        --color-fg-button: black;
+        --color-bg-table: #31363a;
+        --table-hover-color: #222222;
+        --color-transparent: transparent;
+        --color-bg-search: white;
+    }
+
+    html, body, div.Homepage_homepage__2PN8y, div[class*="CriticalAutocomplete"], div[class*="Desktop_mainNavbar"], div[class*="stickyHeaderContainer"], div[class*="Listables_listItemContainer"] *, div[class*="BubbleDetailPanel"] *, div[class*="MediaCarouselDesktop"], div[class*="CarouselMessageSlide"] {
+        /* Background color */
+        background-color: var(--color-bg) !important;
+    }
+    
+    div[class*="ListItemDesktopView_btnIconContainer"] * {
+        background-color: red !important;
+        
+    }
+    
+    h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl *, i {
+        /* Text color */
+        color: var(--color-fg) !important;
+    }
+
+    input, select, div[class*="Textarea_textareaWrapper"], div[class*="Textarea_textareaWrapper"] * {
+        color: white !important;
+        background-color: black !important;
+    }
+
+    .https_form {
+        background-color: var(--search-bar-color);
+    }
+    
+    button[class*="BaseButton_button"] * {
+        background-color: transparent !important;
+    }
+    button[class*="BaseButton_button"] {
+        box-shadow: 0px 1px 0px 0px #1c1b18;
+        background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+        background-color:#eae0c2;
+        border-radius:15px;
+        border:2px solid #333029;
+        display:inline-block;
+        cursor:pointer;
+        color:#505739;
+        font-family:Arial;
+        font-size:14px;
+        font-weight:bold;
+        padding:12px 16px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #ffffff;
+    }
+    button[class*="BaseButton_button"]:hover {
+        background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+        background-color:#ccc2a6;
+    }
+    button[class*="BaseButton_button"]:active {
+        position:relative;
+        top:1px;
+    }
+
+}
