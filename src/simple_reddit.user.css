@@ -58,7 +58,8 @@
     a._1YWXCINvcuU7nk0ED-bta8[href="/premium"], /* Premium button on profile menu */
     a._1YWXCINvcuU7nk0ED-bta8[href="/talk"], /* Talk button on profile menu */
     a[href="/r/psbattleslive"], /* Hide sponsored button from top nav bar */
-    a[href="/rpan/"] /* RPAN button from top nav bar */
+    a[href="/rpan/"], /* RPAN button from top nav bar */
+	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_11.png"]
     {
         /* Elements to hide */
         display: none !important;
