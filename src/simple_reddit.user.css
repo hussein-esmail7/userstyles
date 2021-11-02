@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Simplified Theme
-@version        1.0.4
+@version        1.0.5
 @author         Hussein Esmail
 @description    `A simpler theme template for Reddit (New)`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -20,6 +20,9 @@
     2. Hide Award button on each post
     3. (try to) Hide Twitter JS frames when linked to a tweet
     4. Hides RPAN items in your feed
+	5. Indents posts and comments book-style
+	6. Removed each person's avatar for each comment
+	7. Removed default custom feed cover images
     */
     
     :root {
@@ -30,10 +33,22 @@
         --color-bg-table: #31363a;
         --table-hover-color: #222222;
         --color-bg-search: white;
-        color-scheme: dark;                 /* Used to get dark scroll bars */
+		--font-default: Verdana, Helvetica, Arial, sans-serif;¬
+		--font-all: monospace;		/* New main font to use */
+		--font-all-spacing: -1px;	/* New main font spacing (if it needs to be altered) */
+        color-scheme: dark;			/* Used to get dark scroll bars */
     }
 
-    
+	*:not(i) {
+		font-family: var(--font-default);
+		letter-spacing: var(--font-all-spacing);
+	}
+
+	._3ryJoIoycVkA88fy40qNJc /* Subreddit names in posts */
+	{
+		font-weight: 500;
+	}
+
     ._17nmfaMf1Rq20sVfEmle0O.yIt5UPS176eVebNGNRQtf ._2MkcR85HDnYngvlVW2gMMa, /* Website thumbnails that aren't really images */
     ._3JgI-GOrkmyIeDeyzXdyUD._2CSlKHjH7lsjx0IpjORx14 iframe /* TODO: Embedded Twitter frame (temporary) */
     {
@@ -59,9 +74,34 @@
     a._1YWXCINvcuU7nk0ED-bta8[href="/talk"], /* Talk button on profile menu */
     a[href="/r/psbattleslive"], /* Hide sponsored button from top nav bar */
     a[href="/rpan/"], /* RPAN button from top nav bar */
-	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_11.png"]
-    {
+	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_1.png"],
+	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_2.png"],
+	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_3.png"],
+	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_4.png"],
+	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_5.png"],
+	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_6.png"],
+	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_7.png"],
+	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_8.png"],
+	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_9.png"],
+	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_10.png"],
+	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_11.png"],
+    ._2mHuuvyV9doV3zwbZPtIPG.ZvAy-PJfJmB8pzQxpz1sS, /* Avatar Images in comments */
+	._3Wv3am0TXfTcugZJ6niui ._36AIN2ppxy_z-XSDxTvYj5 /* Comment thread line start */
+	{
         /* Elements to hide */
         display: none !important;
     }
+
+	._1qeIAgB0cPwnLhDF9XSiJM /* Comment and post paragraphs */
+	{
+		padding: 0em;
+		text-indent: 2em; /* Paragraph-style indentation */
+	}
+
+	li ._1qeIAgB0cPwnLhDF9XSiJM /* Comment and post paragraphs */
+	{
+		padding: 0em;
+		text-indent: 0em; /* Undo paragraph-style for list items */
+	}
+
 }
