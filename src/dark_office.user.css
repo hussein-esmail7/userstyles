@@ -56,3 +56,50 @@
     }
     
 }
+
+@-moz-document domain("login.microsoftonline.com") {
+    :root {
+        --color-bg: #141414;            /* Default background color */
+        --color-fg: #f8f8f8;            /* Default text color */
+        --color-bg-secondary: #2f2f2f;
+        --color-bg-tertiary: #3e3e3e;
+        --color-bg-lighter: #eeeeee;
+        --color-bg-table: #31363a;
+        --color-fg-secondary: #eeeeee;
+        --color-fg-button: black;
+        --color-selected: #3f3f3f;
+        --color-inprogress: darkcyan;
+        --table-hover-color: #222222;
+        --color-bg-search: white;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
+    }
+
+	.middle, /* Login background */
+	.sign-in-box, /* Self-explanatory */
+	.ext-title,
+	#displayName,
+	#idBoilerPlateText
+	{
+		background-color: var(--color-bg);
+		color: var(--color-fg);
+	}
+
+	.tile-menu div[role="button"] img, /* Menu dots and profile picture */
+	.background-logo /* "Outlook" header image */
+	{
+		background-color: white;
+	}
+
+	.full-height
+	{
+		border: none !important;
+		padding: 0 !important;
+		margin: none !important;
+	}
+
+	input[name="passwd"]
+	{
+		background-color: var(--color-bg-search) !important;
+		color: white !important;
+	}
+}

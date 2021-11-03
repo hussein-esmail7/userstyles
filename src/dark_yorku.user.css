@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           YorkU Dark
-@version        1.0.5
+@version        1.0.6
 @author         Hussein Esmail
 @description    `A dark theme for York University websites`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -33,6 +33,7 @@
         --color-bg-panel: #222629;
         --color-bg-secondary: #201919;
         --color-bg-url-hover: darkred;
+		--color-bg-dropdown-hover: #202020;
         --color-fg: #f8f8f8;              /* Default text color */
         --color-fg-url: red;              /* Default URL foreground color */
         --color-fg-url-course: orange;    /* Foreground color for course URLs on homepage */
@@ -42,7 +43,10 @@
         color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
-    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, .dropdown-menu, .sectionhead, #nav-drawer, .list-group, ul, li, .list-group-item, .bg-light, .page-link, .card-block, .collapse, .region_main_settings_menu_proxy, div[id^="moodle-dialogue-yui"], th, td, div#tabs, .mod_turnitintooltwo .ui-widget-header, .mod_turnitintooltwo_submissions_data_table .odd .sorting_1, #page, div.card.login, .ps_box-group, .fp-navbar, .filemanager-container, .calendar_event_course {
+    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, .dropdown-menu, .sectionhead, #nav-drawer, .list-group, ul, li, .list-group-item, .bg-light, .page-link, .card-block, .collapse, .region_main_settings_menu_proxy, div[id^="moodle-dialogue-yui"], th, td, div#tabs, .mod_turnitintooltwo .ui-widget-header, .mod_turnitintooltwo_submissions_data_table .odd .sorting_1, #page, div.card.login, .ps_box-group, .fp-navbar, .filemanager-container, .calendar_event_course, 
+	.btn-secondary, /* "Customize this page" button on homepage */
+	#quiz-timer /* Red timer box in corner when taking a quiz */
+	{
         background-color: var(--color-bg) !important;
         
     }
@@ -59,7 +63,9 @@
         /* Borders to get rid of */
         border: none !important;
     }
-    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, h1, h2, h3, h4, h5, h6, .card-title, .text-muted, .dropdown-toggle, .logininfo, .eris_search_library, a, td, pre, select, textarea, .ablock div div span, th, div.mod_turnitintooltwo_refresh_link, p span, p strong {
+    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, h1, h2, h3, h4, h5, h6, .card-title, .text-muted, .dropdown-toggle, .logininfo, .eris_search_library, a, td, pre, select, textarea, .ablock div div span, th, div.mod_turnitintooltwo_refresh_link, p span, p strong, .btn-secondary, 
+	.que .formulation /* Text for multiple choice questions and T/F */
+	{
         color: var(--color-fg) !important;
     }
     
@@ -226,10 +232,17 @@
     
     @media (min-width: 576px) {
         .card-deck {
-            /* Make each option button for each course on homepage on right side */
+			/* Make each course button on homepage as list rather than buttons */
             flex-direction: column !important;
         }
     }
+
+	@media (min-width: 840px) {
+		.dashboard-card-deck:not(.fixed-width-cards) .dashboard-card {
+			/* Make each course button on homepage span whole screen size on smaller */
+			width: 100%;
+		}
+	}
     
     small {
         /* Default = 80%, looks too small (some profs put entire paragraphs in this) */
@@ -240,6 +253,21 @@
         /* These URLs link to themselves, which is a bit pointless */
         color: var(--color-fg) !important;
     }
+
+	@media (min-width: 768px) {
+		.container {
+			max-width: 100%;
+		}
+	}
+
+	.dropdown-item:hover, .dropdown-item:active {
+		background-color: var(--color-bg-dropdown-hover) !important;
+	}
+
+	.block_online_users div div .info /* Online users text align to left */
+	{
+		text-align: left !important;
+	}
 }
 
 @-moz-document domain("yfile.news.yorku.ca") {

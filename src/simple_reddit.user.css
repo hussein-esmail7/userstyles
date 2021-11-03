@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Simplified Theme
-@version        1.0.5
+@version        1.0.6
 @author         Hussein Esmail
 @description    `A simpler theme template for Reddit (New)`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -104,4 +104,9 @@
 		text-indent: 0em; /* Undo paragraph-style for list items */
 	}
 
+	.wBtTDilkW_rtT2k5x3eie /* Sort by block */
+	{
+		/* Make it thinner to save space */
+		padding: inherit;
+	}
 }
