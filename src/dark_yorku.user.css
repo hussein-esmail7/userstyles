@@ -83,7 +83,8 @@
 	.filemanager-container,
 	.calendar_event_course,
 	.btn-secondary, /* "Customize this page" button on homepage */
-	#quiz-timer /* Red timer box in corner when taking a quiz */
+	#quiz-timer, /* Red timer box in corner when taking a quiz */
+	a:focus
 	{
         background-color: var(--color-bg) !important;
         
@@ -374,6 +375,23 @@
 	.block_online_users div div .info /* Online users text align to left */
 	{
 		text-align: left !important;
+	}
+
+	a:focus
+	{
+		box-shadow: none !important;
+	}
+
+	img.activityicon /* File icons in a course (PDF, URL, etc.) */
+	{
+		/* Change height of icons */
+		height: 20px;
+		width: 20px;
+	}
+
+
+	.accesshide {
+		position: relative;
 	}
 }
 
