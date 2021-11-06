@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           YorkU Dark
-@version        1.0.6
+@version        1.0.7
 @author         Hussein Esmail
 @description    `A dark theme for York University websites`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -33,17 +33,55 @@
         --color-bg-panel: #222629;
         --color-bg-secondary: #201919;
         --color-bg-url-hover: darkred;
+        --color-bg-url-visited: transparent;
 		--color-bg-dropdown-hover: #202020;
         --color-fg: #f8f8f8;              /* Default text color */
         --color-fg-url: red;              /* Default URL foreground color */
         --color-fg-url-course: orange;    /* Foreground color for course URLs on homepage */
+        --color-fg-danger: red;
+        --color-fg-success: green;
         --color-nav: #141414;             /* Used to be: #2e2e2e */
         --dark-red: #7d0800;
         --font-all: monospace;              /* New main font to use */
+        --font-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
         color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
-    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, .dropdown-menu, .sectionhead, #nav-drawer, .list-group, ul, li, .list-group-item, .bg-light, .page-link, .card-block, .collapse, .region_main_settings_menu_proxy, div[id^="moodle-dialogue-yui"], th, td, div#tabs, .mod_turnitintooltwo .ui-widget-header, .mod_turnitintooltwo_submissions_data_table .odd .sorting_1, #page, div.card.login, .ps_box-group, .fp-navbar, .filemanager-container, .calendar_event_course, 
+    html,
+	body,
+	p,
+	#page-wrapper,
+	.block-region,
+	#region-main,
+	.card-body,
+	.pt-3,
+	.card-footer,
+	#region-main-box,
+	.row,
+	.dropdown-menu,
+	.sectionhead,
+	#nav-drawer,
+	.list-group,
+	ul,
+	li,
+	.list-group-item,
+	.bg-light,
+	.page-link,
+	.card-block,
+	.collapse,
+	.region_main_settings_menu_proxy,
+	div[id^="moodle-dialogue-yui"],
+	th,
+	td,
+	div#tabs,
+	.mod_turnitintooltwo .ui-widget-header,
+	.mod_turnitintooltwo_submissions_data_table .odd .sorting_1,
+	#page,
+	div.card.login,
+	.ps_box-group,
+	.fp-navbar,
+	.filemanager-container,
+	.calendar_event_course,
 	.btn-secondary, /* "Customize this page" button on homepage */
 	#quiz-timer /* Red timer box in corner when taking a quiz */
 	{
@@ -51,25 +89,65 @@
         
     }
 
-    .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, .mod_turnitintooltwo_listbar, .mod_turnitintooltwo_refresh_link {
-        background: none !important;
-    }
-    
-    .ui-corner-all {
-        border-radius: 0px !important;
-    }
-    
-    .mod_turnitintooltwo_listbar, .block_online_users, .block_yu_messager, .dashboard-card-img, header#page-header div .card  {
+    .mod_turnitintooltwo_listbar,
+    .block_online_users,
+    .block_yu_messager,
+    .dashboard-card-img,
+    header#page-header div .card {
         /* Borders to get rid of */
         border: none !important;
     }
-    html, body, p, #page-wrapper, .block-region, #region-main, .card-body, .pt-3, .card-footer, #region-main-box, .row, h1, h2, h3, h4, h5, h6, .card-title, .text-muted, .dropdown-toggle, .logininfo, .eris_search_library, a, td, pre, select, textarea, .ablock div div span, th, div.mod_turnitintooltwo_refresh_link, p span, p strong, .btn-secondary, 
-	.que .formulation /* Text for multiple choice questions and T/F */
+
+    html, body,
+    p,                  /* Paragraphs */ 
+    #page-wrapper,
+    .block-region,
+    #region-main,
+    .card-body,
+    .pt-3,
+    .card-footer,
+    #region-main-box,
+    .row,
+    h1, h2, h3, h4, h5, h6,
+    .card-title,
+    .text-muted,
+    .dropdown-toggle,
+    .logininfo,
+    .eris_search_library,
+    a,
+    td,
+    pre,            /* Code areas */
+    select,
+    textarea,
+    .ablock div div span,
+    th,
+    div.mod_turnitintooltwo_refresh_link,
+    p span,
+    p strong,
+    .btn-secondary,         /* Mainly for "Customize Home Page" button on homepage */
+	.que .formulation       /* Text for multiple choice questions and T/F */
 	{
         color: var(--color-fg) !important;
     }
-    
-    #york-logo, .eris_search_library, table, table > *  {
+
+    .ui-state-active,
+    .ui-widget-content .ui-state-active,
+    .ui-widget-header .ui-state-active,
+    .mod_turnitintooltwo_listbar,
+    .mod_turnitintooltwo_refresh_link
+    {
+        background: none !important;
+    }
+
+    .ui-corner-all {
+        border-radius: 0px !important;
+    }
+
+    #york-logo, 
+    .eris_search_library, 
+    table, 
+    table > *  
+    {
         background-color: var(--color-bg-secondary);
     }
 
@@ -80,16 +158,22 @@
     a:link {
         color: var(--color-fg-url) !important;
     }
-    
-    a:active, a:hover {
+
+    a:active,
+    a:hover
+    {
         background-color: var(--color-bg-url-hover) !important;
     }
-    
-    a:visited {
-        background-color: transparent !important;
+
+    a:visited
+    {
+        background-color: var(--color-bg-url-visited) !important;
     }
 
-    .alert, .alert-info, .alert * {
+    .alert,
+    .alert-info,
+    .alert *
+    {
         background-color: var(--color-bg-alert) !important;
         border: 0px;
     }
@@ -99,28 +183,28 @@
     }
 
     .block_slideshow,           /* Slideshow at top of homescreen */
-    #card-widgetmenu, 
-    #ycrest, 
+    #card-widgetmenu,
+    #ycrest,
     .watson-btn-container,      /* Ask Savy button */
-    .feedback div p, 
-    .feedback div div div div br, 
-    .feedback div div br, 
-    .block_yu_messager, 
+    .feedback div p,
+    .feedback div div div div br,
+    .feedback div div br,
+    .block_yu_messager,
     .dashboard-card-img,        /* Image for each course on homescreen */
-    #instance-222305-header, 
+    #instance-222305-header,
     .block_badges,              /* Badges block on homescreen */
     .block_calendar_month,      /* Calendar block on homescreen */
     .dashboard-card-footer,     /* Progress bars below courses */
     .block_important_links,     /* Links section I never use */
     .block_library              /* Library search block */
-    { 
+    {
         /* Elements to get rid of */
         display: none;
     }
-    
-    .bg-white, 
+
+    .bg-white,
     .nav-link,                      /* Language dropdown on left */
-    [aria-controls="nav-drawer"], 
+    [aria-controls="nav-drawer"],
     #page-footer,
     button.btn.nav-link,            /* Nav button on left side */
     ul.navbar-nav,                  /* Buttons beside profile menu */
@@ -129,99 +213,120 @@
         /* Navigation Bar */
         background-color: var(--color-nav) !important;
     }
-    
+
     .sectionhead {
         border: white 1px solid;
     }
-    
-    select, textarea {
+
+    select,
+    textarea
+    {
         /* Input boxes */
         background-color: var(--color-bg-input) !important;
     }
-    
-    .formulation, .info, .qtext p, .qtext div div div p, .ablock div div div div div div div p {
+
+    .formulation,
+    .info,
+    .qtext p,
+    .qtext div div div p,
+    .ablock div div div div div div div p
+    {
+        /* Background color of a quiz's question panel */
         background-color: var(--color-bg-panel) !important;
     }
+
     i.text-success {
-        background-color: green !important;
+        background-color: var(--color-fg-success) !important;
     }
+
     i.text-danger {
-        background-color: red !important;
+        background-color: var(--color-fg-danger) !important;
     }
-    
+
     div.mod_turnitintooltwo_refresh_link {
         border: 1px solid white;
     }
-    
-    div.col.span_1_of_4.mobile_full *, .york-global-footer-links {
+
+    div.col.span_1_of_4.mobile_full *, 
+    .york-global-footer-links 
+    {
         background-color: var(--dark-red) !important;
     }
-    
+
     div.card-text .info {
-        background-color: inherit !important; 
+        background-color: inherit !important;
     }
-    
+
     header#page-header div .card {
+        /* Reduces blank space. Still need some for the "Customise this page" button on homepage */
         height: 50px;
     }
-    
+
     .block_myoverview .paged-content-page-container {
-        min-height: 5rem;
+        /* Reduces blank space underneath courses homepage before the "Show #" dropdown */
+        min-height: 0rem;
     }
-    
+
     .block_myoverview .content {
         min-height: 10rem;
     }
-    
+
     div.menubar {
         background-color: inherit !important;
     }
-    
+
     .calendar_event_course {
         border-color: inherit !important;
     }
-    
+
     nav[role="navigation"] {
         display: block !important;
     }
-    
+
     @media (min-width: 1200px) {
         #region-main.has-blocks .dashboard-card-deck:not(.fixed-width-cards) .dashboard-card {
             /* Homepage courses list as list not blocks */
             width: inherit;
         }
     }
-    
-    .dashboard-card, .course-info-container {
+
+    .dashboard-card,			/* Homepage: Courses in courses block */
+	.course-info-container		/* Homepage: Courses in courses block */
+	{
         background-color: inherit !important;
     }
-    
-    .dashboard-card, .course-info-container,
-    .block_timeline,
-    .block_myoverview,
-    .block_calendar_upcoming
+
+    .dashboard-card,			/* Used to reduce spacing between courses list */
+	.course-info-container,
+    .block_timeline,			/* Homepage: Timeline block */
+    .block_myoverview,			/* Homepage: Courses main block */
+    .block_calendar_upcoming	/* Homepage: Calendar block */
     {
+		/* Items to remove borders of */
         border: none;
     }
-    
+
     .coursename, 
     .course-info-container .align-items-start .text-truncate .coursename 
     {
         /* Change colour of course URLs specifically */
         color: var(--color-fg-url-course) !important;
     }
-    
+
     .coursename:hover, a:hover {
         /* Do not show red background when hovering a URL */
         background-color: inherit !important;
     }
-    
-    *:not(i) {
+
+    *:not(i)
+    /* *:not(i, .vjs-icon-play:before, .video-js .vjs-play-control .vjs-icon-placeholder:before, .video-js .vjs-big-play-button .vjs-icon-placeholder:before)  */
+    {
         /* Monospace everything except symbols (i tag) */
         /* i tags are used for images, and emojis, which this font doesn't have */
+        /* The second :not() block is for the inline ech360 video player icons */
         font-family: var(--font-all) !important;
     }
-    
+
     .block .block-cards .course-info-container,
     .block_online_users div div,
     .block_online_users .p-3 {
@@ -229,7 +334,7 @@
         padding: 0;
         margin: 0 !important;
     }
-    
+
     @media (min-width: 576px) {
         .card-deck {
 			/* Make each course button on homepage as list rather than buttons */
@@ -243,14 +348,14 @@
 			width: 100%;
 		}
 	}
-    
+
     small {
         /* Default = 80%, looks too small (some profs put entire paragraphs in this) */
         font-size: 90%;
     }
-    
-    .sectionname span a {
-        /* These URLs link to themselves, which is a bit pointless */
+
+    .sectionname span a /* These URLs link to themselves, which is a bit pointless */
+    {
         color: var(--color-fg) !important;
     }
 
@@ -260,7 +365,9 @@
 		}
 	}
 
-	.dropdown-item:hover, .dropdown-item:active {
+	.dropdown-item:hover,
+	.dropdown-item:active
+    {
 		background-color: var(--color-bg-dropdown-hover) !important;
 	}
 
@@ -542,7 +649,5 @@
         color: white !important; 
     }
     
-    
-
-    
 }
+
