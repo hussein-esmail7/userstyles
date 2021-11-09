@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           StackExchange Dark
-@version        1.0.1
+@version        1.0.2
 @author         Hussein Esmail
 @description    `A dark theme for the StackExchange websites`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -9,57 +9,109 @@
 @updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/dark_stack_exchange.user.css
 ==/UserStyle== */
 
-@-moz-document domain("stackexchange.com"), domain("superuser.com"), domain("askubuntu.com") {
+@-moz-document domain("stackexchange.com"),
+domain("superuser.com"),
+domain("askubuntu.com")
+{
+
     :root {
         --color-bg: #141414;            /* Default background color */
         --color-fg: #f8f8f8;            /* Default text color */
-        --color-url: #d2d0ff;
+        --color-url: #d2d0ff;			/* URL color */
         --color-bg-code: #333333;
         --color-code-blue: lightblue;
         --color-button-active: #7a7a7a;
         --color-bg-button: #003faf;
         --color-bg-textarea: #404040;
-        color-scheme: dark;                 /* Used to get dark scroll bars */
+        color-scheme: dark;             /* Used to get dark scroll bars */
     }
 
-    html, body, .container, #content, footer, header, .s-sidebarwidget, .s-sidebarwidget--header, .lv-info, .number, .lv-stats-wrapper, .dialog-content, .s-modal--dialog, .bg-white, .ps-relative, .d-flex, .tag-suggestions, .achievements-dialog, .achievements-dialog .header {
+    html,
+	body,
+	.container,
+	#content,
+	footer,
+	header,
+	.s-sidebarwidget,
+	.s-sidebarwidget--header,
+	.lv-info,
+	.number,
+	.lv-stats-wrapper,
+	.dialog-content,
+	.s-modal--dialog,
+	.bg-white,
+	.ps-relative,
+	.d-flex,
+	.tag-suggestions,
+	.achievements-dialog,
+	.achievements-dialog .header
+	{
+		/* Main background color */
         background-color: var(--color-bg) !important;
     }
-    
+
     body {
         background-image: none; 
     }
-    .container, #content, footer, header, code, .post-tag, .s-sidebarwidget, .s-sidebarwidget--header, h1, h2, h3, h4, h5, h6, .s-btn, .mr2, .js-vote-count, .fs-fine, textarea, label, .user-action-time, .number, .dialog-content, p, li, .fs-body1, .s-description, input {
+
+    .container,
+	#content,
+	footer,
+	header,
+	code,
+	.post-tag,
+	.s-sidebarwidget,
+	.s-sidebarwidget--header,
+	h1, h2, h3, h4, h5, h6,
+	.s-btn,
+	.mr2,
+	.js-vote-count,
+	.fs-fine,
+	textarea,
+	label,
+	.user-action-time,
+	.number,
+	.dialog-content,
+	p,
+	li,
+	.fs-body1,
+	.s-description,
+	input,
+	pre /* Code text */
+	{
+		/* Main text color */
         color: var(--color-fg) !important;
     }
-    
+
     code, pre, .post-tag {
+		/* Code boxes background color */
         background-color: var(--color-bg-code) !important;
     }
-    
+
     .question-hyperlink, .relativetime, .js-gps-track, .js-add-link, a {
+		/* URL text color */
         color: var(--color-url) !important;
     }
-    
+
     .js-freemium-cta {
         /* Banished elements */
         display: none;
     }
-    
+
     .hljs-keyword {
-        /* Blue code */
         color: var(--color-code-blue) !important;
     }
     
     .youarehere, .youarehere > * {
         background-color: var(--color-button-active) !important;
     }
-    
+
     textarea, input, .s-input {
         background-color: var(--color-bg-textarea) !important;
     }
-    
+
     .s-btn__filled {
         background-color: var(--color-bg-button);
     }
+
 }

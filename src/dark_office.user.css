@@ -29,32 +29,36 @@
     .plannerApp, .sideNav, .ms-Callout-main, .plannerAppCallout, .o365cs-base, .form-content-container, .office-form-body {
         background-color: var(--color-bg) !important;
     }
-    
+
     h1, h2, h3, h4, h5, h6, tspan, label, input, span, div.name, [class^="overflowInitialsIcon"], .plannerApp, .sideNav, .selected, span.leftNavItem, .ms-Icon, .welcome, .tileName, .ms-TooltipHost, .value, .primaryTextSectionTitle, .pivotLink, .title, .dueDate, .addTaskText, .addColumn, .ms-Checkbox-text, .label, .htmlContent, .commenterName, .timestamp, .ms-TextField-field, .ms-Callout-main, .text-format-content, .office-form-footer-block, .office-form-notice-password {
         /* Main text color */
         color: var(--color-fg) !important;
     }
+
     .ms-TextField-fieldGroup, button.header {
         background-color: var(--color-bg-tertiary) !important;
     }
+
     .rollupChart {
         background-color: var(--color-bg-lighter) !important;
     }
-    
+
     img, span.leftNavItem, .ms-Icon, .linkContents {
         background-color: transparent;
     }
-    
+
     li.selected {
         background-color: var(--color-selected) !important;
     }
+
     .planCard, div.container, .addButton, .taskEditor-dialog-container, .taskEditor-dialog-content, .toggle-immersive-reader-button, input, textarea, .button-content, .office-form-footer, .ms-ContextualMenu-itemText {
         background-color: var(--color-bg-secondary) !important;
     }
+
     .color-inprogress {
         color: var(--color-inprogress) !important;
     }
-    
+
 }
 
 @-moz-document domain("login.microsoftonline.com"),
