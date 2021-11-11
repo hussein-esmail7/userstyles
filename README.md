@@ -51,5 +51,8 @@ You can also see my published userstyles
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_zumper.user.css) [Dark] Zumper
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/simple_reddit.user.css) [Simplified] Reddit
 
+## Other Styles I Use + Recommend
+- [[Install]](https://userstyles.world/style/216/google-drive-dark) [Dark] Google Drive
+
 # Donate
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/husseinesmail)
