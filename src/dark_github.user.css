@@ -16,14 +16,16 @@
         --color-fg: #f8f8f8;            /* Default text color */
         --color-fg-secondary: #eeeeee;
         --color-fg-button: black;
-		--color-fg-url: blue;
         --color-bg-table: #31363a;
+		--font-all: monospace;						/* New main font to use */
+		--font-all-spacing: -1px; /* New main font spacing (if it needs to be altered) */
         --table-hover-color: #222222;
         --color-bg-search: white;
+		--space-sidebar-repo: 5px; /* Space between top and bottom in repo */
         color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
-    html, body, div, p, li, ul {
+    html, body, div, p, li, ul, header {
         /* Background color */
         background-color: var(--color-bg) !important;
     }
@@ -39,9 +41,26 @@
         background-color: var(--color-bg-search);
     }
 
-	a:link {
-		color: var(--color-fg-url);
+	*:not(i) {
+		font-family: var(--font-all);
+		letter-spacing: var(--font-all-spacing);
+	}
+	
+	.BorderGrid--spacious .BorderGrid-cell {
+		/* Right bar spacing on a repo (About, Releases, etc.) */
+		padding-top: var(--space-sidebar-repo);
+		padding-bottom: var(--space-sidebar-repo);
 	}
 
+	.UnderlineNav-item {
+		/* Repo tabs spacing (Code, Issues, PRs, Actions, etc.) */
+		padding: 0px;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+
+	.Box-row--focus-gray {
+		background-color: 
+	}
 }
 
