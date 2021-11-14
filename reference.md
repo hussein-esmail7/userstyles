@@ -9,7 +9,7 @@ This document is my personal cheetsheet when writing new styles.
 - a[href^="val"] &#9658; Contains "val"
 
 ## HTML symbols
-[comment]: <> (https://www.w3schools.com/charsets/ref_utf_arrows.asp)
+<!-- https://www.w3schools.com/charsets/ref_utf_arrows.asp -->
 | Symbol | Code | Description |
 | ------ | ---- | ----------- |
 | &larr; | \&larr\; | (Left) |
