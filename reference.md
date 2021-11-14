@@ -10,8 +10,6 @@ This document is my personal cheetsheet when writing new styles.
 
 ## HTML symbols
 [comment]: <> (https://www.w3schools.com/charsets/ref_utf_arrows.asp)
-| Symbol | Code | Description |
-| ------ | ---- | ----------- |
 | &larr; | \&larr\; | (Left) |
 | &uarr; | \&uarr\; | (Up) |
 | &rarr; | \&rarr\; | (Right) |
