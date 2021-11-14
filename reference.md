@@ -2,6 +2,6 @@
 
 This document is my personal cheetsheet when writing new styles.
 
-## a[href...] string symbols:
-- [href*="val"] -> Begins with "val"
-- 
+## a[href...] string symbols
+- [href*="val"] &#9658; Begins with "val"
+- [href$="val" -> ]
