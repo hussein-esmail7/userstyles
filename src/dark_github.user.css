@@ -25,7 +25,15 @@
         color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
-    html, body, div, p, li, ul, header {
+    html,
+	body,
+	div:not(.Box-row--focus-gray *, .Box-row--focus-gray), /* So files can be focused on repo page */
+	p,
+	li,
+	ul,
+	header,
+	.color-bg-default /* README.md header */
+	{
         /* Background color */
         background-color: var(--color-bg) !important;
     }
@@ -59,8 +67,23 @@
 		padding-left: 5px;
 	}
 
-	.Box-row--focus-gray {
-		background-color: 
+	/* .Box-row--focus-gray {
+		background-color: #1f1f1f !important;
+	} */
+
+	ul.UnderlineNav-body {
+		margin: auto !important;
 	}
+	
+	span.v-align-middle:contains("Public") {
+		display: none !important;
+	}
+
+	/* This block makes the header bar as wide as the content and now window width */
+	/*[[leftcolumn]]*/
+	/*[[header]]*/
+	/*[[notificationscreen]]*/
+	/*[[commitwidth]]*/
+	/*[[filebrowserwidth]]*/
 }
 
