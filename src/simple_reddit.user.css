@@ -74,17 +74,7 @@
     a._1YWXCINvcuU7nk0ED-bta8[href="/talk"], /* Talk button on profile menu */
     a[href="/r/psbattleslive"], /* Hide sponsored button from top nav bar */
     a[href="/rpan/"], /* RPAN button from top nav bar */
-	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_1.png"],
-	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_2.png"],
-	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_3.png"],
-	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_4.png"],
-	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_5.png"],
-	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_6.png"],
-	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_7.png"],
-	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_8.png"],
-	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_9.png"],
-	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_10.png"],
-	img[src="https://www.redditstatic.com/custom_feeds/custom_feed_default_11.png"],
+	a[href*="/m/"] img, /* Custom feed's thumbnails on sidebar */
     ._2mHuuvyV9doV3zwbZPtIPG.ZvAy-PJfJmB8pzQxpz1sS, /* Avatar Images in comments */
 	._3Wv3am0TXfTcugZJ6niui ._36AIN2ppxy_z-XSDxTvYj5 /* Comment thread line start */
 	{
@@ -108,5 +98,12 @@
 	{
 		/* Make it thinner to save space */
 		padding: inherit;
+	}
+
+	a[href*="/m/"] span /* Custom feed's text on sidebar */
+	{
+		/* Removes left spacing on custom feeds that help with the images */
+		/* But the images are no longer there */
+		margin-left: 0px !important;
 	}
 }
