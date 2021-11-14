@@ -31,6 +31,7 @@ You can also see my published userstyles
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_bibliogram.user.css) [Dark] Bibliogram
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_crowdmark.user.css) [Dark] Crowdmark
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_echo360.user.css) [Dark] Echo360 Lecture Platform
+- [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_github.user.css) [Dark] Github
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_indeed.user.css) [Dark] Indeed Job Search
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_kijiji.user.css) [Dark] Kijiji
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_libgen.user.css) [Dark] Libgen
