@@ -16,8 +16,9 @@ This document is my personal cheetsheet when writing new styles.
 <!-- https://www.w3schools.com/charsets/ref_utf_arrows.asp -->
 | Symbol | Code | Description |
 | ------ | ---- | ----------- |
-| &larr; | \&larr\; | (Left) |
-| &uarr; | \&uarr\; | (Up) |
-| &rarr; | \&rarr\; | (Right) |
-| &darr; | \&darr\; | (Down) |
-| &#8627; | \&\#8627\; | (Downwards arrow with top rightwards) |
+| &larr; | \&larr\; | Left |
+| &uarr; | \&uarr\; | Up |
+| &rarr; | \&rarr\; | Right |
+| &darr; | \&darr\; | Down |
+| &#8627; | \&\#8627\; | Downwards arrow with top rightwardsx) |
+| &there4; | \&there4\; | Therefore |
