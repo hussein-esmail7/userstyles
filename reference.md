@@ -8,3 +8,11 @@ This document is my personal cheetsheet when writing new styles.
 - a[href$="val"] &#9658; Ends with "val"
 - a[href^="val"] &#9658; Contains "val"
 
+## HTML symbols
+[comment]: <> (https://www.w3schools.com/charsets/ref_utf_arrows.asp)
+Arrows
+- &larr; \&larr\; (Left)
+- &uarr; \&uarr\; (Up) 
+- &rarr; \&rarr\; (Right)
+- &darr; \&darr\; (Down)
+- &#8627; \&\#8627\; (Downwards arrow with top rightwards)
