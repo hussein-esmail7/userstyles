@@ -4,6 +4,8 @@ This document is my personal cheetsheet when writing new styles.
 
 ## Table of Contents
 - [a[href...] string symbols](#ahref-string-symbols)
+- [HTML Symbols](#html-symbols)
+
 ## a[href...] string symbols
 - a[href\*="val"] &#9658; Begins with "val"
 - a[href="val"] &#9658; Equals "val"
