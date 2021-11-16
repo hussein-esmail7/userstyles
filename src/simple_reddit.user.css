@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Simplified Theme
-@version        1.0.8
+@version        1.1.0
 @author         Hussein Esmail
 @description    `A simpler theme template for Reddit (New)`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -10,11 +10,10 @@
 ==/UserStyle== */
 
 
-
 @-moz-document domain("reddit.com") {
 
     /* Reddit - New Theme */
-    
+
     /* What this theme does:
     1. Hide Premium/Coins/Powerups/Talk/Predictions buttons on sidebars
     2. Hide Award button on each post
@@ -24,7 +23,7 @@
 	6. Removed each person's avatar for each comment
 	7. Removed default custom feed cover images
     */
-    
+
     :root {
         --color-bg: #141414;
         --color-fg: #f8f8f8;
@@ -33,7 +32,7 @@
         --color-bg-table: #31363a;
         --table-hover-color: #222222;
         --color-bg-search: white;
-		--font-default: Verdana, Helvetica, Arial, sans-serif;¬
+		--font-default: Verdana, Helvetica, Arial, sans-serif;
 		--font-all: monospace;		/* New main font to use */
 		--font-all-spacing: -1px;	/* New main font spacing (if it needs to be altered) */
         color-scheme: dark;			/* Used to get dark scroll bars */
@@ -56,6 +55,18 @@
         width: 0px;
     }
 
+	/* New background color */
+	._3ozFtOe6WpJEMUtxDOIvtU, /* Main panel background */
+	.uI_hDmU5GSiudtABRz_37, /* Content of a specific post link */
+	.uI_hDmU5GSiudtABRz_37 *:not(._3MknXZVbkWU8JL9XGlzASi *), /* Content of a specific post link except for text box for new comments */
+	._1poyrkZ7g36PawDueRza-J, /* Each post's preview box in feed */
+	._3Qkp11fjcAw9I9wtLo8frE, /* Upvote side of each post in feed */
+	._3JDs8KEQIXSMn1bTF2ZqJ_, /* Top border of a subreddit (center) */
+	.q4a8asWOWdfdniAbgNhMh /* Top border of a subreddit (padding) */
+	{
+		background-color: var(--color-bg) !important;
+	}
+
     /* Elements to hide */
     ._17nmfaMf1Rq20sVfEmle0O.yIt5UPS176eVebNGNRQtf ._2MkcR85HDnYngvlVW2gMMa, /* Website thumbnails that aren't really images */
     ._1EWxiIupuIjiExPQeK4Kud, /* Award button on each post */
@@ -76,7 +87,12 @@
     a[href="/rpan/"], /* RPAN button from top nav bar */
 	a[href*="/m/"] img, /* Custom feed's thumbnails on sidebar */
     ._2mHuuvyV9doV3zwbZPtIPG.ZvAy-PJfJmB8pzQxpz1sS, /* Avatar Images in comments */
-	._3Wv3am0TXfTcugZJ6niui ._36AIN2ppxy_z-XSDxTvYj5 /* Comment thread line start */
+	._3Wv3am0TXfTcugZJ6niui ._36AIN2ppxy_z-XSDxTvYj5, /* Comment thread line start */
+	.M2Hk_S2yvXpsNPfZMBMur i, /* Icons for sort by modes */
+	._1b1Jalg2nxA_Z-BjKXRfAV, /* Reddit Premium ad on sidebar */
+	.QscnL9OySMkHhGudEvEya img, /* Subreddit logo at top */
+	h1._2yYPPW47QxD4lFQTKpfpLQ, /* Subreddit slogan */
+	.jEUbSHJJx8vISKpWirlfx._1dJtiWITrnvIbQdXgYgdym /* Free coins button on top bar */
 	{
         /* Elements to hide */
         display: none !important;
@@ -105,5 +121,45 @@
 		/* Removes left spacing on custom feeds that help with the images */
 		/* But the images are no longer there */
 		margin-left: 0px !important;
+	}
+
+	._32pB7ODBwG3OSx1u_17g58
+	{
+		padding: 0 !important; /* Spacing under URLs of articles */
+	}
+
+	.VatfkH4hd3AcIOCT15Zai, /* Location button on r/popular */
+	.GzkzdrqG-NjAYH7eKJan4 /* Date button on r/popular on Top mode */
+	{
+		padding: 0px !important;
+	}
+
+	a.M2Hk_S2yvXpsNPfZMBMur /* Sort by buttons, reduce size */
+	{
+		padding: 0px 8px;
+	}
+
+	.m3aNC6yp8RrNM_-a0rrfa /* Frame for YouTube video miniplayers */
+	{
+		height: 0;
+		width: 0;
+	}
+
+	._3Qkp11fjcAw9I9wtLo8frE, /* Each post in feed */
+	._3Qkp11fjcAw9I9wtLo8frE:hover /* Each post in feed */
+	{
+		/* Borders to hide */
+		border: none;
+	}
+
+	h2._33aRtz9JtW0dIrBNKFAl0y /* Subreddit name at top */
+	{
+		font-size: 20px;
+		color: var(--color-fg);
+	}
+
+	._2L5G9B5yaoqW3IegiYN-FL /* Subreddit banner at top */
+	{
+		background-color: var(--color-bg) !important;
 	}
 }
