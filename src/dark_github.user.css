@@ -1,8 +1,8 @@
 /* ==UserStyle==
-@name           Dark Theme Template
+@name           GitHub Dark Theme
 @version        1.0.1
 @author         Hussein Esmail
-@description    `A dark theme template for _`
+@description    `A dark theme template for Github`
 @namespace      https://github.com/hussein-esmail7/userstyles
 @homepageURL    https://github.com/hussein-esmail7/userstyles
 @supportURL     https://github.com/hussein-esmail7/userstyles/issues
@@ -53,7 +53,7 @@
 		font-family: var(--font-all);
 		letter-spacing: var(--font-all-spacing);
 	}
-	
+
 	.BorderGrid--spacious .BorderGrid-cell {
 		/* Right bar spacing on a repo (About, Releases, etc.) */
 		padding-top: var(--space-sidebar-repo);
