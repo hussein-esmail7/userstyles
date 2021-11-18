@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           StackExchange Dark
-@version        1.0.2
+@version        1.0.3
 @author         Hussein Esmail
 @description    `A dark theme for the StackExchange websites`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -16,6 +16,7 @@ domain("askubuntu.com")
 
     :root {
         --color-bg: #141414;            /* Default background color */
+		--color-bg-notice: #501414;
         --color-fg: #f8f8f8;            /* Default text color */
         --color-url: #d2d0ff;			/* URL color */
         --color-bg-code: #333333;
@@ -23,6 +24,8 @@ domain("askubuntu.com")
         --color-button-active: #7a7a7a;
         --color-bg-button: #003faf;
         --color-bg-textarea: #404040;
+		--font-all: monospace; /* New main font to use */
+		--font-all-spacing: -1px; /* New main font spacing (if it needs to be altered) */
         color-scheme: dark;             /* Used to get dark scroll bars */
     }
 
@@ -93,9 +96,12 @@ domain("askubuntu.com")
         color: var(--color-url) !important;
     }
 
-    .js-freemium-cta {
+    .js-freemium-cta,
+	.js-create-team-cta, /* Buttons on sidebar to create a Team */
+	.user-info .user-gravatar32 /* User profile pictures */
+	{
         /* Banished elements */
-        display: none;
+        display: none !important;
     }
 
     .hljs-keyword {
@@ -114,4 +120,64 @@ domain("askubuntu.com")
         background-color: var(--color-bg-button);
     }
 
+	.s-notice /* Duplicate question warning at top of page */
+	{
+		padding: 5px;
+		color: var(--color-fg); /* Reset text color inside element */
+		background-color: var(--color-bg-notice);
+		border: none;
+	}
+
+	.s-notice div 
+	{
+		padding-left: 5px;
+	}
+
+	.user-info .user-details 
+	{
+		margin-left: 0px !important;
+		width: 100% !important;
+	}
+
+	.user-info .-flair /* Reputation beside usernames */
+	{
+		display: inline;
+	}
+
+	.user-info
+	{
+		color: var(--color-fg);
+	}
+
+	*:not(i) {
+        /* Monospace everything except symbols (i tag) */
+        font-family: var(--font-all) !important;
+		font-size: 13px;
+        letter-spacing: var(--font-all-spacing);
+    }
+
+	.mb8, 
+	#answers-header,
+	.mb24
+	{
+		margin: 0px !important;
+	}
+
+	.site-footer--container
+	{
+		font-size: 10px !important;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.site-footer--col
+	{
+		padding: 0px !important;
+	}
+
+	#content /* Main content of an answer */
+	{
+		/* Get rid of border */
+		border: none;
+	}
 }
