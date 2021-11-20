@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Simplified Theme
-@version        1.1.0
+@version        1.1.1
 @author         Hussein Esmail
 @description    `A simpler theme template for Reddit (New)`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -39,7 +39,7 @@
     }
 
 	*:not(i) {
-		font-family: var(--font-default);
+		font-family: monospace !important;
 		letter-spacing: var(--font-all-spacing);
 	}
 
@@ -62,7 +62,8 @@
 	._1poyrkZ7g36PawDueRza-J, /* Each post's preview box in feed */
 	._3Qkp11fjcAw9I9wtLo8frE, /* Upvote side of each post in feed */
 	._3JDs8KEQIXSMn1bTF2ZqJ_, /* Top border of a subreddit (center) */
-	.q4a8asWOWdfdniAbgNhMh /* Top border of a subreddit (padding) */
+	.q4a8asWOWdfdniAbgNhMh, /* Top border of a subreddit (padding) */
+	._1gVVmSnHZpkUgVShsn7-ua /* Subreddit header links bar */
 	{
 		background-color: var(--color-bg) !important;
 	}
@@ -92,7 +93,10 @@
 	._1b1Jalg2nxA_Z-BjKXRfAV, /* Reddit Premium ad on sidebar */
 	.QscnL9OySMkHhGudEvEya img, /* Subreddit logo at top */
 	h1._2yYPPW47QxD4lFQTKpfpLQ, /* Subreddit slogan */
-	.jEUbSHJJx8vISKpWirlfx._1dJtiWITrnvIbQdXgYgdym /* Free coins button on top bar */
+	.jEUbSHJJx8vISKpWirlfx._1dJtiWITrnvIbQdXgYgdym, /* Free coins button on top bar */
+	._2fCzxBE1dlMh4OFc7B3Dun, /* "Posted by" string before every user */
+	.action-brave-tip, /* Brave Browser's BAT Tip button */
+	._2L5G9B5yaoqW3IegiYN-FL /* Subreddit banner header */
 	{
         /* Elements to hide */
         display: none !important;
@@ -129,9 +133,17 @@
 	}
 
 	.VatfkH4hd3AcIOCT15Zai, /* Location button on r/popular */
-	.GzkzdrqG-NjAYH7eKJan4 /* Date button on r/popular on Top mode */
+	.GzkzdrqG-NjAYH7eKJan4, /* Date button on r/popular on Top mode */
+	._3-miAEojrCvx_4FQ8x3P-s, /* Buttons bar underneath each post */
+	._2qww3J5KKzsD7e5DO0BvvU, /* Comments button */
 	{
 		padding: 0px !important;
+	}
+
+	.kU8ebCMnbXfjCWfqn0WPb, /* Share button */
+	._3-miAEojrCvx_4FQ8x3P-s .YszYBnnIoNY8pZ6UwCivd /* Save button */
+	{
+		padding: 0px 5px;
 	}
 
 	a.M2Hk_S2yvXpsNPfZMBMur /* Sort by buttons, reduce size */
@@ -161,5 +173,25 @@
 	._2L5G9B5yaoqW3IegiYN-FL /* Subreddit banner at top */
 	{
 		background-color: var(--color-bg) !important;
+	}
+
+	._3a2ZHWaih05DgAOtvu6cIo, /* Spacing near vote buttons */
+	._JRBNstMcGxbZUxrrIKXe /* Spacing before Save button */
+	{
+		margin: 0px;
+	}
+
+	.icon-comment,
+	.icon-share,
+	.icon-saved,
+	.icon-save
+	{
+		font-size: 15px;
+	}
+
+	._1_TJAX-8zAT3vVN1Iz7cys /* Subreddit links header */
+	{
+		/* Center content */
+		justify-content: space-around;
 	}
 }

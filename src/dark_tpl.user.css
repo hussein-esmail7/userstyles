@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Toronto Public Library Dark
-@version        1.0.2
+@version        1.0.3
 @author         Hussein Esmail
 @description    `A dark theme for the website torontopubliclibrary.ca`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -19,7 +19,13 @@
         color-scheme: dark;                 /* Used to get dark scroll bars */
     }
     
-    body, .SearchBox, .logon, #form_signin, .container, .action-bar, td, .panel, .menu-item, section, [class^="components-pages"], [class^="components-Save"], [class^="components-ItemButton"], th, .copyright, .add-new-list, .page-content, div.notice, .megamenu, .megamenu-column {
+    body, .SearchBox, .logon, #form_signin, .container, .action-bar, td, .panel, .menu-item, section, [class^="components-pages"], [class^="components-Save"], [class^="components-ItemButton"], th, .copyright, .add-new-list, .page-content, div.notice, .megamenu, .megamenu-column,
+	.primary-row, /* "Hold placed" page background */
+	.place-hold-confirmation .record-details, /* "Hold placed" main panel */
+	.form-submission-response, /* "Hold placed" main panel 2 */
+	.record-details,
+	.form-place-hold
+	{
         /* Background color */
         background-color: var(--color-bg) !important; 
     }
@@ -28,7 +34,11 @@
         background-color: var(--color-bg-item-focus);
     }
 
-    body, .SearchBox, .logon, h1, h2, h3, h4, h5, h6, label, .holds-title, .menu-item, span, p, ul, th {
+    body, .SearchBox, .logon, h1, h2, h3, h4, h5, h6, label, .holds-title, .menu-item, span, p, ul, th,
+	.place-hold-confirmation .record-details *, /* "Hold placed" main panel */
+	.form-submission-response *, /* "Hold placed" main panel 2 */
+	.record-details *
+	{
         /* Text color */
         color: var(--color-fg) !important;
     }
@@ -47,5 +57,18 @@
     p.notice, .branch-message-outer, .branch-message p, .alert {
         background-color: var(--color-bg-alert) !important;
     }
+
+	.submission-alert /* Green or red circle */
+	{
+		background-color: transparent !important;
+		background-image: none;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.submission-record-confirmation
+	{
+		margin-bottom: 10px;
+	}
     
 }
