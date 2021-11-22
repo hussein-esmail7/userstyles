@@ -54,6 +54,7 @@ You can also see my published userstyles
 
 ## Other Styles I Use + Recommend
 - [[Install]](https://userstyles.world/style/216/google-drive-dark) [Dark] Google Drive
+- [[Install]](https://uso.kkx.one/style/7339) [Dark] Google Calendar
 
 # Donate
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/husseinesmail)
