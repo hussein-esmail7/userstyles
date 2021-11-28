@@ -115,7 +115,8 @@
     .dropdown-toggle,
     .logininfo,
     .eris_search_library,
-    a,
+    a,				/* URLs */
+	b,				/* Bold text */
     td,
     pre,            /* Code areas */
     select,
