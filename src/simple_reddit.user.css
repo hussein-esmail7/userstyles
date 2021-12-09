@@ -63,7 +63,8 @@
 	._3Qkp11fjcAw9I9wtLo8frE, /* Upvote side of each post in feed */
 	._3JDs8KEQIXSMn1bTF2ZqJ_, /* Top border of a subreddit (center) */
 	.q4a8asWOWdfdniAbgNhMh, /* Top border of a subreddit (padding) */
-	._1gVVmSnHZpkUgVShsn7-ua /* Subreddit header links bar */
+	._1gVVmSnHZpkUgVShsn7-ua, /* Subreddit header links bar */
+	._3Oa0THmZ3f5iZXAQ0hBJ0k /* Image panel */
 	{
 		background-color: var(--color-bg) !important;
 	}
@@ -71,7 +72,7 @@
     /* Elements to hide */
     ._17nmfaMf1Rq20sVfEmle0O.yIt5UPS176eVebNGNRQtf ._2MkcR85HDnYngvlVW2gMMa, /* Website thumbnails that aren't really images */
     ._1EWxiIupuIjiExPQeK4Kud, /* Award button on each post */
-    ._3JgI-GOrkmyIeDeyzXdyUD._2CSlKHjH7lsjx0IpjORx14 iframe, /* TODO: Embedded Twitter frame (temporary) */
+	/* ._3JgI-GOrkmyIeDeyzXdyUD._2CSlKHjH7lsjx0IpjORx14 iframe, /* TODO: Embedded Twitter frame (temporary) */
     ._3qQRMrsougg399HF8ZDsfl, /* RPAN posts in home feed */
     .oiDWziAp_Bua6rb7oQKXs, /* Live button on sidebar */
     a#focus-Coins._26MVepkxZHzpNv1cuAA4JA._2MgAHlPDdKvXiG-Qbz5cbC, /* Coins button on sidebar */
@@ -151,11 +152,13 @@
 		padding: 0px 8px;
 	}
 
+	/* -- Commented out because this hides all media
 	.m3aNC6yp8RrNM_-a0rrfa /* Frame for YouTube video miniplayers */
+	/*
 	{
 		height: 0;
 		width: 0;
-	}
+	} */
 
 	._3Qkp11fjcAw9I9wtLo8frE, /* Each post in feed */
 	._3Qkp11fjcAw9I9wtLo8frE:hover /* Each post in feed */
@@ -194,4 +197,28 @@
 		/* Center content */
 		justify-content: space-around;
 	}
+
+	._1oQyIsiPHYt6nx7VOmd1sz /* Each post border */
+	{
+		/* This is here so that posts don't shift when you hover on one */
+		border: 1px solid var(--color-bg);
+	}
+
+	._1oQyIsiPHYt6nx7VOmd1sz:hover /* Each post border */
+	{
+		/* Highlights selected post (will redirect if clicked) */
+		border: 1px solid white;
+	}
+
+	/* 
+! www.reddit.com##._1b1Jalg2nxA_Z-BjKXRfAV
+! www.reddit.com##.scrollerItem.hrQ5rXDbyl6t3TIXxENXB._3Qkp11fjcAw9I9wtLo8frE._1EG7_Cm18ANvUvJ4rJdRgQ
+! www.reddit.com###t3_moc7cd > ._11R7M_VOgKO1RJyRSRErT3._1poyrkZ7g36PawDueRza-J > ._1ixsU4oQRnNfZ91jhBU74y > ._3-miAEojrCvx_4FQ8x3P-s > div._3U_7i38RDPV5eBv7m4M-9J > ._28vEaVlLWeas1CDiLuTCap._1EWxiIupuIjiExPQeK4Kud._3yh2bniLq7bYr4BaiXowdO.YszYBnnIoNY8pZ6UwCivd._10K5i7NW6qcm-UoCtpB3aK
+! www.reddit.com###t3_moedrr > ._11R7M_VOgKO1RJyRSRErT3._1poyrkZ7g36PawDueRza-J > ._1ixsU4oQRnNfZ91jhBU74y > ._3-miAEojrCvx_4FQ8x3P-s > div._3U_7i38RDPV5eBv7m4M-9J > ._28vEaVlLWeas1CDiLuTCap._1EWxiIupuIjiExPQeK4Kud._3yh2bniLq7bYr4BaiXowdO.YszYBnnIoNY8pZ6UwCivd._10K5i7NW6qcm-UoCtpB3aK
+! www.reddit.com##._2QeqBqfT5UbHBoViZUt-wX._1G4yU68P50vRZ4USXfaceV._1mSkPKPjFPKBRNpXETPzqL._2Zqrm36MciZxq2elpbtQig
+! www.reddit.com##a._3dZnYgFFpifT-M_Vs2FAq6:nth-of-type(3)
+! www.reddit.com##._1b1Jalg2nxA_Z-BjKXRfAV
+! www.reddit.com###focus-Premium
+! www.reddit.com##._1dJtiWITrnvIbQdXgYgdym.jEUbSHJJx8vISKpWirlfx
+	 */
 }
