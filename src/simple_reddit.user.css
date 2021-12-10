@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Simplified Theme
-@version        1.1.2
+@version        1.1.3
 @author         Hussein Esmail
 @description    `A simpler theme template for Reddit (New)`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -64,7 +64,9 @@
 	._3JDs8KEQIXSMn1bTF2ZqJ_, /* Top border of a subreddit (center) */
 	.q4a8asWOWdfdniAbgNhMh, /* Top border of a subreddit (padding) */
 	._1gVVmSnHZpkUgVShsn7-ua, /* Subreddit header links bar */
-	._3Oa0THmZ3f5iZXAQ0hBJ0k /* Image panel */
+	._3Oa0THmZ3f5iZXAQ0hBJ0k, /* Image panel */
+	._3BxRNDoASi9FbGX01ewiLg, /* Image panel for multiple images */
+	._1f7kdhvpHh0S3ClTn3xFCa /* Custom feed header */
 	{
 		background-color: var(--color-bg) !important;
 	}
@@ -97,7 +99,8 @@
 	.jEUbSHJJx8vISKpWirlfx._1dJtiWITrnvIbQdXgYgdym, /* Free coins button on top bar */
 	._2fCzxBE1dlMh4OFc7B3Dun, /* "Posted by" string before every user */
 	.action-brave-tip, /* Brave Browser's BAT Tip button */
-	._2L5G9B5yaoqW3IegiYN-FL /* Subreddit banner header */
+	._2L5G9B5yaoqW3IegiYN-FL, /* Subreddit banner header */
+	.pthKOcceozMuXLYrLlbL1 /* Sort by icons on mobile */
 	{
         /* Elements to hide */
         display: none !important;
@@ -208,6 +211,11 @@
 	{
 		/* Highlights selected post (will redirect if clicked) */
 		border: 1px solid white;
+	}
+
+	.XEkFoehJNxIH9Wlr5Ilzd /* Sidebar text */
+	{
+		padding: 5px 24px;
 	}
 
 	/* 
