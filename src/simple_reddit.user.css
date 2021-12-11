@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Simplified Theme
-@version        1.1.3
+@version        1.1.4
 @author         Hussein Esmail
 @description    `A simpler theme template for Reddit (New)`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -30,6 +30,7 @@
         --color-fg-secondary: #eeeeee;
         --color-fg-button: black;
         --color-bg-table: #31363a;
+		--color-border-flair: rgb(103, 174, 229);
         --table-hover-color: #222222;
         --color-bg-search: white;
 		--font-default: Verdana, Helvetica, Arial, sans-serif;
@@ -66,7 +67,11 @@
 	._1gVVmSnHZpkUgVShsn7-ua, /* Subreddit header links bar */
 	._3Oa0THmZ3f5iZXAQ0hBJ0k, /* Image panel */
 	._3BxRNDoASi9FbGX01ewiLg, /* Image panel for multiple images */
-	._1f7kdhvpHh0S3ClTn3xFCa /* Custom feed header */
+	._1f7kdhvpHh0S3ClTn3xFCa, /* Custom feed header */
+	.MSTY2ZpsdupobywLEfx9u, /* Header */
+	.wBtTDilkW_rtT2k5x3eie, /* Sort by bar */
+	._1G4yU68P50vRZ4USXfaceV._2QeqBqfT5UbHBoViZUt-wX, /* Sidebar content */
+	._ZhON3a3vplThB8NFwuJn /* Sidebar headers */
 	{
 		background-color: var(--color-bg) !important;
 	}
@@ -100,17 +105,14 @@
 	._2fCzxBE1dlMh4OFc7B3Dun, /* "Posted by" string before every user */
 	.action-brave-tip, /* Brave Browser's BAT Tip button */
 	._2L5G9B5yaoqW3IegiYN-FL, /* Subreddit banner header */
-	.pthKOcceozMuXLYrLlbL1 /* Sort by icons on mobile */
+	.pthKOcceozMuXLYrLlbL1, /* Sort by icons on mobile */
+	._17nmfaMf1Rq20sVfEmle0O, /* URL thumbnail on external URLs */
+	img[src*="https://www.redditstatic.com/custom_feeds/custom_feed_default_"],
+	._2E_zUw3OUkCKUFrIQwE894 /* User avatar beside "Create Post" bar */
 	{
         /* Elements to hide */
         display: none !important;
     }
-
-	._1qeIAgB0cPwnLhDF9XSiJM /* Comment and post paragraphs */
-	{
-		padding: 0em;
-		/* text-indent: 2em; Paragraph-style indentation */
-	}
 
 	li ._1qeIAgB0cPwnLhDF9XSiJM /* Comment and post paragraphs */
 	{
@@ -131,17 +133,48 @@
 		margin-left: 0px !important;
 	}
 
-	._32pB7ODBwG3OSx1u_17g58
+	._3Qkp11fjcAw9I9wtLo8frE, /* Post content */
+	._1S4dp8VZwrWTJ66AYDKJ8H /* "Add community to custom feed" spacing */
 	{
-		padding: 0 !important; /* Spacing under URLs of articles */
+		/* Get rid of margin spacing */
+		margin: 0;
 	}
 
+	._1S4dp8VZwrWTJ66AYDKJ8H /* "Add community to custom feed" spacing */
+	{
+		margin-left: 10px;
+	}
+	
+	._3GisC5qJ-ELW9BhucOWh1M /* "Add community to custom feed" spacing */
+	{
+		padding: 10px 5px;
+	}
+
+	._2VqfzH0dZ9dIl3XWNxs42y /* Post flairs */
+	{
+		border: solid 1px var(--color-border-flair); /* Border color for each flair */
+		background-color: transparent !important;
+		color: var(--color-fg) !important;
+	}
+
+	._2xu1HuBz1Yx6SP10AGVx_I /* Post flair divs */
+	{
+		/* Vertically centering flair divs to title text */
+		vertical-align: middle;
+	}
+
+	._1qeIAgB0cPwnLhDF9XSiJM, /* Comment and post paragraphs */
+	.yn9v_hQEhjlRNZI0xspbA,
+	._32pB7ODBwG3OSx1u_17g58, /* Post content */
 	.VatfkH4hd3AcIOCT15Zai, /* Location button on r/popular */
 	.GzkzdrqG-NjAYH7eKJan4, /* Date button on r/popular on Top mode */
 	._3-miAEojrCvx_4FQ8x3P-s, /* Buttons bar underneath each post */
 	._2qww3J5KKzsD7e5DO0BvvU, /* Comments button */
+	._2jJNpBqXMbbyOiGCElTYxZ, /* "Create Post" input box border */
+	._3I4Wpl_rl6oTm02aWPZayD /* Subreddit name left padding */
 	{
-		padding: 0px !important;
+		/* Removing padding */
+		padding: 0 !important; /* Spacing under URLs of articles */
 	}
 
 	.kU8ebCMnbXfjCWfqn0WPb, /* Share button */
@@ -182,7 +215,8 @@
 	}
 
 	._3a2ZHWaih05DgAOtvu6cIo, /* Spacing near vote buttons */
-	._JRBNstMcGxbZUxrrIKXe /* Spacing before Save button */
+	._JRBNstMcGxbZUxrrIKXe, /* Spacing before Save button */
+	.zgT5MfUrDMC54cpiCpZFu /* "Create Post" right side of border */
 	{
 		margin: 0px;
 	}
@@ -216,6 +250,17 @@
 	.XEkFoehJNxIH9Wlr5Ilzd /* Sidebar text */
 	{
 		padding: 5px 24px;
+	}
+
+	.VJkPo4gom3XvkL4X-w0JS.ZGQod_mafxz0rQZ6X1osG, /* Top bar when scrolled lower */
+	._3JDs8KEQIXSMn1bTF2ZqJ_
+	{
+		background-color: transparent !important;
+	}
+
+	.VJkPo4gom3XvkL4X-w0JS.ZGQod_mafxz0rQZ6X1osG /* Top bar when scrolled lower */
+	{
+		border: none;
 	}
 
 	/* 
