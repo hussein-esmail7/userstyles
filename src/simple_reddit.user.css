@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Simplified Theme
-@version        1.1.4
+@version        1.1.5
 @author         Hussein Esmail
 @description    `A simpler theme template for Reddit (New)`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -108,7 +108,10 @@
 	.pthKOcceozMuXLYrLlbL1, /* Sort by icons on mobile */
 	._17nmfaMf1Rq20sVfEmle0O, /* URL thumbnail on external URLs */
 	img[src*="https://www.redditstatic.com/custom_feeds/custom_feed_default_"],
-	._2E_zUw3OUkCKUFrIQwE894 /* User avatar beside "Create Post" bar */
+	._2E_zUw3OUkCKUFrIQwE894, /* User avatar beside "Create Post" bar */
+	.TmlaIdEplCzZ0F1aRGYQh, /* Awarded comment gradient coloring */
+	._3VH2iGVh92XtlKq0-eVoEN, /* Awarded comment red glow border */
+	._3hUbl08LBz2mbXjy0iYhOS /* "See Full Image" buttons, since no more need */
 	{
         /* Elements to hide */
         display: none !important;
@@ -150,14 +153,22 @@
 		padding: 10px 5px;
 	}
 
-	._2VqfzH0dZ9dIl3XWNxs42y /* Post flairs */
+	._2VqfzH0dZ9dIl3XWNxs42y, /* Post flairs */
+	._2X6EB3ZhEeXCh1eIVA64XM /* User flairs on comments */
 	{
 		border: solid 1px var(--color-border-flair); /* Border color for each flair */
 		background-color: transparent !important;
 		color: var(--color-fg) !important;
+		border-radius: 20px;
 	}
 
-	._2xu1HuBz1Yx6SP10AGVx_I /* Post flair divs */
+	._1qeIAgB0cPwnLhDF9XSiJM /* Every comment text */
+	{
+		color: var(--color-fg) !important;
+	}
+
+	._2xu1HuBz1Yx6SP10AGVx_I, /* Post flair divs */
+	._2X6EB3ZhEeXCh1eIVA64XM /* User flairs on comments */
 	{
 		/* Vertically centering flair divs to title text */
 		vertical-align: middle;
@@ -235,13 +246,13 @@
 		justify-content: space-around;
 	}
 
-	._1oQyIsiPHYt6nx7VOmd1sz /* Each post border */
+	._1RYN-7H8gYctjOQeL8p2Q7 /* Each post border */
 	{
 		/* This is here so that posts don't shift when you hover on one */
 		border: 1px solid var(--color-bg);
 	}
 
-	._1oQyIsiPHYt6nx7VOmd1sz:hover /* Each post border */
+	._1RYN-7H8gYctjOQeL8p2Q7:hover /* Each post border */
 	{
 		/* Highlights selected post (will redirect if clicked) */
 		border: 1px solid white;
@@ -261,6 +272,17 @@
 	.VJkPo4gom3XvkL4X-w0JS.ZGQod_mafxz0rQZ6X1osG /* Top bar when scrolled lower */
 	{
 		border: none;
+	}
+
+	._3Oa0THmZ3f5iZXAQ0hBJ0k /* Divs that contain images (after a non-class div) */
+	{
+		justify-content: left;
+	}
+
+	._2_tDEnGMLxpM6uOa2kaDB3.ImageBox-image._1XWObl-3b9tPy64oaG6fax:not(.media-element) /* Images with a "See full image" button */
+	{
+		height: 100%;
+		margin-left: 0;
 	}
 
 	/* 
