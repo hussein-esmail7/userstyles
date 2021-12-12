@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           YorkU Dark
-@version        1.0.7
+@version        1.0.8
 @author         Hussein Esmail
 @description    `A dark theme for York University websites`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -84,11 +84,21 @@
 	.calendar_event_course,
 	.btn-secondary, /* "Customize this page" button on homepage */
 	#quiz-timer, /* Red timer box in corner when taking a quiz */
-	a:focus
+	a:focus,
+	.editor_atto div div,
+	.editor_atto div,
+	a.qnbutton .thispageholder,
+	.qtype_essay_editor
 	{
         background-color: var(--color-bg) !important;
         
     }
+
+	a.qnbutton .trafficlight /* Completed questions on eClass quiz */
+	{
+		background-color: green;
+	}
+
 
     .mod_turnitintooltwo_listbar,
     .block_online_users,
@@ -198,7 +208,8 @@
     .block_calendar_month,      /* Calendar block on homescreen */
     .dashboard-card-footer,     /* Progress bars below courses */
     .block_important_links,     /* Links section I never use */
-    .block_library              /* Library search block */
+    .block_library,              /* Library search block */
+	a.qnbutton .accesshide /* Question list on Quiz */
     {
         /* Elements to get rid of */
         display: none;
@@ -388,6 +399,11 @@
 		/* Change height of icons */
 		height: 20px;
 		width: 20px;
+	}
+
+	.btn
+	{
+		color: var(--color-fg) !important;
 	}
 
 
