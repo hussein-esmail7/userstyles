@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Simplified Theme
-@version        1.1.5
+@version        1.1.6
 @author         Hussein Esmail
 @description    `A simpler theme template for Reddit (New)`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -87,6 +87,7 @@
     a#focus-Predictions._26MVepkxZHzpNv1cuAA4JA._2MgAHlPDdKvXiG-Qbz5cbC, /* Predictions button on sidebar */
     a#focus-Premium._26MVepkxZHzpNv1cuAA4JA._2MgAHlPDdKvXiG-Qbz5cbC, /* Premium button on sidebar */
     a#focus-Talk._26MVepkxZHzpNv1cuAA4JA._2MgAHlPDdKvXiG-Qbz5cbC, /* Talk button on sidebar */
+    a#focus-WrappedReddit._26MVepkxZHzpNv1cuAA4JA._2MgAHlPDdKvXiG-Qbz5cbC, /* Reddit Recap button on sidebar */
     a._1YWXCINvcuU7nk0ED-bta8[href="/coins"], /* Coins button on profile menu */
     a._1YWXCINvcuU7nk0ED-bta8[href="/powerups"], /* Powerups button on profile menu */
     a._1YWXCINvcuU7nk0ED-bta8[href="/predictions"], /* Predictions button on profile menu */
@@ -111,7 +112,9 @@
 	._2E_zUw3OUkCKUFrIQwE894, /* User avatar beside "Create Post" bar */
 	.TmlaIdEplCzZ0F1aRGYQh, /* Awarded comment gradient coloring */
 	._3VH2iGVh92XtlKq0-eVoEN, /* Awarded comment red glow border */
-	._3hUbl08LBz2mbXjy0iYhOS /* "See Full Image" buttons, since no more need */
+	._3hUbl08LBz2mbXjy0iYhOS, /* "See Full Image" buttons, since no more need */
+	._2dr_3pZUCk8KfJ-x0txT_l, /* Subreddit thumbnail beside each post in Custom Feeds */
+	._3dZnYgFFpifT-M_Vs2FAq6[href*="/RedditRecap"] /* Reddit Recap button on top bar */
 	{
         /* Elements to hide */
         display: none !important;
@@ -246,13 +249,15 @@
 		justify-content: space-around;
 	}
 
-	._1RYN-7H8gYctjOQeL8p2Q7 /* Each post border */
+	._1RYN-7H8gYctjOQeL8p2Q7, /* Each post border */
+	._3xuFbFM3vrCqdGuKGhhhn0
 	{
 		/* This is here so that posts don't shift when you hover on one */
 		border: 1px solid var(--color-bg);
 	}
 
-	._1RYN-7H8gYctjOQeL8p2Q7:hover /* Each post border */
+	._1RYN-7H8gYctjOQeL8p2Q7:hover, /* Each post border */
+	._3xuFbFM3vrCqdGuKGhhhn0:hover
 	{
 		/* Highlights selected post (will redirect if clicked) */
 		border: 1px solid white;
