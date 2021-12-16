@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           YorkU Dark
-@version        1.0.8
+@version        1.0.9
 @author         Hussein Esmail
 @description    `A dark theme for York University websites`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -24,7 +24,6 @@
 @-moz-document domain("passportyork.yorku.ca"), domain("eclass.yorku.ca"), domain("webapp.eecs.yorku.ca") {
     
     /* eClass */
-    
     :root {
         --color-bg: #141414;              /* Default background color */
         --color-bg-alert: #5c1717;
@@ -155,10 +154,10 @@
         border-radius: 0px !important;
     }
 
-    #york-logo, 
-    .eris_search_library, 
-    table, 
-    table > *  
+    #york-logo,
+    .eris_search_library,
+    table,
+    table > *
     {
         background-color: var(--color-bg-secondary);
     }
@@ -260,8 +259,8 @@
         border: 1px solid white;
     }
 
-    div.col.span_1_of_4.mobile_full *, 
-    .york-global-footer-links 
+    div.col.span_1_of_4.mobile_full *,
+    .york-global-footer-links
     {
         background-color: var(--dark-red) !important;
     }
@@ -362,12 +361,14 @@
 		}
 	}
 
-    small {
+    small
+	{
         /* Default = 80%, looks too small (some profs put entire paragraphs in this) */
         font-size: 90%;
     }
 
-    .sectionname span a /* These URLs link to themselves, which is a bit pointless */
+    .sectionname span a, /* Pointlessly self-linking URLs */
+	.btn
     {
         color: var(--color-fg) !important;
     }
@@ -401,13 +402,8 @@
 		width: 20px;
 	}
 
-	.btn
+	.accesshide
 	{
-		color: var(--color-fg) !important;
-	}
-
-
-	.accesshide {
 		position: relative;
 	}
 }
@@ -415,7 +411,6 @@
 @-moz-document domain("yfile.news.yorku.ca") {
     
     /* YFile */
-    
     :root {
         --color-bg: #141414;
         --color-bg-alert: #5c1717;
@@ -435,31 +430,33 @@
     aside, #footer-widgets-bg, #footer-wrap, #header-wrap, #navi-wrap, .hfeed, .container, .post, .postmeta {
         background-color: var(--color-bg) !important;
     }
-    
+
     h1, h2, h3, h4, h5, h6, div, time, .post {
         color: var(--color-fg) !important;
     }
-    
+
     aside, article {
         /* Borders to get rid of */
         border: none !important;
     }
-    
+
     #york-logo a img, #logo {
         /* Elements to get rid of */
         display: none;
     }
-    
-    #york-logo:after {
+
+    #york-logo:after
+	{
         /* Replace header images with the text */
         /* Since that's all the images are. */
         /* Saves bandwidth this way too. */
         content: var(--text-title);
     }
-       
+
 }
 
 @-moz-document domain("w2prod.sis.yorku.ca") {
+
     :root {
         --color-bg: #141414;
         --color-bg-alert: #5c1717;
@@ -474,23 +471,51 @@
         --dark-red: #7d0800;
     }
 
-    body, .hfeed, #header-wrap, #navi-wrap, .container, .post, .postmeta, aside, #footer-widgets-bg, #footer-wrap, table, p, #yib11banner, td {
+    body,
+	.hfeed,
+	#header-wrap,
+	#navi-wrap,
+	.container,
+	.post,
+	.postmeta,
+	aside,
+	#footer-widgets-bg,
+	#footer-wrap,
+	table,
+	p,
+	#yib11banner,
+	td
+	{
         background-color: var(--color-bg) !important;
     }
-    
-    h1, h2, h3, h4, h5, h6, div, time, .post, p, li, td, select, option, .timetablecell font * {
+
+    h1, h2, h3, h4, h5, h6,
+	div,
+	time,
+	.post,
+	p,
+	li,
+	td,
+	select,
+	option,
+	.timetablecell font *
+	{
         color: var(--color-fg) !important;
     }
-    a:link, a.blacklink {
+
+    a:link,
+	a.blacklink
+	{
         color: var(--color-fg-url) !important;
     }
-    
-    select {
+
+    select
+	{
         background-color: var(--color-bg-input);
     }
-    
+
     img[src="/WebObjects/cdm.woa/Contents/WebServerResources/y.gif"],
-    td.smallbodytext, 
+    td.smallbodytext,
     td[valign="bottom"],
     td[background="https://w2prod.sis.yorku.ca/WebObjects/YorkUimages/banner_bg.gif"]
     {
@@ -498,18 +523,22 @@
         display: none;
     }
     
-    span[style="BACKGROUND-COLOR: YELLOW"] {
+    span[style="BACKGROUND-COLOR: YELLOW"]
+	{
         /* For exam schedule ("Information valid as of ...") */
         background-color: var(--color-bg-alert) !important;
     }
-    body {
+
+    body
+	{
         /* Gets rid of white bar on the right side */
         background-image: none;
     }
-    
+
 }
 
 @-moz-document domain("yorku.zoom.us") {
+
     :root {
         --color-bg: #141414;
         --color-bg-alert: #5c1717;
@@ -543,13 +572,15 @@
     .https_form {
         background-color: var(--color-bg-input);
     }
-    
+
     .navbar-collapse, .navbar {
         background-color: var(--color-bg-secondary) !important;
     }
 }
 
 @-moz-document domain("hrselfserve.yorku.ca") {
+
+	/* TRT */
     :root {
         --color-bg: #141414;
         --color-bg-alert: #5c1717;
@@ -563,59 +594,95 @@
         --color-nav: #2e2e2e;
         --dark-red: #7d0800;
     }
-    
-    html, table, td, th, .tab_selected, #win0divTIMESHEET,  .ps_box-scrollarea-row, .ps_pagecontainer {
+
+    html,
+	table,
+	td,
+	th,
+	.tab_selected,
+	#win0divTIMESHEET,
+	.ps_box-scrollarea-row,
+	.ps_pagecontainer
+	{
         /* Background color */
         background-color: var(--color-bg) !important;
     }
 
-    h1, h2, h3, h4, h5, h6, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl *, span, input {
+    h1, h2, h3, h4, h5, h6,
+	strong,
+	label,
+	.detDesc,
+	div,
+	div#sortby,
+	.comment,
+	#comments,
+	#detailsouterframe *,
+	.comment,
+	#details *,
+	dl *,
+	span,
+	input
+	{
         /* Text color */
         color: var(--color-fg) !important;
     }
-    
-    a:link {
+
+    a:link /* URLs */
+	{
+		/* URL color */
         color: lightblue !important;
     }
 
-    .https_form {
+    .https_form
+	{
         background-color: var(--color-bg-input);
     }
-    
-    .pst_panel-side1, .ps_ag-step-button, .psc_selected, .nuilp {
+
+    .pst_panel-side1,
+	.ps_ag-step-button,
+	.psc_selected,
+	.nuilp
+	{
         background-color: var(--color-bg-secondary) !important;
     }
-    
-    span {
+
+    span
+	{
         background-color: transparent !important;
     }
-    
-    input {
+
+    input
+	{
         background-color: var(--color-bg-input) !important;
     }
-    
-    .PSPUSHBUTTON.Left {
+
+    .PSPUSHBUTTON.Left
+	{
         /* "Submit" and "Clear" buttons on Timesheet Reporting tab */
         border: none !important;
     }
-    
-    img[alt="COVID-19 Updates"] {
+
+    img[alt="COVID-19 Updates"]
+	{
         /* Elements to get rid of */
         display: none;
     }
-    
-    #PSTABNBO a span {
+
+    #PSTABNBO a span
+	{
         background-image: none !important;
     }
 
-    #PSTABNBO a span, .PSPUSHBUTTON.Left {
+    #PSTABNBO a span,
+	.PSPUSHBUTTON.Left
+	{
         background: none;
-    }   
+    }
+
 }
 
-
 @-moz-document domain(yorku.ubixhealth.com) {
-    
+
     /* YU Screen */
     :root {
         --color-bg: #141414;
@@ -623,33 +690,71 @@
         --color-bg-courselink: #2f2f2f;
         --color-bg-input: #535353;
         --color-bg-panel: #222629;
-        --color-bg-secondary: #201919;
+        --color-bg-secondary: #1e1e1e;
         --color-bg-url-hover: darkred;
         --color-fg: #f8f8f8;
         --color-fg-url: red;
         --color-nav: #2e2e2e;
         --dark-red: #7d0800;
     }
-    
-    .navbar, main, .card-body, .o-card-row {
+
+    .navbar,
+	main,
+	.card-body,
+	.o-card-row,
+	.navbar-nav /* Dropdown nav bar on mobile */
+	{
         background-color: var(--color-bg) !important;
     }
-    
+
     img[alt="logo"], .navbar-toggler {
         background-color: white;
     }
-    
-    p, div.card-title span, .card-text, label {
+
+    b, /* Bolded text */
+	p,
+	div.card-title span,
+	.card-text,
+	label,
+	span,
+	.card-title, /* Title text */
+	.o-result-status, /* Cleared or rejected at the end */
+	.list-group *, /* List of buttons on the result page */
+	.grid-item a div, /* Text on square buttons on dashboard */
+	li.pagination-text /* Screening History page text */
+	{
         color: var(--color-fg) !important;
     }
-    
+
     .card-page {
         border: none;
     }
+
+	form.form-signin {
+		background-color: var(--color-bg);
+	}
+
+	.card,
+	.list-group * /* List of buttons on the result page */
+	{
+		background-color: var(--color-bg-secondary) !important;
+	}
+
+	i.fas /* Icons such as home icon, left arrow, right arrow */
+	{
+		background-color: white;
+	}
+
+	i.fa-check-circle /* White icon */
+	{
+		/* Ignote white background color since it is a white icon */
+		background-color: transparent;
+	}
 }
 
 @-moz-document url-prefix("http://www.yorku.ca/nmw/datt1939f21/") {
-    
+
+	/* DATT 1939 2021F separate site */
     :root {
         --color-bg: #141414;
         --color-fg: #f8f8f8;
@@ -665,24 +770,40 @@
         background-color: var(--color-bg) !important;
     }
 
-    h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl * {
+    h1, h2, h3, h4, h5, h6,
+	a,
+	strong,
+	label,
+	.detDesc,
+	div,
+	div#sortby,
+	.comment,
+	#comments,
+	#detailsouterframe *,
+	#details *,
+	dl *
+	{
         /* Text color */
         color: var(--color-fg) !important;
     }
 
-    input {
+    input
+	{
         /* Text inputs */
         color: var(--color-fg-button) !important;
         background-color: var(--color-bg-search);
     }
-    
-    a:link, h3 a {
+
+    a:link,
+	h3 a
+	{
         color: red !important;
     }
-    
-    a.navig {
+
+    a.navig
+	{
         color: white !important; 
     }
-    
+
 }
 
