@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           GitHub Dark Theme
-@version        1.0.1
+@version        1.0.2
 @author         Hussein Esmail
 @description    `A dark theme template for Github`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -45,7 +45,7 @@
 
     input {
         /* Text inputs */
-        color: var(--color-fg-button) !important;
+        color: var(--color-fg);
         background-color: var(--color-bg-search);
     }
 
