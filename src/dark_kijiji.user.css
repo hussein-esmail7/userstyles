@@ -105,5 +105,15 @@
         color: var(--color-fg);
         border: none;
     }
-        
+
+	.fadeOut-1831393242
+	{
+		display: none;
+	}
+
+	.showMoreButton-2571466895
+	{
+		background-color: red !important;
+	}
+
 }
