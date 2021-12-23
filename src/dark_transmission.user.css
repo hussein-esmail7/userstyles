@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Transmission Dark
-@version        1.0.1
+@version        1.0.2
 @author         Hussein Esmail
 @description    `A dark theme for the Transmission web interface`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -11,21 +11,30 @@
 
 @-moz-document url-prefix("http://localhost:9091/transmission/web") {
     :root {
-        --color-bg: #141414;            /* Default background color */
-        --color-fg: #f8f8f8;            /* Default text color */
-        --color-bg-disabled: red;
-        color-scheme: dark;                 /* Used to get dark scroll bars */
+        --color-bg: #141414;	/* Default background color */
+        --color-fg: #f8f8f8;	/* Default text color */
+        color-scheme: dark;		/* Used to get dark scroll bars */
     }
-    
-    html, .torrent_list, .compact, ul, li, #torrent_container, body, .torrent, .ui-widget-content, .ui-menu-divider, .toolbar {
+
+	li, /* Torrent list */
+	body /* Main view apart from the torrent list (blank space) */
+	{
         background-color: var(--color-bg) !important;
-        color: var(--color-fg) !important;
     }
-    
-    li.ui-state-disabled {
-        background-color: var(--color-bg-disabled) !important;
-        color: var(--color-fg) !important;
-    }
+
+	.torrent_name, /* Torrent title */
+	body, /* Toolbar text in "Show" toolbar specifically */
+	li /* Torrent info (how many seeds, file size remaining, etc. */
+	{
+		color: var(--color-fg) !important;
+	}
+
+	div#toolbar, /* 1st top toolbar with icon buttons */
+	#statusbar, /* 2nd top toolbar where the "Show" options are */
+	.torrent_footer /* Footer toolbar with small buttons */
+	{
+		background-image: none !important;
+		background-color: var(--color-bg) !important;
+	}
 
 }
-
