@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           fora.snahp.eu Dark
-@version        1.0.2
+@version        1.0.3
 @author         Hussein Esmail
 @description    `Simplified dark theme`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -258,4 +258,55 @@
 		But that's a hardcoded thing that I don't think I can change
     */
 
+}
+
+@-moz-document domain("lnk.snahp.eu") {
+    :root {
+        --color-bg: #141414;					   /* Main background color */
+        --color-bg-hidebox: orange;  /* Bg for "Please click _ to show" div */
+        --color-fg: #f8f8f8;						  /* Default text color */
+        --color-fg-unread: orange;					  /* Unread posts color */
+        --color-fg-replace: #0080FF; /* For the badly formatted hard-coded colors out there */
+        --max-width: 800px;					 /* Max width, centered on page */
+        --font-default: Verdana, Helvetica, Arial, sans-serif;
+        --font-all: monospace;						/* New main font to use */
+        --font-all-spacing: -1px; /* New main font spacing (if it needs to be altered) */
+        --all-location: auto; /* 'auto' for centered, 'none' for all to left side */
+        --height-profile-pic: 80px;		 /* Max height for profile pictures */
+        --col-text-align-views: right;		 /* Align number column to side */
+        --margin-right-topic-list: 200px;
+        --margin-right-thread-pages: -150px;
+    }
+
+	html,
+	body,
+	#content
+	{
+		background-color: var(--color-bg);
+	}
+
+	p
+	{
+		color: var(--color-fg);
+		line-height: 100%;
+		font-size: 100%;
+	}
+
+	#nav li,
+	#content
+	{
+		border: none;
+	}
+
+	a
+	{
+		color: var(--color-fg-unread);
+		font-size: 100%;
+	}
+
+    *:not(i) {
+        /* Monospace everything except symbols (i tag) */
+        font-family: var(--font-all) !important;
+        letter-spacing: var(--font-all-spacing);
+    }
 }
