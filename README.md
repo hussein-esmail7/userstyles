@@ -28,6 +28,7 @@ You can also see my published userstyles
 
 ## Styles List
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/brave_search.user.css) Brave Search Simplified
+- [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_aur.user.css) [Dark] AUR (Arch User Repository)
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_bibliogram.user.css) [Dark] Bibliogram
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_crowdmark.user.css) [Dark] Crowdmark
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_echo360.user.css) [Dark] Echo360 Lecture Platform
