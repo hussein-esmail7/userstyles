@@ -109,7 +109,7 @@
     }
 
     html, body,
-    p,                  /* Paragraphs */ 
+    p, /* Paragraphs */
     #page-wrapper,
     .block-region,
     #region-main,
@@ -681,7 +681,7 @@
 
 }
 
-@-moz-document domain(yorku.ubixhealth.com) {
+@-moz-document domain("yorku.ubixhealth.com") {
 
     /* YU Screen */
     :root {
@@ -807,3 +807,60 @@
 
 }
 
+@-moz-document url("https://passportyork.yorku.ca/ppylogin/ppylogin") {
+    
+    /* eClass */
+    :root {
+        --color-bg: #141414;              /* Default background color */
+        --color-bg-alert: #5c1717;
+        --color-bg-courselink: #2f2f2f;
+        --color-bg-input: #535353;
+        --color-bg-panel: #222629;
+        --color-bg-secondary: #201919;
+        --color-bg-url-hover: darkred;
+        --color-bg-url-visited: transparent;
+		--color-bg-dropdown-hover: #202020;
+        --color-fg: #f8f8f8;              /* Default text color */
+        --color-fg-url: red;              /* Default URL foreground color */
+        --color-fg-url-course: orange;    /* Foreground color for course URLs on homepage */
+        --color-fg-danger: red;
+        --color-fg-success: green;
+        --color-nav: #141414;             /* Used to be: #2e2e2e */
+        --dark-red: #7d0800;
+        --font-all: monospace;              /* New main font to use */
+        --font-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        color-scheme: dark;                 /* Used to get dark scroll bars */
+    }
+
+	div.app-title-bar .container h1
+	{
+		padding: 10;
+	}
+
+	.page-header
+	{
+		margin-top: 10px;
+		margin-bottom: 0px;
+		padding: 0px;
+	}
+
+	.yapp-logo-container /* York header */
+	{
+		display: none;
+	}
+
+	.col-sm-6
+	{
+		display: inline;
+	}
+
+	footer
+	{
+		margin: 0px;
+	}
+
+	form[name="loginform"] div.row div.col-md-8
+	{
+		padding: 0px;
+	}
+}
