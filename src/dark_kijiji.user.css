@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Kijiji Dark
-@version        1.0.1
+@version        1.0.2
 @author         Hussein Esmail
 @description    `A dark theme for the website https://kijiji.ca`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -14,6 +14,8 @@
         --color-bg: #141414;            /* Default background color */
         --color-fg: #f8f8f8;            /* Default text color */
         --color-bg-secondary: #2e2e2e;
+        --color-bg-secondary: #2e2e2e;
+		--color-bg-active: #333333;
         --color-bg-footer: #3e3e3e;
         --color-fg-secondary: #c4c4c4;
         --color-link: #76bfff;
@@ -23,97 +25,271 @@
         color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
-    html, body, div, fieldset, section, .fes-pagelet, .mainPageContent, #MainContainer, .sticky-inner-wrapper, #SearchLocationPicker, button, a[class^="shareLink"], table, div.top-feature-bottom-bar, li[class^="selectedCategoryListItem"], main, li, span[class^="filterButtonCounter"], nav, .container-346951201, tr {
+    html,
+	body,
+	div,
+	fieldset,
+	section,
+	.fes-pagelet,
+	.mainPageContent,
+	#MainContainer,
+	.sticky-inner-wrapper,
+	#SearchLocationPicker,
+	button,
+	a[class^="shareLink"],
+	table,
+	div.top-feature-bottom-bar,
+	li,
+	li[class^="selectedCategoryListItem"],
+	main,
+	nav,
+	tr,
+	time,
+	.container-346951201,
+	.container-4289908283 /* Ads on homepage */
+	{
         background-color: var(--color-bg) !important;
     }
-    
-    html, body, div, fieldset, label, h1, h2, h3, h4, h5, h6, [itemprop="name"], li[class^="currentCrumb"], span, svg, strong, header, h1[class^="headerTitle"], div[class^="headerContainer"] *, button[data-testid="pill-option"] {
+
+    html,
+	body,
+	div,
+	fieldset,
+	label,
+	h1, h2, h3, h4, h5, h6,
+	[itemprop="name"],
+	li[class^="currentCrumb"],
+	span,
+	svg,
+	strong,
+	header,
+	h1[class^="headerTitle"],
+	div[class^="headerContainer"] *,
+	button[data-testid="pill-option"],
+    button[type="submit"]
+	{
         color: var(--color-fg) !important;
     }
-    
-    .headerContainer-471773205 {
+
+    .headerContainer-471773205
+	{
         color: var(--color-bg) !important;
     }
-    
-    [class^="radioLabelDescription"], .small-print, [class^="postingLocationTip"], [class^="postingLocationContent"] {
+
+    [class^="radioLabelDescription"],
+	.small-print,
+	[class^="postingLocationTip"],
+	[class^="postingLocationContent"]
+	{
         color: var(--color-fg-secondary) !important;
     }
-    
-    textarea, input, select, .checkbox-label, div[class^="defaultMessages"], div[class^="container__success"], button[class^="searchSubmit"], button[class^="titleButton"], div[class^="outerWrapper"], li.highlight, .button-task, .file-upload-button, div[class^="mergedPillWrapper"] * {
+
+    textarea,
+	input,
+	select,
+	.checkbox-label,
+	div[class^="defaultMessages"],
+	div[class^="container__success"],
+	button[class^="searchSubmit"],
+	button[class^="titleButton"],
+	div[class^="outerWrapper"],
+	li.highlight,
+	.button-task,
+	.file-upload-button,
+	div[class^="mergedPillWrapper"] *,
+	.pageButton-1493263986 /* Page button */
+	{
         background-color: var(--color-bg-secondary) !important;
         color: var(--color-fg) !important;
     }
-    
-    div[class^="generalOverlay"], div[class^="editButtonContentWrapper"], div[class^="previewContent"], div[class^="column"], div[class^="scrollToContainer"], button[class^="scrollToButton"], button[aria-label="My Account"], div[class^="socialMediaIcons"], a[aria-label="Notifications"], button[class^="favouriteButton"], svg[class^="favouriteButtonIcon__default"], div.fes-favourite, div.fes-pagelet, div[data-fes-id^="favouriteButton"], [class^="logo"], div[class^="text__fullBleed"] {
+
+    div[class^="generalOverlay"],
+	div[class^="editButtonContentWrapper"],
+	div[class^="previewContent"],
+	div[class^="column"],
+	div[class^="scrollToContainer"],
+	button[class^="scrollToButton"],
+	button[aria-label="My Account"],
+	div[class^="socialMediaIcons"],
+	a[aria-label="Notifications"],
+	button[class^="favouriteButton"],
+	svg[class^="favouriteButtonIcon__default"],
+	div.fes-favourite,
+	div.fes-pagelet,
+	div[data-fes-id^="favouriteButton"],
+	[class^="logo"],
+	div[class^="text__fullBleed"],
+	.filterButtonCounter-2365943836 /* Ad count in Active/Inactive tabs on My Ads page */
+	{
         background-color: transparent !important;
     }
-    
-    a:link, [role="link"], a[tabindex="0"] {
+
+    a:link,
+	[role="link"],
+	a[tabindex="0"],
+	a.tabLink-189954566 /* Profile page tab links */
+	{
         color: var(--color-link) !important;
     }
-    
-    footer, footer > *, header, div[class^="menuWrapper"], div[class^="nameL1"] {
+
+    footer,
+	footer > *,
+	header,
+	div[class^="menuWrapper"],
+	div[class^="nameL1"],
+	li.menuItemL1-3907961876 /* Homepage categories tabs */
+	{
         /* For the header and footer and all elements inside them */
         background-color: var(--color-bg-footer) !important;
     }
-    
-    div[class^="cardContainer"], div[data-testid="adcard-container"] {
+
+    div[class^="cardContainer"]
+	{
         border: 5px var(--color-fg-secondary) !important;
         border-style: solid;
     }
-    
-    div[class^="avatar"] {
+
+    div[class^="avatar"]
+	{
         background-color: var(--color-avatar) !important;
     }
-    
-    div[class^="text__fullBleed"] > * {
+
+    div[class^="text__fullBleed"] > *
+	{
         /* Places where black text is still required */
         color: black !important;
     }
-    
-    button[data-qa-id="adPromoteButton"] *, a[data-qa-id="header-link-post-ad"], button[class^="actionButton"], a#browseKijiji {
+
+    button[data-qa-id="adPromoteButton"] *,
+	a[data-qa-id="header-link-post-ad"],
+	button[class^="actionButton"],
+	a#browseKijiji,
+    button[type="submit"],
+    div[class^="messageRow"] *
+	{
         /* Buttons with coloured background like the Post and Repost  buttons */
         background-color: var(--color-bg-button) !important;
     }
-    
-    button[data-qa-id="adRepostButton"], button[data-qa-id="adRepostButton"] * {
+
+    button[data-qa-id="adRepostButton"],
+	button[data-qa-id="adRepostButton"] *
+	{
         /* Repost buttons will be red because it requires your attention (and has a deadline) */
         background-color: var(--color-bg-button-alert) !important;
     }
-    
-    span[class^="promoteButtonTextTablet"] {
+
+    span[class^="promoteButtonTextTablet"]
+	{
         background-color: transparent !important;
     }
-    
-    .container__success-2527921021, .container__tip-199291752 {
+
+    .container__success-2527921021,
+	.container__tip-199291752,
+	.myAdsLeaderboard-2491395477,
+	a.adChoices-1817877223, /* AdChoices button on homepage */
+	.fadeOut-1831393242,
+	div.L1MoveLinkWrapper-2968708715, /* Kijiji Auto URL on homepage menubar */
+	.moduleWrapper-4029973050, /* Self-advertisement at top of homepage */
+	.top-feature-bottom-bar, /* Related to ads on a search results page */
+	div.search-item.embedded, /* Ad to promote your own ad */
+	div.container-results table.utility-row, /* Ad promotion prices */
+	div.container-results div.inline-banner, /* Ad in search results */
+	.promoteAd-3470154555, /* Ad to promote ads on My Ads page */
+	.searchIcon-1865170271, /* Search icon in search bar on My Ads page */
+	.headerContainer-471773205:before, /* Line at very top of page */
+	.button__active-3917108357:after /* Green underline for selected */
+	{
         /* Hidden elements */
-        /* 2527921021: Ad has been successfully reposed banner popup */
-        /* 199291752: Ad should be reposted within # days */
+        /* 2527921021: "Ad has been successfully reposted" banner popup */
+        /* 199291752: "Ad should be reposted within # days" banner */
         display: none !important;
     }
-    
-    div[class^="messageRow"] * {
-        background-color: var(--color-bg-button) !important;
-    }
-    
-    time {
-        background-color: var(--color-bg) !important;
-    }
-    
-    button[type="submit"] {
-        background-color: var(--color-bg-button) !important;
-        color: var(--color-fg);
-        border: none;
-    }
-
-	.fadeOut-1831393242
-	{
-		display: none;
-	}
 
 	.showMoreButton-2571466895
 	{
 		background-color: red !important;
 	}
+	
+	footer div.linkContainer-2510787684, /* First section of footer */
+	footer div.linkContainer-2510787684 div, /* Columns */
+	.copyright-2418027893, /* All Rights Reserved text */
+	.menuListL1-3326828024, /* Homepage categories tab */
+	li.menuItemL1-3907961876, /* Homepage categories tabs */
+	section header.widget-header, /* "Current Matches" item on sidebar */
+	aside.sidebar-759360815 /* Right sidebar on homepage */
+	{
+		padding: 0 !important;
+	}
 
+	section header.widget-header /* "Current Matches" item on sidebar */
+	{
+		padding-left: 5px !important;
+	}
+
+
+	.copyright-2418027893, /* All Rights Reserved text */
+	footer div div ul li.columnItem-372683642, /* List items in footer column */
+	.title-698598903
+	{
+		margin: 0;
+	}
+
+	.image-192629248, /* Images on ads on homepage */
+    button[type="submit"]
+	{
+		border: none;
+	}
+
+	.myAdsTable-2912248069 tbody tr /* To make My Ads page more compact */
+	{
+		row-gap: 5px !important;
+	}
+
+	.search-966517926, /* Search bar on My Ads page */
+	.button__medium-1066667140 /* Active/Inactive tab buttons on My Ads page */
+	{
+		padding: 0;
+		height: inherit;
+	}
+
+	.button__active-3917108357 * /* Selected button of Active/Inactive on My Ads page */
+	{
+		background-color: var(--color-bg-active) !important;
+	}
+
+	nav div ul li a
+	{
+		padding: 0 !important;
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+		margin: 0 !important;
+	}
+
+	.tabListItem-3110987691
+	{
+		align-items: unset !important
+	}
+
+	.tabLink-189954566, /* Tab bar for profile (Ads/Messages/Favs/etc.) */
+	.myAdsHeadingContainer-1233939527 /* "My Ads" title on My Ads page */
+	{
+		padding: 0;
+	}
+
+	.tabLink-189954566
+	{
+		height: unset;
+	}
+
+	.headerContainer-4071916628
+	{
+		padding: 0;
+	}
+
+	a.tabLink__selected-1951076254 /* Selected tab on profile page */
+	{
+		background-color: var(--color-bg-active);
+		border-bottom: none;
+	}
 }
+
