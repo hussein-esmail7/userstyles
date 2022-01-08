@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           YorkU Dark
-@version        1.0.9
+@version        1.1.0
 @author         Hussein Esmail
 @description    `A dark theme for York University websites`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -87,10 +87,11 @@
 	.editor_atto div div,
 	.editor_atto div,
 	a.qnbutton .thispageholder,
-	.qtype_essay_editor
+	.qtype_essay_editor,
+	span,
+	.card
 	{
         background-color: var(--color-bg) !important;
-        
     }
 
 	a.qnbutton .trafficlight /* Completed questions on eClass quiz */
@@ -98,15 +99,32 @@
 		background-color: green;
 	}
 
-
     .mod_turnitintooltwo_listbar,
     .block_online_users,
     .block_yu_messager,
     .dashboard-card-img,
-    header#page-header div .card {
+    header#page-header div .card,
+	div[aria-label="Course overview controls"] div button /* Course homepage view buttons */
+	{
         /* Borders to get rid of */
         border: none !important;
     }
+
+	div[aria-label="Course overview controls"] div button /* Course homepage view buttons */
+	{
+		padding: 0;
+		padding-right: 20px;
+	}
+
+	div[aria-label="Course overview controls"] div button i.icon /* Course homepage view buttons */
+	{
+		display: none;
+	}
+
+	div[aria-label="Course overview controls"] div button:after /* Course homepage view buttons */
+	{
+		margin: 0;
+	}
 
     html, body,
     p, /* Paragraphs */
@@ -150,7 +168,8 @@
         background: none !important;
     }
 
-    .ui-corner-all {
+    .ui-corner-all
+	{
         border-radius: 0px !important;
     }
 
@@ -162,11 +181,13 @@
         background-color: var(--color-bg-secondary);
     }
 
-    .app-title-bar {
+    .app-title-bar
+	{
         background-color: var(--dark-red);
     }
 
-    a:link {
+    a:link
+	{
         color: var(--color-fg-url) !important;
     }
 
@@ -189,7 +210,8 @@
         border: 0px;
     }
 
-    .course-info-container {
+    .course-info-container
+	{
         background-color: var(--color-bg-courselink) !important;
     }
 
@@ -208,11 +230,21 @@
     .dashboard-card-footer,     /* Progress bars below courses */
     .block_important_links,     /* Links section I never use */
     .block_library,              /* Library search block */
-	a.qnbutton .accesshide /* Question list on Quiz */
+	a.qnbutton .accesshide, /* Question list on Quiz */
+	li a[data-key="privatefiles"], /* "Private Files" button, I don't use it */
+	li a[data-key="btn_Notepad"], /* "Notepad" button, I don't use it */
+	div[data-region="event-list-container"] div[data-region="empty-message"] img, /* "No events" image on homepage sidebar */
+	ul.ctopics li.section div.right.side a.cps_centre, /* "Topic #" labels beside collapsable section heads */
+	ul.ctopics li.section.main.clearfix.hidden /* "Not Available" collabsable section */
     {
         /* Elements to get rid of */
         display: none;
     }
+
+	div[id^="block-timeline"] div.border-bottom
+	{
+		border: none !important;
+	}
 
     .bg-white,
     .nav-link,                      /* Language dropdown on left */
@@ -226,7 +258,8 @@
         background-color: var(--color-nav) !important;
     }
 
-    .sectionhead {
+    .sectionhead
+	{
         border: white 1px solid;
     }
 
@@ -319,13 +352,15 @@
     }
 
     .coursename, 
-    .course-info-container .align-items-start .text-truncate .coursename 
+    .course-info-container .align-items-start .text-truncate .coursename
     {
         /* Change colour of course URLs specifically */
         color: var(--color-fg-url-course) !important;
     }
 
-    .coursename:hover, a:hover {
+    .coursename:hover,
+	a:hover
+	{
         /* Do not show red background when hovering a URL */
         background-color: inherit !important;
     }
@@ -341,17 +376,99 @@
 
     .block .block-cards .course-info-container,
     .block_online_users div div,
-    .block_online_users .p-3 {
+    .block_online_users .p-3,
+	div[data-region="event-list-container"] div[data-region="empty-message"] p /* "No events" text */
+	{
         /* Reduce the empty space border around each course on homepage */
         padding: 0;
-        margin: 0 !important;
+		margin: 0 !important;
     }
+
+	header#page-header .col-12,
+	header#page-header .col-12 .card
+	{
+		padding: 0;
+	}
+
+	div#region-main-box
+	{
+		display: inline-grid;
+	}
+
+	div#region-main-box section, /* Main blocks on homepage, center them */
+	nav.navbar
+	{
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	[data-region="blocks-column"], /* Second column on homepage ("Online users", "Upcoming Events", etc.) */
+	#region-main.has-blocks, /* Courses column on homepage */
+	nav.navbar,
+	div.page-header-headings /* Course title on course page */
+	{
+		width: 800px !important; /* Temporary, since parent is set to auto */
+	}
+
+	div.page-content-header, /* Course title on course page */
+	div.page-header-headings h1 /* Course title on course page */
+	{
+		margin-left: auto !important;
+		margin-right: auto !important;
+		text-align: center !important;
+		align: center !important;
+		padding: auto !important;
+		display: block !important;
+		padding-bottom: 30px !important;
+	}
+
+	header#page-header .col-12 .card .card-body
+	{
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	section#region-main, /* Courses list on homepage */
+	.mb-3, /* Homepage items */
+	.mr-3, /* Navbar toggle button on top-left corner */
+	nav.navbar ul.ml-auto, /* Right side of top bar */
+	.mr-auto,
+	ul.ctopics li.section div.content, /* collapsable section heads */
+	.course-content ul.ctopics li.section .content .toggle span.the_toggle /* collapsable section heads */
+	{
+		margin: 0 !important;
+	}
+
+	.sectionhead /* Collapsable section heads */
+	{
+		border: none;
+	}
+
+	.course-content ul.ctopics li.section .content .toggle span.the_toggle
+	{
+		font-weight: unset;
+	}
+
+	.navbar-brand /* eClass title on navbar */
+	{
+		margin: auto;
+		font-size: 3em;
+	}
+
+	div.dashboard-card div.course-info-container div.dropdown button /* 3 dots beside each course link on homepage */
+	{
+		height: unset !important;
+	}
 
     @media (min-width: 576px) {
         .card-deck {
 			/* Make each course button on homepage as list rather than buttons */
             flex-direction: column !important;
         }
+		.d-sm-flex {
+			/* Course title on course page */
+			display: block !important;
+		}
     }
 
 	@media (min-width: 840px) {
@@ -405,6 +522,54 @@
 	.accesshide
 	{
 		position: relative;
+	}
+
+	@media (min-width: 1235px) {
+		body.drawer-open-left #region-main.has-blocks .dashboard-card-deck:not(.fixed-width-cards) .dashboard-card
+		{
+			width: unset;
+		}
+	}
+
+	.w-100 /* Title of each eClass course */
+	{
+		/* Max width to prevent line wrapping */
+		/* It's nice when each item takes up 1 line only */
+		width: max-content;
+	}
+
+	div#nav-drawer, /* Sidebar */
+	div#nav-drawer nav ul li a div, /* Most sidebar buttons */
+	div#nav-drawer nav ul li a div div.media, /* Most sidebar buttons */
+	div#nav-drawer nav ul li div div, /* For "My Courses" button */
+	div#nav-drawer nav ul li div div div.media /* For "My Courses" button */
+	{
+		padding: 0;
+	}
+
+	div#nav-drawer nav ul li a,
+	div#nav-drawer nav ul li div
+	{
+		padding: 5px 5px;
+	}
+
+	div[aria-label="Course overview controls"] div /* Course homepage view buttons */
+	{
+		margin: 0 !important;
+	}
+
+	ul.ctopics .content .sectionhead .toggle_closed .sectionname /* Folded sections (when collapsed) */
+	{
+		margin: 0px !important;
+		text-align: left;
+	}
+
+	.section_availability .isrestricted span, /* Folded sections (when collapsed) */
+	.course-content ul.ctopics li.section .content .toggle span,
+	.section_availability .isrestricted /* Folded sections (when collapsed) */
+	{
+		color: red;
+		text-align: left;
 	}
 }
 
@@ -832,7 +997,9 @@
         color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
-	div.app-title-bar .container h1
+	div.app-title-bar .container h1,
+	div.alert-info, /* Outage alerts at bottom of page */
+	footer
 	{
 		padding: 10;
 	}
@@ -841,7 +1008,6 @@
 	{
 		margin-top: 10px;
 		margin-bottom: 0px;
-		padding: 0px;
 	}
 
 	.yapp-logo-container /* York header */
@@ -851,16 +1017,47 @@
 
 	.col-sm-6
 	{
-		display: inline;
+		display: contents;
 	}
 
-	footer
+	footer,
+	form
 	{
 		margin: 0px;
 	}
 
-	form[name="loginform"] div.row div.col-md-8
+	form[name="loginform"] div.row div.col-md-8 /* "Username" and "Password" blocks */
 	{
 		padding: 0px;
 	}
+
+	div.alert-warning
+	{
+		color: var(--color-fg);
+	}
+
+	.page-header /* Passport York paragraph with logo */
+	{
+		border: none;
+		padding: 0;
+	}
+
+	div.col-md-8 p input
+	{
+		line-height: normal;
+		width: 100%;
+	}
+
+	@media (min-width: 992px) {
+		.col-md-4 /* "Username" and "Password" blocks */
+		{
+			width: unset;
+		}
+	}
+
+	.alert
+	{
+		margin-bottom: 0px;
+	}
+
 }
