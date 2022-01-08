@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Kijiji Dark
-@version        1.0.2
+@version        1.0.3
 @author         Hussein Esmail
 @description    `A dark theme for the website https://kijiji.ca`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -281,15 +281,80 @@
 		height: unset;
 	}
 
-	.headerContainer-4071916628
+	.headerContainer-4071916628,
+	.input-2398582227, /* Ad title and tags input boxes */
+	.input-485887610 /* Condition select box */
 	{
-		padding: 0;
+		padding: 0px;
+	}
+
+	.input-2398582227, /* Ad title and tags input boxes */
+	.input-485887610 /* Condition select box */
+	{
+		padding-left: 5px;
 	}
 
 	a.tabLink__selected-1951076254 /* Selected tab on profile page */
 	{
 		background-color: var(--color-bg-active);
 		border-bottom: none;
+	}
+
+	div[class^="mapContainer"],
+	ul.post-ad-layout li#WebsiteUrl, /* Add website for $5 near photo browse */
+	ul.post-ad-layout li label[for="YouTubeURL"], /* Add YouTube video near photo browse */
+	.bottomToolTipContainer-945034715, /* "Don't see the city you want to post in?" block */
+	li label[for="YoutubeURL"],
+	input#YoutubeURL,  /* YouTube URL input */
+	input#YoutubeURL ~ p /* Elements on same level as YouTube URL input */
+	{
+		display: none;
+	}
+
+	@media (min-width: 760px) {
+		.selectPostingLocationContainer-798311495,
+		.postingLocationContainer-809359957
+		{
+			padding: 0px;
+		}
+	}
+
+	.container-191245672, /* Price radio buttons */
+	.controlRow-3158116936, /* Extra space below Title input */
+	#MainForm .container-info ul.post-ad-layout,
+	.input-1276203865 /* Ad title and tags input boxes */
+	{
+		margin: 0px;
+	}
+
+	.input-2398582227, /* Ad title and tags input boxes */
+	.input-485887610 /* Condition select box */
+	{
+		height: 30px;
+	}
+
+	.arrowIcon-909064759 /* Condition select box arrow */
+	{
+		height: 30%;
+		bottom: unset;
+	}
+
+	.moduleContainer-3330263826 /* Sections of ad post */
+	{
+		margin-top: 0px;
+	}
+
+	.formGroup-3340560223, /* Condition/Title/Description lines */
+	.tagContainer-1994054405 /* Tags input bar */
+	{
+		margin-top: 5px !important;
+	}
+
+	.moduleContainer-3330263826,
+	form#PostAdMainForm div.container-info
+	{
+		padding-bottom: 0px;
+		padding-right: 0px;
 	}
 }
 
