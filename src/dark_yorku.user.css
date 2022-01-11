@@ -21,9 +21,19 @@
     --color-url: red;
 } */
 
+@-moz-document domain("eclass.yorku.ca") {
+
+	/* Only eClass */
+	body
+	{
+		/* Unset the smaller font size that is meant for normal fonts */
+		font-size: unset;
+	}
+}
+
 @-moz-document domain("passportyork.yorku.ca"), domain("eclass.yorku.ca"), domain("webapp.eecs.yorku.ca") {
     
-    /* eClass */
+    /* eClass and other domains */
     :root {
         --color-bg: #141414;              /* Default background color */
         --color-bg-alert: #5c1717;
@@ -154,7 +164,8 @@
     p span,
     p strong,
     .btn-secondary,         /* Mainly for "Customize Home Page" button on homepage */
-	.que .formulation       /* Text for multiple choice questions and T/F */
+	.que .formulation,       /* Text for multiple choice questions and T/F */
+	span /* Sometimes font color is hardcoded into this in the "style" tag */
 	{
         color: var(--color-fg) !important;
     }
@@ -405,7 +416,8 @@
 	[data-region="blocks-column"], /* Second column on homepage ("Online users", "Upcoming Events", etc.) */
 	#region-main.has-blocks, /* Courses column on homepage */
 	nav.navbar,
-	div.page-header-headings /* Course title on course page */
+	div.page-header-headings, /* Course title on course page */
+	section#region-main /* Main content in eClass course */
 	{
 		width: 800px !important; /* Temporary, since parent is set to auto */
 	}
