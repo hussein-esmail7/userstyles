@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           YorkU Dark
-@version        1.1.0
+@version        1.1.1
 @author         Hussein Esmail
 @description    `A dark theme for York University websites`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -99,7 +99,8 @@
 	a.qnbutton .thispageholder,
 	.qtype_essay_editor,
 	span,
-	.card
+	.card,
+	caption /* At the top of tables on eClass */
 	{
         background-color: var(--color-bg) !important;
     }
