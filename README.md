@@ -49,6 +49,7 @@ You can also see my published userstyles
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_transmission.user.css) [Dark]  Transmission Daemon
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_w3schools.user.css) [Dark] w3schools
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_yorku.user.css) [Dark] York University Sites
+- [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_youtube.user.css) [Dark] YouTube
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_zippyshare.user.css) [Dark] Zippyshare
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_zumper.user.css) [Dark] Zumper
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/simple_reddit.user.css) [Simplified] Reddit
