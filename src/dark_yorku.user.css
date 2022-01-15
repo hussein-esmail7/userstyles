@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           YorkU Dark
-@version        1.1.1
+@version        1.1.2
 @author         Hussein Esmail
 @description    `A dark theme for York University websites`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -153,7 +153,6 @@
     .dropdown-toggle,
     .logininfo,
     .eris_search_library,
-    a,				/* URLs */
 	b,				/* Bold text */
     td,
     pre,            /* Code areas */
@@ -162,14 +161,19 @@
     .ablock div div span,
     th,
     div.mod_turnitintooltwo_refresh_link,
-    p span,
     p strong,
     .btn-secondary,         /* Mainly for "Customize Home Page" button on homepage */
-	.que .formulation,       /* Text for multiple choice questions and T/F */
-	span /* Sometimes font color is hardcoded into this in the "style" tag */
+	.que .formulation       /* Text for multiple choice questions and T/F */
 	{
-        color: var(--color-fg) !important;
+        color: var(--color-fg);
     }
+
+    p span /* Sometimes colours are hardcoded into span */
+	{
+		/* The !important block is separate from the main one or else the
+		 * courses list does not show url colour on the homepage */
+        color: var(--color-fg) !important;
+	}
 
     .ui-state-active,
     .ui-widget-content .ui-state-active,
@@ -198,7 +202,9 @@
         background-color: var(--dark-red);
     }
 
-    a:link
+    a,				/* URLs */
+    a:link,
+    a:link span /* Sometimes there is a span inside of a link */
 	{
         color: var(--color-fg-url) !important;
     }
