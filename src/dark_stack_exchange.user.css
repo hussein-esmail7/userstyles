@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           StackExchange Dark
-@version        1.0.3
+@version        1.0.4
 @author         Hussein Esmail
 @description    `A dark theme for the StackExchange websites`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -54,31 +54,31 @@ domain("askubuntu.com")
     }
 
     body {
-        background-image: none; 
+        background-image: none;
     }
 
-    .container,
 	#content,
-	footer,
-	header,
-	code,
+    .container,
 	.post-tag,
 	.s-sidebarwidget,
 	.s-sidebarwidget--header,
-	h1, h2, h3, h4, h5, h6,
 	.s-btn,
 	.mr2,
 	.js-vote-count,
 	.fs-fine,
-	textarea,
-	label,
 	.user-action-time,
 	.number,
 	.dialog-content,
-	p,
-	li,
 	.fs-body1,
 	.s-description,
+	h1, h2, h3, h4, h5, h6,
+	textarea,
+	label,
+	p,
+	li,
+	footer,
+	header,
+	code,
 	input,
 	pre /* Code text */
 	{
@@ -86,12 +86,26 @@ domain("askubuntu.com")
         color: var(--color-fg) !important;
     }
 
-    code, pre, .post-tag {
+    code,
+    pre, /* Code text */
+    .post-tag
+    {
 		/* Code boxes background color */
         background-color: var(--color-bg-code) !important;
     }
 
-    .question-hyperlink, .relativetime, .js-gps-track, .js-add-link, a {
+    span.math /* When there are math images of black characters */
+	{
+		/* Set the background to white so it can be seen */
+		background-color: white;
+	}
+
+    .question-hyperlink,
+    .relativetime,
+    .js-gps-track,
+    .js-add-link,
+    a
+    {
 		/* URL text color */
         color: var(--color-url) !important;
     }
@@ -104,19 +118,26 @@ domain("askubuntu.com")
         display: none !important;
     }
 
-    .hljs-keyword {
+    .hljs-keyword
+    {
         color: var(--color-code-blue) !important;
     }
-    
-    .youarehere, .youarehere > * {
+
+    .youarehere,
+    .youarehere > *
+    {
         background-color: var(--color-button-active) !important;
     }
 
-    textarea, input, .s-input {
+    textarea,
+    input,
+    .s-input
+    {
         background-color: var(--color-bg-textarea) !important;
     }
 
-    .s-btn__filled {
+    .s-btn__filled
+    {
         background-color: var(--color-bg-button);
     }
 
@@ -128,12 +149,12 @@ domain("askubuntu.com")
 		border: none;
 	}
 
-	.s-notice div 
+	.s-notice div
 	{
 		padding-left: 5px;
 	}
 
-	.user-info .user-details 
+	.user-info .user-details
 	{
 		margin-left: 0px !important;
 		width: 100% !important;
@@ -149,14 +170,15 @@ domain("askubuntu.com")
 		color: var(--color-fg);
 	}
 
-	*:not(i) {
+	*:not(i)
+	{
         /* Monospace everything except symbols (i tag) */
         font-family: var(--font-all) !important;
-		font-size: 13px;
+		font-size: 14px;
         letter-spacing: var(--font-all-spacing);
     }
 
-	.mb8, 
+	.mb8,
 	#answers-header,
 	.mb24
 	{
@@ -169,7 +191,7 @@ domain("askubuntu.com")
 		display: flex;
 		flex-direction: column;
 	}
-	
+
 	.site-footer--col
 	{
 		padding: 0px !important;
