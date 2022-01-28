@@ -59,5 +59,8 @@ You can also see my published userstyles
 - [[Install]](https://uso.kkx.one/style/7339) [Dark] Google Calendar
 - [[Install]](https://raw.githubusercontent.com/DM164/Dark-by-DM/master/instagram.user.css) [Dark] Instagram
 
+## Tapermonkey Scripts I reccomend
+- [[Install]](https://www.returnyoutubedislike.com/install) Return YouTube Dislike Counters
+
 # Donate
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/husseinesmail)
