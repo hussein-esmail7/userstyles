@@ -18,6 +18,12 @@
  *                             ▀     / https://github.com/hussein-esmail7/userstyles
 */
 
+/*
+ * Genome's Base64 Decode button script:
+ * https://greasyfork.org/en/scripts/429871-snahp-it-add-decode-button/code
+ * Post: https://fora.snahp.eu/viewtopic.php?f=21&t=370069
+ */
+
 @-moz-document domain("fora.snahp.eu") {
     :root {
         --color-bg: #141414;					   /* Main background color */
@@ -43,37 +49,37 @@
             --margin-right-topic-list: 20px;
             --margin-right-thread-pages: 0px;
         }
-        
+
         /* New items for mobile only */
-        
+
         ul[role="menubar"] .search-box.responsive-hide {
             /* Show search bar for the whole forum */
             display: block !important;
         }
-        
+
         ul[role="menubar"] .search-box.responsive-hide div form fieldset {
             /* Make search bar wider so user can see it */
             width: calc(100% / 0.75)
         }
     }
-    
+
     *:not(i) {
         /* Monospace everything except symbols (i tag) */
         font-family: var(--font-all) !important;
         letter-spacing: var(--font-all-spacing);
     }
-    
-    #content, 
-    .bg1, 
-    .nav-tabs, 
-    .navlinks, 
-    .post .inner, 
+
+    #content,
+    .bg1,
+    .nav-tabs,
+    .navlinks,
+    .post .inner,
     .post,
-    body, 
-    dl, 
+    body,
+    dl,
     form div,
-    html, 
-    li, 
+    html,
+    li,
     ul {
         /* Background color */
         background-color: var(--color-bg) !important;
@@ -83,41 +89,41 @@
         max-width: var(--max-width);
         margin: var(--all-location);
     }
-    
+
     .username-coloured,
 	div.codebox * {
         /* Items not to monospace */
         font-family: var(--font-default) !important;
         letter-spacing: normal;
     }
-    
+
     li {
         /* Get rid of border style on right side of table headers */
         background: none !important;
     }
-    
+
     span[style="color:#0000BF"] {
         /* Get rid of hardcoded items (an HTML no-no) */
         /* These also looked bad */
         color: var(--color-fg-replace) !important;
     }
-    
-    .forabg, 
-    .forumbg, 
-    .navbar, 
+
+    .forabg,
+    .forumbg,
+    .navbar,
     .post .inner {
         /* Get rid of grey borders on tables, posts, and nav bars */
         border: none;
         padding: 0;
         margin: 0 !important;
     }
-    
-    h1, 
-    h2, 
-    h3, 
-    h4, 
-    h5, 
-    h6, 
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
     p {
         /* Text color */
         color: var(--color-fg) !important;
@@ -128,13 +134,13 @@
         color: var(--color-fg-unread);
     }
 
-    dd.topics, 
+    dd.topics,
     dd.views {
         /* Must be here or else the Views column would be positioned badly */
         float: right !important;
     }
 
-    .forums li .row-item dd.topics, 
+    .forums li .row-item dd.topics,
     dd.views {
         text-align: var(--col-text-align-views);
     }
@@ -164,13 +170,13 @@
     a:link:hover {
         color: var(--color-url);
         text-decoration: underline;
-    }  
+    }
 
     div.list-inner {
         margin: 0px !important;
         padding: 0px !important;
         text-align: left !important;
-    } 
+    }
 
     li.header dt .list-inner {
         text-indent: 0px !important;
@@ -229,19 +235,19 @@
     {
         /* Get rid of the speech bubble images on the left */
         /* Text color is a good indication for me of what's unread */
-        background-image: none !important; 
+        background-image: none !important;
     }
 
-    dd.posts, 
-    dd.lastpost, 
-    i.icon-red, 
-    span.open, 
+    dd.posts,
+    dd.lastpost,
+    i.icon-red,
+    span.open,
     dd.profile-joined,
     a[title^="Donate"],
-    a.read i, 
+    a.read i,
     dd.profile-rank img,
     .rx_spotlight,
-    .online-list,                       
+    .online-list,
     .birthday-list,					/* I don't know these people. Sorry! :( */
     .user-flair__badge-image,
     .user-flair__expand-symbol,
@@ -252,7 +258,7 @@
         /* Items to get rid of to make things nicer */
         display: none !important;
     }
-    
+
     /* Other Improvements I Would Do ==================================
     - Reduce the width of the textarea when using the full reply editor.
 		But that's a hardcoded thing that I don't think I can change
