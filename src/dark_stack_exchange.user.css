@@ -112,7 +112,8 @@ domain("askubuntu.com")
 
     .js-freemium-cta,
 	.js-create-team-cta, /* Buttons on sidebar to create a Team */
-	.user-info .user-gravatar32 /* User profile pictures */
+	.user-info .user-gravatar32, /* User profile pictures */
+	.js-consent-banner /* Cookies consent banner */
 	{
         /* Banished elements */
         display: none !important;
