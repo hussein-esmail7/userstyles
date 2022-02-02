@@ -59,7 +59,9 @@ You can also see my published userstyles
 - [[Install]](https://uso.kkx.one/style/7339) [Dark] Google Calendar
 - [[Install]](https://raw.githubusercontent.com/DM164/Dark-by-DM/master/instagram.user.css) [Dark] Instagram
 
-## Tapermonkey Scripts I reccomend
+## Tampermonkey Scripts I recommend
+Install Tampermonkey for Google Chrome-based browsers
+[here](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo).
 - [[Install]](https://www.returnyoutubedislike.com/install) Return YouTube Dislike Counters
 
 # Donate
