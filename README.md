@@ -58,6 +58,7 @@ You can also see my published userstyles
 - [[Install]](https://userstyles.world/style/216/google-drive-dark) [Dark] Google Drive
 - [[Install]](https://uso.kkx.one/style/7339) [Dark] Google Calendar
 - [[Install]](https://raw.githubusercontent.com/DM164/Dark-by-DM/master/instagram.user.css) [Dark] Instagram
+- [[Install]](https://uso.kkx.one/style/190544) [Dark] Thingiverse (not the best but it's alright for now)
 
 ## Tampermonkey Scripts I recommend
 Install Tampermonkey for Google Chrome-based browsers
