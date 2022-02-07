@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           StackExchange Dark
-@version        1.0.4
+@version        1.0.5
 @author         Hussein Esmail
 @description    `A dark theme for the StackExchange websites`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -8,6 +8,13 @@
 @supportURL     https://github.com/hussein-esmail7/userstyles/issues
 @updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/dark_stack_exchange.user.css
 ==/UserStyle== */
+
+@-moz-document domain("stackoverflow.com")
+{
+    :root {
+        color-scheme: dark;             /* Used to get dark scroll bars */
+    }
+}
 
 @-moz-document domain("stackexchange.com"),
 domain("superuser.com"),
