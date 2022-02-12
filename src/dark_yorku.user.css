@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           YorkU Dark
-@version        1.1.2
+@version        1.1.3
 @author         Hussein Esmail
 @description    `A dark theme for York University websites`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -32,7 +32,7 @@
 }
 
 @-moz-document domain("passportyork.yorku.ca"), domain("eclass.yorku.ca"), domain("webapp.eecs.yorku.ca") {
-    
+
     /* eClass and other domains */
     :root {
         --color-bg: #141414;              /* Default background color */
@@ -49,6 +49,7 @@
         --color-fg-url-course: orange;    /* Foreground color for course URLs on homepage */
         --color-fg-danger: red;
         --color-fg-success: green;
+        --color-submitted: green;
         --color-nav: #141414;             /* Used to be: #2e2e2e */
         --dark-red: #7d0800;
         --font-all: monospace;              /* New main font to use */
@@ -369,7 +370,7 @@
         border: none;
     }
 
-    .coursename, 
+    .coursename,
     .course-info-container .align-items-start .text-truncate .coursename
     {
         /* Change colour of course URLs specifically */
@@ -590,10 +591,21 @@
 		color: red;
 		text-align: left;
 	}
+
+	td.submissionstatussubmitted
+	{
+		background-color: var(--color-submitted) !important;
+		color: var(--color-fg) !important;
+	}
+
+	td.submissionnotgraded
+	{
+		color: var(--color-fg) !important;
+	}
 }
 
 @-moz-document domain("yfile.news.yorku.ca") {
-    
+
     /* YFile */
     :root {
         --color-bg: #141414;
@@ -607,7 +619,7 @@
         --color-fg-url: red;
         --color-nav: #2e2e2e;
         --dark-red: #7d0800;
-        
+
         --text-title: 'York University - YFile';
     }
 
@@ -706,7 +718,7 @@
         /* Elements to get rid of */
         display: none;
     }
-    
+
     span[style="BACKGROUND-COLOR: YELLOW"]
 	{
         /* For exam schedule ("Information valid as of ...") */
@@ -735,7 +747,7 @@
         --color-fg-url: #76bfff;
         --color-nav: #2e2e2e;
         --dark-red: #7d0800;
-        
+
         --color-fg-button: black;
     }
 
@@ -986,13 +998,13 @@
 
     a.navig
 	{
-        color: white !important; 
+        color: white !important;
     }
 
 }
 
 @-moz-document url("https://passportyork.yorku.ca/ppylogin/ppylogin") {
-    
+
     /* eClass */
     :root {
         --color-bg: #141414;              /* Default background color */
