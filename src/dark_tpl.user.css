@@ -18,23 +18,94 @@
         --color-fg-url: lightblue;
         color-scheme: dark;                 /* Used to get dark scroll bars */
     }
-    
-    body, .SearchBox, .logon, #form_signin, .container, .action-bar, td, .panel, .menu-item, section, [class^="components-pages"], [class^="components-Save"], [class^="components-ItemButton"], th, .copyright, .add-new-list, .page-content, div.notice, .megamenu, .megamenu-column,
+
+    body,
+    .SearchBox,
+    .logon,
+    #form_signin,
+    .container,
+    .action-bar,
+    td,
+    .panel,
+    .menu-item,
+    section,
+    [class^="components-pages"],
+    [class^="components-Save"],
+    [class^="components-ItemButton"],
+    th,
+    .copyright,
+    .add-new-list,
+    .page-content,
+    div.notice,
+    .megamenu,
+    .megamenu-column,
 	.primary-row, /* "Hold placed" page background */
 	.place-hold-confirmation .record-details, /* "Hold placed" main panel */
 	.form-submission-response, /* "Hold placed" main panel 2 */
 	.record-details,
-	.form-place-hold
+	.form-place-hold,
+	.ac .auth-panel, /* Login panel */
+	.masthead-container, /* Header */
+	#header-bottom-container, /* Menu bar below header */
+	#syn_summary .syn_body, /* Synopsis for a specific book page */
+	.global-footer /* Footer */
 	{
         /* Background color */
-        background-color: var(--color-bg) !important; 
+        background-color: var(--color-bg) !important;
     }
+
+	#header-bottom-container nav ul li a /* Menu bar below header */
+	{
+		/* Reduce size of buttons */
+		display: initial;
+	}
+
+	.navigation-lower .navigation-dropdown a, /* Border around menu bar links */
+	table th,
+	table tbody th,
+	.accordion .accordion-title /* Dropdown titles */
+	.media-item,
+	.col-footer ul, /* Footer URL lists */
+	.col-footer li
+	{
+		padding: 0 !important;
+	}
+
+	footer *
+	{
+		border: none !important;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+
+	tbody#full-record-partial * *,
+	tbody#full-record-more * *,
+	tbody#full-record-hidden * *
+	{
+		border-bottom: 1px solid white;
+	}
+
+	main.standard-responsive-layout [data-accordion], /* Line at the end of a book description page */
+	main.standard-responsive-layout [data-accordion]:not([data-activatable*="active"]) /* Line at the end of a book description page */
+	{
+		border-bottom: none;
+	}
 
     .selected {
         background-color: var(--color-bg-item-focus);
     }
 
-    body, .SearchBox, .logon, h1, h2, h3, h4, h5, h6, label, .holds-title, .menu-item, span, p, ul, th,
+    body,
+    .SearchBox,
+    .logon,
+    h1, h2, h3, h4, h5, h6,
+    label,
+    .holds-title,
+    .menu-item,
+    span,
+    p,
+    ul,
+    th,
 	.place-hold-confirmation .record-details *, /* "Hold placed" main panel */
 	.form-submission-response *, /* "Hold placed" main panel 2 */
 	.record-details *
@@ -43,14 +114,16 @@
         color: var(--color-fg) !important;
     }
 
-    a:link, a {
+    a:link,
+    a
+    {
         /* Text color for URLs */
         color: var(--color-fg-url) !important;
     }
 
-    .media-item {
+    .media-item
+    {
         background-color: var(--color-bg-item-focus) !important;
-        padding: 0;
         border: none;
     }
 
@@ -70,5 +143,17 @@
 	{
 		margin-bottom: 10px;
 	}
-    
+
+    .components-PromotionAlert-___styles__horizontalBannerContainer___1oc2U
+	{
+		/* Low priority alerts like surveys */
+		background-color: dimgray;
+		border-top: none; /* Gets rid of 3px thick green top border */
+	}
+
+	.social-container, /* Social media icon container: FaceBook, Twitter, etc. */
+	.enewsletter .text-center div img /* Email icon for the eNewsletter */
+	{
+		display: none;
+	}
 }
