@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           GitHub Dark Theme
-@version        1.0.2
+@version        1.0.3
 @author         Hussein Esmail
 @description    `A dark theme template for Github`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -10,19 +10,28 @@
 ==/UserStyle== */
 
 @-moz-document domain("github.com") {
-    
+
     :root {
-        --color-bg: #141414;            /* Default background color */
-        --color-fg: #f8f8f8;            /* Default text color */
+        --color-bg: #141414;			/* Default background color */
+        --color-fg: #f8f8f8;			/* Default text color */
         --color-fg-secondary: #eeeeee;
         --color-fg-button: black;
         --color-bg-table: #31363a;
-		--font-all: monospace;						/* New main font to use */
-		--font-all-spacing: -1px; /* New main font spacing (if it needs to be altered) */
+        --color-bg-accent: orange;
+		--font-all: monospace;			/* New main font to use */
+		--font-all-spacing: -1px;		/* New font spacing to fit new font */
         --table-hover-color: #222222;
         --color-bg-search: white;
-		--space-sidebar-repo: 5px; /* Space between top and bottom in repo */
-        color-scheme: dark;                 /* Used to get dark scroll bars */
+		--space-sidebar-repo: 5px;		/* Space between top and bottom in repo */
+        color-scheme: dark;				/* Used to get dark scroll bars */
+
+		/* Overriding website colours */
+		/* Used to be different shades of green, now different shades
+		 * of orange */
+        --color-calendar-graph-day-L1-bg: #663d00 !important;
+        --color-calendar-graph-day-L2-bg: #995c00 !important;
+        --color-calendar-graph-day-L3-bg: #cc7a00 !important;
+        --color-calendar-graph-day-L4-bg: orange !important;
     }
 
     html,
@@ -74,9 +83,87 @@
 	ul.UnderlineNav-body {
 		margin: auto !important;
 	}
-	
+
 	span.v-align-middle:contains("Public") {
 		display: none !important;
+	}
+
+	ul[data-filterable-for="your-repos-filter"] li,
+	.py-4
+	{
+		padding-top: 10px !important;
+		padding-bottom: 10px !important;
+	}
+
+	header.Header,
+	body
+	{
+		/* Changing the maximum width of the whole site */
+		max-width: 1000px;
+		margin: auto;
+	}
+
+	form[data-autosearch-results-container="user-repositories-list"][role="search"] * /* Sort dropdowns beside search bar */
+	{
+		display: -webkit-inline-box !important;
+	}
+
+	footer div.pt-6 /* Footer that includes Terms, Privacy, API, etc. */
+	{
+		padding: 0px !important
+	}
+
+	.avatar-user /* Profile picture icon */
+	{
+		/* Sets profile picture to squares instead of circles
+		 * Used to be 50% to be a circle */
+		border-radius: 6px !important;
+	}
+
+	div.user-status-circle-badge-container
+	{
+		/* Clears background colour of status circle icon caused by
+		 * --color-bg */
+		background-color: transparent !important;
+		/* Sets icon to bottom corner of the square */
+		bottom: -50px;
+		left: 105%;
+	}
+
+	div.js-calendar-graph /* Div that holds the contribution graph svg */
+	{
+		/* Sets contribution graph to scrollable since I reduced the entire
+		 * site width earlier */
+		overflow-x: scroll !important;
+	}
+
+	path[stroke="#40c463"] /* Shaded section in overview graph */
+	{
+		stroke: var(--color-bg-accent) !important;
+	}
+
+	.TimelineItem /* List items in timeline */
+	{
+		/* Reduced vertical padding by half */
+		padding: 8px 0;
+	}
+
+	.css-truncate.css-truncate-target, .css-truncate .css-truncate-target
+	{
+		max-width: unset;
+	}
+
+	.filter-item.selected,
+	.filter-item[aria-selected=true],
+	.filter-item[aria-current]:not([aria-current=false])
+	{
+		background-color: var(--color-bg-accent);
+		color: black;
+	}
+
+	div.js-navigation-container[aria-labelledby="files"] div.Box-row div.col-5 /* Commit messages on each file */
+	{
+		width: 20%;
 	}
 
 	/* This block makes the header bar as wide as the content and now window width */
