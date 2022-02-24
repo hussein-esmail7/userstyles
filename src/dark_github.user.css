@@ -52,6 +52,12 @@
         color: var(--color-fg) !important;
     }
 
+	a
+	{
+		/* URL Colour */
+        color: var(--color-fg) !important;
+    }
+
     input {
         /* Text inputs */
         color: var(--color-fg);
