@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           YorkU Dark
-@version        1.1.3
+@version        1.1.4
 @author         Hussein Esmail
 @description    `A dark theme for York University websites`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -1005,7 +1005,7 @@
 
 @-moz-document url("https://passportyork.yorku.ca/ppylogin/ppylogin") {
 
-    /* eClass */
+    /* PPY Login */
     :root {
         --color-bg: #141414;              /* Default background color */
         --color-bg-alert: #5c1717;
@@ -1041,7 +1041,8 @@
 		margin-bottom: 0px;
 	}
 
-	.yapp-logo-container /* York header */
+	.yapp-logo-container, /* York header */
+	.alert.alert-warning br
 	{
 		display: none;
 	}
@@ -1055,6 +1056,7 @@
 	form
 	{
 		margin: 0px;
+		text-align: unset;
 	}
 
 	form[name="loginform"] div.row div.col-md-8 /* "Username" and "Password" blocks */
@@ -1089,6 +1091,23 @@
 	.alert
 	{
 		margin-bottom: 0px;
+		padding: 10px;
+	}
+
+	body
+	{
+		max-width: 800px;
+		margin: auto;
+	}
+
+	.app-title-bar /* Red bar at header */
+	{
+		background-color: transparent;
+	}
+
+	.page-content /* Where text is normally stored */
+	{
+		font-size: unset;
 	}
 
 }
