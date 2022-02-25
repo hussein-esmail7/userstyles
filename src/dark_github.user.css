@@ -36,7 +36,7 @@
 
     html,
 	body,
-	div:not(.Box-row--focus-gray *, .Box-row--focus-gray), /* So files can be focused on repo page */
+	div:not(.Box-row--focus-gray *, .Box-row--focus-gray, .user-status-circle-badge), /* So files can be focused on repo page */
 	p,
 	li,
 	ul,
@@ -52,7 +52,12 @@
         color: var(--color-fg) !important;
     }
 
-	a
+    div.user-status-circle-badge
+	{
+		background-color: unset !important;
+	}
+
+	a /* URLs normally in blue */
 	{
 		/* URL Colour */
         color: var(--color-fg) !important;
