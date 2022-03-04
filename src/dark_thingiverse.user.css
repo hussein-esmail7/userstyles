@@ -2,7 +2,7 @@
 @name           Dark Theme Template
 @version        1.0.0
 @author         Hussein Esmail
-@description    `A dark theme template for _`
+@description    `A dark theme template for Thingiverse`
 @namespace      https://github.com/hussein-esmail7/userstyles
 @homepageURL    https://github.com/hussein-esmail7/userstyles
 @supportURL     https://github.com/hussein-esmail7/userstyles/issues
@@ -22,21 +22,80 @@
         color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
-    html, body, div, p, li, ul {
+    html, body,
+    .ScrollUpButton__button--1ZLLm /* "Back to top" button */
+    {
         /* Background color */
         background-color: var(--color-bg) !important;
     }
 
-    h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl * {
+	.ThingCard__thingCard--1IcHY, /* Each Thing card */
+	.Sort__dropdownButton--1myG8, /* "Popular Last 30 Days" homepage dropdown */
+	.CategorySort__dropdownButton--gpHIi, /* "All Things" homepage dropdown */
+    .FilterBySort__dropdownButton--BxDpW, /* "Filter by" homepage dropdown */
+	.UserFilter__dropdownButton--21sZC, /* Filter dropdown on your own profile */
+	.UserSort__dropdownButton--VBJnd, /* "Sort by" on your own profile */
+	.MetricButton__tabButton--2rvo1, /* Self metrics on your own profile */
+	.Dropdown__dropdownItems--N6MD4, /* Profile picture dropdown menu */
+	.UserProfileCard__container--1m2Lc, /* User profile card */
+	.UserAboutWidget__container--qDA2i, /* User about widget */
+	.CollectionCard__CollectionCard--flppB, /* Collection card, like a Thing */
+	.SidebarMenu__sidebarMenu--3uBjd, /* Sidebar of a Thing's page */
+	.ShareThingBlock__shareWindowContainer--1OaE6, /* Share menu of a Thing */
+	div.thumbs-wrapper, /* Thumbnail backgound on a Thing page */
+	.ThingPage__galleryHeader--2CF9f, /* Thing page title bar */
+	.ThingPage__mainColumn--25bWI, /* Description of a Thing */
+    .WidgetContainer__widget--2Zkwj /* Table of contents of description of a Thing */
+	{
+		/* Secondary background colour */
+		background-color: black !important;
+	}
+
+    h1, h2, h3, h4, h5, h6,
+    a,
+    div,
+    span,
+    .ThingCardHeader__cardCreatedAfter--3xS2o, /* Thing title */
+    .ThingCardHeader__cardNameWrapper--3xgAZ, /* Thing title */
+    .UserProfileBody__name--26weQ, /* Profile name */
+    .SideMenuItem__textWrapper--11bnt, /* Text of a Thing sidebar */
+    .ThingPage__description--14TtH p /* Thing description */
+	{
         /* Text color */
         color: var(--color-fg) !important;
     }
 
-    input {
+    .SearchInput__searchContainerUserProfileSearchPage--2gGan /* Search bar */
+    {
         /* Text inputs */
         color: var(--color-fg-button) !important;
         background-color: var(--color-bg-search);
     }
 
+    .ThingCardHeader__avatarWrapper--1Jliv, /* Profile avatar */
+    .ThingCardHeader__cardNameBody--3u1ZL, /* Profile avatar */
+    .SharePageBlock__sharePageContainer--2tdTp, /* Share menu on right side */
+    div.ShareThingBlock__shareWindowContainer--1OaE6, /* Share block of Thing */
+    .ThingPage__authorAvatarBody--x0j-o.Avatar__avatarBody--2U7bI /* Avatar image on a Thing */
+	{
+		/* Hide these elements */
+		display: none;
+	}
+
+	.SidebarMenu__sideMenuTop--3xCYh
+	{
+		border: none;
+	}
+
+	.ThingImageCarousel__carouselWrapper--FHNiQ .thumbs-wrapper /* Thumbnail backgound on a Thing page */
+	{
+		margin: 0px !important;
+	}
+
+	.ThingCardHeader__headerContainer--3vy1c /* Title of a Thing on Thing Item */
+	{
+		/* To not shorten the title of a Thing */
+		/* display: revert; */
+	}
 }
 
