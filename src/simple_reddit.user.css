@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Simplified Theme
-@version        1.1.6
+@version        1.1.7
 @author         Hussein Esmail
 @description    `A simpler theme template for Reddit (New)`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -59,7 +59,10 @@
 	/* New background color */
 	._3ozFtOe6WpJEMUtxDOIvtU, /* Main panel background */
 	.uI_hDmU5GSiudtABRz_37, /* Content of a specific post link */
-	.uI_hDmU5GSiudtABRz_37 *:not(._3MknXZVbkWU8JL9XGlzASi *), /* Content of a specific post link except for text box for new comments */
+	.uI_hDmU5GSiudtABRz_37 *:not(._3MknXZVbkWU8JL9XGlzASi *,
+		span._1jNPl3YUk6zbpLWdjaJT1r),
+		/* Content of a specific post link except for text box for new comments
+		 * _1jNPl3YUk6zbpLWdjaJT1r is for flair colours on a post */
 	._1poyrkZ7g36PawDueRza-J, /* Each post's preview box in feed */
 	._3Qkp11fjcAw9I9wtLo8frE, /* Upvote side of each post in feed */
 	._3JDs8KEQIXSMn1bTF2ZqJ_, /* Top border of a subreddit (center) */
@@ -151,7 +154,7 @@
 	{
 		margin-left: 10px;
 	}
-	
+
 	._3GisC5qJ-ELW9BhucOWh1M /* "Add community to custom feed" spacing */
 	{
 		padding: 10px 5px;
@@ -178,7 +181,6 @@
 		vertical-align: middle;
 	}
 
-	._1qeIAgB0cPwnLhDF9XSiJM, /* Comment and post paragraphs */
 	.yn9v_hQEhjlRNZI0xspbA,
 	._32pB7ODBwG3OSx1u_17g58, /* Post content */
 	.VatfkH4hd3AcIOCT15Zai, /* Location button on r/popular */
@@ -291,7 +293,14 @@
 		margin-left: 0;
 	}
 
-	/* 
+	._1qeIAgB0cPwnLhDF9XSiJM /* Main content paragraph */
+	{
+		/* Increase the font size since with this font it's too small to read
+		 * on a laptop */
+		font-size: 110%;
+	}
+
+	/*
 ! www.reddit.com##._1b1Jalg2nxA_Z-BjKXRfAV
 ! www.reddit.com##.scrollerItem.hrQ5rXDbyl6t3TIXxENXB._3Qkp11fjcAw9I9wtLo8frE._1EG7_Cm18ANvUvJ4rJdRgQ
 ! www.reddit.com###t3_moc7cd > ._11R7M_VOgKO1RJyRSRErT3._1poyrkZ7g36PawDueRza-J > ._1ixsU4oQRnNfZ91jhBU74y > ._3-miAEojrCvx_4FQ8x3P-s > div._3U_7i38RDPV5eBv7m4M-9J > ._28vEaVlLWeas1CDiLuTCap._1EWxiIupuIjiExPQeK4Kud._3yh2bniLq7bYr4BaiXowdO.YszYBnnIoNY8pZ6UwCivd._10K5i7NW6qcm-UoCtpB3aK
