@@ -1,0 +1,60 @@
+/* ==UserStyle==
+@name           YorkU Printable Userstyle
+@version        1.0.0
+@author         Hussein Esmail
+@description    `A printer-based theme template for eClass on YorkU`
+@namespace      https://github.com/hussein-esmail7/userstyles
+@homepageURL    https://github.com/hussein-esmail7/userstyles
+@supportURL     https://github.com/hussein-esmail7/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/printable_yorku.user.css
+==/UserStyle== */
+
+@-moz-document domain("eclass.yorku.ca") {
+
+    :root {
+        --color-bg: white;            /* Default background color */
+        --color-fg: black;            /* Default text color */
+        color-scheme: dark;                 /* Used to get dark scroll bars */
+    }
+
+    html, body, div, p, li, ul {
+        /* Background color */
+        background-color: var(--color-bg) !important;
+    }
+
+    h1, h2, h3, h4, h5, h6,
+    a,
+    strong,
+    label,
+    div
+    {
+        /* Text color */
+        color: var(--color-fg) !important;
+    }
+
+    nav.navbar, /* Site header */
+    footer#page-footer,
+    div.alert,
+    div.activity-navigation
+	{
+		/* Elements to hide, won't be useful while printed */
+		display: none;
+	}
+
+	div#page /* Content below site header */
+	{
+		margin: 0px;
+	}
+
+	@media (max-width: 767.98px) {
+		.breadcrumb:not(:empty)
+		{
+			/* Site path header (Dashboard/Course/Week_/SectionName...etc.) */
+			border: none;
+			padding: 0px;
+			margin-bottom: 0px;
+		}
+	}
+
+}
+
