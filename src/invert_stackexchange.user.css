@@ -1,0 +1,57 @@
+/* ==UserStyle==
+@name           StackExchange Inverted
+@version        1.0.0
+@author         Hussein Esmail
+@description    `A dark theme template for StackExchange sites`
+@namespace      https://github.com/hussein-esmail7/userstyles
+@homepageURL    https://github.com/hussein-esmail7/userstyles
+@supportURL     https://github.com/hussein-esmail7/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/invert_stackexchange.user.css
+==/UserStyle== */
+
+@-moz-document
+domain("superuser.com"),
+domain("serverfault.com"),
+domain("askubuntu.com"),
+domain("stackexchange.com"),
+domain("stackoverflow.com")
+{
+	/* Applies to all sites including StackOverflow */
+
+    :root {
+        color-scheme: dark !important; /* Used to get dark scroll bars */
+	}
+
+	.js-create-team-cta /* "Create a Team" sidebar icon */
+	{
+		/* Elements to hide */
+		display: none !important;
+	}
+
+}
+
+@-moz-document
+domain("superuser.com"),
+domain("serverfault.com"),
+domain("askubuntu.com"),
+domain("stackexchange.com")
+{
+	/* Applies to all sites except StackOverflow */
+
+	body
+	{
+		background-color: #252524 !important;
+	}
+
+	/* Invert the whole website */
+	div.container, /* All content except main header and site header */
+	header.site-header, /* Header banner */
+	footer.site-footer /* Site footer */
+	{
+		/* Taken from "Conwy - Stack Exchange" by lineav
+		 * https://uso.kkx.one/style/176998 (CC Licence) */
+		filter: invert(0.80) hue-rotate(180deg) contrast(1.2)!important;
+		background: #ffffff !important;
+	}
+
+}
