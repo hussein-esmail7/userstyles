@@ -53,7 +53,7 @@ You can also see my published userstyles
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_youtube.user.css) [Dark] YouTube
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_zippyshare.user.css) [Dark] Zippyshare
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_zumper.user.css) [Dark] Zumper
-- [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/invert_stackexchange.css) [Invert] StackExchange
+- [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/invert_stackexchange.user.css) [Invert] StackExchange
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/simple_reddit.user.css) [Simplified] Reddit
 
 ## Other Styles I Use + Recommend
