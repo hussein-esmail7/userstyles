@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Simplified Theme
-@version        1.1.7
+@version        1.1.8
 @author         Hussein Esmail
 @description    `A simpler theme template for Reddit (New)`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -98,6 +98,12 @@
     a._1YWXCINvcuU7nk0ED-bta8[href="/predictions"], /* Predictions button on profile menu */
     a._1YWXCINvcuU7nk0ED-bta8[href="/premium"], /* Premium button on profile menu */
     a._1YWXCINvcuU7nk0ED-bta8[href="/talk"], /* Talk button on profile menu */
+    a._3fbofimxVp_hpVM6I1TGMSGCltVwsXPu5lE-gs4Nucu[href="https://ads.reddit.com?utm_source=d2x_consumer&utm_name=user_menu_cta"], /* Advertise on Reddit button on profile menu */
+    ._3fbofimxVp_hpVM6I1TGMS._3zu1R6cDitNjrJaFA1VPXj[href="/coins"], /* Coins button on profile menu */
+    ._3fbofimxVp_hpVM6I1TGMS.GCltVwsXPu5lE-gs4Nucu[href="/powerups"], /* Powerups button on profile menu */
+    ._3fbofimxVp_hpVM6I1TGMS.GCltVwsXPu5lE-gs4Nucu[href="/predictions"], /* Predictions button on profile menu */
+    ._3fbofimxVp_hpVM6I1TGMS.GCltVwsXPu5lE-gs4Nucu[href="/premium"], /* Premium button on profile menu */
+    ._3fbofimxVp_hpVM6I1TGMS.GCltVwsXPu5lE-gs4Nucu[href="/talk"], /* Talk button on profile menu */
     a[href="/r/psbattleslive"], /* Hide sponsored button from top nav bar */
     a[href="/rpan/"], /* RPAN button from top nav bar */
 	a[href*="/m/"] img, /* Custom feed's thumbnails on sidebar */
@@ -300,6 +306,7 @@
 		 * on a laptop */
 		font-size: 110%;
 	}
+
 
 	/*
 ! www.reddit.com##._1b1Jalg2nxA_Z-BjKXRfAV
