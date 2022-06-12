@@ -122,7 +122,7 @@ domain("askubuntu.com")
 	.user-info .user-gravatar32, /* User profile pictures */
 	.js-consent-banner /* Cookies consent banner */
 	{
-        /* Banished elements */
+        /* Banished elements / Elements to hide */
         display: none !important;
     }
 

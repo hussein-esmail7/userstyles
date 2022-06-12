@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           YorkU Dark
-@version        1.1.4
+@version        1.1.5
 @author         Hussein Esmail
 @description    `A dark theme for York University websites`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -1108,6 +1108,77 @@
 	.page-content /* Where text is normally stored */
 	{
 		font-size: unset;
+	}
+
+}
+
+@-moz-document domain("web3prod.sis.yorku.ca") {
+
+    /* Degree Progress Report */
+    :root {
+        --color-bg: #141414;              /* Default background color */
+        --color-bg-alert: #5c1717;
+        --color-bg-courselink: #2f2f2f;
+        --color-bg-input: #535353;
+        --color-bg-panel: #222629;
+        --color-bg-secondary: #201919;
+        --color-bg-url-hover: darkred;
+        --color-bg-url-visited: transparent;
+		--color-bg-dropdown-hover: #202020;
+        --color-fg: #f8f8f8;              /* Default text color */
+        --color-fg-url: red;              /* Default URL foreground color */
+        --color-fg-url-course: orange;    /* Foreground color for course URLs on homepage */
+        --color-fg-danger: red;
+        --color-fg-success: green;
+        --color-submitted: green;
+        --color-nav: #141414;             /* Used to be: #2e2e2e */
+        --dark-red: #7d0800;
+        --font-all: monospace;              /* New main font to use */
+        --font-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        color-scheme: dark;                 /* Used to get dark scroll bars */
+    }
+
+    #main_content, /* Supposedly the main panel. Really the excess of the side nav bar only */
+    #footer,
+    #nav_area, /* Side nav bar with content elements */
+    #navlist, /* Side nav bar element inside #nav_area */
+    #navlist #button, /* Side nav bar element inside #nav_area */
+    #navlist #button ul, /* Side nav bar element inside #nav_area */
+    #navlist a:link, /* Actual list items in side nav bar */
+    #navlist a:visited, /* Actual list items in side nav bar */
+    #navlist a:hover, /* Actual list items in side nav bar */
+    #ylogo2,
+    #yda_content /* Main content of page after selecting degree from 3 options */
+	{
+		background: var(--color-bg) !important;
+	}
+
+	#content, /* Main panel */
+	html
+	{
+		background-color: var(--color-bg);
+	}
+
+	#content, /* Main panel */
+	#content *, /* Main panel */
+	#content tr,
+    #ylogo2,
+	h1, h2, h3, h4, h5, h6
+	{
+		/* Text color */
+		color: var(--color-fg) !important;
+	}
+
+	a:link,
+	a:visited
+	{
+		color: var(--color-fg-url) !important;
+	}
+
+	table.regtable, th, td,
+	table
+	{
+		border-color: var(--color-fg) !important;
 	}
 
 }
