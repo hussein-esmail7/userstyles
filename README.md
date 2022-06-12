@@ -57,8 +57,9 @@ You can also see my published userstyles
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/simple_reddit.user.css) [Simplified] Reddit
 
 ## Other Styles I Use + Recommend
-- [[Install]](https://userstyles.world/style/216/google-drive-dark) [Dark] Google Drive
 - [[Install]](https://uso.kkx.one/style/7339) [Dark] Google Calendar
+- [[Install]](https://userstyles.world/style/216/google-drive-dark) [Dark] Google Drive
+- [[Install]](https://userstyles.world/style/2597/dark-docs) [Dark] Google Docs
 - [[Install]](https://raw.githubusercontent.com/DM164/Dark-by-DM/master/instagram.user.css) [Dark] Instagram
 - [[Install]](https://uso.kkx.one/style/190544) [Dark] Thingiverse (not the best but it's alright for now)
 
