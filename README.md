@@ -8,8 +8,8 @@
 
 ## What is this?
 This repository is used to host my custom .user.css files that I use in the
-"Stylus" browser extension in Brave. Most (if not all) of these are for dark
-modes for sites that do not have them themselves.
+"Stylus" browser extension in [Brave](https://brave.com). Most (if not all) of
+these are for dark modes for sites that do not have them themselves.
 
 You can also see my published userstyles
 [here](https://userstyles.world/user/hussein-esmail7)
@@ -21,7 +21,11 @@ You can also see my published userstyles
    from the Chrome Web Store, or
    [Stylus](https://addons.mozilla.org/en-CA/firefox/addon/styl-us/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
    from the Firefox Add-ons Store.
-2. Open whichever URLs you want to install from this page in a new tab.
+2. Open whichever URLs you want to install from this page in a new tab. If you
+   have the Stylus extension installed, it will convert that file page to an
+   installation page of that file to your browser. If you are opening a
+   ".user.css" file on Github, make sure you open the "Raw" file, not just the
+   page on Github.
 3. You should see an "Install Style" button on the top left corner of the page
    instead of plain text. Once you install it, that theme will be applied to
    the site it's for.

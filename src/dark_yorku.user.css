@@ -1182,3 +1182,84 @@
 	}
 
 }
+
+@-moz-document domain("once.uit.yorku.ca") {
+
+    /* Online Course Evaluations (ONCE) */
+    :root {
+        --color-bg: #141414;				/* Default background color */
+        --color-fg: #f8f8f8;				/* Default text color */
+        --color-fg-url: red;				/* Default URL foreground color */
+        --color-fg-t-col: #141414;			/* Table column background color */
+        color-scheme: dark;                 /* Used to get dark scroll bars */
+    }
+
+    body,
+    div.navbar,
+    div.navbar-header,
+    div.navbar-collapse
+	{
+		background-color: var(--color-bg);
+	}
+
+	label,
+	td,
+	.py-name, /* "Logged in as [NAME], the NAME text at the top */
+	div.dataTables_info, /* "Showing _ to _ of _ entries", at end of table */
+	div.smallbodytext, /* Footer text */
+	a.paginate_button, /* "Next", "Previous" on the main table */
+	p, /* Normal question text when being asked questions during feedback */
+	p b, /* "Status Legend" */
+	li, /* Unformatted text under Status Legend */
+	li b u /* Formatted text under Status Legend */
+	{
+		color: var(--color-fg) !important;
+	}
+
+	h2, h4, h6, .h2, .h4, .h6,
+	a:link,
+	a:visited
+	{
+		/* Changed these headings to URL color since it was the same before */
+		color: var(--color-fg-url) !important;
+	}
+
+	table.dataTable.order-column.stripe tbody tr.even > .sorting_1,
+	table.dataTable.order-column.stripe tbody tr.odd > .sorting_1,
+	table.dataTable.display tbody tr.even > .sorting_1,
+	table.dataTable.display tbody tr.odd > .sorting_1,
+	table.dataTable.display tbody tr td
+	{
+		/* Table columns */
+		background-color: var(--color-fg-t-col);
+	}
+
+	table.dataTable thead th,
+	table.dataTable thead td
+	{
+		/* Slightly more compact table headers. Original values: 10px 18px */
+		padding: 5px 15px !important;
+	}
+
+	textarea,
+	.form-control
+	{
+		background-color: grey;
+		color: var(--color-fg);
+		padding: 2px 5px; /* Instead of 6px, 12px. Slightly more compact */
+	}
+
+	.alert-info /* Shows up when you've submitted an evaluation */
+	{
+		background-color: blue;
+		border: none;
+	}
+
+	.dataTables_wrapper .dataTables_paginate .paginate_button.disabled
+	{
+		/* "Next" and "Previous" buttons for table when disabled */
+		color: grey !important;
+	}
+
+
+}
