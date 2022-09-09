@@ -21,16 +21,6 @@
     --color-url: red;
 } */
 
-@-moz-document domain("eclass.yorku.ca") {
-
-	/* Only eClass */
-	body
-	{
-		/* Unset the smaller font size that is meant for normal fonts */
-		font-size: unset;
-	}
-}
-
 @-moz-document domain("passportyork.yorku.ca"), domain("eclass.yorku.ca"), domain("webapp.eecs.yorku.ca") {
 
     /* eClass and other domains */
@@ -52,8 +42,7 @@
         --color-submitted: green;
         --color-nav: #141414;             /* Used to be: #2e2e2e */
         --dark-red: #7d0800;
-        --font-all: monospace;              /* New main font to use */
-        --font-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        --font-all: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
         color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
@@ -111,33 +100,6 @@
 		background-color: green;
 	}
 
-    .mod_turnitintooltwo_listbar,
-    .block_online_users,
-    .block_yu_messager,
-    .dashboard-card-img,
-    header#page-header div .card,
-	div[aria-label="Course overview controls"] div button /* Course homepage view buttons */
-	{
-        /* Borders to get rid of */
-        border: none !important;
-    }
-
-	div[aria-label="Course overview controls"] div button /* Course homepage view buttons */
-	{
-		padding: 0;
-		padding-right: 20px;
-	}
-
-	div[aria-label="Course overview controls"] div button i.icon /* Course homepage view buttons */
-	{
-		display: none;
-	}
-
-	div[aria-label="Course overview controls"] div button:after /* Course homepage view buttons */
-	{
-		margin: 0;
-	}
-
     html, body,
     p, /* Paragraphs */
     #page-wrapper,
@@ -175,20 +137,6 @@
 		 * courses list does not show url colour on the homepage */
         color: var(--color-fg) !important;
 	}
-
-    .ui-state-active,
-    .ui-widget-content .ui-state-active,
-    .ui-widget-header .ui-state-active,
-    .mod_turnitintooltwo_listbar,
-    .mod_turnitintooltwo_refresh_link
-    {
-        background: none !important;
-    }
-
-    .ui-corner-all
-	{
-        border-radius: 0px !important;
-    }
 
     #york-logo,
     .eris_search_library,
@@ -234,37 +182,6 @@
         background-color: var(--color-bg-courselink) !important;
     }
 
-    .block_slideshow,           /* Slideshow at top of homescreen */
-    #card-widgetmenu,
-    #ycrest,
-    .watson-btn-container,      /* Ask Savy button */
-    .feedback div p,
-    .feedback div div div div br,
-    .feedback div div br,
-    .block_yu_messager,
-    .dashboard-card-img,        /* Image for each course on homescreen */
-    #instance-222305-header,
-    .block_badges,              /* Badges block on homescreen */
-    .block_calendar_month,      /* Calendar block on homescreen */
-    .dashboard-card-footer,     /* Progress bars below courses */
-    .block_important_links,     /* Links section I never use */
-    .block_library,              /* Library search block */
-	a.qnbutton .accesshide, /* Question list on Quiz */
-	li a[data-key="privatefiles"], /* "Private Files" button, I don't use it */
-	li a[data-key="btn_Notepad"], /* "Notepad" button, I don't use it */
-	div[data-region="event-list-container"] div[data-region="empty-message"] img, /* "No events" image on homepage sidebar */
-	ul.ctopics li.section div.right.side a.cps_centre, /* "Topic #" labels beside collapsable section heads */
-	ul.ctopics li.section.main.clearfix.hidden /* "Not Available" collabsable section */
-    {
-        /* Elements to get rid of */
-        display: none;
-    }
-
-	div[id^="block-timeline"] div.border-bottom
-	{
-		border: none !important;
-	}
-
     .bg-white,
     .nav-link,                      /* Language dropdown on left */
     [aria-controls="nav-drawer"],
@@ -279,7 +196,6 @@
 
     .sectionhead
 	{
-        border: white 1px solid;
     }
 
     select,
@@ -307,10 +223,6 @@
         background-color: var(--color-fg-danger) !important;
     }
 
-    div.mod_turnitintooltwo_refresh_link {
-        border: 1px solid white;
-    }
-
     div.col.span_1_of_4.mobile_full *,
     .york-global-footer-links
     {
@@ -321,20 +233,6 @@
         background-color: inherit !important;
     }
 
-    header#page-header div .card {
-        /* Reduces blank space. Still need some for the "Customise this page" button on homepage */
-        height: 50px;
-    }
-
-    .block_myoverview .paged-content-page-container {
-        /* Reduces blank space underneath courses homepage before the "Show #" dropdown */
-        min-height: 0rem;
-    }
-
-    .block_myoverview .content {
-        min-height: 10rem;
-    }
-
     div.menubar {
         background-color: inherit !important;
     }
@@ -343,31 +241,10 @@
         border-color: inherit !important;
     }
 
-    nav[role="navigation"] {
-        display: block !important;
-    }
-
-    @media (min-width: 1200px) {
-        #region-main.has-blocks .dashboard-card-deck:not(.fixed-width-cards) .dashboard-card {
-            /* Homepage courses list as list not blocks */
-            width: inherit;
-        }
-    }
-
     .dashboard-card,			/* Homepage: Courses in courses block */
 	.course-info-container		/* Homepage: Courses in courses block */
 	{
         background-color: inherit !important;
-    }
-
-    .dashboard-card,			/* Used to reduce spacing between courses list */
-	.course-info-container,
-    .block_timeline,			/* Homepage: Timeline block */
-    .block_myoverview,			/* Homepage: Courses main block */
-    .block_calendar_upcoming	/* Homepage: Calendar block */
-    {
-		/* Items to remove borders of */
-        border: none;
     }
 
     .coursename,
@@ -521,78 +398,10 @@
         color: var(--color-fg) !important;
     }
 
-	@media (min-width: 768px) {
-		.container {
-			max-width: 100%;
-		}
-	}
-
 	.dropdown-item:hover,
 	.dropdown-item:active
     {
 		background-color: var(--color-bg-dropdown-hover) !important;
-	}
-
-	.block_online_users div div .info /* Online users text align to left */
-	{
-		text-align: left !important;
-	}
-
-	a:focus
-	{
-		box-shadow: none !important;
-	}
-
-	img.activityicon /* File icons in a course (PDF, URL, etc.) */
-	{
-		/* Change height of icons */
-		height: 20px;
-		width: 20px;
-	}
-
-	.accesshide
-	{
-		position: relative;
-	}
-
-	@media (min-width: 1235px) {
-		body.drawer-open-left #region-main.has-blocks .dashboard-card-deck:not(.fixed-width-cards) .dashboard-card
-		{
-			width: unset;
-		}
-	}
-
-	.w-100 /* Title of each eClass course */
-	{
-		/* Max width to prevent line wrapping */
-		/* It's nice when each item takes up 1 line only */
-		width: max-content;
-	}
-
-	div#nav-drawer, /* Sidebar */
-	div#nav-drawer nav ul li a div, /* Most sidebar buttons */
-	div#nav-drawer nav ul li a div div.media, /* Most sidebar buttons */
-	div#nav-drawer nav ul li div div, /* For "My Courses" button */
-	div#nav-drawer nav ul li div div div.media /* For "My Courses" button */
-	{
-		padding: 0;
-	}
-
-	div#nav-drawer nav ul li a,
-	div#nav-drawer nav ul li div
-	{
-		padding: 5px 5px;
-	}
-
-	div[aria-label="Course overview controls"] div /* Course homepage view buttons */
-	{
-		margin: 0 !important;
-	}
-
-	ul.ctopics .content .sectionhead .toggle_closed .sectionname /* Folded sections (when collapsed) */
-	{
-		margin: 0px !important;
-		text-align: left;
 	}
 
 	.section_availability .isrestricted span, /* Folded sections (when collapsed) */
@@ -600,7 +409,6 @@
 	.section_availability .isrestricted /* Folded sections (when collapsed) */
 	{
 		color: red;
-		text-align: left;
 	}
 
 	td.submissionstatussubmitted
