@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           YorkU Dark Simple
-@version        1.0.1
+@version        1.0.2
 @author         Hussein Esmail
 @description    `A dark theme template for _`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -35,7 +35,7 @@
 
     a
 	{
-		color: var(--color-fg-a) !important;
+		color: var(--color-fg-a);
 	}
 
     input {
@@ -51,7 +51,7 @@
     :root {
         --color-bg: #141414;            /* Default background color */
         --color-fg: #f8f8f8;            /* Default text color */
-        --color-fg-a: lightblue;
+        --color-fg-a: orange;
         --color-fg-border: #555555;
 
 
@@ -63,7 +63,7 @@
         color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
-    body, #page-wrapper, #page-wrapper * {
+    body, #page-wrapper, #page-wrapper *:not(.mediaplugin *) {
         /* Background color */
         background-color: var(--color-bg) !important;
     }
@@ -76,6 +76,15 @@
     a
 	{
 		color: var(--color-fg-a) !important;
+	}
+
+	.mediaplugin>div
+	{
+		margin: unset;
+	}
+	.mediaplugin
+	{
+		text-align: left !important;
 	}
 
 	.card,
