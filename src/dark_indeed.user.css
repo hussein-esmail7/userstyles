@@ -9,22 +9,90 @@
 @updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/dark_indeed.user.css
 ==/UserStyle== */
 
-@-moz-document url-prefix("indeed.com") url-prefix("ca.indeed.com") {
+@-moz-document domain("indeed.com"), domain("ca.indeed.com") {
     :root {
-        --color-bg: #141414;            /* Default background color */
-        --color-fg: #f8f8f8;            /* Default text color */
+        --color-bg: #141414;			/* Default background color */
+        --color-fg: #f8f8f8;			/* Default text color */
+        --color-url: lightblue;			/* URL color */
         --color-bg-secondary: grey;
-        color-scheme: dark;                 /* Used to get dark scroll bars */
+        color-scheme: dark;				/* Used to get dark scroll bars */
     }
 
-    html, li, .icl-Ratings, .icl-NavigableContainer,  .icl-NavigableContainer--hasBorderBottom, .icl-NavigableContainer--hasBorderTop, .icl-NavigableContainer-linkWrapper, .icl-Ratings-description {
-        background-color: var(--color-bg);
-        color: var(--color-fg);
-    }
+    html.js-focus-visible,
+    .jobsearch-RecentSearches-background.is-desktop,
+    .jobsearch-JapanSerpContainer.is-i18n,
+    .jobsearch-JobComponent,
+    div[role="main"],
+    div[role="tablist"],
+    div[role="tablist"] button,
+    .css-g7s71f /* Search result elements */
+	{
+		background-color: var(--color-bg);
+	}
 
-    .icl-GlobalFooter-link, a:link, .icl-GlobalFooter-item, .jobsearch-JobMetadataFooter, h1, .jobsearch-JobInfoHeader-title-container, .jobsearch-DesktopStickyContainer-subtitle {
-        background-color: var(--color-bg-secondary);
-        color: var(--link-color) !important;
-    }
+	.mosaic-provider-jobcards .tapItem,
+	h1, h2, h3, h4, h5, h6,
+	label,
+    div[role="main"],
+    div[role="tablist"] button,
+    div.job-snippet ul li,
+    span,
+    .jobsearch-JobDescriptionSection-sectionItemKey,
+    .icl-u-textBold,
+    .jobsearch-JobDescriptionSection-sectionItem *,
+    div#jobDescriptionText,
+	.companyName, /* Company name in each search result element */
+	.companyLocation, /* Company location (city) in each search result element */
+	.mosaic-provider-jobcards .result .jobCardShelfContainer .jobCardShelf .ialbl.iaTextBlack
+	{
+		/* Change text colour */
+		color: var(--color-fg) !important;
+	}
+
+    .css-g7s71f /* Search result elements */
+	{
+		border: 1px solid white;
+	}
+
+	.mosaic-provider-jobcards .result .jobCardShelfContainer .jobCardShelf .indeedApply .ialbl.iaTextBlack
+	{
+		/* "Easily apply to this job" text */
+		color: green !important;
+	}
+
+	.urgentlyHiring
+	{
+		/* "Urgenrly hiring" text */
+		color: pink !important;
+	}
+
+	.responsiveEmployer
+	{
+		/* "Responsive employer" text */
+		color: lightblue !important;
+	}
+
+	.hiringMultipleCandidates .hiringMultipleCandidatesCaption
+	{
+		/* "Hiring multiple candidates" text */
+		color: orange !important;
+	}
+
+	a
+	{
+		color: var(--color-url) !important;
+	}
+
+	@media (min-width: 640px) {
+		.jobsearch-TabbedContent-tab.is-desktop
+		{
+			padding: 0px;
+		}
+	}
+
+	.jobsearch-TabbedContent-tab.is-desktop
+	{
+		padding: 0px;
+	}
 
 }
