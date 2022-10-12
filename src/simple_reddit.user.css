@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Simplified Theme
-@version        1.1.8
+@version        1.1.9
 @author         Hussein Esmail
 @description    `A simpler theme template for Reddit (New)`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -125,7 +125,9 @@
 	._3VH2iGVh92XtlKq0-eVoEN, /* Awarded comment red glow border */
 	._3hUbl08LBz2mbXjy0iYhOS, /* "See Full Image" buttons, since no more need */
 	._2dr_3pZUCk8KfJ-x0txT_l, /* Subreddit thumbnail beside each post in Custom Feeds */
-	._3dZnYgFFpifT-M_Vs2FAq6[href*="/RedditRecap"] /* Reddit Recap button on top bar */
+	._3dZnYgFFpifT-M_Vs2FAq6[href*="/RedditRecap"], /* Reddit Recap button on top bar */
+	._2-aCCpAklEV0DkVWrpodjE, /* Top Communities side panel header image */
+	._3hna43Sh0DTnoV7v2NNc2r._2Pmcl9xfKm5qKFFQAOdh-5._2iuoyPiKHN3kfOoeIQalDT._10BQ7pjWbeYP63SAPNS8Ts.HNozj_dKjQZ59ZsfEegz8 /* "Shop Avatars" button at top bar */
 	{
         /* Elements to hide */
         display: none !important;
