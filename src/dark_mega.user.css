@@ -1,0 +1,110 @@
+/* ==UserStyle==
+@name           Mega.nz Dark Theme
+@version        1.0.0
+@author         Hussein Esmail
+@description    `A dark theme template for mega.nz`
+@namespace      https://github.com/hussein-esmail7/userstyles
+@homepageURL    https://github.com/hussein-esmail7/userstyles
+@supportURL     https://github.com/hussein-esmail7/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/dark_mega.user.css
+==/UserStyle== */
+
+@-moz-document domain("mega.nz") {
+
+    :root {
+        --color-bg: #141414;            /* Default background color */
+        --color-fg: #f8f8f8;            /* Default text color */
+        --color-fg-secondary: #eeeeee;
+        --color-bg-secondary: #242424;
+        --color-fg-button: black;
+        --color-bg-table: #31363a;
+        --table-hover-color: #222222;
+        --color-bg-search: white;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
+
+    }
+
+    div.js-myfiles-panel,
+    nav.nw-fm-left-icons-panel,
+    .lp-storage-usage .storage-usage-panel,
+    div.files-grid-view
+	{
+		/* Panel with "Cloud Drive", "Recents", "Rubbish bin", etc. */
+		background-color: var(--color-bg);
+		border: 1px solid #242424;
+	}
+
+	.nw-fm-left-icons-panel .bottom-icons
+	{
+		/* Bottom buttons on left nav */
+		bottom: unset;
+	}
+
+	.lp-header
+	{
+		/* "My files" header above "Cloud Drive" panel */
+		padding: 3px 10px;
+		border-bottom: 3px solid #242424;
+	}
+
+
+	.lp-header span,
+	.lp-gallery, .lp-myfiles,
+	section.topbar,
+	.fm-right-header,
+	.dropdown,
+	.dropdown.body,
+	.link-button.dropdown .dropdown-content,
+	.link-button.dropdown .dropdown-btn
+	{
+		color: var(--color-fg);
+		background-color: var(--color-bg);
+	}
+
+	/* Items to hide */
+	button[data-link="upgrade"], /* Upgrade plan button near storage size */
+	.grid-table.fm.v-fav [megatype="fav"] /* Fav colum in Files Table */
+	{
+		display: none;
+	}
+
+	.topbar .searcher-wrapper
+	{
+		justify-content: unset;
+		margin-inline-start: 0px;
+	}
+
+	.topbar-searcher
+	{
+		/* Expanding the width of the top search bar */
+		max-width: unset;
+	}
+
+	.dropdown.body,
+	.link-button.dropdown .dropdown-content,
+	.link-button.dropdown .dropdown-btn
+	{
+		border-radius: 0px;
+	}
+	.dropdown.body.context,
+	.link-button.dropdown .dropdown-content,
+	.link-button.dropdown .dropdown-btn
+	{
+		box-shadow: unset;
+	}
+
+	.selection-status-bar,
+	.files-grid-view.fm .column-settings.overlap,
+	.grid-table th, /* Header line in files table */
+	.grid-table th:first-child::after,
+	.grid-table th:last-child::before
+	{
+		background-color: var(--color-bg-secondary);
+	}
+
+	.grid-table th:first-child::after
+	{
+		left: -26px;
+	}
+}
+
