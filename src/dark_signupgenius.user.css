@@ -1,0 +1,92 @@
+/* ==UserStyle==
+@name           SignUpGenius Dark Theme
+@version        1.0.0
+@author         Hussein Esmail
+@description    `A dark theme template for signupgenius.com`
+@namespace      https://github.com/hussein-esmail7/userstyles
+@homepageURL    https://github.com/hussein-esmail7/userstyles
+@supportURL     https://github.com/hussein-esmail7/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/dark_signupgenius.user.css
+==/UserStyle== */
+
+@-moz-document domain("signupgenius.com") {
+
+    :root {
+        --color-bg: #141414;            /* Default background color */
+        --color-fg: #f8f8f8;            /* Default text color */
+        --color-fg-secondary: #eeeeee;
+        --color-fg-url: lightblue;
+        --color-fg-button: black;
+        --color-bg-table: #31363a;
+        --table-hover-color: #222222;
+        --color-bg-search: white;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
+    }
+
+	div.signupContainer,
+	td,
+	.sub-footer.nobrand
+	{
+		/* Set background color */
+		background-color: var(--color-bg) !important;
+	}
+
+	.ng-binding,
+	.ng-binding *,
+	.nb-copyright-text
+	{
+		/* Set text color */
+		color: var(--color-fg) !important;
+	}
+
+	.signupPage a /* URLs */
+	{
+		color: var(--color-fg-url);
+		text-decoration: underline;
+	}
+
+	.participant-summary .participant-summary--listing
+	{
+		text-align: left;
+	}
+
+	.participant-summary .participant-summary--details
+	{
+		/* Making things more compact */
+		margin-bottom: 0px;
+	}
+
+	.participant-summary .participant-summary--comment
+	{
+		/* Comments that a person puts when they sign up */
+		opacity: 1.0;
+		display: inline; /* Display beside name instead of below */
+		margin-left: 1em;
+	}
+
+	.participant-summary--profile-pic,
+	td.padding-segment
+	{
+		/* Hide these elements */
+		display: none;
+	}
+
+	.signupPage
+	{
+		/* Set some table border colors to white */
+		color: var(--color-fg);
+	}
+
+	/* This is my attempt to show the full name in the table instead of capping
+	 * it at 16 chars, which it currently does. I know that the full name is
+	 * stored in the .participant-summary--name > span "uib-popover" attribute,
+	 * but for some reason I can't get it to display. If anyone else is reading
+	 * this, feel free to give this a try. */
+	.participant-summary--name .ng-binding:after
+	{
+		content: attr(span uib-popover);
+		width: attr(uib-popover px);
+		color: var(--color-fg);
+	}
+}
+
