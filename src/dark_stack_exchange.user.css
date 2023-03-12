@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           StackExchange Dark Theme
-@version        1.1.0
+@version        1.1.1
 @author         Hussein Esmail
 @description    `Dark theme for StackExchange that copies StackOverflow`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -9,7 +9,7 @@
 @updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/dark_stack_exchange.user.css
 ==/UserStyle== */
 
-@-moz-document domain("stackexchange.com") {
+@-moz-document domain("stackexchange.com"), domain("superuser.com") {
 
     :root {
 	    --theme-primary-color-tex-red: rgba(159, 57, 61, 1) !important;
