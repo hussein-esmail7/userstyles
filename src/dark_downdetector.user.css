@@ -1,0 +1,58 @@
+/* ==UserStyle==
+@name           DownDetector Dark Theme
+@version        1.0.0
+@author         Hussein Esmail
+@description    `A dark theme template for Down Detector`
+@namespace      https://github.com/hussein-esmail7/userstyles
+@homepageURL    https://github.com/hussein-esmail7/userstyles
+@supportURL     https://github.com/hussein-esmail7/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/dark_downdetector.user.css
+==/UserStyle== */
+
+@-moz-document domain("downdetector.ca") {
+
+    :root {
+        --color-bg: #141414;            /* Default background color */
+        --color-fg: #f8f8f8;            /* Default text color */
+        --color-bg-secondary: #282828;
+        --color-fg-secondary: #eeeeee;
+        color-scheme: dark;             /* Used to get dark scroll bars */
+    }
+
+    body,
+    nav
+    {
+		background-color: var(--color-bg);
+	}
+
+	div.card,
+    #baseline_info_btn
+	{
+		background-color: var(--color-bg-secondary);
+	}
+
+	div.h2,
+	.text-center,
+	h1,
+	.justify-content-center,
+	div.indicatorChart_percentage
+	{
+		color: var(--color-fg);
+	}
+
+	.text-muted
+	{
+		/* Darker text */
+		color: var(--color-fg-secondary) !important;
+	}
+
+	nav[aria-label="breadcrumb"], /* Uneccessary site path at top */
+	div.app-promo-card, /* "Install our iOS app" */
+	div#comments-card /* "Share frustrations with other site visitors" */
+	{
+		/* Hide these elements */
+		display: none !important;
+	}
+
+}
+
