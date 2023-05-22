@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Indeed.com Dark
-@version        1.0.2
+@version        1.0.3
 @author         Hussein Esmail
 @description    `A dark theme for the website https://indeed.com`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -11,12 +11,23 @@
 
 @-moz-document domain("indeed.com"), domain("ca.indeed.com") {
     :root {
-        --color-bg: #141414;			/* Default background color */
-        --color-fg: #f8f8f8;			/* Default text color */
-        --color-url: lightblue;			/* URL color */
-        --color-bg-secondary: grey;
+        --color-bg: #1d1d1d;			/* Default background color */
+        --color-fg: #cfcfcf;			/* Default text color */
+        --color-url: lightblue;		/* URL color */
+		--color-svg: white;
+		--color-border: white;
         color-scheme: dark;				/* Used to get dark scroll bars */
+		--font-all: -apple-system,BlinkMacSystemFont,"Segoe UI Adjusted","Segoe UI","Liberation Sans",sans-serif; /* Same font as StackOverflow */
     }
+
+	html body *, 
+	html[dir] body .gnav .icl-GlobalFooter-link, 
+	html[dir] body .gnav .icl-GlobalFooter-copyright, 
+	.icl-WhatWhere .icl-TextInput-control--whatWhere::placeholder
+	{
+		/* Change global font */
+		font-family: var(--font-all) !important;
+	}
 
     html.js-focus-visible,
     .jobsearch-RecentSearches-background.is-desktop,
@@ -25,25 +36,50 @@
     div[role="main"],
     div[role="tablist"],
     div[role="tablist"] button,
+	nav div,
+	ul.jobsearch-ResultsList div, /* List of posting cards on homepage */
+	.jobsearch-DesktopStickyContainer.is-sticky,
+	#gnav-main-container.gnav .gnav-header-1gheiwz, /* Nav bar whitespace */
+	#gnav-main-container.gnav .gnav-header-1gzi9yo,
+	[dir] #gnav-main-container.gnav .css-7lfwia,
+	[dir] #gnav-main-container.gnav .css-pctw5u,
+	[dir] body #gnav-footer-container.gnav-reset,  /* Footer element 1 */
+	[dir] body #gnav-leftnav-container.gnav-reset, /* Footer element 2 */
+	[dir] body #gnav-main-container.gnav-reset,    /* Footer element 3 */
+	.atw-AppCard, /* List of saved jobs */
     .css-g7s71f /* Search result elements */
 	{
 		background-color: var(--color-bg);
 	}
 
+	.companyLocation, /* Company location (city) in each search result element */
+	.companyName, /* Company name in each search result element */
+	.css-1f2yqp0,
+	.css-1k6q999,
+	.css-8hikq5,
+	.css-9g2pc,
+	.css-jiut4q,
+	.jobsearch-RecentSearchesMixedJobFeed-header,
+	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobComponent-description ol, 
+	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobComponent-description p, 
+	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobComponent-description ul, 
+	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobInfoHeader-subtitle, 
+	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobInfoHeader-subtitle.icl-u-textColor--secondary,
+	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobMetadataFooter .icl-u-textColor--success, 
+	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobMetadataFooter, 
+	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobMetadataHeader-item,
+	.mosaic-provider-jobcards .result .jobCardShelfContainer .jobCardShelf .ialbl.iaTextBlack,
 	.mosaic-provider-jobcards .tapItem,
 	h1, h2, h3, h4, h5, h6,
 	label,
-    div[role="main"],
-    div[role="tablist"] button,
-    div.job-snippet ul li,
-    span,
-    .jobsearch-JobDescriptionSection-sectionItemKey,
     .icl-u-textBold,
     .jobsearch-JobDescriptionSection-sectionItem *,
+    .jobsearch-JobDescriptionSection-sectionItemKey,
     div#jobDescriptionText,
-	.companyName, /* Company name in each search result element */
-	.companyLocation, /* Company location (city) in each search result element */
-	.mosaic-provider-jobcards .result .jobCardShelfContainer .jobCardShelf .ialbl.iaTextBlack
+    div.job-snippet ul li,
+    div[role="main"],
+    div[role="tablist"] button,
+    span
 	{
 		/* Change text colour */
 		color: var(--color-fg) !important;
@@ -51,7 +87,7 @@
 
     .css-g7s71f /* Search result elements */
 	{
-		border: 1px solid white;
+		border: solid var(--color-border) 1px;
 	}
 
 	.mosaic-provider-jobcards .result .jobCardShelfContainer .jobCardShelf .indeedApply .ialbl.iaTextBlack
@@ -93,6 +129,76 @@
 	.jobsearch-TabbedContent-tab.is-desktop
 	{
 		padding: 0px;
+	}
+
+	.jobsearch-DesktopStickyContainer.is-sticky
+	{
+		padding-top: 0px;
+		padding-left: 10px;
+		border: solid var(--color-border) 1px;
+	}
+
+	/* This makes the middle-aligned homepage list now alighed to the left to save window space */
+	/* .jobsearch-RecentSearches-a11yLayout */
+	/* { */
+	/* 	*/
+	/* 	margin: none; */ 
+	/* 	max-width: none; */
+	/* } */
+
+	button.kebabMenu-button svg path,
+	#gnav-main-container.gnav .gnav-header-1gzi9yo svg g path,
+	#gnav-main-container.gnav .gnav-header-1xqhio
+	{
+		fill: var(--color-svg) !important;
+	}
+
+	[dir] #gnav-main-container.gnav .css-pctw5u
+	{
+		border: solid var(--color-border) 1px;
+	}
+
+	.css-s1mpip[aria-selected="true"] /* Selected tab in the "My Jobs" page (Saved, Applied, Archived etc.)*/
+	{
+		background-color: dimgray;
+	}
+
+	[dir] #gnav-footer-container.gnav .icl-GlobalFooter-items:first-child
+	{
+		/* Make the footer margins smaller */
+		margin: 0px;
+	}
+
+	.css-l0kfam /* 3 dots (svg) in the Saved Jobs tab */
+	{
+		color: var(--color-svg);
+	}
+
+	.cmp-InlineMccSurvey /* Inline survey */
+	{
+		/* Hide these elements */
+		display: none;
+	}
+
+	td.resultContent div.new span.label
+	{
+		margin-top: 10px;
+		background-color: crimson;
+		padding: 0px 10px;
+		border-radius: 50px;
+    	border: 1px solid crimson;
+	}
+
+	.css-hppowq /* On a job's listing page, the red border on the company info */
+	{
+		border: none;
+	}
+
+	div.css-1qhdppi.e1wrtnu61 .css-1xqhio, /* Review stars (of 5) svg on an individual posting's page */
+	.css-1qhdppi, /* Part of a star filled in on an individual posting's page */
+	.css-ln09g1 /* Stars on the homepage when looking at the list of job posts */
+	{
+		color: gold;
 	}
 
 }
