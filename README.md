@@ -35,16 +35,20 @@ You can also see my published userstyles
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_aur.user.css) [Dark] AUR (Arch User Repository)
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_bibliogram.user.css) [Dark] Bibliogram
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_crowdmark.user.css) [Dark] Crowdmark
+- [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_downdetector.user.css) [Dark] Down Detector
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_echo360.user.css) [Dark] Echo360 Lecture Platform
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_github.user.css) [Dark] Github
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_indeed.user.css) [Dark] Indeed Job Search
+- [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_instagram.user.css) [Dark] Instagram
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_kijiji.user.css) [Dark] Kijiji
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_libgen.user.css) [Dark] Libgen
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_medium.user.css) [Dark] Medium
+- [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_mega.user.css) [Dark] Mega.nz
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_modem.user.css) [Dark] Modem (Bell)
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_office.user.css) [Dark] MS Office (Tasks, Homepage, etc.)
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_pinterest.user.css) [Dark] Pinterest
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_pirate_bay.user.css) [Dark] Pirate Bay
+- [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_signupgenius.user.css) [Dark] SignUpGenius
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_stack_exchange.user.css) [Dark] Stack Exchange
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_streamyard.user.css) [Dark] Streamyard
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_stylus.user.css) [Dark] Stylus Editor
@@ -53,6 +57,9 @@ You can also see my published userstyles
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_tpl.user.css) [Dark] Toronto Public Library
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_transmission.user.css) [Dark] Transmission Daemon
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_w3schools.user.css) [Dark] w3schools
+- [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_wordcounter.user.css) [Dark] Word Counter
+- [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_workinculture.user.css) [Dark] WorkInCulture
+- [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_yorku_simple.user.css) [Dark] York University (Simple)
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_yorku.user.css) [Dark] York University Sites
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_youtube.user.css) [Dark] YouTube
 - [[Install]](https://raw.githubusercontent.com/hussein-esmail7/userstyles/master/src/dark_zippyshare.user.css) [Dark] Zippyshare
@@ -71,6 +78,11 @@ You can also see my published userstyles
 Install Tampermonkey for Google Chrome-based browsers
 [here](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo).
 - [[Install]](https://www.returnyoutubedislike.com/install) Return YouTube Dislike Counters
+- [[Install]](https://greasyfork.org/en/scripts/406535-instagram-download-button) Instagram Download Button
+- [[Install]](https://greasyfork.org/en/scripts/395616-instagram-keyboard-shortcuts-for-power-user) Instagram Keyboard Shortcuts for the Power User
+- [[Install]](https://greasyfork.org/en/scripts/439993-youtube-shorts-redirect) YouTube Shorts Redirect
+- [[Install]](https://greasyfork.org/en/scripts/429871-snahp-it-add-decode-button) fora.snahp.eu Base64 Decode Button 1
+- [[Install]](https://github.com/Bilibox/Snahp-Auto-Base64-Decode) fora.snahp.eu Base64 Decode Button 2
 
 # Donate
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/husseinesmail)
