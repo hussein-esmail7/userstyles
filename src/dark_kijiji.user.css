@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Kijiji Dark
-@version        1.0.3
+@version        1.0.4
 @author         Hussein Esmail
 @description    `A dark theme for the website https://kijiji.ca`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -11,14 +11,15 @@
 
 @-moz-document domain("kijiji.ca") {
     :root {
-        --color-bg: #141414;            /* Default background color */
+        --color-bg: #1A1A1B;            /* Default background color */
         --color-fg: #f8f8f8;            /* Default text color */
         --color-bg-secondary: #2e2e2e;
         --color-bg-secondary: #2e2e2e;
 		--color-bg-active: #333333;
         --color-bg-footer: #3e3e3e;
         --color-fg-secondary: #c4c4c4;
-        --color-link: #76bfff;
+        --color-link: #32A7FF;
+		--color-link-hover: #328ED3;
         --color-avatar: lightblue;
         --color-bg-button: #6d6dee;
         --color-bg-button-alert: #d54f4f;
@@ -46,7 +47,8 @@
 	tr,
 	time,
 	.container-346951201,
-	.container-4289908283 /* Ads on homepage */
+	.container-4289908283, /* Ads on homepage */
+	.searchBar-3410584230
 	{
         background-color: var(--color-bg) !important;
     }
@@ -132,6 +134,18 @@
         color: var(--color-link) !important;
     }
 
+	a:link:hover,
+	[role="link"]:hover,
+	a[tabindex="0"]:hover,
+	.editSaveButton-3459322140:focus, 
+	.editSaveButton-3459322140:hover,
+	.deleteLink-2900055035:hover,
+	.link-2543719473:hover
+	{
+		color: var(--color-link-hover) !important;
+		text-decoration: none !important;
+	}
+
     footer,
 	footer > *,
 	header,
@@ -151,7 +165,7 @@
 
     div[class^="avatar"]
 	{
-        background-color: var(--color-avatar) !important;
+        border: 1px var(--color-link) solid;
     }
 
     div[class^="text__fullBleed"] > *
@@ -168,7 +182,8 @@
     div[class^="messageRow"] *
 	{
         /* Buttons with coloured background like the Post and Repost  buttons */
-        background-color: var(--color-bg-button) !important;
+        background-color: var(--color-bg) !important;
+		border: 1px solid var(--color-link) !important;
     }
 
     button[data-qa-id="adRepostButton"],
@@ -197,7 +212,17 @@
 	.promoteAd-3470154555, /* Ad to promote ads on My Ads page */
 	.searchIcon-1865170271, /* Search icon in search bar on My Ads page */
 	.headerContainer-471773205:before, /* Line at very top of page */
-	.button__active-3917108357:after /* Green underline for selected */
+	.button__active-3917108357:after, /* Green underline for selected */
+	div[class^="shareLinkBar"], /* Social media share buttons */
+	.detailsContainer-3691285501, /* Promote Ad options at the top of your own ad's page */
+	.performanceIcon-3760865162, /* Uneccessary icon beside "My Ad's Status" text */
+	button[data-qa-id="adPromoteButton"],
+	svg[aria-labelledby^="icon-edit-title"],
+	svg[aria-labelledby^="icon-delete-title"],
+	.soldIcon-1743761422, .statsIcon-1743761422,
+	.externalLink-548392708,
+	.separator-1183999717,
+	div#StickyBottomBar
 	{
         /* Hidden elements */
         /* 2527921021: "Ad has been successfully reposted" banner popup */
@@ -210,17 +235,6 @@
 		background-color: red !important;
 	}
 
-	footer div.linkContainer-2510787684, /* First section of footer */
-	footer div.linkContainer-2510787684 div, /* Columns */
-	.copyright-2418027893, /* All Rights Reserved text */
-	.menuListL1-3326828024, /* Homepage categories tab */
-	li.menuItemL1-3907961876, /* Homepage categories tabs */
-	section header.widget-header, /* "Current Matches" item on sidebar */
-	aside.sidebar-759360815 /* Right sidebar on homepage */
-	{
-		padding: 0 !important;
-	}
-
 	section header.widget-header /* "Current Matches" item on sidebar */
 	{
 		padding-left: 5px !important;
@@ -229,9 +243,15 @@
 
 	.copyright-2418027893, /* All Rights Reserved text */
 	footer div div ul li.columnItem-372683642, /* List items in footer column */
-	.title-698598903
+	.title-698598903,
+	.wrapper-1943089324,
+	.safetyText-133708707,
+	.container-191245672, /* Price radio buttons */
+	.controlRow-3158116936, /* Extra space below Title input */
+	#MainForm .container-info ul.post-ad-layout,
+	.input-1276203865 /* Ad title and tags input boxes */
 	{
-		margin: 0;
+		margin: 0px;
 	}
 
 	.image-192629248, /* Images on ads on homepage */
@@ -270,22 +290,30 @@
 		align-items: unset !important
 	}
 
-	.tabLink-189954566, /* Tab bar for profile (Ads/Messages/Favs/etc.) */
-	.myAdsHeadingContainer-1233939527 /* "My Ads" title on My Ads page */
-	{
-		padding: 0;
-	}
-
-	.tabLink-189954566
+	.tabLink-189954566,
+	.locationModalTrigger-555572005
 	{
 		height: unset;
 	}
 
 	.headerContainer-4071916628,
 	.input-2398582227, /* Ad title and tags input boxes */
-	.input-485887610 /* Condition select box */
+	.input-485887610, /* Condition select box */
+	.tabLink-189954566, /* Tab bar for profile (Ads/Messages/Favs/etc.) */
+	.myAdsHeadingContainer-1233939527, /* "My Ads" title on My Ads page */
+	.itemAttributeList-1090551278,
+	footer div.linkContainer-2510787684, /* First section of footer */
+	footer div.linkContainer-2510787684 div, /* Columns */
+	.copyright-2418027893, /* All Rights Reserved text */
+	.menuListL1-3326828024, /* Homepage categories tab */
+	li.menuItemL1-3907961876, /* Homepage categories tabs */
+	section header.widget-header, /* "Current Matches" item on sidebar */
+	aside.sidebar-759360815, /* Right sidebar on homepage */
+	.breadcrumbs-320621489,
+	.safetyWarningContainer-148731728,
+	.label-2246511109
 	{
-		padding: 0px;
+		padding: 0px !important;
 	}
 
 	.input-2398582227, /* Ad title and tags input boxes */
@@ -304,9 +332,7 @@
 	ul.post-ad-layout li#WebsiteUrl, /* Add website for $5 near photo browse */
 	ul.post-ad-layout li label[for="YouTubeURL"], /* Add YouTube video near photo browse */
 	.bottomToolTipContainer-945034715, /* "Don't see the city you want to post in?" block */
-	li label[for="YoutubeURL"],
-	input#YoutubeURL,  /* YouTube URL input */
-	input#YoutubeURL ~ p /* Elements on same level as YouTube URL input */
+	svg.icon-459822882.icon-791659943.itemIcon-690035833.dropdownSelectedIcon-2556449783 /* Uneccessary categories icon in search bar */
 	{
 		display: none;
 	}
@@ -317,14 +343,6 @@
 		{
 			padding: 0px;
 		}
-	}
-
-	.container-191245672, /* Price radio buttons */
-	.controlRow-3158116936, /* Extra space below Title input */
-	#MainForm .container-info ul.post-ad-layout,
-	.input-1276203865 /* Ad title and tags input boxes */
-	{
-		margin: 0px;
 	}
 
 	.input-2398582227, /* Ad title and tags input boxes */
@@ -339,13 +357,16 @@
 		bottom: unset;
 	}
 
-	.moduleContainer-3330263826 /* Sections of ad post */
+	.moduleContainer-3330263826, /* Sections of ad post */
+	.myAdsHeadingContainer-1233939527,
+	.myAdsPage-2053857446
 	{
 		margin-top: 0px;
 	}
 
 	.formGroup-3340560223, /* Condition/Title/Description lines */
-	.tagContainer-1994054405 /* Tags input bar */
+	.tagContainer-1994054405, /* Tags input bar */
+	.breadcrumbs-320621489
 	{
 		margin-top: 5px !important;
 	}
@@ -356,5 +377,178 @@
 		padding-bottom: 0px;
 		padding-right: 0px;
 	}
+
+	div#StickyBottomBar,
+	div#StickyBottomBar div,
+	div#StickyBottomBar div div
+	{
+		background-color: transparent !important;
+	}
+
+	.myAdStatus-3720145982
+	{
+		padding: 5px;
+		flex-direction: row;
+		width: unset;
+		align-items: unset;
+		border-right: none;
+
+	}
+
+	.myAdStatusHeading-3487863985,
+	.adStatusHeadingContainer-1564113045
+	{
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.myAdStatusHeading-3487863985
+	{
+		text-align: unset;
+	}
+
+	.myAdStatus-3720145982,
+	.tabListItem-3110987691,
+	.adStatusHeadingContainer-1564113045
+	{
+		display: unset;
+	}
+
+	.counterContainer-3998546652
+	{
+		margin: unset;
+		min-height: unset;
+	}
+
+	.counterItem-911711643
+	{
+		align-items: unset;
+		flex-direction: row;
+	}
+
+	.count-2019825095
+	{
+		padding-left: 5px;
+		font-size: unset;
+		line-height: unset;
+	}
+
+	.container-1895484246
+	{
+		max-width: 285px;
+		margin: 0px;
+	}
+
+	.myAdStatus-3720145982,
+	.counterItem-911711643
+	{
+		border-right: unset;
+	}
+
+	.link-2543719473, /* "Edit Ad" button at top of an individual ad page */
+	.buttonText-2417803520 /* "Edit Ad" button in each row in the "My Ads" page */
+	{
+		border: orange 1px solid;
+		background-color: orange;
+		color: white;
+		border-radius: 5px;
+		margin-top: 5px;
+		padding: 0px 5px;
+	}
+
+	.deleteLink-2900055035, /* "Delete" ad button at top of an individual ad page */
+	.buttonText-2570028822 /* "Delete" button in each row in the "My Ads" page */
+	{
+		border: red 1px solid;
+		background-color: red !important;
+		color: white;
+		border-radius: 5px;
+		margin-top: 5px;
+		margin-left: 5px;
+		padding: 0px 5px;
+	}
+
+	.link-2543719473:hover, /* "Edit Ad" button at top of an individual ad page */
+	.deleteLink-2900055035:hover /* "Delete" ad button at top of an individual ad page */
+	{
+		background-color: transparent !important;
+	}
+
+	.headerWrapper-3599732097
+	{
+		padding-bottom: 0px;
+	}
+
+	.searchBar-3410584230
+	{
+		flex-wrap: unset;
+	}
+
+	.label-2246511109
+	{
+		line-height: unset;
+	}
+
+	.searchSubmit-1336592678
+	{
+		flex-basis: 70px;
+	}
+
+	.searchBarWrapper-3397949630
+	{
+		margin-top: 5px;
+	}
+
+	.attributeListWrapper-2108313769
+	{
+		margin: 0px;
+		flex-wrap: unset;
+	}
+
+	.imageTag-3961382373 /* Thumnails on the "My Ads" page */
+	{
+		width: unset;
+	}
+
+	.thumbnailCell-291832188
+	{
+		padding-left: 0px;
+	}
+
+	/* ============== */
+	/* Why am I changing the padding of these elements? The way this site is */
+	/* built, if you press the border of the <li> element, the button */
+	/* doesn't actually press, so I am making the links (not the link text) bigger */
+	.listItem-3079336677 /* The <li> elements in the dropdown menu when you press profile picture */
+	{
+		padding: 0px;
+	}
+	.link-3344611369 /* The <a> elements in the dropdown menu when you press profile picture */
+	{
+		padding: 13px 20px;
+	}
+	/* ============== */
+
+	.myAdsTable-2912248069
+	{
+		margin-top: 15px;
+	}
+
+	.myAdsTable-2912248069 tbody tr
+	{
+		row-gap: 2px !important;
+	}
+
+	.actionsContainer-1685284565
+	{
+		justify-content: left;
+	}
+
+	.button__medium-1066667140
+	{
+		line-height: unset;
+	}
+
+
 }
 
