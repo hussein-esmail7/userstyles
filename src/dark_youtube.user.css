@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           YouTube Dark Theme
-@version        1.0.0
+@version        1.0.1
 @author         Hussein Esmail
 @description    `A dark theme template for YouTube`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -21,8 +21,7 @@
         --color-bg-search: white;
         color-scheme: dark;                 /* Used to get dark scroll bars */
 
-		--font-all: monospace;                                          /* New main font to use */
-		--font-all-spacing: -1px; /* New main font spacing (if it needs to be altered) */
+		
     }
 
     html, body {
@@ -30,7 +29,9 @@
         background-color: var(--color-bg) !important;
     }
 
-    h1, h2, h3, h4, h5, h6, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl * {
+    h1, h2, h3, h4, h5, h6, 
+	strong, label, .detDesc, 
+	.comment, #comments, #detailsouterframe *, .comment, dl * {
         /* Text color */
         color: var(--color-fg) !important;
     }
@@ -50,10 +51,16 @@
 	ytd-compact-radio-renderer.style-scope.ytd-item-section-renderer.use-ellipsis, /* Generated "Mix"es */
 	yt-related-chip-cloud-renderer.ytd-watch-next-secondary-results-renderer, /* Tags on video sidebar */
 	div#notification-preference-button, /* Notification button */
-	.ryd-tooltip-bar-container /* White bar underneath like and dislike buttons */
+	.ryd-tooltip-bar-container, /* White bar underneath like and dislike buttons */
+	yt-button-shape button[aria-label="Clip"], /* Clip button underneath a video */
+	yt-button-shape button[aria-label="Download"], /* Download button underneath a video */
+	ytd-guide-entry-renderer a[title="YouTube Premium"], /* YT Premium button on homepage sidebar */
+	ytd-guide-entry-renderer a[title="YouTube Kids"], /* YT Kids button on homepage sidebar */
+	tp-yt-paper-item.style-scope.ytd-menu-service-item-download-renderer, /* Download button when pressing a button with 3 dots */
+	button[aria-label="Join this channel"] /* Join channel button beside Subscribe button */
 	{
 		/* Elements to get rid of */
-		display: none;
+		display: none !important;
 	}
 
 	#content-text.ytd-comment-renderer,
@@ -68,6 +75,50 @@
 	{
 		padding: 10px 0px 0px 0px;
 	}
+
+	#endpoint.yt-simple-endpoint.ytd-guide-entry-renderer 
+	{
+		/* Reduce the height of sidebar buttons when on the homepage */
+		min-height: 0px;
+	}
+
+	tp-yt-paper-item.ytd-guide-entry-renderer,
+	tp-yt-paper-item,
+	.tp-yt-paper-item.tp-yt-paper-item
+	{
+		/* These items must be reset for sidebar button heights to be changed */
+		height: unset;
+	}
+
+	.guide-icon.ytd-guide-entry-renderer
+	{
+		/* Reduce the space between icons and text on sidebar buttons when on the homepage */
+		margin-right: 10px; /* default = 24px */
+	}
+
+	#rich-shelf-header.ytd-rich-shelf-renderer
+	{
+		/* Reduce height of the "Shorts" header on homepage (normally on the 3rd video row) */
+		margin: 0px;
+	}
+
+	tp-yt-paper-item.ytd-menu-service-item-renderer
+	{
+		/* When you press the 3 dots on a video on the homepage, make the dropdown smaller */
+		--paper-item-min-height: 10px; 
+	}
+
+	ytd-thumbnail[size=large] a.ytd-thumbnail, ytd-thumbnail[size=large]:before, /* Thumbnails on homepage */
+	#container.ytd-searchbox, /* Left side of search bar (text field) */
+	#search-icon-legacy.ytd-searchbox /* Right side of search bar (search button) */
+	{
+		/* Get rid of curved edges */
+		border-radius: 0px;
+	}
+
+	
+
+
 
 }
 
