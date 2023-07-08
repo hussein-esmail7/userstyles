@@ -74,7 +74,7 @@ You can also see my published userstyles
 - [[Install]](https://raw.githubusercontent.com/DM164/Dark-by-DM/master/instagram.user.css) [Dark] Instagram
 - [[Install]](https://uso.kkx.one/style/190544) [Dark] Thingiverse (not the best but it's alright for now)
 
-## Tampermonkey Scripts I recommend
+## Tampermonkey Scripts I Recommend
 Install Tampermonkey for Google Chrome-based browsers
 [here](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo).
 - [[Install]](https://www.returnyoutubedislike.com/install) Return YouTube Dislike Counters
@@ -83,6 +83,11 @@ Install Tampermonkey for Google Chrome-based browsers
 - [[Install]](https://greasyfork.org/en/scripts/439993-youtube-shorts-redirect) YouTube Shorts Redirect
 - [[Install]](https://greasyfork.org/en/scripts/429871-snahp-it-add-decode-button) fora.snahp.eu Base64 Decode Button 1
 - [[Install]](https://github.com/Bilibox/Snahp-Auto-Base64-Decode) fora.snahp.eu Base64 Decode Button 2
+
+## Other Extensions I Recommned
+- [[Install]](https://github.com/mahfoozm/YorkURMP/releases) RateMyProfessor Extension for York Courses Portal by [u/oreomilkshake___](https://www.reddit.com/user/oreomilkshake___/)
+
+
 
 # Donate
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/husseinesmail)
