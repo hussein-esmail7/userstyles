@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Simplified Theme
-@version        1.2.0
+@version        1.2.1
 @author         Hussein Esmail
 @description    `A simpler theme template for Reddit (New)`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -10,7 +10,7 @@
 ==/UserStyle== */
 
 
-@-moz-document domain("reddit.com") {
+@-moz-document domain("new.reddit.com") {
 
     /* Reddit - New Theme */
 
