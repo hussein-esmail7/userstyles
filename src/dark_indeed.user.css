@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Indeed.com Dark
-@version        1.0.3
+@version        1.0.4
 @author         Hussein Esmail
 @description    `A dark theme for the website https://indeed.com`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -13,16 +13,19 @@
     :root {
         --color-bg: #1d1d1d;			/* Default background color */
         --color-fg: #cfcfcf;			/* Default text color */
+        --color-fg2: #white;			/* Secondary text color */
+        --color-bg2: #404040;			/* Secondary background color */
         --color-url: lightblue;		/* URL color */
 		--color-svg: white;
 		--color-border: white;
         color-scheme: dark;				/* Used to get dark scroll bars */
 		--font-all: -apple-system,BlinkMacSystemFont,"Segoe UI Adjusted","Segoe UI","Liberation Sans",sans-serif; /* Same font as StackOverflow */
+
     }
 
-	html body *, 
-	html[dir] body .gnav .icl-GlobalFooter-link, 
-	html[dir] body .gnav .icl-GlobalFooter-copyright, 
+	html body *,
+	html[dir] body .gnav .icl-GlobalFooter-link,
+	html[dir] body .gnav .icl-GlobalFooter-copyright,
 	.icl-WhatWhere .icl-TextInput-control--whatWhere::placeholder
 	{
 		/* Change global font */
@@ -47,9 +50,24 @@
 	[dir] body #gnav-leftnav-container.gnav-reset, /* Footer element 2 */
 	[dir] body #gnav-main-container.gnav-reset,    /* Footer element 3 */
 	.atw-AppCard, /* List of saved jobs */
-    .css-g7s71f /* Search result elements */
+    .css-g7s71f, /* Search result elements */
+	.ia-SmartApplyCard-headerButton, /* "Resume" button after pressing apply on a posting */
+	span.css-1v0oqx5.e1wnkr790, /* "Recommended" text inside the "Resume" button */
+	.css-131fz7k, /* Right side of screen after pressing "apply" */
+	.css-1w50uux,
+	.css-1u9ksvk,
+	.ia-SmartApplyCard,
+	.ia-GreyInfoAlert,
+	.ia-WorkExperienceSection,
+	.ia-PreviewSection-card,
+	.css-84ewbe,
+	.css-nhxuph,
+	.ia-BasePage-component,
+	.ia-BasePage-midApplyFeedbackFooter,
+	div.jobsearch-JapanPageLayout,
+	div.jobsearch-JapanPageLayout *
 	{
-		background-color: var(--color-bg);
+		background-color: var(--color-bg) !important;
 	}
 
 	.companyLocation, /* Company location (city) in each search result element */
@@ -60,13 +78,13 @@
 	.css-9g2pc,
 	.css-jiut4q,
 	.jobsearch-RecentSearchesMixedJobFeed-header,
-	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobComponent-description ol, 
-	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobComponent-description p, 
-	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobComponent-description ul, 
-	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobInfoHeader-subtitle, 
+	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobComponent-description ol,
+	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobComponent-description p,
+	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobComponent-description ul,
+	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobInfoHeader-subtitle,
 	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobInfoHeader-subtitle.icl-u-textColor--secondary,
-	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobMetadataFooter .icl-u-textColor--success, 
-	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobMetadataFooter, 
+	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobMetadataFooter .icl-u-textColor--success,
+	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobMetadataFooter,
 	.jobsearch-ViewJobLayout-changeTextColor .jobsearch-JobMetadataHeader-item,
 	.mosaic-provider-jobcards .result .jobCardShelfContainer .jobCardShelf .ialbl.iaTextBlack,
 	.mosaic-provider-jobcards .tapItem,
@@ -79,11 +97,43 @@
     div.job-snippet ul li,
     div[role="main"],
     div[role="tablist"] button,
-    span
+    span,
+	input,
+	.ia-GreyInfoAlert,
+	.ia-WorkExperienceSection,
+	.ia-PreviewSection-card,
+	.card-field__content,
+	.css-84ewbe
 	{
 		/* Change text colour */
 		color: var(--color-fg) !important;
 	}
+
+
+	.MosaicProviderRichSearchDaemon .yosegi-FilterPill-pill,
+	.MosaicProviderRichSearchDaemon .yosegi-FilterPill-pill *
+	{
+		/* Secondary background color for filter labels in job search page */
+		background-color: var(--color-bg2) !important;
+	}
+
+
+	.MosaicProviderRichSearchDaemon .yosegi-FilterPill-pill,
+	.MosaicProviderRichSearchDaemon .yosegi-FilterPill-pill *,
+	.mosaic-provider-jobcards .css-10i21hj, .mosaic-provider-jobcards .css-1restlb, /* Job post subheading */
+	.mosaic-provider-jobcards .css-o11dc0, /* Job description list preview */
+	.mosaic-provider-jobcards .result .underShelfFooter .css-ot0ljy
+	{
+		/* Secondary text color for filter labels in job search page, etc */
+		color: var(--color-fg2) !important;
+
+	}
+
+	.mosaic-provider-jobcards .css-ws1fr0 /* Filter match bubbles (green) */
+	{
+		border: solid 3px #ffa500 !important;
+	}
+
 
     .css-g7s71f /* Search result elements */
 	{
@@ -142,7 +192,7 @@
 	/* .jobsearch-RecentSearches-a11yLayout */
 	/* { */
 	/* 	*/
-	/* 	margin: none; */ 
+	/* 	margin: none; */
 	/* 	max-width: none; */
 	/* } */
 
