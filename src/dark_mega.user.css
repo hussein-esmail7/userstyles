@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name           Mega.nz Dark Theme
-@version        1.0.0
+@version        1.0.1
 @author         Hussein Esmail
-@description    `A dark theme template for mega.nz`
+@description    `A dark theme for mega.nz`
 @namespace      https://github.com/hussein-esmail7/userstyles
 @homepageURL    https://github.com/hussein-esmail7/userstyles
 @supportURL     https://github.com/hussein-esmail7/userstyles/issues
@@ -27,7 +27,8 @@
     div.js-myfiles-panel,
     nav.nw-fm-left-icons-panel,
     .lp-storage-usage .storage-usage-panel,
-    div.files-grid-view
+    div.files-grid-view,
+    div.fm-filter-chips-wrapper
 	{
 		/* Panel with "Cloud Drive", "Recents", "Rubbish bin", etc. */
 		background-color: var(--color-bg);
@@ -63,7 +64,15 @@
 
 	/* Items to hide */
 	button[data-link="upgrade"], /* Upgrade plan button near storage size */
-	.grid-table.fm.v-fav [megatype="fav"] /* Fav colum in Files Table */
+	.grid-table.fm.v-fav [megatype="fav"], /* Fav colum in Files Table */
+	div.dropdown.body.files-menu.context div.dropdown-section a.dropdown-item.rewind-item, /* "Rewind" on right click menu */
+	nav.nw-fm-left-icons-panel .icon-gallery-before, /* sidebar button for "Photos" */
+	nav.nw-fm-left-icons-panel .icon-chat-before, /* sidebar button for "Chat" */
+	nav.nw-fm-left-icons-panel .icon-backup-before, /* Sidebar button for "Devices" */
+	nav.nw-fm-left-icons-panel .icon-business-before, /* Sidebar button for "MEGA Pass */
+	nav.nw-fm-left-icons-panel .icon-pwm-before, /* Sidebar button for "MEGA Pass */
+	div.content-area.js-myfiles-panel.ps div.shared-panel, /* Second sidebar  "Shared Items" list */
+	div.fm-header-buttons button.fm-rewind /* "Rewind" button at header */
 	{
 		display: none;
 	}
@@ -106,5 +115,12 @@
 	{
 		left: -26px;
 	}
+
+	div.left-pane-drag-handle.ui-resizable-handle.ui-resizable-e /* Side panel resize line (draggable) */
+	{
+		background-color: var(--color-bg-secondary);
+	}
+
+
 }
 
