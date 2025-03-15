@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Mega.nz Dark Theme
-@version        1.0.1
+@version        1.0.2
 @author         Hussein Esmail
 @description    `A dark theme for mega.nz`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -72,7 +72,8 @@
 	nav.nw-fm-left-icons-panel .icon-business-before, /* Sidebar button for "MEGA Pass */
 	nav.nw-fm-left-icons-panel .icon-pwm-before, /* Sidebar button for "MEGA Pass */
 	div.content-area.js-myfiles-panel.ps div.shared-panel, /* Second sidebar  "Shared Items" list */
-	div.fm-header-buttons button.fm-rewind /* "Rewind" button at header */
+	div.fm-header-buttons button.fm-rewind, /* "Rewind" button at header */
+	div.dropdown.js-dropdown-notification /* Notifications button at header */
 	{
 		display: none;
 	}
@@ -119,6 +120,11 @@
 	div.left-pane-drag-handle.ui-resizable-handle.ui-resizable-e /* Side panel resize line (draggable) */
 	{
 		background-color: var(--color-bg-secondary);
+	}
+
+	.mega-top-menu .menu .nav-elem {
+		 padding: 0px 24px;
+
 	}
 
 
