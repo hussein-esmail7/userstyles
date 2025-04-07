@@ -1,0 +1,163 @@
+/* ==UserStyle==
+@name           eClass Dark Theme (after York redesign)
+@version        1.0.0
+@author         Hussein Esmail
+@description    `A dark theme for YorkU eClass`
+@namespace      https://github.com/hussein-esmail7/userstyles
+@homepageURL    https://github.com/hussein-esmail7/userstyles
+@supportURL     https://github.com/hussein-esmail7/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/dark_yorku_v2.user.css
+==/UserStyle== */
+
+@-moz-document domain("eclass.yorku.ca") {
+    
+    :root {
+        --color-bg: #141414;            /* Default background color */
+        --color-fg: #f8f8f8;            /* Default text color */
+        --color-fg-secondary: #eeeeee;
+        --color-fg-button: black;
+        --color-bg-table: #31363a;
+        --color-fg-url: orange;
+        --table-hover-color: #222222;
+        --color-bg-search: rgb(58, 58, 58);
+        color-scheme: dark;                 /* Used to get dark scroll bars */
+    }
+
+    html, body, div, p, li, ul,
+    nav.navbar,
+    .card-footer.dashboard-card-footer.menu.border-0.bg-white.ml-auto, /* Element around the dropdown menu per course on the Dashboard */
+    #page-footer
+    {
+        /* Background color */
+        background-color: var(--color-bg) !important;
+    }
+
+    h1, h2, h3, h4, h5, h6, 
+    a, strong, label, .detDesc, 
+    div, div#sortby, 
+    th.cell,
+    td.cell
+    {
+        /* Text color */
+        color: var(--color-fg) !important;
+    }
+
+    input {
+        /* Text inputs */
+        color: var(--color-fg-button) !important;
+        background-color: var(--color-bg-search) !important;
+    }
+
+    span.expandall,
+    span.collapseall,
+    a.aalink .instancename,
+    a.stretched-link .instancename
+    {
+        color: var(--color-fg-url);
+    }
+
+    #page.drawers
+    {
+        overflow-y: unset;
+    }
+
+    #page.drawers .main-inner,
+    body.limitedwidth #page.drawers .main-inner, 
+    #page.drawers .main-inner,
+    #page-my-index.page-mycourses #page.drawers .block_myoverview>.card-body
+    {
+        padding: 0px !important;
+    }
+
+
+    div.dashboard-card-img, /* Meaningless card images */
+    div.moove-container-fluid.footer-columns,
+    .block_mentalhealth
+    {
+        /* Elements to hide */
+        display: none;
+    }
+
+    #page-footer .yorku-arrow
+    {
+        background: unset;
+    }
+
+    .btn.btn-icon:hover, .btn.btn-icon:focus
+    {
+        background-color: black;
+        border: solid white 1px;
+    }
+
+    .description .course-description-item:first-child
+    {
+        /* Remove unesesary spacing in in-course content blocks */
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .course-section
+    {
+        border-bottom: 1px solid #4270ad;
+    }
+
+    .sectionname.course-content-item.d-flex.align-self-stretch.align-items-center.mb-0
+    {
+        font-size: medium;
+        color: red !important;
+    }
+
+    .course-content ul.topics li.section
+    {
+        padding: 0%;
+    }
+
+    div#coursecontentcollapse9 div.my-3,
+    div.feedback
+    {
+        margin: 0px !important;
+    }
+
+    .drawer-toggles .drawer-toggler .btn
+    {
+        border-radius: unset;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #page.drawers::-webkit-scrollbar-track,
+    .drawercontent::-webkit-scrollbar-track
+    {
+        background: #2c2c2c;
+    }
+
+    #page.drawers::-webkit-scrollbar-thumb,
+    .drawercontent::-webkit-scrollbar-thumb
+    {
+        background-color: #6B6B6B;
+        border-color: #2c2c2c;
+    }
+
+    td.submissionstatussubmitted,
+    td.submissiongraded,
+    td.earlysubmission
+    {
+        background-color: var(--color-bg) !important;
+        color: green !important;
+        font-weight: bold;
+    }
+
+    .gradingform_rubric .criterion.even td,
+    .gradingform_rubric .criterion.odd td
+    {
+        background: unset;
+    }
+
+    #region-main
+    {
+        background-color: unset;
+    }
+}
+
+
+

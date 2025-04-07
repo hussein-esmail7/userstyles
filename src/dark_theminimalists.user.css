@@ -1,0 +1,42 @@
+/* ==UserStyle==
+@name           Dark Theme Template
+@version        1.0.0
+@author         Hussein Esmail
+@description    `A dark theme template for _`
+@namespace      https://github.com/hussein-esmail7/userstyles
+@homepageURL    https://github.com/hussein-esmail7/userstyles
+@supportURL     https://github.com/hussein-esmail7/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/<filename>.user.css
+==/UserStyle== */
+
+@-moz-document domain("theminimalists.com") {
+
+    :root {
+        --color-bg: #141414;            /* Default background color */
+        --color-fg: #f8f8f8;            /* Default text color */
+        --color-fg-secondary: #eeeeee;
+        --color-fg-button: black;
+        --color-bg-table: #31363a;
+        --table-hover-color: #222222;
+        --color-bg-search: white;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
+    }
+
+    html, body, div, p, li, ul {
+        /* Background color */
+        background-color: var(--color-bg) !important;
+    }
+
+    h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl * {
+        /* Text color */
+        color: var(--color-fg) !important;
+    }
+
+    input {
+        /* Text inputs */
+        color: var(--color-fg-button) !important;
+        background-color: var(--color-bg-search);
+    }
+
+}
+

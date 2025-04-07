@@ -48,7 +48,8 @@
 	.masthead-container, /* Header */
 	#header-bottom-container, /* Menu bar below header */
 	#syn_summary .syn_body, /* Synopsis for a specific book page */
-	.global-footer /* Footer */
+	.global-footer, /* Footer */
+	.navigationMobile /* Masthead on mobile or thin window */
 	{
         /* Background color */
         background-color: var(--color-bg) !important;
@@ -66,7 +67,8 @@
 	.accordion .accordion-title /* Dropdown titles */
 	.media-item,
 	.col-footer ul, /* Footer URL lists */
-	.col-footer li
+	.col-footer li,
+	.accordion .accordion-title /* Accordion menus on a book's page ("Details", "Copies and Availability") */
 	{
 		padding: 0 !important;
 	}
@@ -127,9 +129,6 @@
         border: none;
     }
 
-    p.notice, .branch-message-outer, .branch-message p, .alert {
-        background-color: var(--color-bg-alert) !important;
-    }
 
 	.submission-alert /* Green or red circle */
 	{
@@ -152,8 +151,78 @@
 	}
 
 	.social-container, /* Social media icon container: FaceBook, Twitter, etc. */
-	.enewsletter .text-center div img /* Email icon for the eNewsletter */
+	.enewsletter .text-center div img, /* Email icon for the eNewsletter */
+	img.accountMenuHeaderElement, /* Profile icon inside "Your Account" button in masthead */
+	.masthead-container .navigation-menu-container #logo-item .homeIcon, /* "Home" hover text when hovering on TPL logo in masthead */
+	ul.navigation-lower.right-section /* "Teens" and "Kids" book buttons on side (can still be accessed via "Books, DVDs, & Movies" section) */
 	{
-		display: none;
+		display: none !important;
 	}
+
+	.masthead-container .navigation-menu-container #logo-item a
+	{
+		padding-right: 0.5rem;
+	}
+
+	.masthead-container, /* The masthead itself */
+	.masthead-container .navigation-menu-container .header-top-menu, /* Button containers inside the masthead */
+	.masthead-container .navigation-menu-container .header-top-menu li#account-menu .accountMenuHeader /* "Your Account" masthead button container */
+	{
+		height: 50px;
+	}
+
+	.masthead-container .navigation-menu-container .header-top-menu li a.linkCell /* Buttons on masthead */
+	{
+		padding: 0px 10px;
+	}
+
+	.masthead-container .navigation-menu-container .header-top-menu li,
+	#header-bottom-container /* Masthead border */
+	{
+		border: none;
+	}
+
+	.masthead-container .navigation-menu-container #logo-item a img
+	{
+		height: 30px;
+		top: 30%
+	}
+
+	.navigation-lower#header-bottom /* Secondary header buttons */
+	{
+		/* Make buttons closer together */
+		flex: 3;
+	}
+
+	.navigation-lower#header-bottom, /* Secondary header buttons */
+	.navigation-lower
+	{
+		flex: 0;
+		margin: 0;
+	}
+
+	li.navigation-dropdown
+	{
+		margin: 7px 0 0 15px !important;
+	}
+
+	div.branch-message 
+	{
+		background-color: transparent;
+		border: 1px solid #FFD839;
+		border-top: 10px solid #FFD839;
+	}
+
+	.accordion .accordion-title
+	{
+		border: none;
+	}
+
+	p.notice, .branch-message-outer, .branch-message p, .alert
+	{
+		background-color: transparent;
+		border: 1px solid darkred;
+		border-top: 10px solid darkred;
+	}
+
 }
