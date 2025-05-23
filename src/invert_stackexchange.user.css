@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           StackExchange Inverted
-@version        1.0.0
+@version        1.0.1
 @author         Hussein Esmail
 @description    `A dark theme template for StackExchange sites`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -52,6 +52,13 @@ domain("stackexchange.com")
 		 * https://uso.kkx.one/style/176998 (CC Licence) */
 		filter: invert(0.80) hue-rotate(180deg) contrast(1.2)!important;
 		background: #ffffff !important;
+	}
+
+	p > img
+	{
+		/* Keep images as they were before inverting */
+		filter: invert(1) hue-rotate(180deg) contrast(1)!important;
+		background: none !important;
 	}
 
 }
