@@ -9,8 +9,8 @@
 @updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/<filename>.user.css
 ==/UserStyle== */
 
-@-moz-document domain("") { /* TODO */
-    
+@-moz-document domain("flexrentalsolutions.com") { /* TODO */
+
     :root {
         --color-bg: #141414;            /* Default background color */
         --color-fg: #f8f8f8;            /* Default text color */
