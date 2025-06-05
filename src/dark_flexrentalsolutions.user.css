@@ -18,25 +18,93 @@
         --color-fg-button: black;
         --color-bg-table: #31363a;
         --table-hover-color: #222222;
-        --color-bg-search: white;
+        --color-bg-search: #2b2b2b;
+        --color-bg-today: #b58ee5;  /* Bg for "Today" on calendar view */
+        --color-fg-today: #1e1e1e;  /* Fg for "Today" on calendar view */
         color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
-    html, body, div, p, li, ul {
-        /* Background color */
-        background-color: var(--color-bg) !important;
-    }
+    /*
+		background-color: var(--color-bg) !important;
+    	color: var(--color-fg) !important;
+    */
 
-    h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl * {
-        /* Text color */
-        color: var(--color-fg) !important;
-    }
+	.x-container-default,
+	.x-calendar-header-cell, /* Calendar day cell on calendar view */
+	.x-calendar-days,
+	.x-btn-clear-input-small,
+	.x-window-header-default-top,
+	.x-toolbar-footer,
+	.x-tab-bar-default-top,
+	.x-tab-bar-material-style-tabpanel-top
+	{
+		background-color: var(--color-bg) !important;
 
-    input {
-        /* Text inputs */
-        color: var(--color-fg-button) !important;
-        background-color: var(--color-bg-search);
-    }
+	}
 
+	.x-component-default,
+	.x-calendar-header-cell, /* Calendar day cell on calendar view */
+	.x-form-item-label,
+	.x-title-text
+	{
+		color: var(--color-fg) !important;
+	}
+
+
+	.x-tab.x-tab-active.x-tab-default,
+	.x-tab.x-tab-active.x-tab-default *,
+	.x-panel-body-default
+	{
+		background-color: var(--color-bg) !important;
+		color: var(--color-fg) !important;
+
+	}
+
+	input,
+	textarea
+	{
+		background-color: var(--color-bg-search) !important;
+		color: var(--color-fg) !important;
+	}
+
+	.x-panel-default
+	{
+		border-color: #2b2b2b !important
+	}
+
+	.x-calendar-days,
+	.x-calendar-days .x-calendar-days-day-column
+	{
+		color: #111111 !important;
+		border: 1px solid #2b2b2b !important;
+
+	}
+
+
+	.x-calendar-weeks-today-cell /* "Today" on calendar view */
+	{
+		background-color: var(--color-bg-today) !important;
+		color: var(--color-fg-today) !important;
+
+	}
+
+	.x-btn-icon-el-clear-input-small
+	{
+		color: red;
+	}
+
+	td.x-table-layout-cell
+	{
+		display: block !important;
+	}
+
+	td.x-table-layout-cell *,
+	.x-title-text,
+	.x-panel-header-title
+	{
+		background-color: var(--color-bg) !important;
+		color: var(--color-fg) !important;
+		width: unset !important;
+	}
 }
 
