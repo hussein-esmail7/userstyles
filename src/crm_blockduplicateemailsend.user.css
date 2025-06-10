@@ -1,0 +1,33 @@
+/* ==UserStyle==
+@name           Dynamics365 Block Email Send Button
+@version        1.0.0
+@author         Hussein Esmail
+@description    ``
+@namespace      https://github.com/hussein-esmail7/userstyles
+@homepageURL    https://github.com/hussein-esmail7/userstyles
+@supportURL     https://github.com/hussein-esmail7/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/crm_blockduplicateemailsend.user.css
+==/UserStyle== */
+
+@-moz-document domain("quest.crm3.dynamics.com") {
+
+    :root {
+        --color-bg: #141414;            /* Default background color */
+        --color-fg: #f8f8f8;            /* Default text color */
+        --color-fg-secondary: #eeeeee;
+        --color-fg-button: black;
+        --color-bg-table: #31363a;
+        --table-hover-color: #222222;
+        --color-bg-search: white;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
+    }
+
+	button.pa-cd.pa-hf.pa-mf.pa-ax.pa-hi.pa-cu.pa-qi.pa-ev.pa-sd.pa-w.pa-afp.pa-afq.pa-afr.pa-afs.pa-aft.pa-afu.pa-afv.pa-afw.pa-afx.pa-afy.pa-afz.pa-aga.flexbox[aria-label="Send Email"]
+	{
+		display: none !important
+
+	}
+
+
+}
+
