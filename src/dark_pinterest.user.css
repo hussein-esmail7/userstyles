@@ -1,6 +1,6 @@
 /* ==UserStyle==
-@name           Pinterest Dark
-@version        1.0.3
+@name           Pinterest Dark Theme
+@version        1.0.0
 @author         Hussein Esmail
 @description    `A dark theme template for Pinterest`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -9,9 +9,7 @@
 @updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/dark_pinterest.user.css
 ==/UserStyle== */
 
-
-
-@-moz-document domain("pinterest.ca") {
+@-moz-document domain("pinterest.com") {
 
     :root {
         --color-bg: #141414;            /* Default background color */
@@ -20,82 +18,94 @@
         --color-fg-button: black;
         --color-bg-table: #31363a;
         --table-hover-color: #222222;
-        --color-transparent: transparent;
-        --color-bg-search: white;
-        --search-bar-color: blue;
+        --color-bg-search: grey;
         color-scheme: dark;                 /* Used to get dark scroll bars */
-
-        /* To implement */
-        --max-width: 800px;					 /* Max width, centered on page */
-        --all-location: auto; /* 'auto' for centered, 'none' for all to left side */
     }
 
-    html,
-    div[data-test-id="header-background"],
-    div[aria-label="Choose board"] div div,
-    div[data-test-id="visual-content-container"],
-    div[data-test-id="description-content-container"],
-    .qiB .a3i,
-    div[role="list"],
-    div[data-test-id="related-modules-header"] div
+    html, p, li, /* Default stuff */
+    div.Jea.XiG.i1W.imm.zI7.iyn.Hsu, /* Container for main image */
+    div.KS5.b8T.hs0.ujU.un8.C9i.TB_, /* Comments collapsible container */
+    div[data-test-id='closeup-body-sticky-content'],
+    div[data-test-id='header-background'],
+    nav#VerticalNavContent,
+    div[aria-label='Dropdown'],
+    h1.FAo.dyH.c51.X8m.V2L.G1E, /* h1 when image hyperlinked to URL */
+	div[data-test-id='more-description-container'] div.S9z.eEj.CCY.e8F.BG7, /* "More" button for long descriptions */
+	div[data-test-id='less-description-container'] div.S9z.eEj.CCY.e8F.BG7 /* "Less" button for long descriptions */
     {
         /* Background color */
         background-color: var(--color-bg) !important;
     }
 
-    h1, h2, h3, h4, h5, h6,
-    a,
-    strong,
-    label,
-    .detDesc,
-    div,
-    div#sortby,
-    .comment,
-    #comments,
-    #detailsouterframe *,
-    #details *,
-    dl *,
-    span
-    {
+    h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl *,
+    nav#VerticalNavContent,
+    div[aria-label='Dropdown'] *,
+    div[aria-label='Currently in'] *,
+    div[aria-label='Your accounts'] *,
+    div#SuggestionsMenu > *
+	{
+
         /* Text color */
         color: var(--color-fg) !important;
     }
 
-    svg[aria-label="secret board"],
-    svg[aria-label="board with sections"]
+    input,
+    div#searchBoxContainer div,
+    div#searchBoxContainer div div div input
     {
-        color: white;
+        /* Text inputs */
+        color: var(--color-fg-button) !important;
+        background-color: var(--color-bg-search);
     }
 
-    /* Highlight when a pin is sponsored by emphasizing the "Promoted by" text */
-    div[title="Promoted by"]
-    {
-        background-color: red !important;
-    }
 
-	.gpV
+    div[data-test-id='creator-card-profile'], /* Author container */
+    div[data-test-id='inline-comment-composer-container'], /* Comment composer container */
+    div[data-test-id='closeup-action-items'], /* Heart/Share buttons */
+    div[data-test-id='closeup-body-image-container'] div.zI7.iyn.Hsu div[data-test-id='closeup-image-overlay-layer-flashlight-button'], /* Image overlay buttons (Zoom in, Related) */
+    div[data-test-id='closeup-body-image-container'] div.zI7.iyn.Hsu div[data-test-id='closeup-image-overlay-layer-media-viewer-button'], /* Image overlay buttons (Zoom in, Related) */
+    div[data-test-id='closeup-body-image-container'] div.zI7.iyn.Hsu div[data-test-id='closeup-image-overlay-layer-domain-link-button'], /* Image overlay buttons (Zoom in, Related) */
+    div[data-test-id='footer'], /* Footer */
+    div[data-test-id='closeup-data-loaded'], /* Back button to left of image */
+    div.Jea.KS5.jzS.zI7.iyn.Hsu >:nth-child(4), /* Sidebar "Create" button */
+    div.Jea.KS5.jzS.zI7.iyn.Hsu >:nth-child(5), /* Sidebar "Notifications" button */
+    div.Jea.KS5.jzS.zI7.iyn.Hsu >:nth-child(6) /* Sidebar "Messages" button */
 	{
-		/* Main button colour */
-		background-color: #1e1e1e;
+		display: none;
 	}
-    img
-    {
-        background-color: transparent !important;
-    }
 
-    button.BackButtonHideShadow /* Show where the back button is more prominently */
-    {
-        background-color: white !important;
-    }
+	svg.Uvi.gUZ.U9O.kVc /* Sidebar icons */
+	{
+		color: white;
+	}
 
-	div.zI7.iyn.Hsu div.jzS.ujU.un8.TB_, /* Caption and comments of a pin */
-    div.F6l.Jea.gjz.k1A.zI7.iyn.Hsu, /* Author of a pin on a sprcific pin page */
-    /* Sponsored pins to hide + other stuff */
-    div[data-test-id="one-tap-desktop"], /* Pins that link directly to a site (ads) */
-    div[data-test-id="triedItCommentTabs"], /* Comments section of pins */
-    div[data-test-id="tries-images"] /* Related images preview from pin (4 small squares beside photo) */
-    {
-        display: none !important;
-    }
+	button.oeK.DUt.Fuc.CCY.Tbt.L4E.e8F.BG7:hover /* When you hover over dropdown buttons */
+	{
+		background-color: grey !important;
+	}
 
+	div.zI7.iyn.Hsu
+	{
+		border-radius: 0 !important;
+	}
+
+	a[aria-label='  pin page']
+	{
+		target: "_blank";
+
+	}
+
+	a.nrl._74.NtY.S9z.CCY._O1.mQ8.KS5.xuB.qrE.a_A /* "Visit Site" button on some image pages */
+	{
+		background-color: red;
+	}
+
+	div[data-test-id='more-description-container'] div.MIw.zI7.iyn.Hsu
+	{
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%) !important;
+		right: 100%;
+		height: 100%;
+		width: 48px;
+	}
 }
+
