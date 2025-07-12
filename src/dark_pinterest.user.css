@@ -28,6 +28,7 @@
     div[data-test-id='closeup-body-sticky-content'],
     div[data-test-id='header-background'],
     nav#VerticalNavContent,
+    .imm,
     div[aria-label='Dropdown'],
     h1.FAo.dyH.c51.X8m.V2L.G1E, /* h1 when image hyperlinked to URL */
 	div[data-test-id='more-description-container'] div.S9z.eEj.CCY.e8F.BG7, /* "More" button for long descriptions */
