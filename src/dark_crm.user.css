@@ -373,12 +373,6 @@
     	--colorStatusDangerBackground3Pressed: #960b18; /*#960b18;*/
     }
 
-    .pa-by /* Backgound under elements on homepage */
-    {
-        /* Background color */
-        background-color: var(--color-bg) !important;
-    }
-
     .pa-o, /* Backgound of hover elements on homepage */
     .root-184 .ag-theme-balham .ag-root, /* Activities hover element */
     .root-184 .ag-theme-balham, /* Activities hover element */
@@ -388,26 +382,12 @@
         /* background-color: #222222 !important; */
     }
 
-    .test {
-        /* Text color */
-        color: var(--color-fg) !important;
-    }
-
-    input {
-        /* Text inputs */
-        color: var(--color-fg-button) !important;
-        background-color: var(--color-bg-search);
-    }
-
-
     /* Elements to hide */
     div[data-id="sidepane-tab-button-Microsoft.Copilot.Pane"], /* Copilot side button on homepage */
-    div.pa-g.pa-jx.pa-na.pa-nb.flexbox, /* Entire right side pane (since Copilot button is only button in it) */
     button[data-id="msdyn_Mscrm.GlobalTab.Copilot.LaunchAppCopilot"] /* Header Copoilot button */
 	{
-		display: none;
+		display: none !important;
 	}
-
 
 	/* Making homepage more compact */
 	.root-184 .ag-theme-balham .ag-root
@@ -448,9 +428,6 @@
 		border-radius: 0;
 	}
 
-
-
-
 	/* Making the "Rows: ####" footer mostly transparent */
 	div.basicPaging-194
 	{
@@ -461,17 +438,14 @@
 		background-color: #ffffff;
 	}
 
-
 	/* Making Left sidebar more compact - text only, no symbols*/
-
-
 
 	.pa-bg
 	{
 		/* Width of entire left sidebar */
 		width: 11em; /* Originally 14.286em */
 	}
-	span.pa-ea.pa-fa.pa-fu.pa-fv.pa-cy.pa-ej.pa-g.pa-w.pa-ci.svgIcon /* Logo */
+	span.pa-w.svgIcon /* Logo */
 	{
 		display: none;
 	}
@@ -497,15 +471,25 @@
 		margin-top: 0;
 	}
 
-
-
-
-
 	.pa-q, /* Entire header height */
 	._2sngRVSfiZnZSR2_elJ0bG, /* 3x3 dots button at top left of header */
 	.mectrl_topHeader /* User icon height */
 	{
 		height: 2.5rem; /* Originally 3.43rem */
 	}
+
+
+
+	.root-276
+	{
+		padding: 0;
+	}
+
+
+	div.ag-row-position-absolute
+	{
+		height: 9;
+	}
+
 }
 
