@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           w3schools Dark
-@version        1.0.2
+@version        1.0.3
 @author         Hussein Esmail
 @description    `A dark theme for the website w3schools.com`
 @namespace      https://github.com/hussein-esmail7/userstyles
@@ -14,6 +14,7 @@
         --color-bg: #141414;            /* Default background color */
         --color-fg: #f8f8f8;            /* Default text color */
         --color-bg-table: #1e1e1e;
+        --color-bg-sidebar-active: #363636;
         --color-bg-ex: #1e1e1e;
         --color-fg-url: #7ecbff;
         --color-fg-url-visited: #eaabff;
@@ -25,7 +26,16 @@
         color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
-    body, .CodeMirror, .w3-white, .w3-bar, .sidesection, .intro, .pagemenu, #leftmenuinnerinner {
+    body, 
+    .CodeMirror, 
+    .w3-white, 
+    .w3-bar, 
+    .sidesection, 
+    .intro, 
+    .pagemenu, 
+    #leftmenuinnerinner,
+    div.w3-row 
+    {
         /* Background color */
         background-color: var(--color-bg) !important;
     }
@@ -37,7 +47,9 @@
         color: var(--color-fg-code);
         background-color: var(--color-bg-ex);
     }
-    p, h1, h2, h3, h4, h5, h6, li, span, td, th {
+    p, h1, h2, h3, h4, h5, h6, li, span, td, th,
+    #sidenav #leftmenuinnerinner a.overview_header.active /* Sidebar selected section */
+    {
         /* Text color */
         color: var(--color-fg) !important;
     }
@@ -76,4 +88,26 @@
         background-color: var(--color-panel-red) !important;
     }
 
+    /* By https://github.com/frostbitefalls on 2026-04-08 */
+    #leftmenuinnerinner .overview_body, #sidenav #leftmenuinnerinner .ref_overview {
+        background-color: var(--color-bg) !important;
+    }
+    .nextprev a:link, .nextprev a:visited { background-color: initial; }
+    .nextprev .w3-btn:not(.w3-left):not(.w3-right):hover { background-color: #059862 !important; }
+    .ws-note { background-color: var(--color-bg); }
+    table.browserref th { background-color: var(--color-bg) !important; }
+    /* By https://github.com/frostbitefalls on 2026-04-08 */
+
+    #sidenav #leftmenuinnerinner a.overview_header.active, /* Sidebar selected section */
+    #sidenav #leftmenuinnerinner .overview_body > a.active, /* Sidebar selected subsection (funciton name) */
+    div#leftmenuinnerinner a.active
+    {
+        background-color: var(--color-bg-sidebar-active) !important;
+    }
+
+    #top-nav-bar #tnb-google-search-input
+    {
+        background-color: var(--color-bg-sidebar-active);
+        color: var(--color-fg);
+    }
 }
