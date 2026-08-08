@@ -2,4 +2,4 @@
 .DS_STORE
 
 # VS Code Environment
-.code-workspace 
+*.code-workspace 
