@@ -1,0 +1,61 @@
+/* ==UserStyle==
+@name           Reddit Compact Sidebar
+@version        1.0.0
+@author         Hussein Esmail
+@description    `Compact Sidebar for Reddit`
+@namespace      https://github.com/hussein-esmail7/userstyles
+@homepageURL    https://github.com/hussein-esmail7/userstyles
+@supportURL     https://github.com/hussein-esmail7/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/reddit_compact_sidebar.user.css
+==/UserStyle== */
+
+@-moz-document domain("reddit.com") { 
+    :root {
+        --color-bg: #141414;            /* Default background color */
+        --color-fg: #f8f8f8;            /* Default text color */
+        --color-fg-secondary: #eeeeee;
+        --color-fg-button: black;
+        --color-bg-table: #31363a;
+        --table-hover-color: #222222;
+        --color-bg-search: white;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
+    }
+
+    #left-sidebar {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    #left-sidebar nav {
+        padding-top: 0px !important;
+    }
+
+    .py-2xs,
+    .py-\[0\.375rem\],
+    .py-2xs
+    {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    #RECENT li a span.py-\[0\.375rem\] {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    hr.w-100.my-sm.border-neutral-border-weak, /* Line between home and custom feeds */
+    #RECENT li a span.shrink-0,
+    left-nav-community-item > .shrink-0 {
+        display: none;
+    }
+
+    .gap-xs {
+        /* Previously: .5rem */
+        /* If I can find a way to have it just apply to sidebar elements that would be better */
+        gap: 0px;
+    }
+
+    
+
+}
+
