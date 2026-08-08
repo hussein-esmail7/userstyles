@@ -1,0 +1,79 @@
+/* ==UserStyle==
+@name           PACT Dark Theme
+@version        1.0.0
+@author         Hussein Esmail
+@description    `A dark theme template for PACT`
+@namespace      https://github.com/hussein-esmail7/userstyles
+@homepageURL    https://github.com/hussein-esmail7/userstyles
+@supportURL     https://github.com/hussein-esmail7/userstyles/issues
+@updateURL      https://raw.githubusercontent.com/hussein-esmail7/userstyles/main/src/dark_pact.user.css
+==/UserStyle== */
+
+@-moz-document domain("pact.ca") {
+
+    :root {
+        --color-bg: #151617;            /* Default background color */
+        --color-fg: #d0d6e0;            /* Default text color */
+        --color-fg-secondary: #62666d;  /* Secondary text color */
+        --color-fg-button: black;
+        --color-fg-search: #ababab;
+        --color-bg-table: #31363a;
+        --table-hover-color: #222222;
+        --color-bg-search: #212121;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
+    }
+
+    html, body, div, a, p, p *, li, ul {
+        /* Background color */
+        background-color: var(--color-bg) !important;
+        color: var(--color-fg-secondary) !important;
+    }
+
+    h1, h2, p.title, div.infobox p.title a {
+        color: var(--color-fg) !important;
+    }
+
+    div.imgbox {
+        background-color: white !important;
+    }
+
+    hr {
+        margin: 1rem;
+        border-top: 1px solid var(--color-fg-secondary);
+    }
+
+    .position-info {
+        margin: 1rem;
+        border-top: 1px solid var(--color-fg-secondary);
+        border-bottom: 1px solid var(--color-fg-secondary);
+    }
+
+    footer .infobar {
+        padding: clamp(1rem, 10vw, 1rem) 0;
+    }
+
+    footer .credits {
+        margin: 1rem auto;
+    }
+
+    main.internal {
+        padding: 1rem 0 1rem;
+    }
+
+    input {
+        /* Text inputs */
+        color: var(--color-fg-search) !important;
+        border-color: var(--color-fg-search) !important;
+        background-color: var(--color-bg-search) !important;
+    }
+
+    nav.main ul, nav.main ul * {
+        background-color: unset !important;
+        color: var(--color-fg) !important;
+    }
+
+    .boardlist .post {
+        padding: 0;
+    }
+}
+
