@@ -18,37 +18,171 @@
         --color-bg-table: #31363a;
         --table-hover-color: #222222;
         --color-transparent: transparent;
-        --color-bg-search: white;
+        --color-bg-search-old: white;
+        --color-bg-search: #212223;
+        --color-fg-search: #919497;
+        --color-border-green: green;
+        --color-red: red;
+        --color-white: white;
+        --color-black: black;
+        color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
-    html, body, div.Homepage_homepage__2PN8y, div[class*="CriticalAutocomplete"], div[class*="Desktop_mainNavbar"], div[class*="stickyHeaderContainer"], div[class*="Listables_listItemContainer"] *, div[class*="BubbleDetailPanel"] *, div[class*="MediaCarouselDesktop"], div[class*="CarouselMessageSlide"] {
+    h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments,
+    #detailsouterframe *, .comment, #details *, dl *, i,
+    .text-gray-800,
+    .body16Reg, .body16Bold, .body16Md,
+    .body20Reg, .body20Bold, .body20Md,
+    .body24Reg, .body24Bold, .body24Md,
+    .text-gray-950,
+    .display20To24, .display24To28,
+    .text-primary-foreground,
+    .ListingCardContentSection_addressText__qP\+OJ,
+    .ListingCardContentSection_amenitiesText__qeNBb,
+    .ListingCardContentSection_bedsRangeText__JIAfb,
+    .ListingCardContentSection_verifiedText__vxDIC, /* "Verified" */
+    .ListingCardContentSection_ratingTextStyle__VyMgZ, /* "Excellent", "Good", etc. */
+    .ListingCardContentSection_longTermPrice__DM1kY, /* Price */
+    .ListingCardContentSection_quickLookButton__nOLEU, /* "Quick Look" button */
+    .ListingCardInfoSection_closeButton__haUyk, /* "Close" button after pressing "Quick Look" */
+    .ListingCardInfoSection_typeAndBlurbText__oXa8q,
+    .text-blue-800, /* On indiv. listing page "OFFER: 1 month free rent", etc */
+    .aria-selected\:text-gray-950[aria-selected=true],
+    .text-gray-600,
+    .css-19aao71,
+    .css-un99ac input[type=search],
+    .text-gray-900,
+    .css-pc4h0j
+    {
+        /* Text color */
+        color: var(--color-fg) !important;
+        caret-color: var(--color-fg) !important;
+    }
+
+    html, body, div.Homepage_homepage__2PN8y, 
+    div[class*="CriticalAutocomplete"], 
+    div[class*="Desktop_mainNavbar"], 
+    div[class*="stickyHeaderContainer"], 
+    div[class*="Listables_listItemContainer"] *, 
+    div[class*="BubbleDetailPanel"] *, 
+    div[class*="MediaCarouselDesktop"], 
+    div[class*="CarouselMessageSlide"],
+    div.w-full, /* Background on main search page */
+    div.flex.justify-between.rounded-xl.bg-gray-50, /* Main page search border */
+    .css-1cl3r0y, /* Symbol beside dropdown results while searching */
+    header,
+    .css-1jk41f4, /* Cards (1 per rental) on search results page */
+    .css-1b8u1xz, /* Small cards on search result cards (Featured, Rent Special, etc) */
+    .text-gray-800,
+    .bg-neutral-100,
+    .md\:bg-gray-50, /* Property Overfiew window in individual pages */
+    .bg-gray-50,
+    .css-1wtwyke,
+    .bg-popover
+    {
         /* Background color */
         background-color: var(--color-bg) !important;
     }
     
     div[class*="ListItemDesktopView_btnIconContainer"] * {
-        background-color: red !important;
+        background-color: var(--color-red) !important;
         
     }
-    
-    h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl *, i {
-        /* Text color */
-        color: var(--color-fg) !important;
+
+    .border-gray-150
+    {
+        border-color: var(--color-bg-search);
     }
 
-    input, select, div[class*="Textarea_textareaWrapper"], div[class*="Textarea_textareaWrapper"] * {
-        color: white !important;
-        background-color: black !important;
+    .text-gray-800.rounded,
+    .bg-neutral-100.border
+    {
+        border: 1px solid var(--color-fg-search);
+    }
+
+    .border-green-300
+    {
+        border: 1px solid var(--color-border-green);
+    }
+
+    img[alt='Zumper'], /* Zumper logo in top left corner (otherwise not too visible) */
+    canvas.mapboxgl-canvas /* Map on search results page */
+    {
+        /* Completely invert colours */
+        filter: invert()
+    }
+
+    div.w-full.bg-auto, /* Background image on main page */
+    div.hidden.flex-1.grow-0, /* Block for ad on a listing page */
+    a[href="https://advertise.zumper.com/"], /* Advertise URL in header */
+    div.bg-teal-850, /* Zoe/Zumper AI */
+    div.to-blue-900, /* Zoe/Zumper AI */
+    section#neighborhood div.flex.flex-col.items-center.border-gray-150.text-gray-600.text-xs.font-normal.gap-4.pt-4.w-full.border-t.border-solid, /* Ad */
+    section#neighborhood div.max-w-full h2.display24To28, /* Internet available near ... header */
+    div.cmwdgt-tc-container.container-fluid, /* Internet available near ...  actual element */
+    div.flex.flex-col.items-center.border-gray-150.text-gray-600.text-xs.font-normal.gap-8.pt-4.w-full.mt-20, /* Ad */
+    .css-nn17uq, /* Newsletter email submit box */
+    div[data-nosnippet="true"] /* Ad */
+    {
+        /* Hide element */
+        display: none;
+    }
+
+    div.flex.flex-col.items-start.h-full.gap-0
+    {
+        height: 0;
+    }
+    
+    .mt-20
+    {
+        margin-top: 1rem; /* 5rem by default, reduced to make it more compact */
+    }
+
+    .mb-\[160px\]
+    {
+        margin-bottom: 1rem; /* 160px by default, reduced to make it more compact */
+    }
+
+    .ListingCardContentSection_quickLookButton__nOLEU, /* "Quick Look" button */
+    .ListingCardInfoSection_closeButton__haUyk /* "Close" button after pressing "Quick Look" */
+    {
+        /* Not URLs but leads to a different view - to show it is user-interactable */
+        text-decoration: underline;
+    }
+
+    .bg-gray-0,
+    .bg-green-50
+    {
+        background-color: unset;
+    }
+
+    select, div[class*="Textarea_textareaWrapper"], div[class*="Textarea_textareaWrapper"] * {
+        /* TODO: Purpose unknown */
+        color: var(--color-white) !important;
+        background-color: var(--color-black) !important;
+    }
+
+    input#autocomplete-search-input__,
+    .LandingAutocompleteTheme_contextualMenu__Jg1hH, /* Search suggestions while typing */
+    .bg-background,
+    .css-1l8ovz6
+    {
+        color: var(--color-fg) !important;
+        background-color: var(--color-bg-search) !important;
     }
 
     .https_form {
+        /* TODO: Purpose unknown */
         background-color: var(--search-bar-color);
     }
     
     button[class*="BaseButton_button"] * {
+        /* TODO: Purpose unknown */
         background-color: transparent !important;
     }
+    
     button[class*="BaseButton_button"] {
+        /* TODO: Purpose unknown */
         box-shadow: 0px 1px 0px 0px #1c1b18;
         background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
         background-color:#eae0c2;
