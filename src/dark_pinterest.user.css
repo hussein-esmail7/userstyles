@@ -18,7 +18,9 @@
         --color-fg-button: black;
         --color-bg-table: #31363a;
         --table-hover-color: #222222;
-        --color-bg-search: grey;
+        --color-bg-search: #212223;
+        --color-bg-buttons: #892626;
+        --color-fg-text: #4c4c4d;
         color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
@@ -32,10 +34,30 @@
     div[aria-label='Dropdown'],
     h1.FAo.dyH.c51.X8m.V2L.G1E, /* h1 when image hyperlinked to URL */
 	div[data-test-id='more-description-container'] div.S9z.eEj.CCY.e8F.BG7, /* "More" button for long descriptions */
-	div[data-test-id='less-description-container'] div.S9z.eEj.CCY.e8F.BG7 /* "Less" button for long descriptions */
+	div[data-test-id='less-description-container'] div.S9z.eEj.CCY.e8F.BG7, /* "Less" button for long descriptions */
+    div[data-test-id='scrollable-one-bar-root'] 
     {
         /* Background color */
         background-color: var(--color-bg) !important;
+    }
+
+    button[data-test-id='one-bar-pill'] div 
+    {
+        /* Background color of top bar of search suggestions when doing a search*/
+        background-color: var(--color-bg-buttons) !important;
+    } 
+
+    input[data-test-id='search-box-input']
+    {
+        /* Search bar text */
+        /*color: var(--color-fg-text) !important; */
+        color: red !important;
+    }
+    
+    svg._ByyDT
+    {
+        color: var(--color-bg-buttons) !important;
+
     }
 
     h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl *,
@@ -52,11 +74,12 @@
 
     input,
     div#searchBoxContainer div,
-    div#searchBoxContainer div div div input
+    div#searchBoxContainer div div div input,
+    div.ADXRXN.MEP_vB.RZKOJ9.aNs6gM.bx1iJI
     {
         /* Text inputs */
-        color: var(--color-fg-button) !important;
-        background-color: var(--color-bg-search);
+        color: var(--color-fg-text) !important;
+        background-color: var(--color-bg-search) !important;
     }
 
 
@@ -70,9 +93,10 @@
     div[data-test-id='closeup-data-loaded'], /* Back button to left of image */
     div.Jea.KS5.jzS.zI7.iyn.Hsu >:nth-child(4), /* Sidebar "Create" button */
     div.Jea.KS5.jzS.zI7.iyn.Hsu >:nth-child(5), /* Sidebar "Notifications" button */
-    div.Jea.KS5.jzS.zI7.iyn.Hsu >:nth-child(6) /* Sidebar "Messages" button */
+    div.Jea.KS5.jzS.zI7.iyn.Hsu >:nth-child(6), /* Sidebar "Messages" button */
+    div.ADXRXN.DTsIgD /* Voice search button */
 	{
-		display: none;
+		display: none !important;
 	}
 
 	svg.Uvi.gUZ.U9O.kVc /* Sidebar icons */
