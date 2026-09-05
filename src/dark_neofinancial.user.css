@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name           Dark Theme Template
+@name           Neo Financial Dark Theme
 @version        1.0.0
 @author         Hussein Esmail
 @description    `A dark theme template for Neo Financial`
@@ -13,6 +13,7 @@
     
     :root {
         --color-bg: #141414;            /* Default background color */
+        --color-bg-secondary: #454545;
         --color-fg: #f8f8f8;            /* Default text color */
         --color-fg-secondary: #eeeeee;
         --color-fg-button: black;
@@ -22,21 +23,299 @@
         color-scheme: dark;                 /* Used to get dark scroll bars */
     }
 
-    html, body, div, p, li, ul {
-        /* Background color */
-        background-color: var(--color-bg) !important;
+    :root {
+        /* Variables from CSS page online */
+        /*--morpheus-wealth10: #ccebe2; */
+        /*--morpheus-wealth20: #a5dbcb; */
+        /*--morpheus-wealth30: #78c9b1; */
+        /*--morpheus-wealth40: #4bb797; */
+        /*--morpheus-wealth50: #1ea57d; */
+        /*--morpheus-wealth60: #188464; */
+        /*--morpheus-wealth70: #12634b; */
+        /*--morpheus-wealth80: #0e4a38; */
+        /*--morpheus-wealth90: #093226; */
+        /*--morpheus-prosper10: #fbd2cb; */
+        /*--morpheus-prosper20: #f9b9ad; */
+        /*--morpheus-prosper30: #f69684; */
+        /*--morpheus-prosper40: #f3735b; */
+        /*--morpheus-prosper50: #f05032; */
+        /*--morpheus-prosper60: #c04028; */
+        /*--morpheus-prosper70: #90301e; */
+        /*--morpheus-prosper80: #6c2417; */
+        /*--morpheus-prosper90: #48180f; */
+        /*--morpheus-ground10: #f9eac8; */
+        /*--morpheus-ground20: #f5dda7; */
+        /*--morpheus-ground30: #f0cc7b; */
+        /*--morpheus-ground40: #ebbb4f; */
+        /*--morpheus-ground50: #e6aa23; */
+        /*--morpheus-ground60: #b8881c; */
+        /*--morpheus-ground70: #805f14; */
+        /*--morpheus-ground80: #684d10; */
+        /*--morpheus-ground90: #45330b; */
+        /*--morpheus-cloud10: #e5eff0; */
+        /*--morpheus-cloud20: #d5e5e7; */
+        /*--morpheus-cloud30: #c0d8db; */
+        /*--morpheus-cloud40: #abcbcf; */
+        /*--morpheus-cloud50: #96bec3; */
+        /*--morpheus-cloud60: #78989c; */
+        /*--morpheus-cloud70: #5a7275; */
+        /*--morpheus-cloud80: #445658; */
+        /*--morpheus-cloud90: #2d393b; */
+        /*--morpheus-purple10: #e6d6ed; */
+        /*--morpheus-purple20: #ccaddc; */
+        /*--morpheus-purple30: #b383ca; */
+        /*--morpheus-purple40: #995ab9; */
+        /*--morpheus-purple50: #8031a7; */
+        /*--morpheus-purple60: #732c96; */
+        /*--morpheus-purple70: #60257d; */
+        /*--morpheus-purple80: #53206d; */
+        /*--morpheus-purple90: #401954; */
+        --morpheus-slate025: var(----color-bg) !important;
+        --morpheus-slate05: #0e4a38;
+        /*--morpheus-slate10: #e1e4e5; */
+        /*--morpheus-slate20: #cdd2d5; */
+        /*--morpheus-slate30: #b4babf; */
+        /*--morpheus-slate40: #828d95; */
+        /*--morpheus-slate50: #697780; */
+        /*--morpheus-slate60: #50606b; */
+        /*--morpheus-slate70: #374956; */
+        /*--morpheus-slate80: #1e3241; */
+        /*--morpheus-slate85: #122737; */
+        /*--morpheus-slate90: #051c2c; */
+        /*--morpheus-blue10: #d6e7ff; */
+        /*--morpheus-blue20: #99c5ff; */
+        /*--morpheus-blue30: #66a8ff; */
+        /*--morpheus-blue40: #338bff; */
+        /*--morpheus-blue50: #006eff; */
+        /*--morpheus-blue60: #0063e6; */
+        /*--morpheus-blue70: #0053bf; */
+        /*--morpheus-blue80: #0048a6; */
+        /*--morpheus-blue90: #003780; */
+        /*--morpheus-white: #fff; */
+        /*--morpheus-black10: #e5e5e5; */
+        /*--morpheus-black20: #ccc; */
+        /*--morpheus-black30: #b2b2b2; */
+        /*--morpheus-black40: #999; */
+        /*--morpheus-black50: #7f7f7f; */
+        /*--morpheus-black60: #666; */
+        /*--morpheus-black70: #4c4c4c; */
+        /*--morpheus-black80: #333; */
+        /*--morpheus-black90: #262626; */
+        /*--morpheus-black95: #1b1b1b; */
+        /*--morpheus-black: #000; */
+        /*--color-interactivePrimary: var(--morpheus-black); */
+        /*--color-interactiveSecondary: var(--morpheus-slate05); */
+        /*--color-interactiveInverse: var(--morpheus-white); */
+        /*--color-interactiveSecondaryInverse: var(--morpheus-black80); */
+        /*--color-accent: var(--morpheus-wealth50); */
+        /*--color-positive: var(--morpheus-wealth50); */
+        /*--color-warning: var(--morpheus-ground50); */
+        /*--color-negative: var(--morpheus-prosper50); */
+        /*--color-info: var(--morpheus-blue50); */
+        /*--color-contentDefault: var(--morpheus-black); */
+        /*--color-contentSubdued: var(--morpheus-slate50); */
+        /*--color-contentDefaultInverse: var(--morpheus-white); */
+        /*--color-contentSubduedInverse: var(--morpheus-slate20); */
+        /*--color-contentOnColor: var(--morpheus-white); */
+        /*--color-contentDisabled: var(--morpheus-slate30); */
+        /*--color-contentInfo: var(--morpheus-blue50); */
+        /*--color-contentInfoInverse: var(--morpheus-blue30); */
+        /*--color-contentAccent: var(--morpheus-wealth70); */
+        /*--color-contentPositive: var(--morpheus-wealth70); */
+        /*--color-contentWarning: var(--morpheus-ground70); */
+        /*--color-contentNegative: var(--morpheus-prosper70); */
+        /*--color-contentNegativeInverse: var(--morpheus-prosper40); */
+        /*--color-borderDefault: var(--morpheus-slate10); */
+        /*--color-borderStrong: var(--morpheus-slate40); */
+        /*--color-borderInverse: var(--morpheus-slate70); */
+        /*--color-borderAccent: var(--morpheus-wealth50); */
+        /*--color-borderPositive: var(--morpheus-wealth50); */
+        /*--color-borderWarning: var(--morpheus-ground50); */
+        /*--color-borderNegative: var(--morpheus-prosper50); */
+        /*--color-contentAccentOnColor: var(--morpheus-wealth30); */
+        /*--color-contentSubduedInverseOnColor: var(--morpheus-slate20); */
+        /*--color-backgroundDefault: var(--morpheus-slate025); */
+        /*--color-backgroundInverse: var(--morpheus-black); */
+        /*--color-backgroundStrong: var(--morpheus-slate10); */
+        /*--color-surfaceDefault: var(--morpheus-white); */
+        /*--color-surfaceStrong: var(--morpheus-slate05); */
+        /*--color-surfaceDisabled: var(--morpheus-slate05); */
+        /*--color-surfaceInverse: var(--morpheus-black90); */
+        /*--color-accentSubtle: var(--morpheus-wealth10); */
+        /*--color-positiveSubtle: var(--morpheus-wealth10); */
+        /*--color-warningSubtle: var(--morpheus-ground10); */
+        /*--color-negativeSubtle: var(--morpheus-prosper10); */
+        /*--color-infoSubtle: var(--morpheus-blue10); */
+        /*--color-memoSubtle: #f2ede0; */
+        /*--color-neutralSubtle: var(--morpheus-cloud10); */
+        /*--color-overlay: rgba(5,28,44,.3); */
+        /*--color-surfaceInverseOnColor: var(--morpheus-black90); */
+        /*--color-tagBills: #ba965d; */
+        /*--color-tagEntertainment: #f095ff; */
+        /*--color-tagFood: #ff9b33; */
+        /*--color-tagGifts: #ff88c8; */
+        /*--color-tagGrocery: #a4d65e; */
+        /*--color-tagHealth: #ff797d; */
+        /*--color-tagIncome: var(--morpheus-wealth40); */
+        /*--color-tagMiscellaneous: var(--morpheus-slate40); */
+        /*--color-tagServices: #8b9bff; */
+        /*--color-tagShopping: var(--morpheus-purple30); */
+        /*--color-tagTransfer: var(--morpheus-black); */
+        /*--color-tagTransportation: #ffc649; */
+        /*--color-tagTravel: var(--morpheus-blue30); */
+        /*--color-pressedDefault: rgba(0,0,0,.08); */
+        /*--color-pressedStrong: rgba(0,0,0,.1); */
+        /*--color-pressedInverse: rgba(255,255,255,.2); */
+        /*--color-hoverDefault: rgba(0,0,0,.04); */
+        /*--color-hoverStrong: rgba(0,0,0,.06); */
+        /*--color-hoverInverse: rgba(255,255,255,.1); */
+        /*--color-focusDefault: rgba(0,0,0,.08); */
+        /*--color-focusStrong: rgba(0,0,0,.1); */
+        /*--color-focusInverse: rgba(255,255,255,.16); */
+        /*--color-navBackgroundDefault: var(--morpheus-black); */
+        /*--color-navInteractivePrimary: var(--morpheus-white); */
+        /*--color-navContentDefault: var(--morpheus-white); */
+        /*--color-navInteractiveSecondary: var(--morpheus-black90); */
+        /*--color-navContentInverse: var(--morpheus-black); */
+        /*--color-hbc: #00274c; */
+        /*--color-cathay: #317e78; */
+        /*--color-skeletonPrimary: rgba(91,91,91,.15); */
+        /*--color-skeletonSecondary: rgba(181,181,181,.15); */
+        /*--trinity-wealth10: #ccebe2; */
+        /*--trinity-wealth20: #a5dbcb; */
+        /*--trinity-wealth30: #78c9b1; */
+        /*--trinity-wealth40: #4bb797; */
+        /*--trinity-wealth50: #1ea57d; */
+        /*--trinity-wealth60: #188464; */
+        /*--trinity-wealth70: #12634b; */
+        /*--trinity-wealth80: #0e4a38; */
+        /*--trinity-wealth90: #093226; */
+        /*--trinity-prosper10: #fbd2cb; */
+        /*--trinity-prosper20: #f9b9ad; */
+        /*--trinity-prosper30: #f69684; */
+        /*--trinity-prosper40: #f3735b; */
+        /*--trinity-prosper50: #f05032; */
+        /*--trinity-prosper60: #c04028; */
+        /*--trinity-prosper70: #90301e; */
+        /*--trinity-prosper80: #6c2417; */
+        /*--trinity-prosper90: #48180f; */
+        /*--trinity-ground10: #f9eac8; */
+        /*--trinity-ground20: #f5dda7; */
+        /*--trinity-ground30: #f0cc7b; */
+        /*--trinity-ground40: #ebbb4f; */
+        /*--trinity-ground50: #e6aa23; */
+        /*--trinity-ground60: #b8881c; */
+        /*--trinity-ground70: #805f14; */
+        /*--trinity-ground80: #684d10; */
+        /*--trinity-ground90: #45330b; */
+        /*--trinity-cloud10: #e5eff0; */
+        /*--trinity-cloud20: #d5e5e7; */
+        /*--trinity-cloud30: #c0d8db; */
+        /*--trinity-cloud40: #abcbcf; */
+        /*--trinity-cloud50: #96bec3; */
+        /*--trinity-cloud60: #78989c; */
+        /*--trinity-cloud70: #5a7275; */
+        /*--trinity-cloud80: #445658; */
+        /*--trinity-cloud90: #2d393b; */
+        /*--trinity-purple10: #e6d6ed; */
+        /*--trinity-purple20: #ccaddc; */
+        /*--trinity-purple30: #b383ca; */
+        /*--trinity-purple40: #995ab9; */
+        /*--trinity-purple50: #8031a7; */
+        /*--trinity-purple60: #732c96; */
+        /*--trinity-purple70: #60257d; */
+        /*--trinity-purple80: #53206d; */
+        /*--trinity-purple90: #401954; */
+        /*--trinity-slate025: red; */
+        /*--trinity-slate05: #e7e8e9; */
+        /*--trinity-slate10: #e1e4e5; */
+        /*--trinity-slate20: #cdd2d5; */
+        /*--trinity-slate30: #b4babf; */
+        /*--trinity-slate40: #828d95; */
+        /*--trinity-slate50: #697780; */
+        /*--trinity-slate60: #50606b; */
+        /*--trinity-slate70: #374956; */
+        /*--trinity-slate80: #1e3241; */
+        /*--trinity-slate85: #122737; */
+        /*--trinity-slate90: #051c2c; */
+        /*--trinity-blue10: #d6e7ff; */
+        /*--trinity-blue20: #99c5ff; */
+        /*--trinity-blue30: #66a8ff; */
+        /*--trinity-blue40: #338bff; */
+        /*--trinity-blue50: #006eff; */
+        /*--trinity-blue60: #0063e6; */
+        /*--trinity-blue70: #0053bf; */
+        /*--trinity-blue80: #0048a6; */
+        /*--trinity-blue90: #003780; */
+        /*--trinity-white: #fff; */
+        /*--trinity-black10: #e5e5e5; */
+        /*--trinity-black20: #ccc; */
+        /*--trinity-black30: #b2b2b2; */
+        /*--trinity-black40: #999; */
+        /*--trinity-black50: #7f7f7f; */
+        /*--trinity-black60: #666; */
+        /*--trinity-black70: #4c4c4c; */
+        /*--trinity-black80: #333; */
+        /*--trinity-black90: #262626; */
+        /*--trinity-black95: #1b1b1b; */
+        /*--trinity-black: #000; */
     }
 
-    h1, h2, h3, h4, h5, h6, a, strong, label, .detDesc, div, div#sortby, .comment, #comments, #detailsouterframe *, .comment, #details *, dl * {
-        /* Text color */
-        color: var(--color-fg) !important;
+    div.bg-backgroundDefault,
+    div.mui-a6uds0,
+    div.MuiContainer-root.MuiContainer-maxWidthXl.MuiContainer-disableGutters.mui-11bx66m, /* Sidebar background */
+    .mui-1qdqtbn, /* Sidebar buttons (Accounts/Credit/Money/Mortgages/Invest/Loans/Insurance/Insights/Rewards/Payments/Cards) */
+    .mui-10lgod3, /* "Transactions/Details/Statements on transaction page " */
+    .mui-17ktrtk /* Transaction list items on transaction page */
+    {
+        /* Main background */
+        background-color: var(--color-bg);
     }
 
-    input {
-        /* Text inputs */
-        color: var(--color-fg-button) !important;
-        background-color: var(--color-bg-search);
+    .text-contentDefault,
+    .mui-1m4qprx /* Sidebar active page (text) */
+    {
+        color: var(--color-fg);
     }
 
+    .text-contentSubdued,
+    .mui-1qve4hp, /* Part of file path (the "Credit" in "Credit > Account Details") */
+    .mui-p6v80h, /* Part of file path (the "Account Details" in "Credit > Account Details") */
+    .mui-iycv3a, /* Sidebar text */
+    .mui-n6k9du /* (Some of) transaction numbers broken down by Pending/Posted */
+    {
+        color: var(--color-fg-secondary);
+    }
+    
+    div.morpheus.border-borderDefault,
+    div.morpheus.hover,
+    .bg-surfaceDefault, /* All oval buttons */
+    .mui-1i2wvt0 /* Oval button on /accounts page for "Neo Mastercard" */
+    {
+        background-color: var(--color-bg-secondary);
+    }
+
+    .bg-surfaceStrong, /* Small text when you receive cashback on a transaction in table view */ 
+    .mui-1l2sa26 /* Sidebar active page */
+    {
+        background-color: #0e4a38;
+        /* Green rewards background */
+        /* Originally --color-surfaceStrong -> --morpheus-slate05 -> #e7e8ea */
+    }
+
+    /* MAKING THINGS MORE COMPACT */
+    /* MAKING THINGS MORE COMPACT */
+    /* MAKING THINGS MORE COMPACT */
+    .mui-1l2sa26, /* Sidebar active page */
+    .mui-1qdqtbn /* Sidebar non-active pages */
+    {
+        padding: 0;
+    }
+
+    .mui-7kz1ae, /* Active icon on sidebar */
+    .mui-1v204tp /* Remaining on sidebar */
+    {
+        display: none;
+    }
 }
 
